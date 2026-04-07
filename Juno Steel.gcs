@@ -1,0 +1,5928 @@
+{
+	"version": 5,
+	"id": "AMCcz18E4hSTpOYHb",
+	"total_points": 204,
+	"points_record": [
+		{
+			"when": "2026-04-05T19:15:00-04:00",
+			"points": 204,
+			"reason": "Initial points"
+		}
+	],
+	"profile": {
+		"name": "Juno Steel",
+		"age": "36",
+		"birthday": "April 15",
+		"eyes": "Green",
+		"hair": "Black",
+		"skin": "Dark Brown",
+		"handedness": "Left",
+		"gender": "Nonbinary",
+		"height": "5'10\"",
+		"weight": "180 lb",
+		"player_name": "FENNECUS-GIGUND\\Fennal",
+		"tech_level": "10"
+	},
+	"settings": {
+		"page": {
+			"paper_size": "letter",
+			"orientation": "portrait",
+			"top_margin": "0.25 in",
+			"left_margin": "0.25 in",
+			"bottom_margin": "0.25 in",
+			"right_margin": "0.25 in"
+		},
+		"block_layout": [
+			"reactions conditional_modifiers",
+			"melee",
+			"ranged",
+			"traits skills",
+			"spells",
+			"equipment",
+			"other_equipment",
+			"notes"
+		],
+		"attributes": [
+			{
+				"id": "st",
+				"type": "integer",
+				"name": "ST",
+				"full_name": "Strength",
+				"base": "10",
+				"cost_per_point": 10,
+				"cost_adj_percent_per_sm": 10
+			},
+			{
+				"id": "dx",
+				"type": "integer",
+				"name": "DX",
+				"full_name": "Dexterity",
+				"base": "10",
+				"cost_per_point": 20
+			},
+			{
+				"id": "iq",
+				"type": "integer",
+				"name": "IQ",
+				"full_name": "Intelligence",
+				"base": "10",
+				"cost_per_point": 10
+			},
+			{
+				"id": "ht",
+				"type": "integer",
+				"name": "HT",
+				"full_name": "Health",
+				"base": "10",
+				"cost_per_point": 10
+			},
+			{
+				"id": "will",
+				"type": "integer",
+				"placement": "primary",
+				"name": "Will",
+				"base": "10",
+				"cost_per_point": 5
+			},
+			{
+				"id": "fright_check",
+				"type": "integer",
+				"name": "Fright Check",
+				"base": "$will",
+				"cost_per_point": 2
+			},
+			{
+				"id": "per",
+				"type": "integer",
+				"placement": "primary",
+				"name": "Per",
+				"full_name": "Perception",
+				"base": "10",
+				"cost_per_point": 5
+			},
+			{
+				"id": "vision",
+				"type": "integer",
+				"name": "Vision",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "hearing",
+				"type": "integer",
+				"name": "Hearing",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "taste_smell",
+				"type": "integer",
+				"name": "Taste \u0026 Smell",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "touch",
+				"type": "integer",
+				"name": "Touch",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "basic_speed",
+				"type": "decimal",
+				"name": "Basic Speed",
+				"base": "($dx + $ht) / 4",
+				"cost_per_point": 20
+			},
+			{
+				"id": "basic_move",
+				"type": "integer",
+				"name": "Basic Move",
+				"base": "Math.floor($basic_speed)",
+				"cost_per_point": 5
+			},
+			{
+				"id": "fp",
+				"type": "pool",
+				"name": "FP",
+				"full_name": "Fatigue Points",
+				"base": "$ht",
+				"cost_per_point": 3,
+				"thresholds": [
+					{
+						"state": "Unconscious",
+						"value": "-$fp",
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Collapse",
+						"value": "0",
+						"explanation": "- Roll vs. Will to do anything besides talk or rest; failure causes unconsciousness\n- Each FP you lose below 0 also causes 1 HP of injury\n- Move, Dodge and ST are halved (B426)",
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Tired",
+						"value": "Math.ceil($fp / 3) - 1",
+						"explanation": "Move, Dodge and ST are halved (B426)",
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Tiring",
+						"value": "$fp - 1"
+					},
+					{
+						"state": "Rested",
+						"value": "$fp"
+					}
+				]
+			},
+			{
+				"id": "hp",
+				"type": "pool",
+				"name": "HP",
+				"full_name": "Hit Points",
+				"base": "$st",
+				"cost_per_point": 2,
+				"cost_adj_percent_per_sm": 10,
+				"thresholds": [
+					{
+						"state": "Dead",
+						"value": "Math.round(-$hp * 5)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #4",
+						"value": "Math.round(-$hp * 4)",
+						"explanation": "- Roll vs. HT to avoid death\n- Roll vs. HT-4 every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #3",
+						"value": "Math.round(-$hp * 3)",
+						"explanation": "- Roll vs. HT to avoid death\n- Roll vs. HT-3 every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #2",
+						"value": "Math.round(-$hp * 2)",
+						"explanation": "- Roll vs. HT to avoid death\n- Roll vs. HT-2 every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #1",
+						"value": "-$hp",
+						"explanation": "- Roll vs. HT to avoid death\n- Roll vs. HT-1 every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Collapse",
+						"value": "0",
+						"explanation": "- Roll vs. HT every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Reeling",
+						"value": "Math.ceil($hp / 3) - 1",
+						"explanation": "Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Wounded",
+						"value": "$hp - 1"
+					},
+					{
+						"state": "Healthy",
+						"value": "$hp"
+					}
+				]
+			}
+		],
+		"body_type": {
+			"name": "Humanoid",
+			"roll": "3d",
+			"locations": [
+				{
+					"id": "eye",
+					"choice_name": "Eyes",
+					"table_name": "Eyes",
+					"hit_penalty": -9,
+					"description": "An attack that misses by 1 hits the torso instead. Only\nimpaling (imp), piercing (pi-, pi, pi+, pi++), and\ntight-beam burning (burn) attacks can target the eye – and\nonly from the front or sides. Injury over HP÷10 blinds the\neye. Otherwise, treat as skull, but without the extra DR!",
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 6
+						}
+					}
+				},
+				{
+					"id": "skull",
+					"choice_name": "Skull",
+					"table_name": "Skull",
+					"slots": 2,
+					"hit_penalty": -7,
+					"dr_bonus": 2,
+					"description": "An attack that misses by 1 hits the torso instead. Wounding\nmodifier is x4. Knockdown rolls are at -10. Critical hits\nuse the Critical Head Blow Table (B556). Exception: These\nspecial effects do not apply to toxic (tox) damage.",
+					"calc": {
+						"roll_range": "3-4",
+						"dr": {
+							"all": 8
+						}
+					}
+				},
+				{
+					"id": "face",
+					"choice_name": "Face",
+					"table_name": "Face",
+					"slots": 1,
+					"hit_penalty": -5,
+					"description": "An attack that misses by 1 hits the torso instead. Jaw,\ncheeks, nose, ears, etc. If the target has an open-faced\nhelmet, ignore its DR. Knockdown rolls are at -5. Critical\nhits use the Critical Head Blow Table (B556). Corrosion\n(cor) damage gets a x1½ wounding modifier, and if it\ninflicts a major wound, it also blinds one eye (both eyes on\ndamage over full HP). Random attacks from behind hit the\nskull instead.",
+					"calc": {
+						"roll_range": "5",
+						"dr": {
+							"all": 6
+						}
+					}
+				},
+				{
+					"id": "leg",
+					"choice_name": "Leg",
+					"table_name": "Right Leg",
+					"slots": 2,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "6-7",
+						"dr": {
+							"all": 6
+						}
+					}
+				},
+				{
+					"id": "arm",
+					"choice_name": "Arm",
+					"table_name": "Right Arm",
+					"slots": 1,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost. If holding a shield,\ndouble the penalty to hit: -4 for shield arm instead of -2.",
+					"calc": {
+						"roll_range": "8",
+						"dr": {
+							"all": 6
+						}
+					}
+				},
+				{
+					"id": "torso",
+					"choice_name": "Torso",
+					"table_name": "Torso",
+					"slots": 2,
+					"calc": {
+						"roll_range": "9-10",
+						"dr": {
+							"all": 6
+						}
+					}
+				},
+				{
+					"id": "groin",
+					"choice_name": "Groin",
+					"table_name": "Groin",
+					"slots": 1,
+					"hit_penalty": -3,
+					"description": "An attack that misses by 1 hits the torso instead. Human\nmales and the males of similar species suffer double shock\nfrom crushing (cr) damage, and get -5 to knockdown rolls.\nOtherwise, treat as a torso hit.",
+					"calc": {
+						"roll_range": "11",
+						"dr": {
+							"all": 6
+						}
+					}
+				},
+				{
+					"id": "arm",
+					"choice_name": "Arm",
+					"table_name": "Left Arm",
+					"slots": 1,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost. If holding a shield,\ndouble the penalty to hit: -4 for shield arm instead of -2.",
+					"calc": {
+						"roll_range": "12",
+						"dr": {
+							"all": 6
+						}
+					}
+				},
+				{
+					"id": "leg",
+					"choice_name": "Leg",
+					"table_name": "Left Leg",
+					"slots": 2,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "13-14",
+						"dr": {
+							"all": 6
+						}
+					}
+				},
+				{
+					"id": "hand",
+					"choice_name": "Hand",
+					"table_name": "Hand",
+					"slots": 1,
+					"hit_penalty": -4,
+					"description": "If holding a shield, double the penalty to hit: -8 for\nshield hand instead of -4. Reduce the wounding multiplier of\nlarge piercing (pi+), huge piercing (pi++), and impaling\n(imp) damage to x1. Any major wound (loss of over ⅓ HP\nfrom one blow) cripples the extremity. Damage beyond that\nthreshold is lost.",
+					"calc": {
+						"roll_range": "15",
+						"dr": {
+							"all": 6
+						}
+					}
+				},
+				{
+					"id": "foot",
+					"choice_name": "Foot",
+					"table_name": "Foot",
+					"slots": 1,
+					"hit_penalty": -4,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ⅓ HP from one blow) cripples the\nextremity. Damage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "16",
+						"dr": {
+							"all": 6
+						}
+					}
+				},
+				{
+					"id": "neck",
+					"choice_name": "Neck",
+					"table_name": "Neck",
+					"slots": 2,
+					"hit_penalty": -5,
+					"description": "An attack that misses by 1 hits the torso instead. Neck and\nthroat. Increase the wounding multiplier of crushing (cr)\nand corrosion (cor) attacks to x1½, and that of cutting\n(cut) damage to x2. At the GM’s option, anyone killed by a\ncutting (cut) blow to the neck is decapitated!",
+					"calc": {
+						"roll_range": "17-18",
+						"dr": {
+							"all": 6
+						}
+					}
+				},
+				{
+					"id": "vitals",
+					"choice_name": "Vitals",
+					"table_name": "Vitals",
+					"hit_penalty": -3,
+					"description": "An attack that misses by 1 hits the torso instead. Heart,\nlungs, kidneys, etc. Increase the wounding modifier for an\nimpaling (imp) or any piercing (pi-, pi, pi+, pi++) attack\nto x3. Increase the wounding modifier for a tight-beam\nburning (burn) attack to x2. Other attacks cannot target the\nvitals.",
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 6
+						}
+					}
+				}
+			]
+		},
+		"damage_progression": "basic_set",
+		"default_length_units": "ft_in",
+		"default_weight_units": "lb",
+		"user_description_display": "tooltip",
+		"modifiers_display": "inline",
+		"notes_display": "inline",
+		"skill_level_adj_display": "tooltip",
+		"use_modifying_dice_plus_adds": true,
+		"show_spell_adj": true
+	},
+	"attributes": [
+		{
+			"attr_id": "st",
+			"adj": 2,
+			"calc": {
+				"value": 12,
+				"points": 20
+			}
+		},
+		{
+			"attr_id": "dx",
+			"adj": 3,
+			"calc": {
+				"value": 13,
+				"points": 60
+			}
+		},
+		{
+			"attr_id": "iq",
+			"adj": 2,
+			"calc": {
+				"value": 12,
+				"points": 20
+			}
+		},
+		{
+			"attr_id": "ht",
+			"adj": 2,
+			"calc": {
+				"value": 12,
+				"points": 20
+			}
+		},
+		{
+			"attr_id": "will",
+			"adj": 1,
+			"calc": {
+				"value": 11,
+				"points": 5
+			}
+		},
+		{
+			"attr_id": "fright_check",
+			"adj": 0,
+			"calc": {
+				"value": 13,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "per",
+			"adj": 2,
+			"calc": {
+				"value": 12,
+				"points": 10
+			}
+		},
+		{
+			"attr_id": "vision",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "hearing",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "taste_smell",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "touch",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "basic_speed",
+			"adj": 0,
+			"calc": {
+				"value": 6.25,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "basic_move",
+			"adj": 0,
+			"calc": {
+				"value": 6,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "fp",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"current": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "hp",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"current": 12,
+				"points": 0
+			}
+		}
+	],
+	"traits": [
+		{
+			"id": "tzUUmgJWExSBfe1yH",
+			"name": "Natural Attacks",
+			"reference": "B271",
+			"weapons": [
+				{
+					"id": "w9FlrLH34DV-yjQ5i",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						}
+					],
+					"calc": {
+						"level": 13,
+						"damage": "1d-2 cr"
+					}
+				},
+				{
+					"id": "wRLMdPH_Ah_RSZC86",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "skill",
+							"name": "Karate"
+						}
+					],
+					"calc": {
+						"level": 13,
+						"damage": "1d-2 cr",
+						"parry": "10"
+					}
+				},
+				{
+					"id": "w66GbE6G5hYyL8oPr",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Brawling",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Kicking"
+						},
+						{
+							"type": "skill",
+							"name": "Karate",
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"level": 11,
+						"damage": "1d-1 cr"
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "taXcNHFRvJ-qILfok",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tw1Ad0oSMw2ATM4X1"
+			},
+			"name": "Language: English",
+			"reference": "B24",
+			"tags": [
+				"Advantage",
+				"Language",
+				"Mental"
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "Language Talent"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					}
+				]
+			},
+			"modifiers": [
+				{
+					"id": "ma99_s4ogFgrhEKVb",
+					"name": "Native",
+					"reference": "B23",
+					"cost_adj": "-6"
+				},
+				{
+					"id": "m7DA85RQoBWfkQ39j",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "None",
+					"disabled": true
+				},
+				{
+					"id": "mRlhjrXkqhnP7HckF",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Broken",
+					"cost_adj": "1",
+					"disabled": true
+				},
+				{
+					"id": "mczW0BldM9DS0-jMW",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Accented",
+					"cost_adj": "2",
+					"disabled": true
+				},
+				{
+					"id": "m7xW4mxhWWIi1k9pu",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Native",
+					"cost_adj": "3"
+				},
+				{
+					"id": "mkNTGs2f6U2kBqvdb",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "None",
+					"disabled": true
+				},
+				{
+					"id": "mdQTRjhA4PZagOMQM",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Broken",
+					"cost_adj": "1",
+					"disabled": true
+				},
+				{
+					"id": "mx0JN5nLvzeB3zP9-",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Accented",
+					"cost_adj": "2",
+					"disabled": true
+				},
+				{
+					"id": "mFk9WHfmihT97tx_D",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Native",
+					"cost_adj": "3"
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "tEf7GKg46ljRlfsQx",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tw1Ad0oSMw2ATM4X1"
+			},
+			"name": "Language: Common Galactic",
+			"reference": "B24",
+			"tags": [
+				"Advantage",
+				"Language",
+				"Mental"
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "Language Talent"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					}
+				]
+			},
+			"modifiers": [
+				{
+					"id": "ms9BhF6PHX1JDOTDz",
+					"name": "Native",
+					"reference": "B23",
+					"cost_adj": "-6"
+				},
+				{
+					"id": "mydlomQ0Y8WguRUwG",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "None",
+					"disabled": true
+				},
+				{
+					"id": "m6Re2GxUieErl57c6",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Broken",
+					"cost_adj": "1",
+					"disabled": true
+				},
+				{
+					"id": "m2IVMgmGclOTpEf1F",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Accented",
+					"cost_adj": "2",
+					"disabled": true
+				},
+				{
+					"id": "m5A5JkVQHdVaC2ASW",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Native",
+					"cost_adj": "3"
+				},
+				{
+					"id": "mtjbh1n5M_22lhq9L",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "None",
+					"disabled": true
+				},
+				{
+					"id": "m4iGt-aaM2lxZzQc4",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Broken",
+					"cost_adj": "1",
+					"disabled": true
+				},
+				{
+					"id": "mcJdexRrqxKZ8AJB_",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Accented",
+					"cost_adj": "2",
+					"disabled": true
+				},
+				{
+					"id": "m8Fhd6NB-cS05rpe8",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Native",
+					"cost_adj": "3"
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "tXlsX_hCrgw6OYNqQ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "teRggYn926_I1YeWO"
+			},
+			"name": "High Pain Threshold",
+			"reference": "B59",
+			"local_notes": "Never suffer shock penalties when injured",
+			"tags": [
+				"Advantage",
+				"Physical"
+			],
+			"vtt_notes": "[HT +3 High Pain Threshold (avoid knockdown and stunning)] [HT +3 High Pain Threshold (torture)]",
+			"base_points": 10,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "on all HT rolls to avoid knockdown and stunning",
+					"amount": 3
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "to resist torture",
+					"amount": 3
+				}
+			],
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "t-XfeAhsAGrq5-Lha",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "t7U76B4j7M7hCGD_H"
+			},
+			"name": "Contact (@Who@)",
+			"reference": "B44",
+			"tags": [
+				"Advantage",
+				"Social"
+			],
+			"vtt_notes": "[CR: 9 Appears fairly often] [CR: 12 Effective Skill]",
+			"replacements": {
+				"Who": "Who"
+			},
+			"modifiers": [
+				{
+					"id": "MH88gbB0M4cLwFCF2",
+					"name": "Effective Skill",
+					"children": [
+						{
+							"id": "mNIYavDv0rsOiGqdf",
+							"name": "Effective skill",
+							"reference": "B44",
+							"local_notes": "12",
+							"cost_adj": "1"
+						},
+						{
+							"id": "m92qw3lUlKMD5dJii",
+							"name": "Effective skill",
+							"reference": "B44",
+							"local_notes": "15",
+							"cost_adj": "2",
+							"disabled": true
+						},
+						{
+							"id": "mSDJ2TPxxZ-PpGr5I",
+							"name": "Effective skill",
+							"reference": "B44",
+							"local_notes": "18",
+							"cost_adj": "3",
+							"disabled": true
+						},
+						{
+							"id": "mas9mB17jRIlwhf-b",
+							"name": "Effective skill",
+							"reference": "B44",
+							"local_notes": "21",
+							"cost_adj": "4",
+							"disabled": true
+						},
+						{
+							"id": "mvtUxpIIrGyAK_7A9",
+							"name": "Can obtain information using supernatural talents",
+							"reference": "B44",
+							"cost_adj": "1",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "MZHrr50v5cPUdc1K4",
+					"name": "Frequency of Appearance",
+					"children": [
+						{
+							"id": "m20GbXtPK2zbYCIrI",
+							"name": "Appears quite rarely",
+							"reference": "B36",
+							"reference_highlight": "Frequency of Appearance",
+							"local_notes": "6-",
+							"cost_adj": "x0.5",
+							"disabled": true
+						},
+						{
+							"id": "mhQDBXMfiZJAf1KZA",
+							"name": "Appears fairly often",
+							"reference": "B36",
+							"reference_highlight": "Frequency of Appearance",
+							"local_notes": "9-",
+							"cost_adj": "x1"
+						},
+						{
+							"id": "mp-PgLJI2fmCdgDEr",
+							"name": "Appears quite often",
+							"reference": "B36",
+							"reference_highlight": "Frequency of Appearance",
+							"local_notes": "12-",
+							"cost_adj": "x2",
+							"disabled": true
+						},
+						{
+							"id": "mNla4F8t_7LJBkhuX",
+							"name": "Appears almost all the time",
+							"reference": "B36",
+							"reference_highlight": "Frequency of Appearance",
+							"local_notes": "15-",
+							"cost_adj": "x3",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "M9lHwwMtaYdomCmBK",
+					"name": "Reliability",
+					"children": [
+						{
+							"id": "mc5FDRS80h4LSZLtY",
+							"name": "Completely reliable",
+							"reference": "B44",
+							"cost_adj": "x3",
+							"disabled": true
+						},
+						{
+							"id": "mfQYtHfJhACDez_-e",
+							"name": "Usually reliable",
+							"reference": "B44",
+							"cost_adj": "x2",
+							"disabled": true
+						},
+						{
+							"id": "mMBhJt1H-LMOR6uZz",
+							"name": "Somewhat reliable",
+							"reference": "B44",
+							"cost_adj": "x1"
+						},
+						{
+							"id": "miUdE2fWYU5LqFs8W",
+							"name": "Unreliable",
+							"reference": "B44",
+							"cost_adj": "x0.5",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "mzuFl97AvGx3EkwIw",
+					"name": "Group",
+					"reference": "B44",
+					"cost_adj": "x5",
+					"disabled": true
+				},
+				{
+					"id": "m1f22ceYA2oEy5gFB",
+					"name": "Favor",
+					"reference": "B55",
+					"cost_adj": "x0.2",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": 1
+			}
+		},
+		{
+			"id": "tLC_QizVF-X0nTa9D",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "t9lxfCn84bo3idpX9"
+			},
+			"name": "Unluckiness",
+			"reference": "B160",
+			"local_notes": "Once per play session, the GM will arbitrarily and maliciously make something go wrong for you.",
+			"tags": [
+				"Disadvantage",
+				"Mental"
+			],
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "tUdkKtG1whyKVm2-I",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tE_Ykx9nKvsgBGb6L"
+			},
+			"name": "Ambidexterity",
+			"reference": "B39",
+			"tags": [
+				"Advantage",
+				"Physical"
+			],
+			"base_points": 5,
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "tFFh2Ts2KP740XPqx",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "toRWQC_wqLurdUtig"
+			},
+			"name": "Electrical",
+			"reference": "B134",
+			"tags": [
+				"Disadvantage",
+				"Exotic",
+				"Physical"
+			],
+			"base_points": -20,
+			"calc": {
+				"points": -20
+			}
+		},
+		{
+			"id": "tuEgD0jvoI2CN0MSa",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "t55UZnC4Hxsvl7-ri"
+			},
+			"name": "Wealthy",
+			"reference": "B25",
+			"local_notes": "Starting wealth is 5x normal",
+			"tags": [
+				"Advantage",
+				"Social",
+				"Wealth"
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "dead broke"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "poor"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "struggling"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "comfortable wealth"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "very wealthy"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "filthy rich"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "multimillionaire"
+						}
+					}
+				]
+			},
+			"base_points": 20,
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "t0VV17HEGFo8PsnBl",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tIDqwizWRQYDHHGUX"
+			},
+			"name": "Dependent (@Who@)",
+			"reference": "B131",
+			"tags": [
+				"Disadvantage",
+				"Social"
+			],
+			"vtt_notes": "[CR: 9 Appears fairly often]",
+			"replacements": {
+				"Who": "Child"
+			},
+			"modifiers": [
+				{
+					"id": "MizrVn4aR6_YDrLn9",
+					"name": "Competence",
+					"children": [
+						{
+							"id": "mqXa3qVpXVoFmQSs-",
+							"name": "Point total",
+							"reference": "B131",
+							"local_notes": "100% of your starting points",
+							"cost_adj": "-1",
+							"disabled": true
+						},
+						{
+							"id": "mdc8mBRNpKEftWknr",
+							"name": "Point total",
+							"reference": "B131",
+							"local_notes": "75% of your starting points",
+							"cost_adj": "-2",
+							"disabled": true
+						},
+						{
+							"id": "m1BbDWgSYSlPBb-3r",
+							"name": "Point total",
+							"reference": "B131",
+							"local_notes": "50% of your starting points",
+							"cost_adj": "-5"
+						},
+						{
+							"id": "mLfyEYTFD59DJLwYO",
+							"name": "Point total",
+							"reference": "B131",
+							"local_notes": "25% of your starting points",
+							"cost_adj": "-10",
+							"disabled": true
+						},
+						{
+							"id": "mgaMwuGmYleRTiTKr",
+							"name": "Point total",
+							"reference": "B131",
+							"local_notes": "0 or fewer points",
+							"cost_adj": "-15",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "MXyNcIAHWpkpdhvNt",
+					"name": "Importance",
+					"children": [
+						{
+							"id": "m9ejVRcVLW6nJfM7m",
+							"name": "Acquaintance",
+							"reference": "B131",
+							"cost_adj": "x0.5",
+							"disabled": true
+						},
+						{
+							"id": "mfYDE7YBPZhYd7PEQ",
+							"name": "Friend",
+							"reference": "B131",
+							"cost_adj": "x1",
+							"disabled": true
+						},
+						{
+							"id": "mIa3YH2de7GgO1tft",
+							"name": "Loved one",
+							"reference": "B131",
+							"cost_adj": "x2"
+						}
+					]
+				},
+				{
+					"id": "MjEOPlbDoXY49D6Wd",
+					"name": "Frequency of Appearance",
+					"children": [
+						{
+							"id": "mRrAOXP36KAmvXxSU",
+							"name": "Appears quite rarely",
+							"reference": "B36",
+							"local_notes": "6-",
+							"cost_adj": "x0.5",
+							"disabled": true
+						},
+						{
+							"id": "mq0Rk1d5zAhAFNI7T",
+							"name": "Appears fairly often",
+							"reference": "B36",
+							"local_notes": "9-",
+							"cost_adj": "x1"
+						},
+						{
+							"id": "mfU111Hn0ff4Giw0S",
+							"name": "Appears quite often",
+							"reference": "B36",
+							"local_notes": "12-",
+							"cost_adj": "x2",
+							"disabled": true
+						},
+						{
+							"id": "mmAMHZ6jEXXJg8n01",
+							"name": "Appears almost all the time",
+							"reference": "B36",
+							"local_notes": "15-",
+							"cost_adj": "x3",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "mkgS4fEKu10x94-EG",
+					"name": "Group",
+					"reference": "B131",
+					"cost_adj": "x2",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "t6Xa5VFr3HXlR97lY",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "txSrmgLB0M36uR802"
+			},
+			"name": "Code of Honor (Soldier's)",
+			"reference": "B127",
+			"local_notes": "An officer should be tough but fair, lead from the front, and look out for his men; an enlisted man should look out for his buddies and take care of his kit. Every soldier should be willing to fight and die for the honor of his unit, service, and country; follow orders; obey the “rules of war”; treat an honorable enemy with respect (a dishonorable enemy deserves a bullet); and wear the uniform with pride.",
+			"tags": [
+				"Disadvantage",
+				"Mental"
+			],
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "txiAfoUobyulCz2Fl",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tAdgvQpc5XxYoM2Zu"
+			},
+			"name": "Combat Sense  (Spinal Enhancement)",
+			"reference": "B52,MA44",
+			"local_notes": "You immediately act in combat before those without Enhanced Time Sense; Never freeze; Includes bonuses from Combat Reflexes",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Mental"
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "Combat Reflexes"
+						}
+					}
+				]
+			},
+			"modifiers": [
+				{
+					"id": "mNo2JAh1e_G6aRO9M",
+					"name": "Combat Sense",
+					"cost_adj": "-20%"
+				}
+			],
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "contains",
+						"qualifier": "fast-draw"
+					},
+					"amount": 1
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "dodge",
+					"amount": 1
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "parry",
+					"amount": 1
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "block",
+					"amount": 1
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "fright_check",
+					"amount": 2
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "on all IQ rolls to wake up or to recover from surprise or mental stun",
+					"amount": 6
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "to your side on initiative rolls (+2 if you're the leader)",
+					"amount": 1
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "ttHheYD6fB0H-zmms",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "t5bwP6TnS4cX-zM8L"
+			},
+			"name": "Enemy (@Who@)",
+			"reference": "B135",
+			"tags": [
+				"Disadvantage",
+				"Social"
+			],
+			"replacements": {
+				"Who": "Patricia"
+			},
+			"modifiers": [
+				{
+					"id": "MVPSduh_c4wgUPAwb",
+					"name": "Power",
+					"children": [
+						{
+							"id": "m_7Ne2_iTEYK1Q32z",
+							"name": "Weak Individual",
+							"reference": "B135",
+							"local_notes": "50% of your starting points",
+							"cost_adj": "-5",
+							"disabled": true
+						},
+						{
+							"id": "mPLiMUbHl3vLoVv1w",
+							"name": "Equal Individual",
+							"reference": "B135",
+							"local_notes": "100% of your starting points",
+							"cost_adj": "-10"
+						},
+						{
+							"id": "m4k0e2CzL_KTgdP6A",
+							"name": "Powerful Individual",
+							"reference": "B135",
+							"local_notes": "\u003e150% of your starting points",
+							"cost_adj": "-20",
+							"disabled": true
+						},
+						{
+							"id": "mL6NFT6X8PYB6ecBj",
+							"name": "Weak Group",
+							"reference": "B135",
+							"cost_adj": "-10",
+							"disabled": true
+						},
+						{
+							"id": "mq9VMX5KVFK0-Xreb",
+							"name": "Medium Group",
+							"reference": "B135",
+							"cost_adj": "-20",
+							"disabled": true
+						},
+						{
+							"id": "mGAB_9_ha7uY4_rFo",
+							"name": "Large/Powerful Group",
+							"reference": "B135",
+							"cost_adj": "-30",
+							"disabled": true
+						},
+						{
+							"id": "mv2xZZG1MIiOYGBzc",
+							"name": "Utterly Formidable Group",
+							"reference": "B135",
+							"cost_adj": "-40",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "MYk3QV6TJPd1Nw-hG",
+					"name": "Special Cases",
+					"children": [
+						{
+							"id": "m4qZm79MKoLXe5YZm",
+							"name": "Evil Twin",
+							"reference": "B135",
+							"disabled": true
+						},
+						{
+							"id": "mfF8RCoSlvz7Bsq-W",
+							"name": "Evil Twin",
+							"reference": "B135",
+							"local_notes": "More skilled or extra abilities",
+							"cost_adj": "-5",
+							"disabled": true
+						},
+						{
+							"id": "mezgSVcJXUbe5e-zO",
+							"name": "Evil Twin",
+							"reference": "B135",
+							"local_notes": "More skilled and extra abilities",
+							"cost_adj": "-10",
+							"disabled": true
+						},
+						{
+							"id": "mYqe7OtttlAUfJdJY",
+							"name": "Unknown",
+							"reference": "B135",
+							"cost_adj": "-5",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "MfmX1GFF-UC3lhhm5",
+					"name": "Intent",
+					"children": [
+						{
+							"id": "mrRJ-I9yk0NQ60OVe",
+							"name": "Watcher",
+							"reference": "B135",
+							"cost_adj": "x0.25"
+						},
+						{
+							"id": "mU7skD4PS_rB8jRVv",
+							"name": "Rival",
+							"reference": "B135",
+							"cost_adj": "x0.5",
+							"disabled": true
+						},
+						{
+							"id": "m4eJKmXgmmeICqwzp",
+							"name": "Hunter",
+							"reference": "B135",
+							"cost_adj": "x1",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "MWFm-bUjq3dvv-Jlo",
+					"name": "Frequency of Appearance",
+					"children": [
+						{
+							"id": "mFshCcL546USkGy8-",
+							"name": "Appears quite rarely",
+							"reference": "B36",
+							"local_notes": "6-",
+							"cost_adj": "x0.5",
+							"disabled": true
+						},
+						{
+							"id": "m8tn7Oo4y7bLMpSsH",
+							"name": "Appears fairly often",
+							"reference": "B36",
+							"local_notes": "9-",
+							"cost_adj": "x1"
+						},
+						{
+							"id": "mYrw1NwUxsS4PhAkT",
+							"name": "Appears quite often",
+							"reference": "B36",
+							"local_notes": "12-",
+							"cost_adj": "x2",
+							"disabled": true
+						},
+						{
+							"id": "mvlMree0potG-1UIG",
+							"name": "Appears almost all the time",
+							"reference": "B36",
+							"local_notes": "15-",
+							"cost_adj": "x3",
+							"disabled": true
+						}
+					]
+				}
+			],
+			"calc": {
+				"points": -2
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "sCB5yMQgh28x86hIN",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s67Roch7cMOY4VSj-"
+			},
+			"name": "Accounting",
+			"reference": "B174",
+			"tags": [
+				"Business"
+			],
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Finance",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Mathematics",
+					"specialization": "Statistics",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Merchant",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "soz3GNS_XS5IzUEau",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "shHyf3H441PtZMBlJ"
+			},
+			"name": "Merchant",
+			"reference": "B209",
+			"tags": [
+				"Business",
+				"Social"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Finance",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Market Analysis",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sWdWe-zeshKPekQeF",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sxSlxLiSgB95HINP_"
+			},
+			"name": "Forced Entry",
+			"reference": "B196",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "dx/e",
+			"points": 1,
+			"calc": {
+				"level": 13,
+				"rsl": "DX+0"
+			}
+		},
+		{
+			"id": "sSJKdpPoTV1fPR3EY",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sDLf4crz0sGRjVDFi"
+			},
+			"name": "Hobby Skill",
+			"reference": "B200,MA57",
+			"tags": [
+				"Knowledge"
+			],
+			"replacements": {
+				"Physical Hobby": "Origami"
+			},
+			"specialization": "@Physical Hobby@",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "DX+0"
+			}
+		},
+		{
+			"id": "s-g14VXa-N_qWYGEd",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sM7ZMtDfhhFCJkt1X"
+			},
+			"name": "Knot-Tying",
+			"reference": "B203,MA58",
+			"tags": [
+				"Everyman"
+			],
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Climbing",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Seamanship",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "DX+0"
+			}
+		},
+		{
+			"id": "sj7qDFbJgyWZQQ2Rv",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "spdUP_VQ1WFDBlGW0"
+			},
+			"name": "Fast-Draw",
+			"reference": "B194,MA56",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"specialization": "Sword",
+			"difficulty": "dx/e",
+			"points": 1,
+			"calc": {
+				"level": 14,
+				"rsl": "DX+1"
+			}
+		},
+		{
+			"id": "s23ZYNIY1c9r5NMmv",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sS4hZ6hj6EE25ergR"
+			},
+			"name": "Smallsword",
+			"reference": "B208",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Shortsword",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Main-Gauche",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Rapier",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Saber",
+					"modifier": -3
+				}
+			],
+			"points": 4,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 14,
+				"rsl": "DX+1"
+			}
+		},
+		{
+			"id": "qVcPaOZBVCNvldbUE",
+			"name": "Parry Missile-Weapons",
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Smallsword",
+				"modifier": -5
+			},
+			"limit": 4,
+			"points": 2,
+			"calc": {
+				"level": 10,
+				"rsl": "-4"
+			}
+		},
+		{
+			"id": "s9IneWIG1itYmHH-0",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sfWUh9TJBpQuwZBVo"
+			},
+			"name": "Guns",
+			"reference": "B198",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Pistol",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Grenade Launcher",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Gyroc",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Anti-Armor Weapon",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Machine Gun",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Musket",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Beam Weapons",
+					"specialization": "Pistol",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Rifle",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Shotgun",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Submachine Gun",
+					"modifier": -2
+				}
+			],
+			"tech_level": "10",
+			"points": 2,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 14,
+				"rsl": "DX+1"
+			}
+		},
+		{
+			"id": "sFsTamUux-4e8yrcP",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sENfGTCKokQN0N4PF"
+			},
+			"name": "Climbing",
+			"reference": "B183",
+			"tags": [
+				"Athletic",
+				"Criminal",
+				"Exploration",
+				"Outdoor",
+				"Street"
+			],
+			"difficulty": "dx/a",
+			"encumbrance_penalty_multiplier": 1,
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "DX-1"
+			}
+		},
+		{
+			"id": "sQKOYabMzW-GaYMHK",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sGqQ0und_g8u3ez2b"
+			},
+			"name": "Driving",
+			"reference": "B188",
+			"tags": [
+				"Vehicle"
+			],
+			"replacements": {
+				"Vehicle class": "Automobile"
+			},
+			"specialization": "@Vehicle class@",
+			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				},
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Driving",
+					"specialization": "Heavy Wheeled",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Driving",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "DX-1"
+			}
+		},
+		{
+			"id": "sik2GRaN3pru6HgHG",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "st53T_P4vw5xhO7Rp"
+			},
+			"name": "Environment Suit",
+			"reference": "B192",
+			"tags": [
+				"Technical"
+			],
+			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "DX-1"
+			}
+		},
+		{
+			"id": "sT6-J9Zm4FfEAUT0r",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "srxSMYwpMihXMmD5a"
+			},
+			"name": "Erotic Art",
+			"reference": "B192",
+			"tags": [
+				"Social"
+			],
+			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Acrobatics",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "DX-1"
+			}
+		},
+		{
+			"id": "sK5OW1n2x1zyBgaq5",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s8xJ9sNlYaXiyd-va"
+			},
+			"name": "Filch",
+			"reference": "B195",
+			"tags": [
+				"Criminal",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Pickpocket",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Sleight of Hand",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "DX-1"
+			}
+		},
+		{
+			"id": "s0cvophn12sUXw3uy",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "svEm7OyeCu_9wJ8Kk"
+			},
+			"name": "Stealth",
+			"reference": "B222",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "dx/a",
+			"encumbrance_penalty_multiplier": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "DX-1"
+			}
+		},
+		{
+			"id": "sAGalbPGySI7NqzME",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s64oJ-8i-8xecRu4a"
+			},
+			"name": "Throwing",
+			"reference": "B226",
+			"tags": [
+				"Athletic",
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Dropping",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -3,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "DX-1"
+			}
+		},
+		{
+			"id": "sYAEZt3kS9QKc2ZWG",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sX8y2AmeL5DLlQl17"
+			},
+			"name": "Acrobatics",
+			"reference": "B174,MA54",
+			"local_notes": "Acrobatic Dodge: Success +2 Dodge, Fail -2 Dodge",
+			"tags": [
+				"Athletic"
+			],
+			"vtt_notes": "[+2 Acrobatic Dodge] [-2 Failed Acrobatic Dodge]",
+			"difficulty": "dx/h",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Aerobatics",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Aquabatics",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -6,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "DX-2"
+			}
+		},
+		{
+			"id": "sKb84xyZDFbpAJ-gt",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sWVqswxT3hi7db0kD"
+			},
+			"name": "Judo",
+			"reference": "B203,MA57",
+			"local_notes": "Allows parrying two different attacks per turn, one with each hand.",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/h",
+			"encumbrance_penalty_multiplier": 1,
+			"weapons": [
+				{
+					"id": "wLMpojcuVDOAyBbLv",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Throw",
+					"reach": "C,1",
+					"parry": "0F",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Judo"
+						}
+					],
+					"calc": {
+						"level": 11,
+						"damage": "1d-2 cr",
+						"parry": "9F"
+					}
+				}
+			],
+			"points": 1,
+			"calc": {
+				"level": 11,
+				"rsl": "DX-2"
+			}
+		},
+		{
+			"id": "sCxiGHujEzn_Y-dID",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sU4bjpp9TsvnRavPN"
+			},
+			"name": "Karate",
+			"reference": "B203,MA57",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/h",
+			"encumbrance_penalty_multiplier": 1,
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Karate"
+					},
+					"level": {
+						"compare": "at_least"
+					},
+					"amount": 1,
+					"per_die": true
+				},
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Karate"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 1
+					},
+					"amount": 1,
+					"per_die": true
+				}
+			],
+			"points": 1,
+			"calc": {
+				"level": 11,
+				"rsl": "DX-2"
+			}
+		},
+		{
+			"id": "s8u1nY482q0ZWeQ_L",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sfTwejhxAraXCVCCY"
+			},
+			"name": "Escape",
+			"reference": "B192",
+			"tags": [
+				"Criminal",
+				"Street"
+			],
+			"difficulty": "dx/h",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -6
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -6,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "DX-2"
+			}
+		},
+		{
+			"id": "s77_GWEoVPSOSm_1f",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s9b5e-6c-ljOeUtt5"
+			},
+			"name": "Hiking",
+			"reference": "B200",
+			"tags": [
+				"Athletic",
+				"Exploration",
+				"Outdoor"
+			],
+			"difficulty": "ht/a",
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "ht",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "HT-1"
+			}
+		},
+		{
+			"id": "sx--fKcwqAwn-89BJ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "suO1r-jJlrd15U-GJ"
+			},
+			"name": "Lifting",
+			"reference": "B205",
+			"tags": [
+				"Athletic"
+			],
+			"difficulty": "ht/a",
+			"points": 1,
+			"calc": {
+				"level": 11,
+				"rsl": "HT-1"
+			}
+		},
+		{
+			"id": "sIMt2hAAZa3eKAhRz",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s4I5dPhJgOFfh57YM"
+			},
+			"name": "Running",
+			"reference": "B218",
+			"tags": [
+				"Athletic"
+			],
+			"difficulty": "ht/a",
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "ht",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "HT-1"
+			}
+		},
+		{
+			"id": "srPmJYNjSFW5vD7vm",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "ssHhRG7LH-Ma3YDnH"
+			},
+			"name": "Computer Operation",
+			"reference": "B184",
+			"tags": [
+				"Everyman",
+				"Scholarly",
+				"Technical"
+			],
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "s4eYiI14GwPy4ABvz",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sLoMDn7X8itpfsDPv"
+			},
+			"name": "Criminology",
+			"reference": "B186",
+			"tags": [
+				"Humanities",
+				"Police",
+				"Social Sciences"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Psychology",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 2,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "s57-sUbBesoPm0Zcw",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sD4fUkpkj37Cpnm1z"
+			},
+			"name": "Current Affairs",
+			"reference": "B186",
+			"tags": [
+				"Everyman",
+				"Knowledge",
+				"Social"
+			],
+			"specialization": "Headline News",
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Research",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Current Affairs",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "so2weXgO3yqkVo7qa",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s71NSSCnVzScWznSY"
+			},
+			"name": "Electronics Operation",
+			"reference": "B189",
+			"tags": [
+				"Police",
+				"Spy",
+				"Technical"
+			],
+			"specialization": "Surveillance",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Electronics Repair",
+					"specialization": "Surveillance",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Electronics",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Electronics Operation",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 2,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "sidinn4UjqsTMO7v-",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s9mV--3lpIfXO7N6Z"
+			},
+			"name": "First Aid",
+			"reference": "B195",
+			"tags": [
+				"Everyman",
+				"Medical"
+			],
+			"vtt_notes": "[1d-3! First Aid Healing]",
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Esoteric Medicine"
+				},
+				{
+					"type": "skill",
+					"name": "Physician"
+				},
+				{
+					"type": "skill",
+					"name": "Veterinary",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "sbyAeDW3wBP9C_7-8",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "syfSQ9N8yETqQbhFK"
+			},
+			"name": "Games",
+			"reference": "B197,MA57",
+			"tags": [
+				"Knowledge"
+			],
+			"replacements": {
+				"Specialty": "Traditional Board Games"
+			},
+			"specialization": "@Specialty@",
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "sNrCJTESQ9BHlEcKI",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sGz21GskAlJXL1hYP"
+			},
+			"name": "Gesture",
+			"reference": "B198",
+			"tags": [
+				"Social"
+			],
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "sCNfO-e-MYFmmC_l8",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sOtPessbzkRjGaQPR"
+			},
+			"name": "Hobby Skill",
+			"reference": "B200,MA57",
+			"tags": [
+				"Knowledge"
+			],
+			"replacements": {
+				"Mental Hobby": "Comic Books"
+			},
+			"specialization": "@Mental Hobby@",
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "sRTWvA1jlAYHV61IL",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sfZrwMVUibhbtdssl"
+			},
+			"name": "Housekeeping",
+			"reference": "B200",
+			"tags": [
+				"Everyman"
+			],
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "sPg-B12nHO4C04hX1",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sW_7zfEtZS5wjZRD-"
+			},
+			"name": "Savoir-Faire",
+			"reference": "B218,MA59",
+			"tags": [
+				"Knowledge",
+				"Police",
+				"Social"
+			],
+			"specialization": "Police",
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "sdm4J4e7FX9HmFWOy",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sqFw3NucoHE6Ki4XP"
+			},
+			"name": "Shadowing",
+			"reference": "B219",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Observation",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Stealth",
+					"modifier": -4
+				}
+			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Stealth",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "szLxjfVw0Df0VaOhD",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s9IHT34mK8yfSB7d_"
+			},
+			"name": "Spacer",
+			"reference": "B185",
+			"tags": [
+				"Vehicle"
+			],
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "sTILQSLv3mna83QhU",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s5huq4lGmPah5Mzn3"
+			},
+			"name": "Armoury",
+			"reference": "B178",
+			"tags": [
+				"Maintenance",
+				"Military",
+				"Repair"
+			],
+			"specialization": "Melee Weapons",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Melee Weapons",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Smith",
+					"specialization": "Bronze",
+					"modifier": -3,
+					"when_tl": {
+						"compare": "is",
+						"qualifier": 1
+					}
+				},
+				{
+					"type": "skill",
+					"name": "Smith",
+					"specialization": "Iron",
+					"modifier": -3,
+					"when_tl": {
+						"compare": "at_most",
+						"qualifier": 4
+					}
+				},
+				{
+					"type": "skill",
+					"name": "Machinist",
+					"modifier": -3,
+					"when_tl": {
+						"compare": "at_least",
+						"qualifier": 5
+					}
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sr_Uc0MZNHTh1JLSR",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sECLIE914su-sEPNx"
+			},
+			"name": "Armoury",
+			"reference": "B178",
+			"tags": [
+				"Maintenance",
+				"Military",
+				"Repair"
+			],
+			"specialization": "Small Arms",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Small Arms",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Machinist",
+					"modifier": -5,
+					"when_tl": {
+						"compare": "at_least",
+						"qualifier": 5
+					}
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sDX2H0PAvlFetisjz",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sB28HTR_MZyXLP90w"
+			},
+			"name": "Cartography",
+			"reference": "B183",
+			"tags": [
+				"Exploration",
+				"Humanities",
+				"Outdoor",
+				"Social Sciences"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Geography",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Mathematics",
+					"specialization": "Surveying",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Navigation",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Geography",
+				"specialization": "Political",
+				"modifier": -2,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sVSSMBGE0_ipbwNVb",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sxglmNWmcsR5YcSDw"
+			},
+			"name": "Cooking",
+			"reference": "B185",
+			"tags": [
+				"Everyman"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Housekeeping",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "s1UJY8CZmM_WKxgxD",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "scAysIf1hcMnIL0Ca"
+			},
+			"name": "Electrician",
+			"reference": "B189",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Electrical",
+					"modifier": -3
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sUo_WihREt3AgOfKq",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "swXuff1DBhSQbTqy1"
+			},
+			"name": "Electronics Operation",
+			"reference": "B189",
+			"tags": [
+				"Technical"
+			],
+			"specialization": "Communications",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Electronics Operation",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Electronics Repair",
+					"specialization": "Communications",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Electronics",
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Electronics Operation",
+				"specialization": "Surveillance",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sMj5nfl-1pKEYF7So",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "slXlqD4FNReNHmsov"
+			},
+			"name": "Electronics Operation",
+			"reference": "B189",
+			"tags": [
+				"Criminal",
+				"Spy",
+				"Street",
+				"Technical"
+			],
+			"specialization": "Security",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Electronics Operation",
+					"specialization": "Security",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Electronics",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Electronics Operation",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Electronics Operation",
+				"specialization": "Surveillance",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "s42oPeKcObVJP1a25",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s7zUqAO5PEC5JKk_W"
+			},
+			"name": "Fast-Talk",
+			"reference": "B195",
+			"tags": [
+				"Criminal",
+				"Social",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Acting",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "s6tIMzt6KWal_cdNP",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sKWsnqVrAhUQFZUr5"
+			},
+			"name": "Forensics",
+			"reference": "B196",
+			"tags": [
+				"Police"
+			],
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Criminology",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 2,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Criminology",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "s6y4_8SOnkxcy9qEQ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sVspKJvpEaYNHFmRo"
+			},
+			"name": "Freight Handling",
+			"reference": "B197",
+			"tags": [
+				"Technical",
+				"Vehicle"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "s_XyutBfE3RldKjH1",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sWB9ypJAq43MF3O0n"
+			},
+			"name": "Gambling",
+			"reference": "B197",
+			"tags": [
+				"Criminal",
+				"Social",
+				"Street"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Mathematics",
+					"specialization": "Statistics",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "s6bKFZnt7BMzBTO7k",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sY2uk2fBNQBcdx6jV"
+			},
+			"name": "Hazardous Materials",
+			"reference": "B199",
+			"tags": [
+				"Technical"
+			],
+			"specialization": "Chemical",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "st10uGrzCHkoJzvi8",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s3hoLmN-a9_mOr2Kh"
+			},
+			"name": "Holdout",
+			"reference": "B200",
+			"tags": [
+				"Criminal",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Sleight of Hand",
+					"modifier": -3
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "s_hdi_vkQMq4C-T2P",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sfB-d4kTee0C-BZv0"
+			},
+			"name": "Interrogation",
+			"reference": "B202",
+			"tags": [
+				"Military",
+				"Police",
+				"Spy"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Intimidation",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Psychology",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "stXfvCMyWk5LNLymx",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "szeHiRtktcHWqsul8"
+			},
+			"name": "Law",
+			"reference": "B204",
+			"tags": [
+				"Business",
+				"Humanities",
+				"Police",
+				"Social Sciences"
+			],
+			"replacements": {
+				"Specialty": "Drynax Criminal"
+			},
+			"specialization": "@Specialty@",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				}
+			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sr9Gh1Xkt0CNkb_2z",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sbzAJAcPWGr5sFAdP"
+			},
+			"name": "Lockpicking",
+			"reference": "B206",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Spy",
+				"Street",
+				"Technical"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "s1oFu89mibQtbM5A0",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "shHyf3H441PtZMBlJ"
+			},
+			"name": "Merchant",
+			"reference": "B209",
+			"tags": [
+				"Business",
+				"Social"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Finance",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Market Analysis",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "s0ajdyEokDQfswOLa",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "so2Ldnofc7ZvAhwh_"
+			},
+			"name": "Navigation",
+			"reference": "B211",
+			"tags": [
+				"Exploration",
+				"Outdoor",
+				"Technical",
+				"Vehicle"
+			],
+			"specialization": "Land",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Cartography",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Mathematics",
+					"specialization": "Surveying",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Navigation",
+					"specialization": "Air",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Navigation",
+					"specialization": "Sea",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Navigation",
+					"specialization": "Underground",
+					"modifier": -2
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "s00ED-VImwxyEiw4H",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sWZxYKexOd29DFrRI"
+			},
+			"name": "Photography",
+			"reference": "B213",
+			"tags": [
+				"Arts",
+				"Entertainment",
+				"Spy",
+				"Technical"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Electronics Operation",
+					"specialization": "Media",
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "s5MfKn9PA9FTAeLBP",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "stFawUEv8gxldDoiC"
+			},
+			"name": "Research",
+			"reference": "B217",
+			"tags": [
+				"Scholarly",
+				"Spy"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Writing",
+					"modifier": -3
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "prereq_list",
+						"all": true,
+						"when_tl": {
+							"compare": "at_least",
+							"qualifier": 8
+						},
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Computer Operation"
+								}
+							}
+						]
+					},
+					{
+						"type": "prereq_list",
+						"all": false,
+						"when_tl": {
+							"compare": "at_most",
+							"qualifier": 4
+						},
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Language"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Written (Native"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Language"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Written (Accented)"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Language"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Written (Broken)"
+								}
+							}
+						]
+					}
+				]
+			},
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Writing",
+				"modifier": -3,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sFd5cp1zZMfXKED81",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s-Sz8XmnGE56GDrez"
+			},
+			"name": "Soldier",
+			"reference": "B221",
+			"tags": [
+				"Military"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "seloUsKFB2sjy0k5A",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "smTUpMWJGqPeT1KER"
+			},
+			"name": "Streetwise",
+			"reference": "B223",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Social",
+				"Street"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sQCHrf7zt2D8mRhQr",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sHuT7RWMID47mVbzP"
+			},
+			"name": "Writing",
+			"reference": "B228",
+			"tags": [
+				"Arts",
+				"Entertainment",
+				"Scholarly"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sS0zObZJjldDIOL0B",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s67Roch7cMOY4VSj-"
+			},
+			"name": "Accounting",
+			"reference": "B174",
+			"tags": [
+				"Business"
+			],
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Finance",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Mathematics",
+					"specialization": "Statistics",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Merchant",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "svAIIqfCrez3YwfnL",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s5odcUEok8qKTgBoF"
+			},
+			"name": "Economics",
+			"reference": "B189",
+			"tags": [
+				"Business",
+				"Humanities",
+				"Social Sciences"
+			],
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Finance",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Market Analysis",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Merchant",
+					"modifier": -6
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "sPY6ftpLdtcdi_84w",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sR-OvLtUXzXoPy9Ab"
+			},
+			"name": "Geography",
+			"reference": "B198",
+			"tags": [
+				"Humanities",
+				"Social Sciences"
+			],
+			"specialization": "Political",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Economics",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Geography",
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "ssw5O9CzLNxybEnYz",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sPyZ0zxFI-Kygrzie"
+			},
+			"name": "Intelligence Analysis",
+			"reference": "B201",
+			"tags": [
+				"Military",
+				"Police",
+				"Spy"
+			],
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Strategy",
+					"modifier": -6
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "sC2JpK1md4D1sLA1e",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s7TXAnMYKalDo9ZEs"
+			},
+			"name": "Literature",
+			"reference": "B205",
+			"tags": [
+				"Humanities",
+				"Scholarly",
+				"Social Sciences"
+			],
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "s76zVmMXFI_oa9zU3",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sjU9kn3jTX-_5Q5p5"
+			},
+			"name": "Psychology",
+			"reference": "B216",
+			"tags": [
+				"Humanities",
+				"Social Sciences"
+			],
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Sociology",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "sPcvPGVd2SgR8LFvY",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "szf-0DrUH5ef3Cw0E"
+			},
+			"name": "Sociology",
+			"reference": "B221",
+			"tags": [
+				"Humanities",
+				"Social Sciences"
+			],
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Anthropology",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Psychology",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "spcIf85Vg8yAAYtj2",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sgWf_qVqI7HrPQUo7"
+			},
+			"name": "Tactics",
+			"reference": "B224,MA60",
+			"tags": [
+				"Military",
+				"Police"
+			],
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Strategy",
+					"modifier": -6
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "sNOdH_A6vphrm4Q6D",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sOp4wssAMtUc1ukJI"
+			},
+			"name": "Body Language",
+			"reference": "B181",
+			"tags": [
+				"Police",
+				"Social",
+				"Spy"
+			],
+			"difficulty": "per/a",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Detect Lies",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Psychology",
+					"modifier": -4
+				}
+			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Psychology",
+				"modifier": -4,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "Per+0"
+			}
+		},
+		{
+			"id": "s9QFpyCt7wuvOUJy5",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s6Yn2IClGb4i4LgOQ"
+			},
+			"name": "Observation",
+			"reference": "B211",
+			"tags": [
+				"Criminal",
+				"Military",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "per/a",
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Shadowing",
+					"modifier": -5
+				}
+			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "Per+0"
+			}
+		},
+		{
+			"id": "sUtFxBzG7dsWSMzZ1",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sQ2Nj_TqMYKV7skUF"
+			},
+			"name": "Scrounging",
+			"reference": "B218",
+			"tags": [
+				"Criminal",
+				"Street"
+			],
+			"difficulty": "per/e",
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "Per+0"
+			}
+		},
+		{
+			"id": "sQPz3vwe3ZT4iDyDv",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sdl9m7gHE7hlMX0AX"
+			},
+			"name": "Lip Reading",
+			"reference": "B205",
+			"tags": [
+				"Spy"
+			],
+			"difficulty": "per/a",
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -10
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -10,
+				"level": 2,
+				"adjusted_level": 2,
+				"points": -2
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "Per-1"
+			}
+		},
+		{
+			"id": "scnWw8FHBczfLhpse",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sW_dr_6QZxz1zrODT"
+			},
+			"name": "Search",
+			"reference": "B219",
+			"tags": [
+				"Police",
+				"Spy"
+			],
+			"difficulty": "per/a",
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Criminology",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "Per-1"
+			}
+		},
+		{
+			"id": "sEcR14fcp-AzOdItE",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sNx2U5ErYC6YZ-zbF"
+			},
+			"name": "Urban Survival",
+			"reference": "B228",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Street"
+			],
+			"difficulty": "per/a",
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "Per-1"
+			}
+		},
+		{
+			"id": "sA1Ny7OyfL9bqi-sP",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sIegIM7jx4oMnRMm2"
+			},
+			"name": "Detect Lies",
+			"reference": "B187",
+			"tags": [
+				"Police",
+				"Social",
+				"Spy"
+			],
+			"difficulty": "per/h",
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Body Language",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Psychology",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Body Language",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "Per-2"
+			}
+		}
+	],
+	"equipment": [
+		{
+			"id": "eP7OgWNDhZSV4gr19",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eWuX99YxE9cLtIMtN"
+			},
+			"description": "Cyberspine",
+			"reference": "UT217",
+			"local_notes": "Multiply dollar cost by point cost (before applying Temporary Disadvantage). Major procedure.",
+			"tech_level": "10",
+			"legality_class": "3",
+			"base_value": "180000",
+			"vtt_notes": "Provides Enhanced Time Sense with Combat Sense limitation; WARNING: unshielded electronics!",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 180000,
+				"extended_value": 180000,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "e0xsEgGFK8HKxTgBH",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eKiSNZv46qzfUZDjq"
+			},
+			"description": "Ablative Nanoplas Suit",
+			"reference": "UT174",
+			"local_notes": "DR+30 vs. burning or crushing explosive damage inflicted by any type of laser. Flexible.",
+			"tech_level": "10",
+			"legality_class": "3",
+			"tags": [
+				"Armor",
+				"Defenses"
+			],
+			"base_value": "1200",
+			"base_weight": "8 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"eye"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"skull"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"face"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"neck"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"torso"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"vitals"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"groin"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"arm"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"hand"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"leg"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"foot"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"tail"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"wing"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"fin"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"brain"
+					],
+					"amount": 6
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1200,
+				"extended_value": 1200,
+				"weight": "8 lb",
+				"extended_weight": "8 lb"
+			}
+		},
+		{
+			"id": "ep5mtL6XPYpw3f0sg",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "ea__kqP7i_MP6eWbb"
+			},
+			"description": "Gauss Pistol, 4mm",
+			"reference": "UT142",
+			"local_notes": "C/40 shots.",
+			"tech_level": "10",
+			"legality_class": "3",
+			"tags": [
+				"Missile Weapon",
+				"Weaponry"
+			],
+			"base_value": "1700",
+			"base_weight": "2 lb",
+			"weapons": [
+				{
+					"id": "WhXA3j2lICjwhY0Vm",
+					"sv": 1,
+					"damage": {
+						"type": "pi-",
+						"base": "3d",
+						"armor_divisor": 3
+					},
+					"strength": "9",
+					"accuracy": "3",
+					"range": "500/2,100",
+					"rate_of_fire": "3",
+					"shots": "40(3)",
+					"bulk": "-2",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol"
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"level": 14,
+						"damage": "4d(5) pi-"
+					}
+				}
+			],
+			"modifiers": [
+				{
+					"id": "f5ePqJFfDxj3F9-fX",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment Modifiers.eqm",
+						"id": "fIrwGb3phQHID5ir-"
+					},
+					"name": "Very Fine Quality",
+					"reference": "B280",
+					"local_notes": "+1 to Malf",
+					"cost_type": "to_base_cost",
+					"cost": "x5",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						}
+					]
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 8500,
+				"extended_value": 8500,
+				"weight": "2 lb",
+				"extended_weight": "2 lb"
+			}
+		},
+		{
+			"id": "eshiQ_o2De6KvizmP",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "evkwkZ3NDZYW8UN9p"
+			},
+			"description": "Vibro Fencing Sword",
+			"reference": "B273",
+			"tech_level": "10",
+			"tags": [
+				"Melee Weapon"
+			],
+			"base_value": "400",
+			"base_weight": "1.5 lb",
+			"weapons": [
+				{
+					"id": "wOCwNWekJ_TSfVuBE",
+					"sv": 1,
+					"damage": {
+						"type": "imp",
+						"st": "thr",
+						"base": "+1"
+					},
+					"strength": "5",
+					"usage": "Thrust",
+					"reach": "1",
+					"parry": "0F",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Smallsword"
+						},
+						{
+							"type": "skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Rapier",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Saber",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Sword!"
+						}
+					],
+					"calc": {
+						"level": 14,
+						"damage": "2d+2(3) imp",
+						"parry": "11F"
+					}
+				}
+			],
+			"vtt_notes": "[Parry +3 Fencing Retreat]\nThe following include the bonus from Combat Reflexes(Combat Sense)\n[S:\"Parry Missile-Weapons\"+1]\n[S:\"Parry Missile-Weapons\"-3 large thrown weapons] [S:\"Parry Missile-Weapons\"+3 small thrown weapons] [S:\"Parry Missile-Weapons\"-1 Small low-tech missiles\"] [S:\"Parry Missile-Weapons\"-4 Bullets or high-tech projectiiles]",
+			"modifiers": [
+				{
+					"id": "fs9lCWDOL8uw23nA4",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment Modifiers.eqm",
+						"id": "fwR4HtoiYW3rm_Fr3"
+					},
+					"name": "Very Fine Quality",
+					"reference": "B274",
+					"local_notes": "-2 to break; +2 to cutting and impaling damage; for fencing weapons and swords only",
+					"cost_type": "to_base_cost",
+					"cost": "x4",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "this_weapon",
+							"amount": 2
+						}
+					]
+				},
+				{
+					"id": "f6vt2acUv9UIYG2nk",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment Modifiers.eqm",
+						"id": "fIcBJBASQXoaQDRr7"
+					},
+					"name": "Vibroblade",
+					"reference": "UT164",
+					"cost_type": "to_final_base_cost",
+					"tech_level": "10",
+					"cost": "x10",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 4
+						},
+						{
+							"type": "weapon_dr_divisor_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						}
+					]
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 16000,
+				"extended_value": 16000,
+				"weight": "1.5 lb",
+				"extended_weight": "1.5 lb"
+			}
+		},
+		{
+			"id": "e0Zfuc8V6UakUkNLB",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "ev80WwcnBpiGFrkol"
+			},
+			"description": "C cell",
+			"reference": "UT19",
+			"tech_level": "9",
+			"tags": [
+				"Power"
+			],
+			"base_value": "10",
+			"base_weight": "0.5 lb",
+			"quantity": 6,
+			"equipped": true,
+			"calc": {
+				"value": 10,
+				"extended_value": 60,
+				"weight": "0.5 lb",
+				"extended_weight": "3 lb"
+			}
+		},
+		{
+			"id": "e4_iDP2uQbYYnup7M",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eYufWgtLKbOJdfUqy"
+			},
+			"description": "4mm",
+			"reference": "UT143",
+			"tech_level": "10",
+			"legality_class": "3",
+			"tags": [
+				"Ammunition",
+				"Weaponry"
+			],
+			"base_value": "0.06",
+			"base_weight": "0.006 lb",
+			"quantity": 120,
+			"equipped": true,
+			"calc": {
+				"value": 0.06,
+				"extended_value": 7.2,
+				"weight": "0.006 lb",
+				"extended_weight": "0.72 lb"
+			}
+		},
+		{
+			"id": "ejJDExV8kFJgPVJFL",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eiFZSDgHIOenxdNEO"
+			},
+			"description": "Bug, Audio",
+			"reference": "B289",
+			"local_notes": "-7 to spot, 1/4-mile range, transmits for 1 week.",
+			"tech_level": "7",
+			"tags": [
+				"Law-Enforcement",
+				"Spy Gear",
+				"Thief"
+			],
+			"base_value": "200",
+			"quantity": 5,
+			"equipped": true,
+			"calc": {
+				"value": 200,
+				"extended_value": 1000,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eSwSBUp4ezc9oUf1c",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "e9twf7mhTaBNGu3rQ"
+			},
+			"description": "Ear Muffs",
+			"reference": "B289",
+			"local_notes": "Block loud noises (e.g. gunshots). Give Protected Hearing.",
+			"tech_level": "6",
+			"tags": [
+				"Weapon and Combat Accessories"
+			],
+			"base_value": "200",
+			"base_weight": "1 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 200,
+				"extended_value": 200,
+				"weight": "1 lb",
+				"extended_weight": "1 lb"
+			}
+		},
+		{
+			"id": "ef2MPE9CmiecBPTfA",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eCQX_NEhHao-HXw1l"
+			},
+			"description": "Cell Phone",
+			"reference": "B288",
+			"local_notes": "Only works in some areas; $20/month fee., 10 hrs.",
+			"tech_level": "8",
+			"tags": [
+				"Communications and Information Gear"
+			],
+			"base_value": "250",
+			"base_weight": "0.25 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 250,
+				"extended_value": 250,
+				"weight": "0.25 lb",
+				"extended_weight": "0.25 lb"
+			}
+		},
+		{
+			"id": "eXgyEWeov6rIudRAT",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eXRmIV_DsOO1bevEv"
+			},
+			"description": "Flashlight, Heavy",
+			"reference": "B288",
+			"local_notes": "30' beam, lasts 5 hours",
+			"tech_level": "6",
+			"tags": [
+				"Camping and Survival Gear"
+			],
+			"base_value": "20",
+			"base_weight": "1 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 20,
+				"extended_value": 20,
+				"weight": "1 lb",
+				"extended_weight": "1 lb"
+			}
+		},
+		{
+			"id": "e7vdgtbXHl7Hl5qJt",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eR92vNL1Su3Uofy99"
+			},
+			"description": "Handcuffs",
+			"reference": "B289",
+			"tech_level": "5",
+			"tags": [
+				"Law-Enforcement",
+				"Spy Gear",
+				"Thief"
+			],
+			"base_value": "40",
+			"base_weight": "0.5 lb",
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Escape"
+					},
+					"amount": -5
+				}
+			],
+			"quantity": 1,
+			"calc": {
+				"value": 40,
+				"extended_value": 40,
+				"weight": "0.5 lb",
+				"extended_weight": "0.5 lb"
+			}
+		},
+		{
+			"id": "e84YNQwQ1ae7vbYp8",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "ez0zsgZQAQsQO7qHN"
+			},
+			"description": "Hand Grenade, Stun",
+			"reference": "B277",
+			"local_notes": "Fuse 2",
+			"tech_level": "8",
+			"legality_class": "2",
+			"tags": [
+				"Missile Weapon"
+			],
+			"base_value": "40",
+			"base_weight": "1 lb",
+			"weapons": [
+				{
+					"id": "WgdCB3bJR2scAgj1z",
+					"sv": 1,
+					"damage": {
+						"type": ""
+					},
+					"range": "x3.5",
+					"rate_of_fire": "1",
+					"shots": "1",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Throwing"
+						},
+						{
+							"type": "skill",
+							"name": "Dropping",
+							"modifier": -4
+						},
+						{
+							"type": "dx",
+							"modifier": -3
+						}
+					],
+					"calc": {
+						"level": 12,
+						"range": "42"
+					}
+				}
+			],
+			"quantity": 3,
+			"equipped": true,
+			"calc": {
+				"value": 40,
+				"extended_value": 120,
+				"weight": "1 lb",
+				"extended_weight": "3 lb"
+			}
+		},
+		{
+			"id": "e0s9xk1FqkHDtpZo7",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "ez-4XMjmMn3z_-AFi"
+			},
+			"description": "Lockpicks",
+			"reference": "B289",
+			"local_notes": "Basic equipment for Lockpicking skill",
+			"tech_level": "3",
+			"tags": [
+				"Law-Enforcement",
+				"Spy Gear",
+				"Thief"
+			],
+			"base_value": "50",
+			"modifiers": [
+				{
+					"id": "fr26QSlUZHQrCE6IK",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment Modifiers.eqm",
+						"id": "fCE422wQefovq7qHD"
+					},
+					"name": "Fine Quality",
+					"reference": "BX345",
+					"reference_highlight": "Fine-quality Equipment",
+					"local_notes": "+2 to skill rolls",
+					"cost_type": "to_base_cost",
+					"cost": "x20"
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1000,
+				"extended_value": 1000,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eoX-b3V53f6htm1ux",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "ePzy2xQpq8lmOn7Hs"
+			},
+			"description": "Matches, Waterproof",
+			"reference": "B288",
+			"local_notes": "Box of 50",
+			"tech_level": "6",
+			"tags": [
+				"Camping and Survival Gear"
+			],
+			"base_value": "1.5",
+			"base_weight": "0.051 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1.5,
+				"extended_value": 1.5,
+				"weight": "0.051 lb",
+				"extended_weight": "0.051 lb"
+			}
+		},
+		{
+			"id": "eSzOVg1SjdiZnM-0e",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eRf4lnUTTknGU1HAK"
+			},
+			"description": "Mini-Recorder",
+			"reference": "B288",
+			"local_notes": "Palm-sized, with 3-hour tape",
+			"tech_level": "7",
+			"tags": [
+				"Communications and Information Gear"
+			],
+			"base_value": "200",
+			"base_weight": "0.5 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 200,
+				"extended_value": 200,
+				"weight": "0.5 lb",
+				"extended_weight": "0.5 lb"
+			}
+		},
+		{
+			"id": "elO9h7UIloz8RRnp7",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eFmN-M8-PYD47gn9M"
+			},
+			"description": "Wristwatch",
+			"reference": "B288",
+			"tech_level": "6",
+			"tags": [
+				"Camping and Survival Gear"
+			],
+			"base_value": "20",
+			"base_weight": "0.075 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 20,
+				"extended_value": 20,
+				"weight": "0.075 lb",
+				"extended_weight": "0.075 lb"
+			}
+		},
+		{
+			"id": "eXzqZMZpwoJvJLsI1",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eYCnY0X0IXiPdq2y8"
+			},
+			"description": "Molecular Glue",
+			"reference": "UT83",
+			"local_notes": "Per application.",
+			"tech_level": "10",
+			"tags": [
+				"Expedition Gear"
+			],
+			"base_value": "0.5",
+			"quantity": 10,
+			"equipped": true,
+			"calc": {
+				"value": 0.5,
+				"extended_value": 5,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "ep3dluxM5kMupE1bd",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "evonkWifNxOHVpuvC"
+			},
+			"description": "Molecular Glue Solvent",
+			"reference": "UT83",
+			"local_notes": "Removes 10 applications.",
+			"tech_level": "10",
+			"tags": [
+				"Expedition Gear"
+			],
+			"base_value": "1",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1,
+				"extended_value": 1,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eW2Fi5vt5IE9Ik08Z",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "e9F8zNWEjYh2hx1fi"
+			},
+			"description": "Ordinary Clothes",
+			"reference": "B266",
+			"local_notes": "Status 1",
+			"tags": [
+				"Clothing"
+			],
+			"base_value": "240",
+			"base_weight": "2 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 240,
+				"extended_value": 240,
+				"weight": "2 lb",
+				"extended_weight": "2 lb"
+			}
+		}
+	],
+	"other_equipment": [
+		{
+			"id": "et4KbQWyM-80jLwdc",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eQQTnMUoLtKKZcSby"
+			},
+			"description": "Camera, 35mm",
+			"reference": "B289",
+			"local_notes": "Basic equipment for Photography skill. Extra film is 32 shots ($10, neg.).",
+			"tech_level": "6",
+			"tags": [
+				"Optics and Sensors"
+			],
+			"base_value": "50",
+			"base_weight": "3 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 50,
+				"extended_value": 50,
+				"weight": "3 lb",
+				"extended_weight": "3 lb"
+			}
+		},
+		{
+			"id": "evBQCM7yKutdkO7Ke",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "e1Yy1_iAv_75Ud3kS"
+			},
+			"description": "Camera-Film",
+			"reference": "B289",
+			"local_notes": "Extra film with 32 shots",
+			"tech_level": "6",
+			"tags": [
+				"Optics and Sensors"
+			],
+			"base_value": "10",
+			"quantity": 2,
+			"equipped": true,
+			"calc": {
+				"value": 10,
+				"extended_value": 20,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "e3AMmZRNFERAwKprp",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eafxbL_MsqAoAZecF"
+			},
+			"description": "Formal Wear",
+			"reference": "B266",
+			"local_notes": "Status 3",
+			"tags": [
+				"Clothing"
+			],
+			"base_value": "4800",
+			"base_weight": "2 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 4800,
+				"extended_value": 4800,
+				"weight": "2 lb",
+				"extended_weight": "2 lb"
+			}
+		},
+		{
+			"id": "eld2pEuGsVuYq0yWs",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eLoPf9CE7ax0Sss-B"
+			},
+			"description": "1 PB (Petabyte) Data Storage",
+			"reference": "UT23",
+			"tech_level": "10",
+			"tags": [
+				"Computers"
+			],
+			"base_value": "1",
+			"base_weight": "0.001 lb",
+			"quantity": 5,
+			"equipped": true,
+			"calc": {
+				"value": 1,
+				"extended_value": 5,
+				"weight": "0.001 lb",
+				"extended_weight": "0.005 lb"
+			}
+		},
+		{
+			"id": "eHBiT3pOOXPIGksgi",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eibL8ZSW6nOgOX6co"
+			},
+			"description": "Entertainment Console",
+			"reference": "UT51",
+			"local_notes": "Complexity 6. 4B/5hr. or external power.",
+			"tech_level": "10",
+			"tags": [
+				"Media and Education"
+			],
+			"base_value": "500",
+			"base_weight": "1 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 500,
+				"extended_value": 500,
+				"weight": "1 lb",
+				"extended_weight": "1 lb"
+			}
+		},
+		{
+			"id": "e1rkOLHx4lrmoV1S3",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eeCN6UUEkvuVXponr"
+			},
+			"description": "1/8\" Smart Rope",
+			"reference": "UT76",
+			"local_notes": "Per yard. Supports 400lbs. Can be ordered by radio to be flexible or rigid, unable to be untied.",
+			"tech_level": "10",
+			"tags": [
+				"Tools and Construction Materials"
+			],
+			"base_value": "0.4",
+			"base_weight": "0.01 lb",
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Knot-Tying"
+					},
+					"amount": 3
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0.4,
+				"extended_value": 0.4,
+				"weight": "0.01 lb",
+				"extended_weight": "0.01 lb"
+			}
+		},
+		{
+			"id": "eGswK3KXFoEx2YjBT",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "ek2CTXpTDjJDErAjt"
+			},
+			"description": "Night Vision Goggles",
+			"reference": "B289",
+			"local_notes": "Give Night Vision 9. 8 hrs.",
+			"tech_level": "8",
+			"tags": [
+				"Optics and Sensors"
+			],
+			"base_value": "600",
+			"base_weight": "2 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 600,
+				"extended_value": 600,
+				"weight": "2 lb",
+				"extended_weight": "2 lb"
+			}
+		},
+		{
+			"id": "eVy3HAn_2wFpt6TIO",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eNLb1KOItxm0vSDSq"
+			},
+			"description": "Rope, 3/4\", 20 yards",
+			"reference": "B288",
+			"local_notes": "Supports 1,100 lbs.",
+			"tech_level": "1",
+			"tags": [
+				"Camping and Survival Gear"
+			],
+			"base_value": "50",
+			"base_weight": "10 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 50,
+				"extended_value": 50,
+				"weight": "10 lb",
+				"extended_weight": "10 lb"
+			}
+		},
+		{
+			"id": "eG-90aGWJubsppZUt",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eBSrjkzutk3ssiwkn"
+			},
+			"description": "Gas Mask",
+			"reference": "B285",
+			"tech_level": "6",
+			"tags": [
+				"Headgear"
+			],
+			"base_value": "100",
+			"base_weight": "4 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"eye",
+						"face"
+					],
+					"amount": 2
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 100,
+				"extended_value": 100,
+				"weight": "4 lb",
+				"extended_weight": "4 lb"
+			}
+		},
+		{
+			"id": "epdNgpDBNfUTX4Mrg",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eQwYw3YMYdWxfoOrH"
+			},
+			"description": "Computer, Laptop",
+			"reference": "B288",
+			"local_notes": "Modem plugs into phone. 2 hrs.",
+			"tech_level": "8",
+			"tags": [
+				"Communications and Information Gear"
+			],
+			"base_value": "1500",
+			"base_weight": "3 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1500,
+				"extended_value": 1500,
+				"weight": "3 lb",
+				"extended_weight": "3 lb"
+			}
+		},
+		{
+			"id": "e67Q19xHmorkwmfPB",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "e9F8zNWEjYh2hx1fi"
+			},
+			"description": "Ordinary Clothes",
+			"reference": "B266",
+			"local_notes": "Status 1",
+			"tags": [
+				"Clothing"
+			],
+			"base_value": "240",
+			"base_weight": "2 lb",
+			"quantity": 2,
+			"equipped": true,
+			"calc": {
+				"value": 240,
+				"extended_value": 480,
+				"weight": "2 lb",
+				"extended_weight": "4 lb"
+			}
+		},
+		{
+			"id": "eilqD-i6tZArT7Jl-",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eRpb2T1C-sVXZ6mYa"
+			},
+			"description": "Shovel",
+			"reference": "B289",
+			"local_notes": "Speeds up digging",
+			"tech_level": "1",
+			"tags": [
+				"Tools"
+			],
+			"base_value": "12",
+			"base_weight": "6 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 12,
+				"extended_value": 12,
+				"weight": "6 lb",
+				"extended_weight": "6 lb"
+			}
+		},
+		{
+			"id": "ejzzwN6yOvxXHKuww",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eaVppQQrIDnLaaN6V"
+			},
+			"description": "Laser Microphone",
+			"reference": "B289",
+			"local_notes": "Eavesdrop through glass. 300-yd. range.",
+			"tech_level": "8",
+			"tags": [
+				"Law-Enforcement",
+				"Spy Gear",
+				"Thief"
+			],
+			"base_value": "500",
+			"base_weight": "2 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 500,
+				"extended_value": 500,
+				"weight": "2 lb",
+				"extended_weight": "2 lb"
+			}
+		},
+		{
+			"id": "eonpAuT4188Y84Ya0",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eZYm5qb2A78neJwzX"
+			},
+			"description": "Food Tablets",
+			"reference": "UT73",
+			"local_notes": "One day's supply.",
+			"tech_level": "9",
+			"tags": [
+				"Housing and Food"
+			],
+			"base_value": "10",
+			"base_weight": "0.75 lb",
+			"quantity": 100,
+			"equipped": true,
+			"calc": {
+				"value": 10,
+				"extended_value": 1000,
+				"weight": "0.75 lb",
+				"extended_weight": "75 lb"
+			}
+		},
+		{
+			"id": "eZoO6Y7CtVYP-vK_E",
+			"description": "Money",
+			"legality_class": "4",
+			"base_value": "31517.9",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 31517.9,
+				"extended_value": 31517.9,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		}
+	],
+	"created_date": "2026-04-05T19:15:00-04:00",
+	"modified_date": "2026-04-06T19:09:46-04:00",
+	"calc": {
+		"swing": "1d+2",
+		"thrust": "1d-1",
+		"basic_lift": "29 lb",
+		"dodge_bonus": 1,
+		"parry_bonus": 1,
+		"block_bonus": 1,
+		"move": [
+			6,
+			4,
+			3,
+			2,
+			1
+		],
+		"dodge": [
+			10,
+			9,
+			8,
+			7,
+			6
+		]
+	}
+}
