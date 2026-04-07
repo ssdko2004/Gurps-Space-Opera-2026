@@ -694,13 +694,13 @@
 			}
 		},
 		{
-			"id": "taXcNHFRvJ-qILfok",
+			"id": "tv93Z244LbWZyMS-U",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Traits.adq",
 				"id": "tw1Ad0oSMw2ATM4X1"
 			},
-			"name": "Language: English",
+			"name": "Language: @Language@",
 			"reference": "B24",
 			"tags": [
 				"Advantage",
@@ -724,22 +724,25 @@
 					}
 				]
 			},
+			"replacements": {
+				"Language": "English"
+			},
 			"modifiers": [
 				{
-					"id": "ma99_s4ogFgrhEKVb",
+					"id": "mYbcGe-IEtk2cC7rL",
 					"name": "Native",
 					"reference": "B23",
 					"cost_adj": "-6"
 				},
 				{
-					"id": "m7DA85RQoBWfkQ39j",
+					"id": "mnl1DwlPE6SIiK9PF",
 					"name": "Spoken",
 					"reference": "B24",
 					"local_notes": "None",
 					"disabled": true
 				},
 				{
-					"id": "mRlhjrXkqhnP7HckF",
+					"id": "mwB-Z_Ho-DbNjlsUA",
 					"name": "Spoken",
 					"reference": "B24",
 					"local_notes": "Broken",
@@ -747,7 +750,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mczW0BldM9DS0-jMW",
+					"id": "mERxruGY2JwpGYNSK",
 					"name": "Spoken",
 					"reference": "B24",
 					"local_notes": "Accented",
@@ -755,21 +758,21 @@
 					"disabled": true
 				},
 				{
-					"id": "m7xW4mxhWWIi1k9pu",
+					"id": "mR-MQvesT62i2KgB6",
 					"name": "Spoken",
 					"reference": "B24",
 					"local_notes": "Native",
 					"cost_adj": "3"
 				},
 				{
-					"id": "mkNTGs2f6U2kBqvdb",
+					"id": "mKyUh7i2s-9ONPggP",
 					"name": "Written",
 					"reference": "B24",
 					"local_notes": "None",
 					"disabled": true
 				},
 				{
-					"id": "mdQTRjhA4PZagOMQM",
+					"id": "mRiVhNACzF6OxQ5cB",
 					"name": "Written",
 					"reference": "B24",
 					"local_notes": "Broken",
@@ -777,7 +780,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mx0JN5nLvzeB3zP9-",
+					"id": "m9N-mjuedxbfNys4Z",
 					"name": "Written",
 					"reference": "B24",
 					"local_notes": "Accented",
@@ -785,7 +788,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mFk9WHfmihT97tx_D",
+					"id": "mr9yPk2kxFMwVFLuW",
 					"name": "Written",
 					"reference": "B24",
 					"local_notes": "Native",
@@ -797,13 +800,13 @@
 			}
 		},
 		{
-			"id": "tEf7GKg46ljRlfsQx",
+			"id": "toCxOQHMDkTF2liR4",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Traits.adq",
 				"id": "tw1Ad0oSMw2ATM4X1"
 			},
-			"name": "Language: Common Galactic",
+			"name": "Language: @Language@",
 			"reference": "B24",
 			"tags": [
 				"Advantage",
@@ -827,22 +830,25 @@
 					}
 				]
 			},
+			"replacements": {
+				"Language": "Common Galactic"
+			},
 			"modifiers": [
 				{
-					"id": "ms9BhF6PHX1JDOTDz",
+					"id": "mjI0VHQeyOo_p50o4",
 					"name": "Native",
 					"reference": "B23",
 					"cost_adj": "-6"
 				},
 				{
-					"id": "mydlomQ0Y8WguRUwG",
+					"id": "mY2MRuYo2s-d5849a",
 					"name": "Spoken",
 					"reference": "B24",
 					"local_notes": "None",
 					"disabled": true
 				},
 				{
-					"id": "m6Re2GxUieErl57c6",
+					"id": "mKULNTDgeGaCkVuWX",
 					"name": "Spoken",
 					"reference": "B24",
 					"local_notes": "Broken",
@@ -850,7 +856,7 @@
 					"disabled": true
 				},
 				{
-					"id": "m2IVMgmGclOTpEf1F",
+					"id": "mpsb_UAWEr_AQ1tP0",
 					"name": "Spoken",
 					"reference": "B24",
 					"local_notes": "Accented",
@@ -858,21 +864,21 @@
 					"disabled": true
 				},
 				{
-					"id": "m5A5JkVQHdVaC2ASW",
+					"id": "mO8Qbin-4DEIoz2Ka",
 					"name": "Spoken",
 					"reference": "B24",
 					"local_notes": "Native",
 					"cost_adj": "3"
 				},
 				{
-					"id": "mtjbh1n5M_22lhq9L",
+					"id": "mk_2SSfBrVXULgnBb",
 					"name": "Written",
 					"reference": "B24",
 					"local_notes": "None",
 					"disabled": true
 				},
 				{
-					"id": "m4iGt-aaM2lxZzQc4",
+					"id": "mfvgYkalPVUPEo-_M",
 					"name": "Written",
 					"reference": "B24",
 					"local_notes": "Broken",
@@ -880,7 +886,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mcJdexRrqxKZ8AJB_",
+					"id": "mG_87riscfgjnz5TP",
 					"name": "Written",
 					"reference": "B24",
 					"local_notes": "Accented",
@@ -888,7 +894,7 @@
 					"disabled": true
 				},
 				{
-					"id": "m8Fhd6NB-cS05rpe8",
+					"id": "mBEHxWlxCu4Mt2Tg0",
 					"name": "Written",
 					"reference": "B24",
 					"local_notes": "Native",
@@ -1239,15 +1245,15 @@
 			],
 			"vtt_notes": "[CR: 9 Appears fairly often]",
 			"replacements": {
-				"Who": "Child"
+				"Who": "Rigo Steel"
 			},
 			"modifiers": [
 				{
-					"id": "MizrVn4aR6_YDrLn9",
+					"id": "MwLO1H-1Pd4_kxr27",
 					"name": "Competence",
 					"children": [
 						{
-							"id": "mqXa3qVpXVoFmQSs-",
+							"id": "mBmc4JlmEYYS31JjH",
 							"name": "Point total",
 							"reference": "B131",
 							"local_notes": "100% of your starting points",
@@ -1255,7 +1261,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mdc8mBRNpKEftWknr",
+							"id": "mZl2RZykZ4cXj4Y58",
 							"name": "Point total",
 							"reference": "B131",
 							"local_notes": "75% of your starting points",
@@ -1263,14 +1269,14 @@
 							"disabled": true
 						},
 						{
-							"id": "m1BbDWgSYSlPBb-3r",
+							"id": "mrwzWI8mLmHB4QEUe",
 							"name": "Point total",
 							"reference": "B131",
 							"local_notes": "50% of your starting points",
 							"cost_adj": "-5"
 						},
 						{
-							"id": "mLfyEYTFD59DJLwYO",
+							"id": "m7aaR4Aov4Z4g97E-",
 							"name": "Point total",
 							"reference": "B131",
 							"local_notes": "25% of your starting points",
@@ -1278,7 +1284,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mgaMwuGmYleRTiTKr",
+							"id": "mAHCwiDOpqVhCq5K1",
 							"name": "Point total",
 							"reference": "B131",
 							"local_notes": "0 or fewer points",
@@ -1288,25 +1294,25 @@
 					]
 				},
 				{
-					"id": "MXyNcIAHWpkpdhvNt",
+					"id": "My4dom8RNnA50UnCN",
 					"name": "Importance",
 					"children": [
 						{
-							"id": "m9ejVRcVLW6nJfM7m",
+							"id": "m1DmJ3KEdm_vqo_B8",
 							"name": "Acquaintance",
 							"reference": "B131",
 							"cost_adj": "x0.5",
 							"disabled": true
 						},
 						{
-							"id": "mfYDE7YBPZhYd7PEQ",
+							"id": "mrWXEk-HWzj0Th-Kd",
 							"name": "Friend",
 							"reference": "B131",
 							"cost_adj": "x1",
 							"disabled": true
 						},
 						{
-							"id": "mIa3YH2de7GgO1tft",
+							"id": "mtHNNkJJrq-rbVOU6",
 							"name": "Loved one",
 							"reference": "B131",
 							"cost_adj": "x2"
@@ -1314,11 +1320,11 @@
 					]
 				},
 				{
-					"id": "MjEOPlbDoXY49D6Wd",
+					"id": "Mh7JZ1YM2ruqC2-ys",
 					"name": "Frequency of Appearance",
 					"children": [
 						{
-							"id": "mRrAOXP36KAmvXxSU",
+							"id": "mTOl0M1KjwG47KwPq",
 							"name": "Appears quite rarely",
 							"reference": "B36",
 							"local_notes": "6-",
@@ -1326,14 +1332,14 @@
 							"disabled": true
 						},
 						{
-							"id": "mq0Rk1d5zAhAFNI7T",
+							"id": "mUsIVxPp98lb32mrb",
 							"name": "Appears fairly often",
 							"reference": "B36",
 							"local_notes": "9-",
 							"cost_adj": "x1"
 						},
 						{
-							"id": "mfU111Hn0ff4Giw0S",
+							"id": "mlCx_sdPi2hbpntaP",
 							"name": "Appears quite often",
 							"reference": "B36",
 							"local_notes": "12-",
@@ -1341,7 +1347,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mmAMHZ6jEXXJg8n01",
+							"id": "msOojSoDVPi1gR1m5",
 							"name": "Appears almost all the time",
 							"reference": "B36",
 							"local_notes": "15-",
@@ -1351,7 +1357,7 @@
 					]
 				},
 				{
-					"id": "mkgS4fEKu10x94-EG",
+					"id": "m_jlDDrqHcIv8RFS1",
 					"name": "Group",
 					"reference": "B131",
 					"cost_adj": "x2",
@@ -5902,7 +5908,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:15:00-04:00",
-	"modified_date": "2026-04-06T19:09:46-04:00",
+	"modified_date": "2026-04-07T16:30:22-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",

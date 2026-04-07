@@ -112,7 +112,7 @@
 				"path": "Basic Set/Basic Set Traits.adq",
 				"id": "tw1Ad0oSMw2ATM4X1"
 			},
-			"name": "Language: Common Galactic Tongue (Name TBD)",
+			"name": "Language: @Language@",
 			"reference": "B24",
 			"tags": [
 				"Advantage",
@@ -136,22 +136,25 @@
 					}
 				]
 			},
+			"replacements": {
+				"Language": "Common Galactic"
+			},
 			"modifiers": [
 				{
-					"id": "maPRQafG3qS1Iwd6e",
+					"id": "motYCy5yvre7NHrmP",
 					"name": "Native",
 					"reference": "B23",
 					"cost_adj": "-6"
 				},
 				{
-					"id": "m_17sZ_28VDJtnyKu",
+					"id": "mIpN2Aunu9KYKoBmR",
 					"name": "Spoken",
 					"reference": "B24",
 					"local_notes": "None",
 					"disabled": true
 				},
 				{
-					"id": "mUtCUBcj5zbGS2kEp",
+					"id": "mvumCZSPs_K4i1xWc",
 					"name": "Spoken",
 					"reference": "B24",
 					"local_notes": "Broken",
@@ -159,7 +162,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mcVOgnHd_nzpiTqUU",
+					"id": "mzHarKh8MwA3_UWoc",
 					"name": "Spoken",
 					"reference": "B24",
 					"local_notes": "Accented",
@@ -167,21 +170,21 @@
 					"disabled": true
 				},
 				{
-					"id": "mgZ2nDMs8R64qNAMs",
+					"id": "mc19A2Zy3Mg3AYe4U",
 					"name": "Spoken",
 					"reference": "B24",
 					"local_notes": "Native",
 					"cost_adj": "3"
 				},
 				{
-					"id": "mY9IRGoY9Jy3hTWQx",
+					"id": "mm-UrktUJMcYUdjKN",
 					"name": "Written",
 					"reference": "B24",
 					"local_notes": "None",
 					"disabled": true
 				},
 				{
-					"id": "mhBV8XU7PfzYppfo1",
+					"id": "mVta5S6p8kjSkoa10",
 					"name": "Written",
 					"reference": "B24",
 					"local_notes": "Broken",
@@ -189,7 +192,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mXfqB6pvZd3BrXoaS",
+					"id": "mcm2IPr-EC8iM5ek5",
 					"name": "Written",
 					"reference": "B24",
 					"local_notes": "Accented",
@@ -197,7 +200,7 @@
 					"disabled": true
 				},
 				{
-					"id": "m9c0dX7umXUTs0AVW",
+					"id": "mUN2WLhs38gynLdgy",
 					"name": "Written",
 					"reference": "B24",
 					"local_notes": "Native",
