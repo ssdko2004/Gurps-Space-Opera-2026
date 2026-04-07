@@ -31,7 +31,7 @@
 		"height": "5'8\"",
 		"weight": "149 lb",
 		"player_name": "Matthew",
-		"tech_level": "3"
+		"tech_level": "10"
 	},
 	"settings": {
 		"page": {
@@ -292,7 +292,9 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 0
+							"all": 6,
+							"burn from a laser": 30,
+							"cr from a laser": 30
 						}
 					}
 				},
@@ -307,7 +309,9 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 2
+							"all": 8,
+							"burn from a laser": 30,
+							"cr from a laser": 30
 						}
 					}
 				},
@@ -321,7 +325,9 @@
 					"calc": {
 						"roll_range": "5",
 						"dr": {
-							"all": 0
+							"all": 6,
+							"burn from a laser": 30,
+							"cr from a laser": 30
 						}
 					}
 				},
@@ -335,7 +341,9 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 0
+							"all": 6,
+							"burn from a laser": 30,
+							"cr from a laser": 30
 						}
 					}
 				},
@@ -349,7 +357,9 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 0
+							"all": 6,
+							"burn from a laser": 30,
+							"cr from a laser": 30
 						}
 					}
 				},
@@ -361,7 +371,9 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 0
+							"all": 6,
+							"burn from a laser": 30,
+							"cr from a laser": 30
 						}
 					}
 				},
@@ -375,7 +387,9 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 0
+							"all": 6,
+							"burn from a laser": 30,
+							"cr from a laser": 30
 						}
 					}
 				},
@@ -389,7 +403,9 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 0
+							"all": 6,
+							"burn from a laser": 30,
+							"cr from a laser": 30
 						}
 					}
 				},
@@ -403,7 +419,9 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 0
+							"all": 6,
+							"burn from a laser": 30,
+							"cr from a laser": 30
 						}
 					}
 				},
@@ -417,7 +435,9 @@
 					"calc": {
 						"roll_range": "15",
 						"dr": {
-							"all": 0
+							"all": 6,
+							"burn from a laser": 30,
+							"cr from a laser": 30
 						}
 					}
 				},
@@ -431,7 +451,9 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 0
+							"all": 6,
+							"burn from a laser": 30,
+							"cr from a laser": 30
 						}
 					}
 				},
@@ -445,7 +467,9 @@
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
-							"all": 0
+							"all": 6,
+							"burn from a laser": 30,
+							"cr from a laser": 30
 						}
 					}
 				},
@@ -458,7 +482,9 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 0
+							"all": 6,
+							"burn from a laser": 30,
+							"cr from a laser": 30
 						}
 					}
 				}
@@ -2300,15 +2326,15 @@
 								}
 							],
 							"calc": {
-								"level": 11,
+								"level": 9,
 								"damage": "1d-2 cr",
-								"parry": "8F"
+								"parry": "7F"
 							}
 						}
 					],
 					"points": 1,
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "DX-2"
 					}
 				},
@@ -2455,7 +2481,7 @@
 					],
 					"points": 1,
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "DX-2"
 					}
 				},
@@ -2593,7 +2619,7 @@
 						"points": -8
 					},
 					"calc": {
-						"level": 12,
+						"level": 11,
 						"rsl": "DX-1"
 					}
 				},
@@ -2714,7 +2740,7 @@
 						"points": -8
 					},
 					"calc": {
-						"level": 12,
+						"level": 11,
 						"rsl": "DX-1"
 					}
 				},
@@ -3322,6 +3348,164 @@
 			}
 		},
 		{
+			"id": "enlHUSSN0fAknQixh",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eKiSNZv46qzfUZDjq"
+			},
+			"description": "Ablative Nanoplas Suit",
+			"reference": "UT174",
+			"local_notes": "Laser resistant DR drops by 1 for every 10 damage from a laser taken (To the max of -30)",
+			"tech_level": "10",
+			"legality_class": "3",
+			"tags": [
+				"Armor",
+				"Defenses"
+			],
+			"base_value": "1200",
+			"base_weight": "8 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "cr from a laser",
+					"amount": 30
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "burn from a laser",
+					"amount": 30
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"eye"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"skull"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"face"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"neck"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"torso"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"vitals"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"groin"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"arm"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"hand"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"leg"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"foot"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"tail"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"wing"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"fin"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"brain"
+					],
+					"amount": 6
+				}
+			],
+			"modifiers": [
+				{
+					"id": "fDwJt4L4voJNn57B8",
+					"name": "Made for small hands (SM -6)",
+					"cost_type": "to_base_cost",
+					"cost": "+0.5 CF"
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1800,
+				"extended_value": 1800,
+				"weight": "8 lb",
+				"extended_weight": "8 lb"
+			}
+		},
+		{
 			"id": "eoj9gvRoL6hnpMpCd",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -3517,7 +3701,7 @@
 		}
 	],
 	"created_date": "2026-03-25T10:24:58-04:00",
-	"modified_date": "2026-04-07T16:41:01-04:00",
+	"modified_date": "2026-04-07T18:05:40-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",

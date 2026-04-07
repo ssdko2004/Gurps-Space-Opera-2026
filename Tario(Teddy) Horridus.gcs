@@ -283,8 +283,13 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 12,
-							"non-crushing": -3
+							"all": 10,
+							"burn": 10,
+							"cut": 10,
+							"pi": 20,
+							"pi+": 20,
+							"pi++": 20,
+							"pi-": 20
 						}
 					}
 				},
@@ -299,8 +304,13 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 14,
-							"non-crushing": -3
+							"all": 13,
+							"burn": 10,
+							"cut": 10,
+							"pi": 20,
+							"pi+": 20,
+							"pi++": 20,
+							"pi-": 20
 						}
 					}
 				},
@@ -314,8 +324,13 @@
 					"calc": {
 						"roll_range": "5",
 						"dr": {
-							"all": 13,
-							"non-crushing": -3
+							"all": 11,
+							"burn": 10,
+							"cut": 10,
+							"pi": 20,
+							"pi+": 20,
+							"pi++": 20,
+							"pi-": 20
 						}
 					}
 				},
@@ -329,7 +344,13 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 6
+							"all": 11,
+							"burn": 10,
+							"cut": 10,
+							"pi": 20,
+							"pi+": 20,
+							"pi++": 20,
+							"pi-": 20
 						}
 					}
 				},
@@ -343,7 +364,13 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 7
+							"all": 12,
+							"burn": 10,
+							"cut": 10,
+							"pi": 20,
+							"pi+": 20,
+							"pi++": 20,
+							"pi-": 20
 						}
 					}
 				},
@@ -355,7 +382,13 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 8
+							"all": 12,
+							"burn": 10,
+							"cut": 10,
+							"pi": 20,
+							"pi+": 20,
+							"pi++": 20,
+							"pi-": 20
 						}
 					}
 				},
@@ -369,7 +402,13 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 6
+							"all": 11,
+							"burn": 10,
+							"cut": 10,
+							"pi": 20,
+							"pi+": 20,
+							"pi++": 20,
+							"pi-": 20
 						}
 					}
 				},
@@ -383,7 +422,13 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 7
+							"all": 12,
+							"burn": 10,
+							"cut": 10,
+							"pi": 20,
+							"pi+": 20,
+							"pi++": 20,
+							"pi-": 20
 						}
 					}
 				},
@@ -397,7 +442,13 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 6
+							"all": 11,
+							"burn": 10,
+							"cut": 10,
+							"pi": 20,
+							"pi+": 20,
+							"pi++": 20,
+							"pi-": 20
 						}
 					}
 				},
@@ -411,7 +462,13 @@
 					"calc": {
 						"roll_range": "15",
 						"dr": {
-							"all": 6
+							"all": 11,
+							"burn": 10,
+							"cut": 10,
+							"pi": 20,
+							"pi+": 20,
+							"pi++": 20,
+							"pi-": 20
 						}
 					}
 				},
@@ -425,7 +482,13 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 6
+							"all": 11,
+							"burn": 10,
+							"cut": 10,
+							"pi": 20,
+							"pi+": 20,
+							"pi++": 20,
+							"pi-": 20
 						}
 					}
 				},
@@ -439,7 +502,13 @@
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
-							"all": 6
+							"all": 11,
+							"burn": 10,
+							"cut": 10,
+							"pi": 20,
+							"pi+": 20,
+							"pi++": 20,
+							"pi-": 20
 						}
 					}
 				},
@@ -452,7 +521,13 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 8
+							"all": 12,
+							"burn": 10,
+							"cut": 10,
+							"pi": 20,
+							"pi+": 20,
+							"pi++": 20,
+							"pi-": 20
 						}
 					}
 				}
@@ -896,36 +971,35 @@
 			}
 		},
 		{
-			"id": "tZpxSQ-27_dEhiZ9o",
+			"id": "tqj44nnfSPJsIAjVk",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Traits.adq",
 				"id": "t7U76B4j7M7hCGD_H"
 			},
-			"name": "Contact (Brother)",
+			"name": "Contact (@Who@)",
 			"reference": "B44",
-			"local_notes": "Drug runner",
 			"tags": [
 				"Advantage",
 				"Social"
 			],
 			"replacements": {
-				"Who": "Who"
+				"Who": "Brother"
 			},
 			"modifiers": [
 				{
-					"id": "Mx1Rb9_upqYQy5zXt",
+					"id": "M9hKt505_1F2xrATY",
 					"name": "Effective Skill",
 					"children": [
 						{
-							"id": "mV3Juc3lDaR6f_Vmm",
+							"id": "mZgeV9A9ljfAkWr2h",
 							"name": "Effective skill",
 							"reference": "B44",
 							"local_notes": "12",
 							"cost_adj": "1"
 						},
 						{
-							"id": "miwkBptxDl_vXtww7",
+							"id": "mkQZ8OMNuiYYi6HYo",
 							"name": "Effective skill",
 							"reference": "B44",
 							"local_notes": "15",
@@ -933,7 +1007,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mzKLxsP6pCFVHaKgI",
+							"id": "myo_baySbLATHXQne",
 							"name": "Effective skill",
 							"reference": "B44",
 							"local_notes": "18",
@@ -941,7 +1015,7 @@
 							"disabled": true
 						},
 						{
-							"id": "m5pAlc9m9b9oLAY4T",
+							"id": "mVOx3U962u-suWST9",
 							"name": "Effective skill",
 							"reference": "B44",
 							"local_notes": "21",
@@ -949,7 +1023,7 @@
 							"disabled": true
 						},
 						{
-							"id": "m4XBE5qSnRaFjqcUe",
+							"id": "mLuGQBtRB0ZBcYtEP",
 							"name": "Can obtain information using supernatural talents",
 							"reference": "B44",
 							"cost_adj": "1",
@@ -958,11 +1032,11 @@
 					]
 				},
 				{
-					"id": "M9e7QVWsUPqqwBksp",
+					"id": "MovKajaQkjKzhtvCV",
 					"name": "Frequency of Appearance",
 					"children": [
 						{
-							"id": "mLOI-GI7K6BJ93hzp",
+							"id": "m_4pnmcszthsi6kuI",
 							"name": "Appears quite rarely",
 							"reference": "B36",
 							"reference_highlight": "Frequency of Appearance",
@@ -971,7 +1045,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mo57gbF4ON9-gapoi",
+							"id": "maT3ydGheblXY5yAM",
 							"name": "Appears fairly often",
 							"reference": "B36",
 							"reference_highlight": "Frequency of Appearance",
@@ -979,7 +1053,7 @@
 							"cost_adj": "x1"
 						},
 						{
-							"id": "ml3CpSrEsEx-Gg2jr",
+							"id": "m6NFFEZDN6BIwGBJQ",
 							"name": "Appears quite often",
 							"reference": "B36",
 							"reference_highlight": "Frequency of Appearance",
@@ -988,7 +1062,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mdHRepWzC2yYqbxJ-",
+							"id": "mqsvU0MauzXMnQ4Vp",
 							"name": "Appears almost all the time",
 							"reference": "B36",
 							"reference_highlight": "Frequency of Appearance",
@@ -999,31 +1073,31 @@
 					]
 				},
 				{
-					"id": "MMIFa3VIGstQx4c3F",
+					"id": "M2Ds7Z1bh3oFgPX4j",
 					"name": "Reliability",
 					"children": [
 						{
-							"id": "mdNMbxvKFb__s3ynB",
+							"id": "mbCHVO0vuI8KQUI8l",
 							"name": "Completely reliable",
 							"reference": "B44",
 							"cost_adj": "x3",
 							"disabled": true
 						},
 						{
-							"id": "mamLUxYhiW9vgXPN-",
+							"id": "m1kIdwP5Tkpqutnbc",
 							"name": "Usually reliable",
 							"reference": "B44",
 							"cost_adj": "x2",
 							"disabled": true
 						},
 						{
-							"id": "mxM1jGqkYtx9nBuy_",
+							"id": "mrRnuNcr2BrgEOnOJ",
 							"name": "Somewhat reliable",
 							"reference": "B44",
 							"cost_adj": "x1"
 						},
 						{
-							"id": "mjuTF2N5oqXX7-RRM",
+							"id": "mQ569nNOvHdGsuCXK",
 							"name": "Unreliable",
 							"reference": "B44",
 							"cost_adj": "x0.5",
@@ -1032,14 +1106,14 @@
 					]
 				},
 				{
-					"id": "mo2oWUD14w4DNthHW",
+					"id": "mMKz5jrHy36z_mQQt",
 					"name": "Group",
 					"reference": "B44",
 					"cost_adj": "x5",
 					"disabled": true
 				},
 				{
-					"id": "mtcKf26_Azu8lDPu_",
+					"id": "mzPTpU6q_ICiSkdHk",
 					"name": "Favor",
 					"reference": "B55",
 					"cost_adj": "x0.2",
@@ -1246,22 +1320,23 @@
 			}
 		},
 		{
-			"id": "tr3SQ2gQOatf1xZ3c",
+			"id": "tNJZ43C1ZawL-pOLB",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Traits.adq",
 				"id": "twGsZPV8OE0NLFaXl"
 			},
-			"name": "Enhanced Vehicle Dodge",
+			"name": "Enhanced Dodge",
 			"reference": "B51,MA43",
 			"tags": [
 				"Advantage",
 				"Mental"
 			],
+			"userdesc": "While piloting a Vehicle only",
 			"modifiers": [
 				{
-					"id": "mGxugep5xm_9NgRNR",
-					"name": "Only while Piloting a Vehicle",
+					"id": "mv4AGDahK5Ge_ck_c",
+					"name": "Piloting a Vehicle only",
 					"cost_adj": "-20%"
 				}
 			],
@@ -1745,26 +1820,27 @@
 			}
 		},
 		{
-			"id": "tChF0Km66Ieni7jsh",
+			"id": "t1JB6JjNW2gTzwIcj",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Traits.adq",
 				"id": "tBmSJ3pNE53c4IRUU"
 			},
-			"name": "Rockhide",
+			"name": "Damage Resistance",
 			"reference": "B46,B47,P45,MA43,PSI14",
 			"tags": [
 				"Advantage",
 				"Exotic",
 				"Physical"
 			],
+			"userdesc": "Rockhide",
 			"modifiers": [
 				{
-					"id": "ML_dwxM2Smzgn22ZV",
+					"id": "MJ4sDwuX2qFzRKV5t",
 					"name": "Special Enhancements",
 					"children": [
 						{
-							"id": "myPA40S2aTUq2WC-v",
+							"id": "mZjiGku-M1hajn0mR",
 							"name": "Absorption",
 							"reference": "B46",
 							"local_notes": "Enhances @Trait@",
@@ -1772,7 +1848,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mPgwC1a517eWO_qN7",
+							"id": "mNhnIYD8m7i0tkg1g",
 							"name": "Absorption",
 							"reference": "B46",
 							"local_notes": "Healing only",
@@ -1780,7 +1856,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mg8C_pBaCA2qG0jY3",
+							"id": "m8tH9YDDS9wyVGx9C",
 							"name": "Absorption",
 							"reference": "B46",
 							"local_notes": "Enhances any trait",
@@ -1788,14 +1864,14 @@
 							"disabled": true
 						},
 						{
-							"id": "mW8YucsN9kg8MlVML",
+							"id": "m1q3fRFLrPGqnzARi",
 							"name": "Force Field",
 							"reference": "B47",
 							"cost_adj": "20%",
 							"disabled": true
 						},
 						{
-							"id": "mganc92HfJmsBVdOd",
+							"id": "m0eY1mcYhzLY12hli",
 							"name": "Hardened",
 							"reference": "B47",
 							"local_notes": "Reduces armor divisor by @Hardened level@ step(s): \"ignores DR\"→100→10→5→3→2→\"no divisor\"",
@@ -1804,27 +1880,27 @@
 							"disabled": true
 						},
 						{
-							"id": "m2VvVqZKf2kU_EWu5",
+							"id": "mZXNgt10dtLn_o8_G",
 							"name": "Laminate",
 							"reference": "RSWL18",
 							"cost_adj": "10%",
 							"disabled": true
 						},
 						{
-							"id": "m8Dr_HnymPaOEliAw",
+							"id": "myvsr-WPfU5KEyZzQ",
 							"name": "Malediction-Proof",
 							"reference": "PSI14",
 							"cost_adj": "50%",
 							"disabled": true
 						},
 						{
-							"id": "mRRiNqDB-ZDHwRyGA",
+							"id": "mLi-cAPwE4KyvT3cn",
 							"name": "Maledictions Only",
 							"reference": "PSI14",
 							"disabled": true
 						},
 						{
-							"id": "mkNFodENjLyTct7kI",
+							"id": "mrr6e2bro8ncqWoUb",
 							"name": "Reflection",
 							"reference": "B47",
 							"cost_adj": "100%",
@@ -1833,18 +1909,18 @@
 					]
 				},
 				{
-					"id": "MC1Bbqwc-Y2UOQJOX",
+					"id": "MQFMOGrek9fmhlHMK",
 					"name": "Special Limitations",
 					"children": [
 						{
-							"id": "me_DU_YA0iQ3z8abZ",
+							"id": "mDoeS8UFvI9a9YwdO",
 							"name": "Ablative",
 							"reference": "B47",
 							"cost_adj": "-80%",
 							"disabled": true
 						},
 						{
-							"id": "m5VYjf4WbSdHDRhFD",
+							"id": "m3IalZN7KRa4w1mZM",
 							"name": "Bane",
 							"reference": "H14",
 							"local_notes": "@Very Common@",
@@ -1852,7 +1928,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mvS7-hK2KvN4K2lsY",
+							"id": "mcgP3eUjbuz15GDly",
 							"name": "Bane",
 							"reference": "H14",
 							"local_notes": "@Common@",
@@ -1860,7 +1936,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mAD6ouweeA8Gf1YSS",
+							"id": "mwCJDAWyyIbHG7ker",
 							"name": "Bane",
 							"reference": "H14",
 							"local_notes": "@Occasional@",
@@ -1868,7 +1944,7 @@
 							"disabled": true
 						},
 						{
-							"id": "msET-2TauORQ9PLFj",
+							"id": "m8bmG_NVfat6zTJJy",
 							"name": "Bane",
 							"reference": "H14",
 							"local_notes": "@Rare@",
@@ -1876,14 +1952,14 @@
 							"disabled": true
 						},
 						{
-							"id": "mFkbOPGbxvvzf_Ceo",
+							"id": "mmQXu8BbudxhVz6_T",
 							"name": "Can't wear armor",
 							"reference": "B47",
 							"cost_adj": "-40%",
 							"disabled": true
 						},
 						{
-							"id": "mE5LULgup9DszbTLB",
+							"id": "mLaCLvh4dVG1ke7xq",
 							"name": "Directional",
 							"reference": "B47",
 							"local_notes": "Front",
@@ -1891,7 +1967,7 @@
 							"disabled": true
 						},
 						{
-							"id": "m8-eA1D4cE7ul-KGC",
+							"id": "mG4Fp9pGHOSydHk12",
 							"name": "Directional",
 							"reference": "B47",
 							"local_notes": "@Direction: Back, Right, Left, Top or Underside@",
@@ -1899,13 +1975,13 @@
 							"disabled": true
 						},
 						{
-							"id": "mq3tRz_hbxvaDgY9v",
+							"id": "m_PWqSIWnXtcbuMI4",
 							"name": "Flexible",
 							"reference": "B47",
 							"cost_adj": "-20%"
 						},
 						{
-							"id": "m1sAFHcLfe6dZHvTz",
+							"id": "mGbWPlb9_XonLTKU4",
 							"name": "Limited",
 							"reference": "B46",
 							"local_notes": "@Very Common Attack Form@",
@@ -1913,7 +1989,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mbXyIm_RRnEBHnv9g",
+							"id": "mTSX25slPazjvmDPO",
 							"name": "Limited",
 							"reference": "B46",
 							"local_notes": "@Common Attack Form@",
@@ -1921,7 +1997,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mmHrrZNjKkrjGRcyo",
+							"id": "mHdn0QhVIBJRhpS3g",
 							"name": "Limited",
 							"reference": "B46",
 							"local_notes": "@Occasional Attack Form@",
@@ -1929,7 +2005,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mzv2GMX6aGgwOyO4C",
+							"id": "m2Iw16cQu2kVicARE",
 							"name": "Limited",
 							"reference": "B46",
 							"local_notes": "@Rare Attack Form@",
@@ -1937,21 +2013,21 @@
 							"disabled": true
 						},
 						{
-							"id": "m_bjmjEZQeXYBGXxV",
+							"id": "mYRT8b3Nu2taTvggU",
 							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
 							"reference": "B47",
 							"cost_adj": "-10%",
 							"disabled": true
 						},
 						{
-							"id": "mVk2nC761qy0xqNmh",
+							"id": "mpMcp0d3M88BIRJMy",
 							"name": "Semi-Ablative",
 							"reference": "B47",
 							"cost_adj": "-20%",
 							"disabled": true
 						},
 						{
-							"id": "mty21EOT9TBvjyIKc",
+							"id": "m2Pit4mvbZHuVmewh",
 							"name": "Tough Skin",
 							"reference": "B47",
 							"local_notes": "Effects that just require skin contact or a scratch ignore this DR",
@@ -1983,6 +2059,281 @@
 			"levels": 1,
 			"calc": {
 				"points": 2,
+				"current_level": 1
+			}
+		},
+		{
+			"id": "tJv7BKczHyf631s47",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tBmSJ3pNE53c4IRUU"
+			},
+			"name": "Damage Resistance",
+			"reference": "B46,B47,P45,MA43,PSI14",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Physical"
+			],
+			"userdesc": "Bioplstic Skin",
+			"modifiers": [
+				{
+					"id": "Mplo88gjoxFu7bD_6",
+					"name": "Special Enhancements",
+					"children": [
+						{
+							"id": "m_m4sOO4uZTbWF7JS",
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances @Trait@",
+							"cost_adj": "80%",
+							"disabled": true
+						},
+						{
+							"id": "mH4opiLGgwbsTw6eU",
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Healing only",
+							"cost_adj": "80%",
+							"disabled": true
+						},
+						{
+							"id": "m2Q6mvrUKBDM6BCdh",
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances any trait",
+							"cost_adj": "100%",
+							"disabled": true
+						},
+						{
+							"id": "m6gP_i3Qc_E-ClkGF",
+							"name": "Force Field",
+							"reference": "B47",
+							"cost_adj": "20%",
+							"disabled": true
+						},
+						{
+							"id": "mmqSu_NgKP93yyXtQ",
+							"name": "Hardened",
+							"reference": "B47",
+							"local_notes": "Reduces armor divisor by @Hardened level@ step(s): \"ignores DR\"→100→10→5→3→2→\"no divisor\"",
+							"cost_adj": "20%",
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mFp0zfWvRR0tGKcOL",
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost_adj": "10%",
+							"disabled": true
+						},
+						{
+							"id": "moS7ghuT91YEgmm7g",
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost_adj": "50%",
+							"disabled": true
+						},
+						{
+							"id": "mjrJIdrVSazJVrSoj",
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "mx1NLWW1nS8pinY8f",
+							"name": "Reflection",
+							"reference": "B47",
+							"cost_adj": "100%",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "MvzJ3-SShxsIRrUZH",
+					"name": "Special Limitations",
+					"children": [
+						{
+							"id": "mWYU3D7S_zvWM2sMG",
+							"name": "Ablative",
+							"reference": "B47",
+							"cost_adj": "-80%",
+							"disabled": true
+						},
+						{
+							"id": "mdq8U1mMAubNAyq9W",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Very Common@",
+							"cost_adj": "-15%",
+							"disabled": true
+						},
+						{
+							"id": "mvM9BPgz_fff4amkD",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Common@",
+							"cost_adj": "-10%",
+							"disabled": true
+						},
+						{
+							"id": "mg0zGYQ0T59c6fnNg",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Occasional@",
+							"cost_adj": "-5%",
+							"disabled": true
+						},
+						{
+							"id": "mdfRiJbaFNKZbMhhe",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Rare@",
+							"cost_adj": "-1",
+							"disabled": true
+						},
+						{
+							"id": "m-yUuRAUvMMwyDojC",
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "m6HJoMrpAHufHrshp",
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "Front",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mwsx0p3l7Ykgce526",
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mtXCXedCenTrlJVaj",
+							"name": "Flexible",
+							"reference": "B47",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "m-zhWYaiiLZK-mSXK",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Very Common Attack Form@",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mfjAFH2_3Bd7ecVcw",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Common Attack Form@",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mFSeKncLQJVb_odoc",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Occasional Attack Form@",
+							"cost_adj": "-60%",
+							"disabled": true
+						},
+						{
+							"id": "mO8N1w5AS7S40bXnU",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Rare Attack Form@",
+							"cost_adj": "-80%",
+							"disabled": true
+						},
+						{
+							"id": "mOre7vIgjrtxiuN_W",
+							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+							"reference": "B47",
+							"cost_adj": "-10%",
+							"disabled": true
+						},
+						{
+							"id": "mf3YAWYOZpOpL0Lo1",
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mB275uj9Gon8tD8Ux",
+							"name": "Tough Skin",
+							"reference": "B47",
+							"local_notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost_adj": "-40%"
+						}
+					]
+				}
+			],
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi",
+					"amount": 10
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi+",
+					"amount": 10
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi-",
+					"amount": 10
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "burn",
+					"amount": 10
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi++",
+					"amount": 10
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"amount": 5,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 0,
 				"current_level": 1
 			}
 		},
@@ -2312,7 +2663,7 @@
 				"points": -9
 			},
 			"calc": {
-				"level": 12,
+				"level": 13,
 				"rsl": "DX-1"
 			}
 		},
@@ -2993,7 +3344,7 @@
 			}
 		},
 		{
-			"id": "sAb7aAICAjV9FBxiV",
+			"id": "smtqMZZt3EhBNKpRC",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
@@ -3004,7 +3355,7 @@
 			"tags": [
 				"Vehicle"
 			],
-			"specialization": "Reactionless Drive",
+			"specialization": "High-Performance Spacecraft",
 			"difficulty": "dx/a",
 			"defaults": [
 				{
@@ -3024,7 +3375,7 @@
 					"modifier": -2
 				}
 			],
-			"tech_level": "3",
+			"tech_level": "10",
 			"points": 4,
 			"defaulted_from": {
 				"type": "iq",
@@ -3039,21 +3390,18 @@
 			}
 		},
 		{
-			"id": "sNcNrDdR3RWr5PcKa",
+			"id": "sg4ZI-q76n7HcCBeb",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sQE2t0-gMM5-4KgPb"
+				"id": "slKxa0QDQ5O5sW0rh"
 			},
 			"name": "Piloting",
 			"reference": "B214",
 			"tags": [
 				"Vehicle"
 			],
-			"replacements": {
-				"FTL Type": "Hyper Drive"
-			},
-			"specialization": "@FTL Type@",
+			"specialization": "Low-Performance Spacecraft",
 			"difficulty": "dx/a",
 			"defaults": [
 				{
@@ -3063,19 +3411,26 @@
 				{
 					"type": "skill",
 					"name": "Piloting",
+					"specialization": "Aerospace",
 					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Piloting",
+					"specialization": "High-Performance Spacecraft",
+					"modifier": -2
 				}
 			],
-			"tech_level": "3",
+			"tech_level": "10",
 			"points": 4,
 			"defaulted_from": {
 				"type": "skill",
 				"name": "Piloting",
-				"specialization": "Reactionless Drive",
-				"modifier": -4,
-				"level": 11,
-				"adjusted_level": 11,
-				"points": -11
+				"specialization": "High-Performance Spacecraft",
+				"modifier": -2,
+				"level": 13,
+				"adjusted_level": 13,
+				"points": 1
 			},
 			"calc": {
 				"level": 17,
@@ -3260,7 +3615,7 @@
 				"points": -9
 			},
 			"calc": {
-				"level": 12,
+				"level": 13,
 				"rsl": "DX-1"
 			}
 		},
@@ -3573,6 +3928,46 @@
 			"base_value": "2400",
 			"base_weight": "4 lb",
 			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "cut",
+					"amount": 10
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi-",
+					"amount": 10
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi",
+					"amount": 10
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi+",
+					"amount": 10
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi++",
+					"amount": 10
+				},
 				{
 					"type": "dr_bonus",
 					"locations": [
@@ -4245,6 +4640,181 @@
 			}
 		},
 		{
+			"id": "eJzL8hzWLqmYOaDX8",
+			"description": "Money",
+			"legality_class": "4",
+			"base_value": "3392",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 3392,
+				"extended_value": 3392,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "e-emAcR_USe70lj9q",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eLpY_lV7JPT_Srj5A"
+			},
+			"description": "Ordinary Clothes",
+			"reference": "B266",
+			"local_notes": "Status 0",
+			"tags": [
+				"Clothing"
+			],
+			"base_value": "120",
+			"base_weight": "2 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 120,
+				"extended_value": 120,
+				"weight": "2 lb",
+				"extended_weight": "2 lb"
+			}
+		},
+		{
+			"id": "E-W9rub6wa7A7adbc",
+			"description": "Cybernetics",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "ehGF4y9a9BzZpWeCA",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "es0C-jHIqR2OgYq2A"
+					},
+					"description": "Bioplastic Skin",
+					"reference": "UT212",
+					"local_notes": "Major procedure.",
+					"tech_level": "10",
+					"legality_class": "3",
+					"base_value": "20000",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 20000,
+						"extended_value": 20000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "EmHlT6K-F4mO8wuEu",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "ELQXi9nxNFgBQAsXi"
+					},
+					"description": "Flesh Pocket (Right Hip)",
+					"reference": "UT211",
+					"local_notes": "Cost per level of Payload. Simple procedure.",
+					"tech_level": "9",
+					"legality_class": "3",
+					"base_value": "200",
+					"quantity": 1,
+					"level": 1,
+					"equipped": true,
+					"calc": {
+						"value": 200,
+						"extended_value": 200,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 20200,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		}
+	],
+	"other_equipment": [
+		{
+			"id": "eYiQl1XHqUIFXH4lB",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "e24V1_w4hI1Y5_jks"
+			},
+			"description": "Winter Clothes",
+			"reference": "B266",
+			"local_notes": "Status 0",
+			"tags": [
+				"Clothing"
+			],
+			"base_value": "180",
+			"base_weight": "4 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 180,
+				"extended_value": 180,
+				"weight": "4 lb",
+				"extended_weight": "4 lb"
+			}
+		},
+		{
+			"id": "euRp_40b5PWvLB_7B",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "High Tech/High Tech Equipment.eqp",
+				"id": "eEyqx2Zvgc3wLWJBN"
+			},
+			"description": "Motorcycle Helmet + Visor",
+			"reference": "HT70",
+			"local_notes": "DR+3 vs. cr.",
+			"tech_level": "7",
+			"tags": [
+				"Defenses"
+			],
+			"base_value": "250",
+			"base_weight": "3.5 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"eye",
+						"face",
+						"torso"
+					],
+					"amount": 1
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"skull"
+					],
+					"specialization": "cr",
+					"amount": 3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"skull"
+					],
+					"amount": 3
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 250,
+				"extended_value": 250,
+				"weight": "3.5 lb",
+				"extended_weight": "3.5 lb"
+			}
+		},
+		{
 			"id": "e6n7znZlDF_mSdA-Q",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -4285,187 +4855,6 @@
 			}
 		},
 		{
-			"id": "eJzL8hzWLqmYOaDX8",
-			"description": "Money",
-			"legality_class": "4",
-			"base_value": "3392",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 3392,
-				"extended_value": 3392,
-				"weight": "0 lb",
-				"extended_weight": "0 lb"
-			}
-		},
-		{
-			"id": "euRp_40b5PWvLB_7B",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "High Tech/High Tech Equipment.eqp",
-				"id": "eEyqx2Zvgc3wLWJBN"
-			},
-			"description": "Motorcycle Helmet + Visor",
-			"reference": "HT70",
-			"local_notes": "DR+3 vs. cr.",
-			"tech_level": "7",
-			"tags": [
-				"Defenses"
-			],
-			"base_value": "250",
-			"base_weight": "3.5 lb",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"skull"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"eye"
-					],
-					"amount": 7
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"face"
-					],
-					"amount": 7
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"skull"
-					],
-					"specialization": "non-crushing",
-					"amount": -3
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"eye"
-					],
-					"specialization": "non-crushing",
-					"amount": -3
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"face"
-					],
-					"specialization": "non-crushing",
-					"amount": -3
-				}
-			],
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 250,
-				"extended_value": 250,
-				"weight": "3.5 lb",
-				"extended_weight": "3.5 lb"
-			}
-		},
-		{
-			"id": "e-emAcR_USe70lj9q",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "eLpY_lV7JPT_Srj5A"
-			},
-			"description": "Ordinary Clothes",
-			"reference": "B266",
-			"local_notes": "Status 0",
-			"tags": [
-				"Clothing"
-			],
-			"base_value": "120",
-			"base_weight": "2 lb",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 120,
-				"extended_value": 120,
-				"weight": "2 lb",
-				"extended_weight": "2 lb"
-			}
-		}
-	],
-	"other_equipment": [
-		{
-			"id": "EmHlT6K-F4mO8wuEu",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "ELQXi9nxNFgBQAsXi"
-			},
-			"description": "Flesh Pocket (Right Hip)",
-			"reference": "UT211",
-			"local_notes": "Cost per level of Payload. Simple procedure.",
-			"tech_level": "9",
-			"legality_class": "3",
-			"base_value": "200",
-			"quantity": 1,
-			"level": 1,
-			"equipped": true,
-			"calc": {
-				"value": 200,
-				"extended_value": 200,
-				"weight": "0 lb",
-				"extended_weight": "0 lb"
-			}
-		},
-		{
-			"id": "ehGF4y9a9BzZpWeCA",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "es0C-jHIqR2OgYq2A"
-			},
-			"description": "Bioplastic Skin",
-			"reference": "UT212",
-			"local_notes": "Major procedure.",
-			"tech_level": "10",
-			"legality_class": "3",
-			"base_value": "20000",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 20000,
-				"extended_value": 20000,
-				"weight": "0 lb",
-				"extended_weight": "0 lb"
-			}
-		},
-		{
-			"id": "eYiQl1XHqUIFXH4lB",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "e24V1_w4hI1Y5_jks"
-			},
-			"description": "Winter Clothes",
-			"reference": "B266",
-			"local_notes": "Status 0",
-			"tags": [
-				"Clothing"
-			],
-			"base_value": "180",
-			"base_weight": "4 lb",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 180,
-				"extended_value": 180,
-				"weight": "4 lb",
-				"extended_weight": "4 lb"
-			}
-		},
-		{
 			"id": "ee6eM1OQST0frj4mE",
 			"description": "Ninja Motorcycle",
 			"tech_level": "8",
@@ -4482,7 +4871,7 @@
 		}
 	],
 	"created_date": "2026-04-06T20:12:34-04:00",
-	"modified_date": "2026-04-07T16:35:59-04:00",
+	"modified_date": "2026-04-07T17:54:12-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",
