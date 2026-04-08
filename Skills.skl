@@ -1,0 +1,17 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "qiYNV1EzxYNRhy0NR",
+			"name": "Parry Missile-Weapons",
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Smallsword",
+				"modifier": -5
+			},
+			"limit": 4,
+			"points": 2
+		}
+	]
+}
