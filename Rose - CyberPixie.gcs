@@ -3186,6 +3186,346 @@
 					]
 				}
 			]
+		},
+		{
+			"id": "sw0r9t55qKVOm3s4p",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sPHmyudtzbGOj_6y1"
+			},
+			"name": "Mechanic",
+			"reference": "B207",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"specialization": "Reactionless Thrusters",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Reactionless Thrusters",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Machinist",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "sZUhH5rfa8CqwzcE-",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sx2TjmCq2xgX9qSVv"
+			},
+			"name": "Mechanic",
+			"reference": "B207",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"specialization": "High-Performance Spacecraft",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "High-Performance Spacecraft",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Machinist",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "scDG6MlrVZE_hi84J",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "stSBQGxPluGCXOsdy"
+			},
+			"name": "Mechanic",
+			"reference": "B207",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"specialization": "Fusion Reactor",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Fusion Reactor",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Machinist",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "sJp-UB6dvp66ENQg8",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sn43FFqXYbGHF-4hG"
+			},
+			"name": "Mechanic",
+			"reference": "B207",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"specialization": "Antimatter Reactor",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Antimatter Reactor",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Machinist",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "sO-QAIl9Fjsmh0-ou",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sjiPOdZOS0Ve3xMhr"
+			},
+			"name": "Mechanic",
+			"reference": "B207",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"replacements": {
+				"Machine class": "Hyperdrive"
+			},
+			"specialization": "@Machine class@",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "@Machine class@",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Machinist",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "s6FRSqsvlD-a_LYGa",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "scAysIf1hcMnIL0Ca"
+			},
+			"name": "Electrician",
+			"reference": "B189",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Electrical",
+					"modifier": -3
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "soV0MSFJSlR1uCyWE",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "siSKgRr1MizPF9IrU"
+			},
+			"name": "Armoury",
+			"reference": "B178",
+			"tags": [
+				"Maintenance",
+				"Military",
+				"Repair"
+			],
+			"specialization": "Heavy Weapons",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Heavy Weapons",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
 		}
 	],
 	"equipment": [
@@ -3269,6 +3609,30 @@
 			}
 		},
 		{
+			"id": "eQWPm5-nETVkh38qt",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "e_noIf9v8q1Okb3m9"
+			},
+			"description": "D cell",
+			"reference": "UT19",
+			"tech_level": "9",
+			"tags": [
+				"Power"
+			],
+			"base_value": "100",
+			"base_weight": "5 lb",
+			"quantity": 2,
+			"equipped": true,
+			"calc": {
+				"value": 100,
+				"extended_value": 200,
+				"weight": "5 lb",
+				"extended_weight": "10 lb"
+			}
+		},
+		{
 			"id": "etXKRAhzmbL-x3yCH",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -3345,6 +3709,30 @@
 				"extended_value": 3600,
 				"weight": "3.3 lb",
 				"extended_weight": "3.3 lb"
+			}
+		},
+		{
+			"id": "ekXrGv2cK3hDGbrMW",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "ev80WwcnBpiGFrkol"
+			},
+			"description": "C cell",
+			"reference": "UT19",
+			"tech_level": "9",
+			"tags": [
+				"Power"
+			],
+			"base_value": "10",
+			"base_weight": "0.5 lb",
+			"quantity": 4,
+			"equipped": true,
+			"calc": {
+				"value": 10,
+				"extended_value": 40,
+				"weight": "0.5 lb",
+				"extended_weight": "2 lb"
 			}
 		},
 		{
@@ -3512,105 +3900,105 @@
 				"path": "Basic Set/Basic Set Equipment.eqp",
 				"id": "ezeQnJTiw6vauDH7p"
 			},
-			"description": "Starting Wealth",
+			"description": "Wealth",
 			"reference": "B25,B27",
 			"tech_level": "0",
 			"tags": [
 				"Money"
 			],
-			"base_value": "28600",
+			"base_value": "26540",
 			"modifiers": [
 				{
-					"id": "FZFvOCVWCFXTrslvq",
+					"id": "Fl7V9fQdYURDzxq-1",
 					"name": "Tech Level",
 					"reference": "B27",
 					"children": [
 						{
-							"id": "fGd7NgaoBeRvNMjyp",
+							"id": "f4WfrGRxeVV7Fk-c6",
 							"name": "TL0",
 							"reference": "B27",
 							"cost": "+250",
 							"disabled": true
 						},
 						{
-							"id": "fSHqu7TI3nEsbGWuY",
+							"id": "fzSGJA_99Uwe5oaz2",
 							"name": "TL1",
 							"reference": "B27",
 							"cost": "+500",
 							"disabled": true
 						},
 						{
-							"id": "fCdVpsh-bUVQEMaWO",
+							"id": "fSQZsB0oLlCznMUep",
 							"name": "TL2",
 							"reference": "B27",
 							"cost": "+750",
 							"disabled": true
 						},
 						{
-							"id": "fEQF5ixL1GYY647ae",
+							"id": "flX1BXcNgjwDRjoEI",
 							"name": "TL3",
 							"reference": "B27",
 							"cost": "+1000",
 							"disabled": true
 						},
 						{
-							"id": "fGH9gS4b2OC8A_IN9",
+							"id": "fHqHQOEzDHz1lOqeo",
 							"name": "TL4",
 							"reference": "B27",
 							"cost": "+2000",
 							"disabled": true
 						},
 						{
-							"id": "fRfvuF9zJXJVgrM1a",
+							"id": "f_1r6KrpfQFLAE-Iw",
 							"name": "TL5",
 							"reference": "B27",
 							"cost": "+5000",
 							"disabled": true
 						},
 						{
-							"id": "fc1VSYTQQ-vu0Te9n",
+							"id": "fpSV8mP8TQeIWiFFB",
 							"name": "TL6",
 							"reference": "B27",
 							"cost": "+10000",
 							"disabled": true
 						},
 						{
-							"id": "fm8aruLqPs1zUvIQG",
+							"id": "fs2F0oKIEVVbwk7Cf",
 							"name": "TL7",
 							"reference": "B27",
 							"cost": "+15000",
 							"disabled": true
 						},
 						{
-							"id": "fqha1uNamMEE3VoAm",
+							"id": "flFSLNgS3EsAs0kiX",
 							"name": "TL8",
 							"reference": "B27",
 							"cost": "+20000",
 							"disabled": true
 						},
 						{
-							"id": "fl6hlOqkQJYKtANkF",
+							"id": "f3JYRQJwEl2mE31xT",
 							"name": "TL9",
 							"reference": "B27",
 							"cost": "+30000",
 							"disabled": true
 						},
 						{
-							"id": "fMu1BnIudzeMEwzGI",
+							"id": "fQQZa9BDTb_trTpO_",
 							"name": "TL10",
 							"reference": "B27",
 							"cost": "+50000",
 							"disabled": true
 						},
 						{
-							"id": "fWDDMERT6ed0WDxgT",
+							"id": "fMh6K3G7IDQKFb3Iv",
 							"name": "TL11",
 							"reference": "B27",
 							"cost": "+75000",
 							"disabled": true
 						},
 						{
-							"id": "fF4EmAbvWzoAI0Trc",
+							"id": "fcPWMzkBni9-v2pf-",
 							"name": "TL12",
 							"reference": "B27",
 							"cost": "+100000",
@@ -3619,12 +4007,12 @@
 					]
 				},
 				{
-					"id": "FJSLQbuMOwBtkiTP4",
+					"id": "FHOuOEOhamNAX5-Ev",
 					"name": "Wealth Level",
 					"reference": "B25",
 					"children": [
 						{
-							"id": "f3pmpfva-5dCqi-9V",
+							"id": "fJ5hmaHegdap56pdP",
 							"name": "Poor",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3632,7 +4020,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f0nc3s2VGE33ZN-aY",
+							"id": "fHnkPNJZJsAWpbrgV",
 							"name": "Struggling",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3640,7 +4028,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fjqQ55PjJMEXe8FyA",
+							"id": "fe-NjnG58sjA1RpOk",
 							"name": "Average",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3648,7 +4036,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fJ4dvzfti8Sw532IK",
+							"id": "fdSOAMRX3L0C_TW5M",
 							"name": "Comfortable",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3656,7 +4044,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fSxDmIzLy4lkYH8xl",
+							"id": "fe-jIApZhfwWAgxTK",
 							"name": "Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3664,7 +4052,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fyhV3hEp83XTFY_LM",
+							"id": "f0-9FPnYk-WEQWinf",
 							"name": "Very Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3672,7 +4060,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fzNvvvtrLRgVQRg8m",
+							"id": "f_Gwv0_ArIQbLErm1",
 							"name": "Filthy Rich",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3680,7 +4068,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f5C5uq7zxB5oh2Lkn",
+							"id": "f2ucQXr37FNyNRZ6W",
 							"name": "Multimillionaire 1",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3693,15 +4081,15 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 28600,
-				"extended_value": 28600,
+				"value": 26540,
+				"extended_value": 26540,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
 		}
 	],
 	"created_date": "2026-03-25T10:24:58-04:00",
-	"modified_date": "2026-04-07T18:05:40-04:00",
+	"modified_date": "2026-04-08T02:10:09-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",
