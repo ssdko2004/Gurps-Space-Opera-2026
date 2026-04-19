@@ -21,7 +21,8 @@
 		"height": "5'10\"",
 		"weight": "180 lb",
 		"player_name": "Fennal",
-		"tech_level": "10"
+		"tech_level": "10",
+		"portrait": "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"
 	},
 	"settings": {
 		"page": {
@@ -284,9 +285,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -301,9 +300,7 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 8,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 8
 						}
 					}
 				},
@@ -317,9 +314,7 @@
 					"calc": {
 						"roll_range": "5",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -333,9 +328,7 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -349,9 +342,7 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -363,9 +354,7 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -379,9 +368,7 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -395,9 +382,7 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -411,9 +396,7 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -427,9 +410,7 @@
 					"calc": {
 						"roll_range": "15",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -443,9 +424,7 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -459,9 +438,7 @@
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -474,9 +451,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				}
@@ -1138,6 +1113,21 @@
 			}
 		},
 		{
+			"id": "tGNuR7NgNxim_B-Yx",
+			"name": "Laser resistant armor bonus",
+			"local_notes": "+30 vs cr and burn from laser weapons",
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "To DR against cr and burn damage from a laser weapon (Drops 1 point every 10 damage recived this way)",
+					"amount": 30
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
 			"id": "tUdkKtG1whyKVm2-I",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -1507,16 +1497,17 @@
 				"Disadvantage",
 				"Social"
 			],
+			"vtt_notes": "[CR: 9 Appears fairly often]",
 			"replacements": {
 				"Who": "Patricia"
 			},
 			"modifiers": [
 				{
-					"id": "MVPSduh_c4wgUPAwb",
+					"id": "Mo7TAdoN4ZyKBF2pO",
 					"name": "Power",
 					"children": [
 						{
-							"id": "m_7Ne2_iTEYK1Q32z",
+							"id": "mnA98reO4fLNiZ3yl",
 							"name": "Weak Individual",
 							"reference": "B135",
 							"local_notes": "50% of your starting points",
@@ -1524,14 +1515,14 @@
 							"disabled": true
 						},
 						{
-							"id": "mPLiMUbHl3vLoVv1w",
+							"id": "mvC6fh9YythZCDrOP",
 							"name": "Equal Individual",
 							"reference": "B135",
 							"local_notes": "100% of your starting points",
 							"cost_adj": "-10"
 						},
 						{
-							"id": "m4k0e2CzL_KTgdP6A",
+							"id": "mEmYqtBX1pk5KsVg8",
 							"name": "Powerful Individual",
 							"reference": "B135",
 							"local_notes": "\u003e150% of your starting points",
@@ -1539,28 +1530,28 @@
 							"disabled": true
 						},
 						{
-							"id": "mL6NFT6X8PYB6ecBj",
+							"id": "mQ4AyCEG8TVqdPCy4",
 							"name": "Weak Group",
 							"reference": "B135",
 							"cost_adj": "-10",
 							"disabled": true
 						},
 						{
-							"id": "mq9VMX5KVFK0-Xreb",
+							"id": "mJ-F7szqrRfpsFl1q",
 							"name": "Medium Group",
 							"reference": "B135",
 							"cost_adj": "-20",
 							"disabled": true
 						},
 						{
-							"id": "mGAB_9_ha7uY4_rFo",
+							"id": "mIah5oOHlaJBe_ben",
 							"name": "Large/Powerful Group",
 							"reference": "B135",
 							"cost_adj": "-30",
 							"disabled": true
 						},
 						{
-							"id": "mv2xZZG1MIiOYGBzc",
+							"id": "mUvzP2mcoOFHEgDLO",
 							"name": "Utterly Formidable Group",
 							"reference": "B135",
 							"cost_adj": "-40",
@@ -1569,17 +1560,17 @@
 					]
 				},
 				{
-					"id": "MYk3QV6TJPd1Nw-hG",
+					"id": "MDjMbUgN6RJ_TmXdG",
 					"name": "Special Cases",
 					"children": [
 						{
-							"id": "m4qZm79MKoLXe5YZm",
+							"id": "mIhJWvngPNuogqxN8",
 							"name": "Evil Twin",
 							"reference": "B135",
 							"disabled": true
 						},
 						{
-							"id": "mfF8RCoSlvz7Bsq-W",
+							"id": "mH1lJpezbkt09d4Kb",
 							"name": "Evil Twin",
 							"reference": "B135",
 							"local_notes": "More skilled or extra abilities",
@@ -1587,7 +1578,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mezgSVcJXUbe5e-zO",
+							"id": "miVm9fhAuZvHpCbq1",
 							"name": "Evil Twin",
 							"reference": "B135",
 							"local_notes": "More skilled and extra abilities",
@@ -1595,7 +1586,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mYqe7OtttlAUfJdJY",
+							"id": "mS8blUY1LIlv-2iTp",
 							"name": "Unknown",
 							"reference": "B135",
 							"cost_adj": "-5",
@@ -1604,24 +1595,24 @@
 					]
 				},
 				{
-					"id": "MfmX1GFF-UC3lhhm5",
+					"id": "MXfzxQTujuM8zTH73",
 					"name": "Intent",
 					"children": [
 						{
-							"id": "mrRJ-I9yk0NQ60OVe",
+							"id": "m3_Us-D7Y990peHZe",
 							"name": "Watcher",
 							"reference": "B135",
 							"cost_adj": "x0.25"
 						},
 						{
-							"id": "mU7skD4PS_rB8jRVv",
+							"id": "mEHI3_-IKcTjjEzUS",
 							"name": "Rival",
 							"reference": "B135",
 							"cost_adj": "x0.5",
 							"disabled": true
 						},
 						{
-							"id": "m4eJKmXgmmeICqwzp",
+							"id": "mN94u7ZyCOMA_7x5u",
 							"name": "Hunter",
 							"reference": "B135",
 							"cost_adj": "x1",
@@ -1630,11 +1621,11 @@
 					]
 				},
 				{
-					"id": "MWFm-bUjq3dvv-Jlo",
+					"id": "Ma3vvicXIxoAZrN_2",
 					"name": "Frequency of Appearance",
 					"children": [
 						{
-							"id": "mFshCcL546USkGy8-",
+							"id": "mHuFoCM9UEaP7OQ3x",
 							"name": "Appears quite rarely",
 							"reference": "B36",
 							"local_notes": "6-",
@@ -1642,14 +1633,14 @@
 							"disabled": true
 						},
 						{
-							"id": "m8tn7Oo4y7bLMpSsH",
+							"id": "mZMm9E--qIx5iuNrB",
 							"name": "Appears fairly often",
 							"reference": "B36",
 							"local_notes": "9-",
 							"cost_adj": "x1"
 						},
 						{
-							"id": "mYrw1NwUxsS4PhAkT",
+							"id": "mbmF6DxIUeb41fMdc",
 							"name": "Appears quite often",
 							"reference": "B36",
 							"local_notes": "12-",
@@ -1657,7 +1648,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mvlMree0potG-1UIG",
+							"id": "mwh_gwgoz5TRRDYI9",
 							"name": "Appears almost all the time",
 							"reference": "B36",
 							"local_notes": "15-",
@@ -2782,6 +2773,54 @@
 			}
 		},
 		{
+			"id": "sidinn4UjqsTMO7v-",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s9mV--3lpIfXO7N6Z"
+			},
+			"name": "First Aid",
+			"reference": "B195",
+			"tags": [
+				"Everyman",
+				"Medical"
+			],
+			"vtt_notes": "[1d+1 First Aid Healing]",
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Esoteric Medicine"
+				},
+				{
+					"type": "skill",
+					"name": "Physician"
+				},
+				{
+					"type": "skill",
+					"name": "Veterinary",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
 			"id": "sK5OW1n2x1zyBgaq5",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -2823,54 +2862,6 @@
 			"calc": {
 				"level": 12,
 				"rsl": "DX-1"
-			}
-		},
-		{
-			"id": "sidinn4UjqsTMO7v-",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "s9mV--3lpIfXO7N6Z"
-			},
-			"name": "First Aid",
-			"reference": "B195",
-			"tags": [
-				"Everyman",
-				"Medical"
-			],
-			"vtt_notes": "[1d-3! First Aid Healing]",
-			"difficulty": "iq/e",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Esoteric Medicine"
-				},
-				{
-					"type": "skill",
-					"name": "Physician"
-				},
-				{
-					"type": "skill",
-					"name": "Veterinary",
-					"modifier": -4
-				}
-			],
-			"tech_level": "10",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"calc": {
-				"level": 12,
-				"rsl": "IQ+0"
 			}
 		},
 		{
@@ -4779,22 +4770,6 @@
 				{
 					"type": "dr_bonus",
 					"locations": [
-						"all"
-					],
-					"specialization": "cr from a laser",
-					"amount": 30
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"all"
-					],
-					"specialization": "burn from a laser",
-					"amount": 30
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
 						"eye"
 					],
 					"amount": 6
@@ -5949,8 +5924,14 @@
 			}
 		}
 	],
+	"notes": [
+		{
+			"id": "n43ZkIrb3p0Gr4pd8",
+			"markdown": "+30 DR vs burn or cr damage from lasers. This drops by 1 for every 10 damage recieved this way"
+		}
+	],
 	"created_date": "2026-04-05T19:15:00-04:00",
-	"modified_date": "2026-04-07T19:25:46-04:00",
+	"modified_date": "2026-04-18T23:24:29-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",

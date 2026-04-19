@@ -292,9 +292,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -309,9 +307,7 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 8,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 8
 						}
 					}
 				},
@@ -325,9 +321,7 @@
 					"calc": {
 						"roll_range": "5",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -341,9 +335,7 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -357,9 +349,7 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -371,9 +361,7 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -387,9 +375,7 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -403,9 +389,7 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -419,9 +403,7 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -435,9 +417,7 @@
 					"calc": {
 						"roll_range": "15",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -451,9 +431,7 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -467,9 +445,7 @@
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				},
@@ -482,9 +458,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 6,
-							"burn from a laser": 30,
-							"cr from a laser": 30
+							"all": 6
 						}
 					}
 				}
@@ -2016,6 +1990,204 @@
 			"calc": {
 				"points": 30
 			}
+		},
+		{
+			"id": "tnkf2yWLjVMGvGYQ4",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "t5bwP6TnS4cX-zM8L"
+			},
+			"name": "Enemy (@Who@)",
+			"reference": "B135",
+			"tags": [
+				"Disadvantage",
+				"Social"
+			],
+			"vtt_notes": "[CR: 9 Appears fairly often]",
+			"replacements": {
+				"Who": "Kotobuki Financhial"
+			},
+			"modifiers": [
+				{
+					"id": "MLFzMq4ng8wJiXPZq",
+					"name": "Power",
+					"children": [
+						{
+							"id": "mhHxdozWvCOfaf_Eu",
+							"name": "Weak Individual",
+							"reference": "B135",
+							"local_notes": "50% of your starting points",
+							"cost_adj": "-5",
+							"disabled": true
+						},
+						{
+							"id": "mQOwPNK14RtC_1ibE",
+							"name": "Equal Individual",
+							"reference": "B135",
+							"local_notes": "100% of your starting points",
+							"cost_adj": "-10",
+							"disabled": true
+						},
+						{
+							"id": "mtOy3gLIRhXLWdZPo",
+							"name": "Powerful Individual",
+							"reference": "B135",
+							"local_notes": "\u003e150% of your starting points",
+							"cost_adj": "-20",
+							"disabled": true
+						},
+						{
+							"id": "mc_B8KEcQaVQ8nem8",
+							"name": "Weak Group",
+							"reference": "B135",
+							"cost_adj": "-10",
+							"disabled": true
+						},
+						{
+							"id": "mdmysVtDwFJRPcmBv",
+							"name": "Medium Group",
+							"reference": "B135",
+							"cost_adj": "-20",
+							"disabled": true
+						},
+						{
+							"id": "mhopfeYc7T-gxrU8y",
+							"name": "Large/Powerful Group",
+							"reference": "B135",
+							"cost_adj": "-30"
+						},
+						{
+							"id": "mQbxBTHMMqwIQ5wHD",
+							"name": "Utterly Formidable Group",
+							"reference": "B135",
+							"cost_adj": "-40",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "M15kdCQUs1a-TDqUK",
+					"name": "Special Cases",
+					"children": [
+						{
+							"id": "m3TYguzaO8I4P3BAU",
+							"name": "Evil Twin",
+							"reference": "B135",
+							"disabled": true
+						},
+						{
+							"id": "m0jLuXIQeABZQy6ne",
+							"name": "Evil Twin",
+							"reference": "B135",
+							"local_notes": "More skilled or extra abilities",
+							"cost_adj": "-5",
+							"disabled": true
+						},
+						{
+							"id": "mjFN5iofkALa2JIN3",
+							"name": "Evil Twin",
+							"reference": "B135",
+							"local_notes": "More skilled and extra abilities",
+							"cost_adj": "-10",
+							"disabled": true
+						},
+						{
+							"id": "mZ29aYwsAFsID-Xj6",
+							"name": "Unknown",
+							"reference": "B135",
+							"cost_adj": "-5",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "MGqDgw3mNkANA4u5i",
+					"name": "Intent",
+					"children": [
+						{
+							"id": "m1B2hSVj9QjnEIlwo",
+							"name": "Watcher",
+							"reference": "B135",
+							"cost_adj": "x0.25",
+							"disabled": true
+						},
+						{
+							"id": "mZk6lIlkbQqVNNJQT",
+							"name": "Rival",
+							"reference": "B135",
+							"cost_adj": "x0.5",
+							"disabled": true
+						},
+						{
+							"id": "mMO8cyKOdXXKGDPX2",
+							"name": "Hunter",
+							"reference": "B135",
+							"cost_adj": "x1"
+						}
+					]
+				},
+				{
+					"id": "MhPUEJ1s0ae8uqaW8",
+					"name": "Frequency of Appearance",
+					"children": [
+						{
+							"id": "m44lsEAPm1w_lp35X",
+							"name": "Appears quite rarely",
+							"reference": "B36",
+							"local_notes": "6-",
+							"cost_adj": "x0.5",
+							"disabled": true
+						},
+						{
+							"id": "mEygWSxCKyYnhmdWj",
+							"name": "Appears fairly often",
+							"reference": "B36",
+							"local_notes": "9-",
+							"cost_adj": "x1"
+						},
+						{
+							"id": "mKvqJGIgZ9BXoizwM",
+							"name": "Appears quite often",
+							"reference": "B36",
+							"local_notes": "12-",
+							"cost_adj": "x2",
+							"disabled": true
+						},
+						{
+							"id": "mW9lgD88NqN7Xtndk",
+							"name": "Appears almost all the time",
+							"reference": "B36",
+							"local_notes": "15-",
+							"cost_adj": "x3",
+							"disabled": true
+						}
+					]
+				}
+			],
+			"calc": {
+				"points": -30
+			}
+		},
+		{
+			"id": "tQ9AVn-1aJ1euw7qI",
+			"source": {
+				"library": "ssdko2004/https://github.com/ssdko2004/Gurps-Space-Opera-2026.git",
+				"path": "Traits.adq",
+				"id": "tLIKNA5AC1rIwzghY"
+			},
+			"name": "Laser resistant armor bonus",
+			"local_notes": "+30 vs cr and burn from laser weapons",
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "To DR against cr and burn damage from a laser weapon (Drops 1 point every 10 damage recived this way)",
+					"amount": 30
+				}
+			],
+			"calc": {
+				"points": 0
+			}
 		}
 	],
 	"skills": [
@@ -2624,7 +2796,41 @@
 					}
 				},
 				{
-					"id": "slxZaxyVFW9tU_Hx6",
+					"id": "sOTB0vDW0tqkRe6kk",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "s9b5e-6c-ljOeUtt5"
+					},
+					"name": "Hiking",
+					"reference": "B200",
+					"tags": [
+						"Athletic",
+						"Exploration",
+						"Outdoor"
+					],
+					"difficulty": "ht/a",
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -5
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "ht",
+						"modifier": -5,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"calc": {
+						"level": 10,
+						"rsl": "HT-1"
+					}
+				},
+				{
+					"id": "sbVWJI4IVhXFx4FHC",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Skills.skl",
@@ -2636,6 +2842,7 @@
 						"Everyman",
 						"Medical"
 					],
+					"vtt_notes": "[1d+1 First Aid Healing]",
 					"difficulty": "iq/e",
 					"defaults": [
 						{
@@ -2668,40 +2875,6 @@
 					"calc": {
 						"level": 12,
 						"rsl": "IQ+0"
-					}
-				},
-				{
-					"id": "sOTB0vDW0tqkRe6kk",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "s9b5e-6c-ljOeUtt5"
-					},
-					"name": "Hiking",
-					"reference": "B200",
-					"tags": [
-						"Athletic",
-						"Exploration",
-						"Outdoor"
-					],
-					"difficulty": "ht/a",
-					"defaults": [
-						{
-							"type": "ht",
-							"modifier": -5
-						}
-					],
-					"points": 1,
-					"defaulted_from": {
-						"type": "ht",
-						"modifier": -5,
-						"level": 6,
-						"adjusted_level": 6,
-						"points": -6
-					},
-					"calc": {
-						"level": 10,
-						"rsl": "HT-1"
 					}
 				},
 				{
@@ -3188,6 +3361,76 @@
 			]
 		},
 		{
+			"id": "sN-e0iaAN5NStMQMb",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sgrDrFiOdLC9njqnC"
+			},
+			"name": "Surgery",
+			"reference": "B223",
+			"tags": [
+				"Medical"
+			],
+			"specialization": "Cybernetics",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "First Aid",
+					"modifier": -12
+				},
+				{
+					"type": "skill",
+					"name": "Physician",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Physiology",
+					"modifier": -8
+				},
+				{
+					"type": "skill",
+					"name": "Veterinary",
+					"modifier": -5
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "first aid"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "physician"
+						}
+					}
+				]
+			},
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "First Aid",
+				"modifier": -12
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
 			"id": "sw0r9t55qKVOm3s4p",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -3225,6 +3468,7 @@
 				}
 			],
 			"tech_level": "10",
+			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
 				"name": "Machinist",
@@ -3234,8 +3478,8 @@
 				"points": -9
 			},
 			"calc": {
-				"level": 10,
-				"rsl": "IQ-2"
+				"level": 12,
+				"rsl": "IQ+0"
 			}
 		},
 		{
@@ -3276,6 +3520,7 @@
 				}
 			],
 			"tech_level": "10",
+			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
 				"name": "Machinist",
@@ -3285,8 +3530,8 @@
 				"points": -9
 			},
 			"calc": {
-				"level": 10,
-				"rsl": "IQ-2"
+				"level": 12,
+				"rsl": "IQ+0"
 			}
 		},
 		{
@@ -3327,6 +3572,7 @@
 				}
 			],
 			"tech_level": "10",
+			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
 				"name": "Machinist",
@@ -3336,8 +3582,8 @@
 				"points": -9
 			},
 			"calc": {
-				"level": 10,
-				"rsl": "IQ-2"
+				"level": 12,
+				"rsl": "IQ+0"
 			}
 		},
 		{
@@ -3378,6 +3624,7 @@
 				}
 			],
 			"tech_level": "10",
+			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
 				"name": "Machinist",
@@ -3387,8 +3634,8 @@
 				"points": -9
 			},
 			"calc": {
-				"level": 10,
-				"rsl": "IQ-2"
+				"level": 12,
+				"rsl": "IQ+0"
 			}
 		},
 		{
@@ -3432,6 +3679,7 @@
 				}
 			],
 			"tech_level": "10",
+			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
 				"name": "Machinist",
@@ -3441,8 +3689,8 @@
 				"points": -9
 			},
 			"calc": {
-				"level": 10,
-				"rsl": "IQ-2"
+				"level": 12,
+				"rsl": "IQ+0"
 			}
 		},
 		{
@@ -3757,22 +4005,6 @@
 				{
 					"type": "dr_bonus",
 					"locations": [
-						"all"
-					],
-					"specialization": "cr from a laser",
-					"amount": 30
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"all"
-					],
-					"specialization": "burn from a laser",
-					"amount": 30
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
 						"eye"
 					],
 					"amount": 6
@@ -3878,7 +4110,7 @@
 			],
 			"modifiers": [
 				{
-					"id": "fDwJt4L4voJNn57B8",
+					"id": "fbGqBZjp9jTHNZc-6",
 					"name": "Made for small hands (SM -6)",
 					"cost_type": "to_base_cost",
 					"cost": "+0.5 CF"
@@ -4089,7 +4321,7 @@
 		}
 	],
 	"created_date": "2026-03-25T10:24:58-04:00",
-	"modified_date": "2026-04-08T02:10:09-04:00",
+	"modified_date": "2026-04-17T22:03:50-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",

@@ -1,0 +1,20 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "tLIKNA5AC1rIwzghY",
+			"name": "Laser resistant armor bonus",
+			"local_notes": "+30 vs cr and burn from laser weapons",
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "To DR against cr and burn damage from a laser weapon (Drops 1 point every 10 damage recived this way)",
+					"amount": 30
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		}
+	]
+}
