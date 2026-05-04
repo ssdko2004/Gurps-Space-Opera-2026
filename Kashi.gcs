@@ -560,10 +560,10 @@
 		},
 		{
 			"attr_id": "iq",
-			"adj": 5,
+			"adj": 6,
 			"calc": {
-				"value": 15,
-				"points": 50
+				"value": 16,
+				"points": 60
 			}
 		},
 		{
@@ -2017,7 +2017,7 @@
 			],
 			"points": 1,
 			"calc": {
-				"level": 15,
+				"level": 16,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2051,12 +2051,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-2"
 			}
 		},
@@ -2176,7 +2176,7 @@
 			"tech_level": "10",
 			"points": 4,
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2206,12 +2206,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 11,
-				"adjusted_level": 11,
-				"points": -11
+				"level": 12,
+				"adjusted_level": 12,
+				"points": -12
 			},
 			"calc": {
-				"level": 16,
+				"level": 17,
 				"rsl": "IQ+1"
 			}
 		},
@@ -2232,7 +2232,7 @@
 			"tech_level": "10",
 			"points": 4,
 			"calc": {
-				"level": 15,
+				"level": 16,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2254,7 +2254,7 @@
 			"tech_level": "10",
 			"points": 4,
 			"calc": {
-				"level": 15,
+				"level": 16,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2287,12 +2287,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 15,
+				"level": 16,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2359,12 +2359,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 12,
+				"level": 13,
 				"rsl": "IQ-3"
 			}
 		},
@@ -2411,13 +2411,13 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": 1
 			},
 			"calc": {
-				"level": 11,
-				"rsl": "DX-1"
+				"level": 12,
+				"rsl": "DX+0"
 			}
 		},
 		{
@@ -2438,7 +2438,7 @@
 			"difficulty": "iq/h",
 			"points": 4,
 			"calc": {
-				"level": 15,
+				"level": 16,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2468,7 +2468,7 @@
 			"tech_level": "10",
 			"points": 2,
 			"calc": {
-				"level": 15,
+				"level": 16,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2517,12 +2517,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 11,
-				"adjusted_level": 11,
-				"points": -11
+				"level": 12,
+				"adjusted_level": 12,
+				"points": -12
 			},
 			"calc": {
-				"level": 15,
+				"level": 16,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2590,12 +2590,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2718,7 +2718,7 @@
 			"difficulty": "iq/h",
 			"points": 2,
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2798,12 +2798,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -7,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 15,
+				"level": 16,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2839,12 +2839,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 11,
-				"adjusted_level": 11,
-				"points": -11
+				"level": 12,
+				"adjusted_level": 12,
+				"points": -12
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2895,12 +2895,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2928,12 +2928,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 11,
-				"adjusted_level": 11,
-				"points": -11
+				"level": 12,
+				"adjusted_level": 12,
+				"points": -12
 			},
 			"calc": {
-				"level": 15,
+				"level": 16,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3012,13 +3012,13 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": 1
 			},
 			"calc": {
-				"level": 9,
-				"rsl": "DX-1"
+				"level": 10,
+				"rsl": "DX+0"
 			}
 		},
 		{
@@ -3178,7 +3178,7 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 15,
+						"level": 16,
 						"rsl": "IQ+0"
 					}
 				},
@@ -3226,7 +3226,7 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 15,
+						"level": 16,
 						"rsl": "IQ+0"
 					}
 				},
@@ -3312,7 +3312,7 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 15,
+						"level": 16,
 						"rsl": "IQ+0"
 					}
 				},
@@ -3360,7 +3360,7 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 15,
+						"level": 16,
 						"rsl": "IQ+0"
 					}
 				}
@@ -3394,7 +3394,7 @@
 					"duration": "Instant",
 					"points": 1,
 					"calc": {
-						"level": 15,
+						"level": 16,
 						"rsl": "IQ+0"
 					}
 				},
@@ -3442,7 +3442,7 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 15,
+						"level": 16,
 						"rsl": "IQ+0"
 					}
 				},
@@ -3490,7 +3490,7 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 15,
+						"level": 16,
 						"rsl": "IQ+0"
 					}
 				},
@@ -3538,7 +3538,7 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 15,
+						"level": 16,
 						"rsl": "IQ+0"
 					}
 				},
@@ -3588,7 +3588,7 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 15,
+						"level": 16,
 						"rsl": "IQ+0"
 					}
 				}
@@ -4663,7 +4663,7 @@
 								}
 							],
 							"calc": {
-								"level": 13
+								"level": 14
 							}
 						}
 					],
@@ -4713,7 +4713,7 @@
 								}
 							],
 							"calc": {
-								"level": 14
+								"level": 15
 							}
 						}
 					],
@@ -4763,7 +4763,7 @@
 								}
 							],
 							"calc": {
-								"level": 14
+								"level": 15
 							}
 						}
 					],
@@ -4812,7 +4812,7 @@
 								}
 							],
 							"calc": {
-								"level": 15
+								"level": 16
 							}
 						}
 					],
@@ -4857,7 +4857,7 @@
 								}
 							],
 							"calc": {
-								"level": 13
+								"level": 14
 							}
 						}
 					],
@@ -4901,7 +4901,7 @@
 								}
 							],
 							"calc": {
-								"level": 14
+								"level": 15
 							}
 						}
 					],
@@ -4951,7 +4951,7 @@
 								}
 							],
 							"calc": {
-								"level": 14
+								"level": 15
 							}
 						}
 					],
@@ -5002,7 +5002,7 @@
 								}
 							],
 							"calc": {
-								"level": 12
+								"level": 13
 							}
 						}
 					],
@@ -5051,7 +5051,7 @@
 								}
 							],
 							"calc": {
-								"level": 17
+								"level": 18
 							}
 						}
 					],
@@ -5101,7 +5101,7 @@
 								}
 							],
 							"calc": {
-								"level": 16
+								"level": 17
 							}
 						}
 					],
@@ -5146,7 +5146,7 @@
 								}
 							],
 							"calc": {
-								"level": 13
+								"level": 14
 							}
 						}
 					],
@@ -5196,7 +5196,7 @@
 								}
 							],
 							"calc": {
-								"level": 17
+								"level": 18
 							}
 						}
 					],
@@ -5245,7 +5245,7 @@
 								}
 							],
 							"calc": {
-								"level": 16
+								"level": 17
 							}
 						}
 					],
@@ -5294,7 +5294,7 @@
 								}
 							],
 							"calc": {
-								"level": 15
+								"level": 16
 							}
 						}
 					],
@@ -5339,7 +5339,7 @@
 								}
 							],
 							"calc": {
-								"level": 12
+								"level": 13
 							}
 						}
 					],
@@ -5390,7 +5390,7 @@
 								}
 							],
 							"calc": {
-								"level": 12
+								"level": 13
 							}
 						}
 					],
@@ -5440,7 +5440,7 @@
 								}
 							],
 							"calc": {
-								"level": 17
+								"level": 18
 							}
 						}
 					],
@@ -5711,7 +5711,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:16:51-04:00",
-	"modified_date": "2026-05-03T18:41:19-04:00",
+	"modified_date": "2026-05-03T20:31:37-04:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
