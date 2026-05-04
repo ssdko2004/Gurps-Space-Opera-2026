@@ -1,8 +1,18 @@
 {
 	"version": 5,
 	"id": "Av22gCRCvmacEEanS",
-	"total_points": 204,
+	"total_points": 213,
 	"points_record": [
+		{
+			"when": "2026-05-03T20:20:55-04:00",
+			"points": 5,
+			"reason": "Session 2"
+		},
+		{
+			"when": "2026-04-19T20:36:30-04:00",
+			"points": 4,
+			"reason": "Session 1"
+		},
 		{
 			"when": "2026-04-06T20:12:34-04:00",
 			"points": 204,
@@ -2417,10 +2427,10 @@
 				}
 			],
 			"can_level": true,
-			"levels": 1,
+			"levels": 2,
 			"calc": {
-				"points": 5,
-				"current_level": 1
+				"points": 10,
+				"current_level": 2
 			}
 		},
 		{
@@ -3876,6 +3886,128 @@
 				"level": 13,
 				"rsl": "DX-1"
 			}
+		},
+		{
+			"id": "ss5nJIA1A9wYtKygl",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sQ7hn7pW3tIPfsU8Z"
+			},
+			"name": "Acting",
+			"reference": "B174",
+			"tags": [
+				"Social",
+				"Spy"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Performance",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Public Speaking",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sFfMZDccYRouZYOYe",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s8j6tcaNxXkF89Xbt"
+			},
+			"name": "Diplomacy",
+			"reference": "B187",
+			"tags": [
+				"Business",
+				"Police",
+				"Social"
+			],
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Politics",
+					"modifier": -6
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "sSIKUuW2c24noJzXh",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s7zUqAO5PEC5JKk_W"
+			},
+			"name": "Fast-Talk",
+			"reference": "B195",
+			"tags": [
+				"Criminal",
+				"Social",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Acting",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
 		}
 	],
 	"spells": [
@@ -5052,6 +5184,21 @@
 			}
 		},
 		{
+			"id": "eFLIdkWVvYJU9zcDE",
+			"description": "Kawanagi Motorcycle",
+			"tech_level": "8",
+			"legality_class": "4",
+			"base_value": "15000",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 15000,
+				"extended_value": 15000,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
 			"id": "ee6eM1OQST0frj4mE",
 			"description": "Ninja Motorcycle",
 			"tech_level": "8",
@@ -5068,7 +5215,7 @@
 		}
 	],
 	"created_date": "2026-04-06T20:12:34-04:00",
-	"modified_date": "2026-04-18T23:47:50-04:00",
+	"modified_date": "2026-05-03T20:25:12-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",

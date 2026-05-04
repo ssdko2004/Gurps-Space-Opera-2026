@@ -1,8 +1,18 @@
 {
 	"version": 5,
 	"id": "AMCcz18E4hSTpOYHb",
-	"total_points": 204,
+	"total_points": 213,
 	"points_record": [
+		{
+			"when": "2026-05-03T20:20:30-04:00",
+			"points": 5,
+			"reason": "Session 2"
+		},
+		{
+			"when": "2026-04-19T20:32:10-04:00",
+			"points": 4,
+			"reason": "Session XP"
+		},
 		{
 			"when": "2026-04-05T19:15:00-04:00",
 			"points": 204,
@@ -945,7 +955,7 @@
 				"path": "Basic Set/Basic Set Traits.adq",
 				"id": "t7U76B4j7M7hCGD_H"
 			},
-			"name": "Contact (@Who@)",
+			"name": "Contact (Mariano Basso)",
 			"reference": "B44",
 			"tags": [
 				"Advantage",
@@ -957,18 +967,18 @@
 			},
 			"modifiers": [
 				{
-					"id": "MH88gbB0M4cLwFCF2",
+					"id": "ML5U9yCFZ8b8qXo0O",
 					"name": "Effective Skill",
 					"children": [
 						{
-							"id": "mNIYavDv0rsOiGqdf",
+							"id": "mthtHGV417-owRQ9B",
 							"name": "Effective skill",
 							"reference": "B44",
 							"local_notes": "12",
 							"cost_adj": "1"
 						},
 						{
-							"id": "m92qw3lUlKMD5dJii",
+							"id": "mPbU0Js4CisIPHvQB",
 							"name": "Effective skill",
 							"reference": "B44",
 							"local_notes": "15",
@@ -976,7 +986,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mSDJ2TPxxZ-PpGr5I",
+							"id": "m4SwZzrQZHbvpB_nx",
 							"name": "Effective skill",
 							"reference": "B44",
 							"local_notes": "18",
@@ -984,7 +994,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mas9mB17jRIlwhf-b",
+							"id": "mmLIZyJfcASnc5qHZ",
 							"name": "Effective skill",
 							"reference": "B44",
 							"local_notes": "21",
@@ -992,7 +1002,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mvtUxpIIrGyAK_7A9",
+							"id": "mn57WMuIAJdH5xTGZ",
 							"name": "Can obtain information using supernatural talents",
 							"reference": "B44",
 							"cost_adj": "1",
@@ -1001,11 +1011,11 @@
 					]
 				},
 				{
-					"id": "MZHrr50v5cPUdc1K4",
+					"id": "M9C09i5Opscbscz01",
 					"name": "Frequency of Appearance",
 					"children": [
 						{
-							"id": "m20GbXtPK2zbYCIrI",
+							"id": "mnS3zCyzRFY1dtulX",
 							"name": "Appears quite rarely",
 							"reference": "B36",
 							"reference_highlight": "Frequency of Appearance",
@@ -1014,7 +1024,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mhQDBXMfiZJAf1KZA",
+							"id": "mGbHpzbbpO-_Fm2J1",
 							"name": "Appears fairly often",
 							"reference": "B36",
 							"reference_highlight": "Frequency of Appearance",
@@ -1022,7 +1032,7 @@
 							"cost_adj": "x1"
 						},
 						{
-							"id": "mp-PgLJI2fmCdgDEr",
+							"id": "mo-ccOdvcf6TrBPlp",
 							"name": "Appears quite often",
 							"reference": "B36",
 							"reference_highlight": "Frequency of Appearance",
@@ -1031,7 +1041,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mNla4F8t_7LJBkhuX",
+							"id": "mg14WBIBHPdhJwpGV",
 							"name": "Appears almost all the time",
 							"reference": "B36",
 							"reference_highlight": "Frequency of Appearance",
@@ -1042,31 +1052,31 @@
 					]
 				},
 				{
-					"id": "M9lHwwMtaYdomCmBK",
+					"id": "MoK1rXqapag1dHZsr",
 					"name": "Reliability",
 					"children": [
 						{
-							"id": "mc5FDRS80h4LSZLtY",
+							"id": "mUW6hpkXTEBQTtdbg",
 							"name": "Completely reliable",
 							"reference": "B44",
 							"cost_adj": "x3",
 							"disabled": true
 						},
 						{
-							"id": "mfQYtHfJhACDez_-e",
+							"id": "m1vg4Wjd-75Bda5TH",
 							"name": "Usually reliable",
 							"reference": "B44",
 							"cost_adj": "x2",
 							"disabled": true
 						},
 						{
-							"id": "mMBhJt1H-LMOR6uZz",
+							"id": "md2Pr-baWGssqHLwQ",
 							"name": "Somewhat reliable",
 							"reference": "B44",
 							"cost_adj": "x1"
 						},
 						{
-							"id": "miUdE2fWYU5LqFs8W",
+							"id": "mhuZrRuqhnYkpBRAV",
 							"name": "Unreliable",
 							"reference": "B44",
 							"cost_adj": "x0.5",
@@ -1075,14 +1085,14 @@
 					]
 				},
 				{
-					"id": "mzuFl97AvGx3EkwIw",
+					"id": "mEiTDpWdVwj8aVNDi",
 					"name": "Group",
 					"reference": "B44",
 					"cost_adj": "x5",
 					"disabled": true
 				},
 				{
-					"id": "m1f22ceYA2oEy5gFB",
+					"id": "m58u0GUNIkwUo02pl",
 					"name": "Favor",
 					"reference": "B55",
 					"cost_adj": "x0.2",
@@ -2725,6 +2735,28 @@
 				"Weapon"
 			],
 			"specialization": "Sword",
+			"difficulty": "dx/e",
+			"points": 1,
+			"calc": {
+				"level": 14,
+				"rsl": "DX+1"
+			}
+		},
+		{
+			"id": "sYZLESsMGtfVVqQva",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "slFkOhWAAPF7DTJRe"
+			},
+			"name": "Fast-Draw",
+			"reference": "B194,MA56",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Pistol",
 			"difficulty": "dx/e",
 			"points": 1,
 			"calc": {
@@ -4934,7 +4966,7 @@
 					],
 					"calc": {
 						"level": 14,
-						"damage": "4d(5) pi-"
+						"damage": "4d(7) pi-"
 					}
 				}
 			],
@@ -4976,7 +5008,7 @@
 			}
 		},
 		{
-			"id": "eshiQ_o2De6KvizmP",
+			"id": "ekcoCIRCRn4oTM-GN",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Equipment.eqp",
@@ -4992,7 +5024,7 @@
 			"base_weight": "1.5 lb",
 			"weapons": [
 				{
-					"id": "wOCwNWekJ_TSfVuBE",
+					"id": "wrRUYotXT_5ZkwwfT",
 					"sv": 1,
 					"damage": {
 						"type": "imp",
@@ -5039,7 +5071,7 @@
 					],
 					"calc": {
 						"level": 14,
-						"damage": "2d+2(3) imp",
+						"damage": "2d+2(5) imp",
 						"parry": "11F"
 					}
 				}
@@ -5047,7 +5079,7 @@
 			"vtt_notes": "[Parry +3 Fencing Retreat]\nThe following include the bonus from Combat Reflexes(Combat Sense)\n[S:\"Parry Missile-Weapons\"+1]\n[S:\"Parry Missile-Weapons\"-3 large thrown weapons] [S:\"Parry Missile-Weapons\"+3 small thrown weapons] [S:\"Parry Missile-Weapons\"-1 Small low-tech missiles\"] [S:\"Parry Missile-Weapons\"-4 Bullets or high-tech projectiiles]",
 			"modifiers": [
 				{
-					"id": "fs9lCWDOL8uw23nA4",
+					"id": "fXW-O_A9VooMXpo2h",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Equipment Modifiers.eqm",
@@ -5067,17 +5099,17 @@
 					]
 				},
 				{
-					"id": "f6vt2acUv9UIYG2nk",
+					"id": "f210QRoy3Lu9BCk98",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Ultra Tech/Ultra Tech Equipment Modifiers.eqm",
 						"id": "fIcBJBASQXoaQDRr7"
 					},
-					"name": "Vibroblade",
+					"name": "Superfine Vibroblade",
 					"reference": "UT164",
 					"cost_type": "to_final_base_cost",
 					"tech_level": "10",
-					"cost": "x10",
+					"cost": "x30",
 					"features": [
 						{
 							"type": "weapon_bonus",
@@ -5093,7 +5125,7 @@
 							"level": {
 								"compare": "at_least"
 							},
-							"amount": 2
+							"amount": 4
 						}
 					]
 				}
@@ -5101,8 +5133,8 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 16000,
-				"extended_value": 16000,
+				"value": 48000,
+				"extended_value": 48000,
 				"weight": "1.5 lb",
 				"extended_weight": "1.5 lb"
 			}
@@ -5900,25 +5932,40 @@
 			],
 			"base_value": "10",
 			"base_weight": "0.75 lb",
-			"quantity": 100,
+			"quantity": 50,
 			"equipped": true,
 			"calc": {
 				"value": 10,
-				"extended_value": 1000,
+				"extended_value": 500,
 				"weight": "0.75 lb",
-				"extended_weight": "75 lb"
+				"extended_weight": "37.5 lb"
+			}
+		},
+		{
+			"id": "eE4roXacUBy2_ch2j",
+			"description": "Kawanagi Motorcycle",
+			"tech_level": "8",
+			"legality_class": "4",
+			"base_value": "15000",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 15000,
+				"extended_value": 15000,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
 			}
 		},
 		{
 			"id": "eZoO6Y7CtVYP-vK_E",
 			"description": "Money",
 			"legality_class": "4",
-			"base_value": "31517.9",
+			"base_value": "17.9",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 31517.9,
-				"extended_value": 31517.9,
+				"value": 17.9,
+				"extended_value": 17.9,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
@@ -5928,10 +5975,14 @@
 		{
 			"id": "n43ZkIrb3p0Gr4pd8",
 			"markdown": "+30 DR vs burn or cr damage from lasers. This drops by 1 for every 10 damage recieved this way"
+		},
+		{
+			"id": "nTFPcCH4TMc1WEAWV",
+			"markdown": "Backstory - Juno Steel was born on Drynax to an entertainment executive after a short-lived affair with a rival. Despite their wide entertainment empire throughout nearby systems, Juno was always uncertain why their mother lived on Drynax. Regardless, they practically raised himself on TV police serials and eventually trained to become a police officer themself.\n\nAs a cop, Juno found mild success. They got married to a police lawyer, Patricia, and had a child together named Rigo. One day, Juno rescued another young child - a somewhat troubled juvenile named Victor Basso, son of the infamous crime lord Mariano Basso. Juno endeavored to return Victor to his father - their partner and precinct disagreed, wanting to use Victor as leverage over his father. The precinct ended up purposefully running into Juno with a police vehicle in an attempt to stop them from returning Victor, destroying Juno's spine, but nonetheless Mariano and his gang, who was nearby, retrieved the boy and swore a debt to Juno.\n\nJuno used a lawyer Mariano hired to sue the department for their injury. They were able to prove the department's scheme, and despite Patricia's defense of the precinct, Juno received a large sum of money for attorney fees and medical expenses. Patricia, thanks to her defense of the police against her husband, was served divorce papers and was forced to pay child support until Rigo came of age.\n\nNow that Rigo has turned 18 and gone to college in a nearby system, the child support payments have ended. Juno's injury and relationship with the local police have prevented them from finding legitimate work, so their savings amount to the entirety of Rigo's college fund - and it isn't enough. They've found a bounty, though - a scientist needs to retrieve some stolen tech and a lab assistant - and Juno finds the endeavor both worthy and profitable. Hopefully their family troubles will be behind them soon..."
 		}
 	],
 	"created_date": "2026-04-05T19:15:00-04:00",
-	"modified_date": "2026-04-18T23:24:29-04:00",
+	"modified_date": "2026-05-02T13:26:07-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",

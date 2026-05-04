@@ -1,0 +1,20 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "eMsQUc4DxGhfhgFHl",
+			"description": "Kawanagi Motorcycle",
+			"tech_level": "8",
+			"legality_class": "4",
+			"base_value": "15000",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 15000,
+				"extended_value": 15000,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		}
+	]
+}
