@@ -488,10 +488,10 @@
 	"attributes": [
 		{
 			"attr_id": "st",
-			"adj": 2,
+			"adj": 3,
 			"calc": {
-				"value": 12,
-				"points": 20
+				"value": 13,
+				"points": 30
 			}
 		},
 		{
@@ -603,8 +603,8 @@
 			"attr_id": "hp",
 			"adj": 0,
 			"calc": {
-				"value": 12,
-				"current": 12,
+				"value": 13,
+				"current": 13,
 				"points": 0
 			}
 		}
@@ -636,7 +636,7 @@
 					],
 					"calc": {
 						"level": 13,
-						"damage": "1d-2 cr"
+						"damage": "1d-1 cr"
 					}
 				},
 				{
@@ -669,7 +669,7 @@
 					],
 					"calc": {
 						"level": 13,
-						"damage": "1d-2 cr",
+						"damage": "1d-1 cr",
 						"parry": "9"
 					}
 				},
@@ -704,7 +704,7 @@
 					],
 					"calc": {
 						"level": 11,
-						"damage": "1d-1 cr"
+						"damage": "1d cr"
 					}
 				}
 			],
@@ -1178,14 +1178,14 @@
 			],
 			"modifiers": [
 				{
-					"id": "mkUrP_ls-h6sRaI-q",
+					"id": "m3kEb5m2OgJ2VyuiG",
 					"name": "Exposed",
 					"reference": "B74",
 					"cost_adj": "-50%",
 					"disabled": true
 				},
 				{
-					"id": "mwv06vr22cGHdlp38",
+					"id": "mwebRa0P2DmepBqmd",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Powers/Powers Modifiers.adm",
@@ -1199,11 +1199,11 @@
 			],
 			"points_per_level": 1,
 			"can_level": true,
-			"levels": 10,
+			"levels": 11,
 			"calc": {
-				"points": 15,
-				"resolved_notes": "29 lb",
-				"current_level": 10
+				"points": 17,
+				"resolved_notes": "37.4 lb",
+				"current_level": 11
 			}
 		},
 		{
@@ -2378,7 +2378,7 @@
 							"modifier": -5
 						}
 					],
-					"points": 1,
+					"points": 3,
 					"defaulted_from": {
 						"type": "dx",
 						"modifier": -5,
@@ -2387,8 +2387,8 @@
 						"points": -8
 					},
 					"calc": {
-						"level": 11,
-						"rsl": "DX-1"
+						"level": 13,
+						"rsl": "DX+0"
 					}
 				},
 				{
@@ -2553,7 +2553,7 @@
 					],
 					"points": 1,
 					"calc": {
-						"level": 10,
+						"level": 11,
 						"rsl": "DX-2"
 					}
 				},
@@ -2593,15 +2593,15 @@
 								}
 							],
 							"calc": {
-								"level": 9,
-								"damage": "1d-2 cr",
-								"parry": "7F"
+								"level": 11,
+								"damage": "1d-1 cr",
+								"parry": "8F"
 							}
 						}
 					],
 					"points": 1,
 					"calc": {
-						"level": 10,
+						"level": 11,
 						"rsl": "DX-2"
 					}
 				},
@@ -3230,7 +3230,7 @@
 						"points": -8
 					},
 					"calc": {
-						"level": 11,
+						"level": 12,
 						"rsl": "DX-1"
 					}
 				},
@@ -3714,7 +3714,7 @@
 				}
 			],
 			"tech_level": "10",
-			"points": 1,
+			"points": 3,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
@@ -3723,8 +3723,8 @@
 				"points": -7
 			},
 			"calc": {
-				"level": 12,
-				"rsl": "IQ+0"
+				"level": 13,
+				"rsl": "IQ+1"
 			}
 		},
 		{
@@ -3818,354 +3818,6 @@
 		}
 	],
 	"equipment": [
-		{
-			"id": "eqGzw89BEjH_3A_1d",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "etU9krC1dOaDdOChj"
-			},
-			"description": "Dinosaur Laser",
-			"reference": "UT115",
-			"local_notes": "Backpack D-cell.",
-			"tech_level": "10",
-			"legality_class": "1",
-			"tags": [
-				"Missile Weapon",
-				"Weaponry"
-			],
-			"base_value": "19000",
-			"base_weight": "19 lb",
-			"weapons": [
-				{
-					"id": "WxKYZisy-kW2oXTav",
-					"sv": 1,
-					"damage": {
-						"type": "burn",
-						"base": "8d",
-						"armor_divisor": 2
-					},
-					"strength": "10†",
-					"accuracy": "12",
-					"range": "1,300/3,900",
-					"rate_of_fire": "1",
-					"shots": "35(5)",
-					"bulk": "-5",
-					"recoil": "1",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Beam Weapons",
-							"specialization": "Rifle"
-						},
-						{
-							"type": "skill",
-							"name": "Beam Weapons",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Rifle",
-							"modifier": -4
-						}
-					],
-					"calc": {
-						"level": 13,
-						"damage": "8d(2) burn"
-					}
-				}
-			],
-			"modifiers": [
-				{
-					"id": "fD8FzX-MWMl_8xjQN",
-					"name": "Made for small hands (SM -6)",
-					"cost_type": "to_base_cost",
-					"cost": "+0.5 CF"
-				}
-			],
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 28500,
-				"extended_value": 28500,
-				"weight": "19 lb",
-				"extended_weight": "19 lb"
-			}
-		},
-		{
-			"id": "eQWPm5-nETVkh38qt",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "e_noIf9v8q1Okb3m9"
-			},
-			"description": "D cell",
-			"reference": "UT19",
-			"tech_level": "9",
-			"tags": [
-				"Power"
-			],
-			"base_value": "100",
-			"base_weight": "5 lb",
-			"quantity": 2,
-			"equipped": true,
-			"calc": {
-				"value": 100,
-				"extended_value": 200,
-				"weight": "5 lb",
-				"extended_weight": "10 lb"
-			}
-		},
-		{
-			"id": "etXKRAhzmbL-x3yCH",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "eZy6BFBoX-Q3tdBQv"
-			},
-			"description": "Heavy Laser Pistol",
-			"reference": "UT115",
-			"local_notes": "2C/56 shots",
-			"tech_level": "10",
-			"legality_class": "3",
-			"tags": [
-				"Missile Weapon",
-				"Weaponry"
-			],
-			"base_value": "2400",
-			"base_weight": "3.3 lb",
-			"weapons": [
-				{
-					"id": "Wbs2m6r7gEGdCqyvA",
-					"sv": 1,
-					"damage": {
-						"type": "burn",
-						"base": "4d",
-						"armor_divisor": 2
-					},
-					"strength": "6",
-					"accuracy": "6",
-					"range": "300/900",
-					"rate_of_fire": "10",
-					"shots": "56(3)",
-					"bulk": "-2",
-					"recoil": "1",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Beam Weapons",
-							"specialization": "Pistol"
-						},
-						{
-							"type": "skill",
-							"name": "Beam Weapons",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Pistol",
-							"modifier": -4
-						}
-					],
-					"calc": {
-						"level": 13,
-						"damage": "4d(2) burn"
-					}
-				}
-			],
-			"modifiers": [
-				{
-					"id": "fr43sE7leV0cyAm-d",
-					"name": "Made for small hands (SM -6)",
-					"cost_type": "to_base_cost",
-					"cost": "+0.5 CF"
-				}
-			],
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 3600,
-				"extended_value": 3600,
-				"weight": "3.3 lb",
-				"extended_weight": "3.3 lb"
-			}
-		},
-		{
-			"id": "ekXrGv2cK3hDGbrMW",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "ev80WwcnBpiGFrkol"
-			},
-			"description": "C cell",
-			"reference": "UT19",
-			"tech_level": "9",
-			"tags": [
-				"Power"
-			],
-			"base_value": "10",
-			"base_weight": "0.5 lb",
-			"quantity": 4,
-			"equipped": true,
-			"calc": {
-				"value": 10,
-				"extended_value": 40,
-				"weight": "0.5 lb",
-				"extended_weight": "2 lb"
-			}
-		},
-		{
-			"id": "enlHUSSN0fAknQixh",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "eKiSNZv46qzfUZDjq"
-			},
-			"description": "Ablative Nanoplas Suit",
-			"reference": "UT174",
-			"local_notes": "Laser resistant DR drops by 1 for every 10 damage from a laser taken (To the max of -30)",
-			"tech_level": "10",
-			"legality_class": "3",
-			"tags": [
-				"Armor",
-				"Defenses"
-			],
-			"base_value": "1200",
-			"base_weight": "8 lb",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"eye"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"skull"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"face"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"neck"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"torso"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"vitals"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"groin"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"arm"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"hand"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"leg"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"foot"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"tail"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"wing"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"fin"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"brain"
-					],
-					"amount": 6
-				}
-			],
-			"modifiers": [
-				{
-					"id": "fbGqBZjp9jTHNZc-6",
-					"name": "Made for small hands (SM -6)",
-					"cost_type": "to_base_cost",
-					"cost": "+0.5 CF"
-				}
-			],
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 1800,
-				"extended_value": 1800,
-				"weight": "8 lb",
-				"extended_weight": "8 lb"
-			}
-		},
 		{
 			"id": "eoj9gvRoL6hnpMpCd",
 			"source": {
@@ -4359,14 +4011,387 @@
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
+		},
+		{
+			"id": "enlHUSSN0fAknQixh",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eKiSNZv46qzfUZDjq"
+			},
+			"description": "Ablative Nanoplas Suit",
+			"reference": "UT174",
+			"local_notes": "Laser resistant DR drops by 1 for every 10 damage from a laser taken (To the max of -30)",
+			"tech_level": "10",
+			"legality_class": "3",
+			"tags": [
+				"Armor",
+				"Defenses"
+			],
+			"base_value": "1200",
+			"base_weight": "8 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"eye"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"skull"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"face"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"neck"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"torso"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"vitals"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"groin"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"arm"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"hand"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"leg"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"foot"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"tail"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"wing"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"fin"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"brain"
+					],
+					"amount": 6
+				}
+			],
+			"modifiers": [
+				{
+					"id": "fbGqBZjp9jTHNZc-6",
+					"name": "Made for small hands (SM -6)",
+					"cost_type": "to_base_cost",
+					"cost": "+0.5 CF"
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1800,
+				"extended_value": 1800,
+				"weight": "8 lb",
+				"extended_weight": "8 lb"
+			}
+		},
+		{
+			"id": "EWxMIHTmHjYzGF0gL",
+			"description": "Payload ",
+			"local_notes": "Holds up to 37.4",
+			"legality_class": "4",
+			"base_weight": "0",
+			"features": [
+				{
+					"type": "contained_weight_reduction",
+					"reduction": "37.4 lb"
+				}
+			],
+			"ignore_weight_for_skills": true,
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "eQWPm5-nETVkh38qt",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "e_noIf9v8q1Okb3m9"
+					},
+					"description": "D cell",
+					"reference": "UT19",
+					"tech_level": "9",
+					"tags": [
+						"Power"
+					],
+					"base_value": "100",
+					"base_weight": "5 lb",
+					"quantity": 2,
+					"equipped": true,
+					"calc": {
+						"value": 100,
+						"extended_value": 200,
+						"weight": "5 lb",
+						"extended_weight": "10 lb"
+					}
+				},
+				{
+					"id": "ekXrGv2cK3hDGbrMW",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "ev80WwcnBpiGFrkol"
+					},
+					"description": "C cell",
+					"reference": "UT19",
+					"tech_level": "9",
+					"tags": [
+						"Power"
+					],
+					"base_value": "10",
+					"base_weight": "0.5 lb",
+					"quantity": 4,
+					"equipped": true,
+					"calc": {
+						"value": 10,
+						"extended_value": 40,
+						"weight": "0.5 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "eqGzw89BEjH_3A_1d",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "etU9krC1dOaDdOChj"
+					},
+					"description": "Dinosaur Laser (Diplomacy)",
+					"reference": "UT115",
+					"local_notes": "Backpack D-cell.",
+					"tech_level": "10",
+					"legality_class": "1",
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"base_value": "19000",
+					"base_weight": "19 lb",
+					"weapons": [
+						{
+							"id": "WgNkkTRT8B6ncbgil",
+							"sv": 1,
+							"damage": {
+								"type": "burn",
+								"base": "8d",
+								"armor_divisor": 2
+							},
+							"strength": "10†",
+							"accuracy": "12",
+							"range": "1,300/3,900",
+							"rate_of_fire": "1",
+							"shots": "35(5)",
+							"bulk": "-5",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Beam Weapons",
+									"specialization": "Rifle"
+								},
+								{
+									"type": "skill",
+									"name": "Beam Weapons",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Rifle",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"level": 13,
+								"damage": "8d(2) burn"
+							}
+						}
+					],
+					"modifiers": [
+						{
+							"id": "fzIL2VLiBkunkQOtT",
+							"name": "Made for small hands (SM -6)",
+							"cost_type": "to_base_cost",
+							"cost": "+0.5 CF"
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 28500,
+						"extended_value": 28500,
+						"weight": "19 lb",
+						"extended_weight": "19 lb"
+					}
+				},
+				{
+					"id": "etXKRAhzmbL-x3yCH",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "eZy6BFBoX-Q3tdBQv"
+					},
+					"description": "Heavy Laser Pistol (Mercy)",
+					"reference": "UT115",
+					"local_notes": "2C/56 shots",
+					"tech_level": "10",
+					"legality_class": "3",
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"base_value": "2400",
+					"base_weight": "3.3 lb",
+					"weapons": [
+						{
+							"id": "W3CpuGs4ZUbkNfQiy",
+							"sv": 1,
+							"damage": {
+								"type": "burn",
+								"base": "4d",
+								"armor_divisor": 2
+							},
+							"strength": "6",
+							"accuracy": "6",
+							"range": "300/900",
+							"rate_of_fire": "10",
+							"shots": "56(3)",
+							"bulk": "-2",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Beam Weapons",
+									"specialization": "Pistol"
+								},
+								{
+									"type": "skill",
+									"name": "Beam Weapons",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Pistol",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"level": 13,
+								"damage": "4d(2) burn"
+							}
+						}
+					],
+					"modifiers": [
+						{
+							"id": "f-RLuCWFFAdSDBFzj",
+							"name": "Made for small hands (SM -6)",
+							"cost_type": "to_base_cost",
+							"cost": "+0.5 CF"
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 3600,
+						"extended_value": 3600,
+						"weight": "3.3 lb",
+						"extended_weight": "3.3 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 32340,
+				"weight": "0 lb",
+				"extended_weight": "0 lb",
+				"extended_weight_for_skills": "0 lb"
+			}
 		}
 	],
 	"created_date": "2026-03-25T10:24:58-04:00",
-	"modified_date": "2026-05-03T18:16:59-04:00",
+	"modified_date": "2026-05-03T21:11:06-04:00",
 	"calc": {
-		"swing": "1d+2",
-		"thrust": "1d-1",
-		"basic_lift": "29 lb",
+		"swing": "2d-1",
+		"thrust": "1d",
+		"basic_lift": "34 lb",
 		"dodge_bonus": 1,
 		"move": [
 			6,
