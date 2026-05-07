@@ -2203,1157 +2203,20 @@
 	],
 	"skills": [
 		{
-			"id": "sN-e0iaAN5NStMQMb",
+			"id": "soV0MSFJSlR1uCyWE",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sgrDrFiOdLC9njqnC"
+				"id": "siSKgRr1MizPF9IrU"
 			},
-			"name": "Surgery",
-			"reference": "B223",
-			"tags": [
-				"Medical"
-			],
-			"specialization": "Cybernetics",
-			"difficulty": "iq/h",
-			"defaults": [
-				{
-					"type": "skill",
-					"name": "First Aid",
-					"modifier": -12
-				},
-				{
-					"type": "skill",
-					"name": "Physician",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Physiology",
-					"modifier": -8
-				},
-				{
-					"type": "skill",
-					"name": "Veterinary",
-					"modifier": -5
-				}
-			],
-			"prereqs": {
-				"type": "prereq_list",
-				"all": false,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "first aid"
-						}
-					},
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "physician"
-						}
-					}
-				]
-			},
-			"tech_level": "10",
-			"points": 1,
-			"defaulted_from": {
-				"type": "skill",
-				"name": "First Aid",
-				"modifier": -12
-			},
-			"calc": {
-				"level": 10,
-				"rsl": "IQ-2"
-			}
-		},
-		{
-			"id": "SqsoEobiqcQSpdMiI",
-			"name": "Space Adventurer",
-			"children": [
-				{
-					"id": "stUqNCFYBCbX9aDHh",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "s64oJ-8i-8xecRu4a"
-					},
-					"name": "Throwing",
-					"reference": "B226",
-					"tags": [
-						"Athletic",
-						"Combat",
-						"Ranged Combat",
-						"Weapon"
-					],
-					"difficulty": "dx/a",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Dropping",
-							"modifier": -4
-						}
-					],
-					"points": 1,
-					"defaulted_from": {
-						"type": "dx",
-						"modifier": -3,
-						"level": 10,
-						"adjusted_level": 10,
-						"points": -10
-					},
-					"calc": {
-						"level": 12,
-						"rsl": "DX-1"
-					}
-				},
-				{
-					"id": "sqIOGrGflW43s-Vg6",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "smTUpMWJGqPeT1KER"
-					},
-					"name": "Streetwise",
-					"reference": "B223",
-					"tags": [
-						"Criminal",
-						"Police",
-						"Social",
-						"Street"
-					],
-					"difficulty": "iq/a",
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -5
-						}
-					],
-					"points": 1,
-					"defaulted_from": {
-						"type": "iq",
-						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
-					},
-					"calc": {
-						"level": 11,
-						"rsl": "IQ-1"
-					}
-				},
-				{
-					"id": "swS6a_D_10AWo5he5",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "svEm7OyeCu_9wJ8Kk"
-					},
-					"name": "Stealth",
-					"reference": "B222",
-					"tags": [
-						"Criminal",
-						"Police",
-						"Spy",
-						"Street"
-					],
-					"difficulty": "dx/a",
-					"encumbrance_penalty_multiplier": 1,
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -5
-						},
-						{
-							"type": "dx",
-							"modifier": -5
-						}
-					],
-					"points": 3,
-					"defaulted_from": {
-						"type": "dx",
-						"modifier": -5,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
-					},
-					"calc": {
-						"level": 13,
-						"rsl": "DX+0"
-					}
-				},
-				{
-					"id": "sHrBNnrb9UE_6_XG2",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "s9IHT34mK8yfSB7d_"
-					},
-					"name": "Spacer",
-					"reference": "B185",
-					"tags": [
-						"Vehicle"
-					],
-					"difficulty": "iq/e",
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -4
-						}
-					],
-					"tech_level": "10",
-					"points": 1,
-					"defaulted_from": {
-						"type": "iq",
-						"modifier": -4,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
-					},
-					"calc": {
-						"level": 12,
-						"rsl": "IQ+0"
-					}
-				},
-				{
-					"id": "skQpSdRe4l2j_e8wU",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "sQ2Nj_TqMYKV7skUF"
-					},
-					"name": "Scrounging",
-					"reference": "B218",
-					"tags": [
-						"Criminal",
-						"Street"
-					],
-					"difficulty": "per/e",
-					"defaults": [
-						{
-							"type": "per",
-							"modifier": -4
-						}
-					],
-					"points": 1,
-					"defaulted_from": {
-						"type": "per",
-						"modifier": -4,
-						"level": 6,
-						"adjusted_level": 6,
-						"points": -6
-					},
-					"calc": {
-						"level": 10,
-						"rsl": "Per+0"
-					}
-				},
-				{
-					"id": "sORBp7xJHTGbxU5vq",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "slOONrK6jDHvcRoGx"
-					},
-					"name": "Knife",
-					"reference": "B208",
-					"tags": [
-						"Combat",
-						"Melee Combat",
-						"Weapon"
-					],
-					"difficulty": "dx/e",
-					"defaults": [
-						{
-							"type": "skill",
-							"name": "Force Sword",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Main-Gauche",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Shortsword",
-							"modifier": -3
-						},
-						{
-							"type": "dx",
-							"modifier": -4
-						}
-					],
-					"points": 1,
-					"defaulted_from": {
-						"type": "dx",
-						"modifier": -4,
-						"level": 9,
-						"adjusted_level": 9,
-						"points": -9
-					},
-					"calc": {
-						"level": 13,
-						"rsl": "DX+0"
-					}
-				},
-				{
-					"id": "sxeYOfqPKX-GWs5vN",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "sU4bjpp9TsvnRavPN"
-					},
-					"name": "Karate",
-					"reference": "B203,MA57",
-					"tags": [
-						"Combat",
-						"Melee Combat",
-						"Weapon"
-					],
-					"difficulty": "dx/h",
-					"encumbrance_penalty_multiplier": 1,
-					"features": [
-						{
-							"type": "weapon_bonus",
-							"selection_type": "weapons_with_required_skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Karate"
-							},
-							"level": {
-								"compare": "at_least"
-							},
-							"amount": 1,
-							"per_die": true
-						},
-						{
-							"type": "weapon_bonus",
-							"selection_type": "weapons_with_required_skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Karate"
-							},
-							"level": {
-								"compare": "at_least",
-								"qualifier": 1
-							},
-							"amount": 1,
-							"per_die": true
-						}
-					],
-					"points": 1,
-					"calc": {
-						"level": 11,
-						"rsl": "DX-2"
-					}
-				},
-				{
-					"id": "sl7hTMszm3q0k8QN7",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "sWVqswxT3hi7db0kD"
-					},
-					"name": "Judo",
-					"reference": "B203,MA57",
-					"local_notes": "Allows parrying two different attacks per turn, one with each hand.",
-					"tags": [
-						"Combat",
-						"Melee Combat",
-						"Weapon"
-					],
-					"difficulty": "dx/h",
-					"encumbrance_penalty_multiplier": 1,
-					"weapons": [
-						{
-							"id": "wVQa3p1jV5apYpEzA",
-							"sv": 1,
-							"damage": {
-								"type": "cr",
-								"st": "thr",
-								"base": "-1"
-							},
-							"usage": "Throw",
-							"reach": "C,1",
-							"parry": "0F",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": "Judo"
-								}
-							],
-							"calc": {
-								"level": 11,
-								"damage": "1d-1 cr",
-								"parry": "8F"
-							}
-						}
-					],
-					"points": 1,
-					"calc": {
-						"level": 11,
-						"rsl": "DX-2"
-					}
-				},
-				{
-					"id": "sOLoTZuPOH9Vbt-L6",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "s3hoLmN-a9_mOr2Kh"
-					},
-					"name": "Holdout",
-					"reference": "B200",
-					"tags": [
-						"Criminal",
-						"Spy",
-						"Street"
-					],
-					"difficulty": "iq/a",
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Sleight of Hand",
-							"modifier": -3
-						}
-					],
-					"points": 1,
-					"defaulted_from": {
-						"type": "skill",
-						"name": "Sleight of Hand",
-						"modifier": -3,
-						"level": 9,
-						"adjusted_level": 9,
-						"points": -9
-					},
-					"calc": {
-						"level": 11,
-						"rsl": "IQ-1"
-					}
-				},
-				{
-					"id": "sOTB0vDW0tqkRe6kk",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "s9b5e-6c-ljOeUtt5"
-					},
-					"name": "Hiking",
-					"reference": "B200",
-					"tags": [
-						"Athletic",
-						"Exploration",
-						"Outdoor"
-					],
-					"difficulty": "ht/a",
-					"defaults": [
-						{
-							"type": "ht",
-							"modifier": -5
-						}
-					],
-					"points": 1,
-					"defaulted_from": {
-						"type": "ht",
-						"modifier": -5,
-						"level": 6,
-						"adjusted_level": 6,
-						"points": -6
-					},
-					"calc": {
-						"level": 10,
-						"rsl": "HT-1"
-					}
-				},
-				{
-					"id": "s-5hoF3y9v9LOjVCX",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "sGz21GskAlJXL1hYP"
-					},
-					"name": "Gesture",
-					"reference": "B198",
-					"tags": [
-						"Social"
-					],
-					"difficulty": "iq/e",
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -4
-						}
-					],
-					"points": 1,
-					"defaulted_from": {
-						"type": "iq",
-						"modifier": -4,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
-					},
-					"calc": {
-						"level": 12,
-						"rsl": "IQ+0"
-					}
-				},
-				{
-					"id": "sYiwm4XugE_avq2qT",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "sxSlxLiSgB95HINP_"
-					},
-					"name": "Forced Entry",
-					"reference": "B196",
-					"tags": [
-						"Criminal",
-						"Police",
-						"Spy",
-						"Street"
-					],
-					"difficulty": "dx/e",
-					"points": 1,
-					"calc": {
-						"level": 13,
-						"rsl": "DX+0"
-					}
-				},
-				{
-					"id": "sbVWJI4IVhXFx4FHC",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "s9mV--3lpIfXO7N6Z"
-					},
-					"name": "First Aid",
-					"reference": "B195",
-					"tags": [
-						"Everyman",
-						"Medical"
-					],
-					"vtt_notes": "[1d+1 First Aid Healing]",
-					"difficulty": "iq/e",
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Esoteric Medicine"
-						},
-						{
-							"type": "skill",
-							"name": "Physician"
-						},
-						{
-							"type": "skill",
-							"name": "Veterinary",
-							"modifier": -4
-						}
-					],
-					"tech_level": "10",
-					"points": 1,
-					"defaulted_from": {
-						"type": "iq",
-						"modifier": -4,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
-					},
-					"calc": {
-						"level": 12,
-						"rsl": "IQ+0"
-					}
-				},
-				{
-					"id": "sg7xioP0mnQbP3E-9",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "s7zUqAO5PEC5JKk_W"
-					},
-					"name": "Fast-Talk",
-					"reference": "B195",
-					"tags": [
-						"Criminal",
-						"Social",
-						"Spy",
-						"Street"
-					],
-					"difficulty": "iq/a",
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Acting",
-							"modifier": -5
-						}
-					],
-					"points": 1,
-					"defaulted_from": {
-						"type": "iq",
-						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
-					},
-					"calc": {
-						"level": 11,
-						"rsl": "IQ-1"
-					}
-				},
-				{
-					"id": "SqaoJyxa8G8GTotc5",
-					"name": "Domestic/Hobby Skills",
-					"children": [
-						{
-							"id": "soB5-Q4OQ6ldufIf_",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Skills.skl",
-								"id": "si6mX4OGmTtcWb1ud"
-							},
-							"name": "Weird Science",
-							"reference": "B228",
-							"tags": [
-								"Design",
-								"Invention"
-							],
-							"difficulty": "iq/vh",
-							"points": 1,
-							"calc": {
-								"level": 9,
-								"rsl": "IQ-3"
-							}
-						},
-						{
-							"id": "sQg6Fu2M74qYtnIpP",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Skills.skl",
-								"id": "syDYl_qmW2q_TFWjQ"
-							},
-							"name": "Typing",
-							"reference": "B228",
-							"tags": [
-								"Everyman",
-								"Scholarly",
-								"Technical"
-							],
-							"difficulty": "dx/e",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -4
-								}
-							],
-							"points": 1,
-							"defaulted_from": {
-								"type": "dx",
-								"modifier": -4,
-								"level": 9,
-								"adjusted_level": 9,
-								"points": -9
-							},
-							"calc": {
-								"level": 13,
-								"rsl": "DX+0"
-							}
-						},
-						{
-							"id": "soOALl5TwoxvlesVn",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Skills.skl",
-								"id": "smwvG7uvdgf3cJC56"
-							},
-							"name": "Sewing",
-							"reference": "B219",
-							"tags": [
-								"Craft",
-								"Everyman"
-							],
-							"difficulty": "dx/e",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -4
-								}
-							],
-							"tech_level": "10",
-							"points": 1,
-							"defaulted_from": {
-								"type": "dx",
-								"modifier": -4,
-								"level": 9,
-								"adjusted_level": 9,
-								"points": -9
-							},
-							"calc": {
-								"level": 13,
-								"rsl": "DX+0"
-							}
-						},
-						{
-							"id": "sFK_FSncoTakQHvrZ",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Skills.skl",
-								"id": "sZhLALSTNRZIxx-GS"
-							},
-							"name": "Musical Instrument",
-							"reference": "B211",
-							"tags": [
-								"Arts",
-								"Entertainment"
-							],
-							"replacements": {
-								"Specialty": "Piccolo"
-							},
-							"specialization": "@Specialty@",
-							"difficulty": "iq/h",
-							"points": 1,
-							"calc": {
-								"level": 10,
-								"rsl": "IQ-2"
-							}
-						},
-						{
-							"id": "sKiWDrUPeuNLJq1UE",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Skills.skl",
-								"id": "s7TXAnMYKalDo9ZEs"
-							},
-							"name": "Literature",
-							"reference": "B205",
-							"tags": [
-								"Humanities",
-								"Scholarly",
-								"Social Sciences"
-							],
-							"difficulty": "iq/h",
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -6
-								}
-							],
-							"points": 1,
-							"defaulted_from": {
-								"type": "iq",
-								"modifier": -6,
-								"level": 6,
-								"adjusted_level": 6,
-								"points": -6
-							},
-							"calc": {
-								"level": 10,
-								"rsl": "IQ-2"
-							}
-						},
-						{
-							"id": "suBBMKQsv5qYm4PbM",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Skills.skl",
-								"id": "sM7ZMtDfhhFCJkt1X"
-							},
-							"name": "Knot-Tying",
-							"reference": "B203,MA58",
-							"tags": [
-								"Everyman"
-							],
-							"difficulty": "dx/e",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Climbing",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Seamanship",
-									"modifier": -4
-								}
-							],
-							"points": 1,
-							"defaulted_from": {
-								"type": "dx",
-								"modifier": -4,
-								"level": 9,
-								"adjusted_level": 9,
-								"points": -9
-							},
-							"calc": {
-								"level": 13,
-								"rsl": "DX+0"
-							}
-						},
-						{
-							"id": "sbCVWKH78fDFfVJtK",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Skills.skl",
-								"id": "syfSQ9N8yETqQbhFK"
-							},
-							"name": "Games",
-							"reference": "B197,MA57",
-							"tags": [
-								"Knowledge"
-							],
-							"replacements": {
-								"Specialty": "Computer"
-							},
-							"specialization": "@Specialty@",
-							"difficulty": "iq/e",
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -4
-								}
-							],
-							"points": 1,
-							"defaulted_from": {
-								"type": "iq",
-								"modifier": -4,
-								"level": 8,
-								"adjusted_level": 8,
-								"points": -8
-							},
-							"calc": {
-								"level": 12,
-								"rsl": "IQ+0"
-							}
-						},
-						{
-							"id": "sZniTkJuHykRX29w_",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Skills.skl",
-								"id": "sksrUWDcZ36TbMPjP"
-							},
-							"name": "Dancing",
-							"reference": "B187",
-							"tags": [
-								"Arts",
-								"Entertainment"
-							],
-							"difficulty": "dx/a",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								}
-							],
-							"points": 1,
-							"defaulted_from": {
-								"type": "dx",
-								"modifier": -5,
-								"level": 8,
-								"adjusted_level": 8,
-								"points": -8
-							},
-							"calc": {
-								"level": 12,
-								"rsl": "DX-1"
-							}
-						},
-						{
-							"id": "sx7-BC9OPpXYlODEM",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Skills.skl",
-								"id": "sWZx5RKXXnBX3nFHt"
-							},
-							"name": "Current Affairs",
-							"reference": "B186",
-							"tags": [
-								"Everyman",
-								"Knowledge",
-								"Social"
-							],
-							"specialization": "Science \u0026 Technology",
-							"difficulty": "iq/e",
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Research",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Current Affairs",
-									"modifier": -4
-								}
-							],
-							"tech_level": "10",
-							"points": 1,
-							"defaulted_from": {
-								"type": "iq",
-								"modifier": -4,
-								"level": 8,
-								"adjusted_level": 8,
-								"points": -8
-							},
-							"calc": {
-								"level": 12,
-								"rsl": "IQ+0"
-							}
-						},
-						{
-							"id": "sJMarZlwqqoMUO4TV",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Skills.skl",
-								"id": "sD3EsxbzE53gj93Ow"
-							},
-							"name": "Carpentry",
-							"reference": "B183",
-							"tags": [
-								"Craft"
-							],
-							"difficulty": "iq/e",
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -4
-								}
-							],
-							"points": 1,
-							"defaulted_from": {
-								"type": "iq",
-								"modifier": -4,
-								"level": 8,
-								"adjusted_level": 8,
-								"points": -8
-							},
-							"calc": {
-								"level": 13,
-								"rsl": "IQ+1"
-							}
-						}
-					]
-				},
-				{
-					"id": "sFHDkKBw0U6QMIeb8",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "ssHhRG7LH-Ma3YDnH"
-					},
-					"name": "Computer Operation",
-					"reference": "B184",
-					"tags": [
-						"Everyman",
-						"Scholarly",
-						"Technical"
-					],
-					"difficulty": "iq/e",
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -4
-						}
-					],
-					"tech_level": "10",
-					"points": 1,
-					"defaulted_from": {
-						"type": "iq",
-						"modifier": -4,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
-					},
-					"calc": {
-						"level": 12,
-						"rsl": "IQ+0"
-					}
-				},
-				{
-					"id": "s8UmKFwI6112uu0Bw",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "sENfGTCKokQN0N4PF"
-					},
-					"name": "Climbing",
-					"reference": "B183",
-					"tags": [
-						"Athletic",
-						"Criminal",
-						"Exploration",
-						"Outdoor",
-						"Street"
-					],
-					"difficulty": "dx/a",
-					"encumbrance_penalty_multiplier": 1,
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -5
-						}
-					],
-					"points": 1,
-					"defaulted_from": {
-						"type": "dx",
-						"modifier": -5,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
-					},
-					"calc": {
-						"level": 12,
-						"rsl": "DX-1"
-					}
-				},
-				{
-					"id": "s6WlfVcKfyeLGpEhD",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "sBJgeWUs81Ifhob4Z"
-					},
-					"name": "Beam Weapons",
-					"reference": "B179",
-					"tags": [
-						"Combat",
-						"Ranged Combat",
-						"Weapon"
-					],
-					"specialization": "Pistol",
-					"difficulty": "dx/e",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Beam Weapons",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Pistol",
-							"modifier": -4
-						}
-					],
-					"tech_level": "10",
-					"points": 1,
-					"defaulted_from": {
-						"type": "dx",
-						"modifier": -4,
-						"level": 9,
-						"adjusted_level": 9,
-						"points": -9
-					},
-					"calc": {
-						"level": 13,
-						"rsl": "DX+0"
-					}
-				}
-			]
-		},
-		{
-			"id": "sMcNcHEvfiQmedQ2T",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sx30jF75AT-salBcj"
-			},
-			"name": "Sleight of Hand",
-			"reference": "B221",
-			"tags": [
-				"Arts",
-				"Criminal",
-				"Entertainment",
-				"Street"
-			],
-			"difficulty": "dx/h",
-			"defaults": [
-				{
-					"type": "skill",
-					"name": "Filch",
-					"modifier": -5
-				}
-			],
-			"points": 2,
-			"calc": {
-				"level": 12,
-				"rsl": "DX-1"
-			}
-		},
-		{
-			"id": "saG9wkCCtCmrRoDfW",
-			"name": "Scrounging",
-			"reference": "B218",
-			"tags": [
-				"Criminal",
-				"Street"
-			],
-			"difficulty": "per/e",
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -4
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -4,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
-			},
-			"calc": {
-				"level": 10,
-				"rsl": "Per+0"
-			}
-		},
-		{
-			"id": "sw0r9t55qKVOm3s4p",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sPHmyudtzbGOj_6y1"
-			},
-			"name": "Mechanic",
-			"reference": "B207",
+			"name": "Armoury",
+			"reference": "B178",
 			"tags": [
 				"Maintenance",
+				"Military",
 				"Repair"
 			],
-			"specialization": "Reactionless Thrusters",
+			"specialization": "Heavy Weapons",
 			"difficulty": "iq/a",
 			"defaults": [
 				{
@@ -3363,7 +2226,365 @@
 				{
 					"type": "skill",
 					"name": "Engineer",
-					"specialization": "Reactionless Thrusters",
+					"specialization": "Heavy Weapons",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "sVc-e7oC3EvSRr_vY",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sF2gsndOW8j3EX1CG"
+			},
+			"name": "Armoury",
+			"reference": "B178",
+			"tags": [
+				"Maintenance",
+				"Military",
+				"Repair"
+			],
+			"specialization": "Vehicular Armor",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Vehicular Armor",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "sEPGi29BEee92JxZ5",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "siYt1EBnBE2eyvV2M"
+			},
+			"name": "Beam Weapons",
+			"reference": "B179",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Rifle",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Beam Weapons",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Rifle",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "DX+0"
+			}
+		},
+		{
+			"id": "s6FRSqsvlD-a_LYGa",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "scAysIf1hcMnIL0Ca"
+			},
+			"name": "Electrician",
+			"reference": "B189",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Electrical",
+					"modifier": -3
+				}
+			],
+			"tech_level": "10",
+			"points": 3,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "IQ+1"
+			}
+		},
+		{
+			"id": "seW38zO6gg2uzxRxD",
+			"name": "Electronics Repair",
+			"reference": "B190",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"replacements": {
+				"Electronics type": "Cybernetics"
+			},
+			"specialization": "@Electronics type@",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Electronics Operation",
+					"specialization": "@Electronics type@",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Electronics",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Electronics Repair",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 8,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 15,
+				"rsl": "IQ+3"
+			}
+		},
+		{
+			"id": "sG3_vbPNxdo0DnSiX",
+			"name": "Machinist",
+			"reference": "B206",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 8,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 15,
+				"rsl": "IQ+3"
+			}
+		},
+		{
+			"id": "sJp-UB6dvp66ENQg8",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sn43FFqXYbGHF-4hG"
+			},
+			"name": "Mechanic",
+			"reference": "B207",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"specialization": "Antimatter Reactor",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Antimatter Reactor",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Machinist",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "scDG6MlrVZE_hi84J",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "stSBQGxPluGCXOsdy"
+			},
+			"name": "Mechanic",
+			"reference": "B207",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"specialization": "Fusion Reactor",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Fusion Reactor",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Machinist",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "sZUhH5rfa8CqwzcE-",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sx2TjmCq2xgX9qSVv"
+			},
+			"name": "Mechanic",
+			"reference": "B207",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"specialization": "High-Performance Spacecraft",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "High-Performance Spacecraft",
 					"modifier": -4
 				},
 				{
@@ -3448,11 +2669,11 @@
 			}
 		},
 		{
-			"id": "sZUhH5rfa8CqwzcE-",
+			"id": "sw0r9t55qKVOm3s4p",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sx2TjmCq2xgX9qSVv"
+				"id": "sPHmyudtzbGOj_6y1"
 			},
 			"name": "Mechanic",
 			"reference": "B207",
@@ -3460,7 +2681,7 @@
 				"Maintenance",
 				"Repair"
 			],
-			"specialization": "High-Performance Spacecraft",
+			"specialization": "Reactionless Thrusters",
 			"difficulty": "iq/a",
 			"defaults": [
 				{
@@ -3470,7 +2691,7 @@
 				{
 					"type": "skill",
 					"name": "Engineer",
-					"specialization": "High-Performance Spacecraft",
+					"specialization": "Reactionless Thrusters",
 					"modifier": -4
 				},
 				{
@@ -3500,320 +2721,1141 @@
 			}
 		},
 		{
-			"id": "scDG6MlrVZE_hi84J",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "stSBQGxPluGCXOsdy"
-			},
-			"name": "Mechanic",
-			"reference": "B207",
+			"id": "saG9wkCCtCmrRoDfW",
+			"name": "Scrounging",
+			"reference": "B218",
 			"tags": [
-				"Maintenance",
-				"Repair"
+				"Criminal",
+				"Street"
 			],
-			"specialization": "Fusion Reactor",
-			"difficulty": "iq/a",
+			"difficulty": "per/e",
 			"defaults": [
 				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Fusion Reactor",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Machinist",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Mechanic",
+					"type": "per",
 					"modifier": -4
 				}
 			],
-			"tech_level": "10",
 			"points": 1,
 			"defaulted_from": {
-				"type": "skill",
-				"name": "Machinist",
-				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"calc": {
-				"level": 12,
-				"rsl": "IQ+0"
-			}
-		},
-		{
-			"id": "sJp-UB6dvp66ENQg8",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sn43FFqXYbGHF-4hG"
-			},
-			"name": "Mechanic",
-			"reference": "B207",
-			"tags": [
-				"Maintenance",
-				"Repair"
-			],
-			"specialization": "Antimatter Reactor",
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Antimatter Reactor",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Machinist",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Mechanic",
-					"modifier": -4
-				}
-			],
-			"tech_level": "10",
-			"points": 1,
-			"defaulted_from": {
-				"type": "skill",
-				"name": "Machinist",
-				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"calc": {
-				"level": 12,
-				"rsl": "IQ+0"
-			}
-		},
-		{
-			"id": "sG3_vbPNxdo0DnSiX",
-			"name": "Machinist",
-			"reference": "B206",
-			"tags": [
-				"Maintenance",
-				"Repair"
-			],
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Mechanic",
-					"modifier": -5
-				}
-			],
-			"tech_level": "10",
-			"points": 8,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 15,
-				"rsl": "IQ+3"
-			}
-		},
-		{
-			"id": "seW38zO6gg2uzxRxD",
-			"name": "Electronics Repair",
-			"reference": "B190",
-			"tags": [
-				"Maintenance",
-				"Repair"
-			],
-			"replacements": {
-				"Electronics type": "Cybernetics"
-			},
-			"specialization": "@Electronics type@",
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Electronics Operation",
-					"specialization": "@Electronics type@",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Electronics",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Electronics Repair",
-					"modifier": -4
-				}
-			],
-			"tech_level": "10",
-			"points": 8,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 15,
-				"rsl": "IQ+3"
-			}
-		},
-		{
-			"id": "s6FRSqsvlD-a_LYGa",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "scAysIf1hcMnIL0Ca"
-			},
-			"name": "Electrician",
-			"reference": "B189",
-			"tags": [
-				"Maintenance",
-				"Repair"
-			],
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Electrical",
-					"modifier": -3
-				}
-			],
-			"tech_level": "10",
-			"points": 3,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 13,
-				"rsl": "IQ+1"
-			}
-		},
-		{
-			"id": "sEPGi29BEee92JxZ5",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "siYt1EBnBE2eyvV2M"
-			},
-			"name": "Beam Weapons",
-			"reference": "B179",
-			"tags": [
-				"Combat",
-				"Ranged Combat",
-				"Weapon"
-			],
-			"specialization": "Rifle",
-			"difficulty": "dx/e",
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Beam Weapons",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Rifle",
-					"modifier": -4
-				}
-			],
-			"tech_level": "10",
-			"points": 1,
-			"defaulted_from": {
-				"type": "dx",
+				"type": "per",
 				"modifier": -4,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
 			},
 			"calc": {
-				"level": 13,
-				"rsl": "DX+0"
+				"level": 10,
+				"rsl": "Per+0"
 			}
 		},
 		{
-			"id": "soV0MSFJSlR1uCyWE",
+			"id": "sMcNcHEvfiQmedQ2T",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "siSKgRr1MizPF9IrU"
+				"id": "sx30jF75AT-salBcj"
 			},
-			"name": "Armoury",
-			"reference": "B178",
+			"name": "Sleight of Hand",
+			"reference": "B221",
 			"tags": [
-				"Maintenance",
-				"Military",
-				"Repair"
+				"Arts",
+				"Criminal",
+				"Entertainment",
+				"Street"
 			],
-			"specialization": "Heavy Weapons",
-			"difficulty": "iq/a",
+			"difficulty": "dx/h",
 			"defaults": [
 				{
-					"type": "iq",
+					"type": "skill",
+					"name": "Filch",
+					"modifier": -5
+				}
+			],
+			"points": 2,
+			"calc": {
+				"level": 12,
+				"rsl": "DX-1"
+			}
+		},
+		{
+			"id": "SqsoEobiqcQSpdMiI",
+			"name": "Space Adventurer",
+			"children": [
+				{
+					"id": "s6WlfVcKfyeLGpEhD",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "sBJgeWUs81Ifhob4Z"
+					},
+					"name": "Beam Weapons",
+					"reference": "B179",
+					"tags": [
+						"Combat",
+						"Ranged Combat",
+						"Weapon"
+					],
+					"specialization": "Pistol",
+					"difficulty": "dx/e",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Beam Weapons",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -4
+						}
+					],
+					"tech_level": "10",
+					"points": 1,
+					"defaulted_from": {
+						"type": "dx",
+						"modifier": -4,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"calc": {
+						"level": 13,
+						"rsl": "DX+0"
+					}
+				},
+				{
+					"id": "s8UmKFwI6112uu0Bw",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "sENfGTCKokQN0N4PF"
+					},
+					"name": "Climbing",
+					"reference": "B183",
+					"tags": [
+						"Athletic",
+						"Criminal",
+						"Exploration",
+						"Outdoor",
+						"Street"
+					],
+					"difficulty": "dx/a",
+					"encumbrance_penalty_multiplier": 1,
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "dx",
+						"modifier": -5,
+						"level": 8,
+						"adjusted_level": 8,
+						"points": -8
+					},
+					"calc": {
+						"level": 12,
+						"rsl": "DX-1"
+					}
+				},
+				{
+					"id": "sFHDkKBw0U6QMIeb8",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "ssHhRG7LH-Ma3YDnH"
+					},
+					"name": "Computer Operation",
+					"reference": "B184",
+					"tags": [
+						"Everyman",
+						"Scholarly",
+						"Technical"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						}
+					],
+					"tech_level": "10",
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -4,
+						"level": 8,
+						"adjusted_level": 8,
+						"points": -8
+					},
+					"calc": {
+						"level": 12,
+						"rsl": "IQ+0"
+					}
+				},
+				{
+					"id": "SqaoJyxa8G8GTotc5",
+					"name": "Domestic/Hobby Skills",
+					"children": [
+						{
+							"id": "sJMarZlwqqoMUO4TV",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Skills.skl",
+								"id": "sD3EsxbzE53gj93Ow"
+							},
+							"name": "Carpentry",
+							"reference": "B183",
+							"tags": [
+								"Craft"
+							],
+							"difficulty": "iq/e",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -4
+								}
+							],
+							"points": 1,
+							"defaulted_from": {
+								"type": "iq",
+								"modifier": -4,
+								"level": 8,
+								"adjusted_level": 8,
+								"points": -8
+							},
+							"calc": {
+								"level": 13,
+								"rsl": "IQ+1"
+							}
+						},
+						{
+							"id": "sx7-BC9OPpXYlODEM",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Skills.skl",
+								"id": "sWZx5RKXXnBX3nFHt"
+							},
+							"name": "Current Affairs",
+							"reference": "B186",
+							"tags": [
+								"Everyman",
+								"Knowledge",
+								"Social"
+							],
+							"specialization": "Science \u0026 Technology",
+							"difficulty": "iq/e",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Research",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Current Affairs",
+									"modifier": -4
+								}
+							],
+							"tech_level": "10",
+							"points": 1,
+							"defaulted_from": {
+								"type": "iq",
+								"modifier": -4,
+								"level": 8,
+								"adjusted_level": 8,
+								"points": -8
+							},
+							"calc": {
+								"level": 12,
+								"rsl": "IQ+0"
+							}
+						},
+						{
+							"id": "sZniTkJuHykRX29w_",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Skills.skl",
+								"id": "sksrUWDcZ36TbMPjP"
+							},
+							"name": "Dancing",
+							"reference": "B187",
+							"tags": [
+								"Arts",
+								"Entertainment"
+							],
+							"difficulty": "dx/a",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								}
+							],
+							"points": 1,
+							"defaulted_from": {
+								"type": "dx",
+								"modifier": -5,
+								"level": 8,
+								"adjusted_level": 8,
+								"points": -8
+							},
+							"calc": {
+								"level": 12,
+								"rsl": "DX-1"
+							}
+						},
+						{
+							"id": "sbCVWKH78fDFfVJtK",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Skills.skl",
+								"id": "syfSQ9N8yETqQbhFK"
+							},
+							"name": "Games",
+							"reference": "B197,MA57",
+							"tags": [
+								"Knowledge"
+							],
+							"replacements": {
+								"Specialty": "Computer"
+							},
+							"specialization": "@Specialty@",
+							"difficulty": "iq/e",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -4
+								}
+							],
+							"points": 1,
+							"defaulted_from": {
+								"type": "iq",
+								"modifier": -4,
+								"level": 8,
+								"adjusted_level": 8,
+								"points": -8
+							},
+							"calc": {
+								"level": 12,
+								"rsl": "IQ+0"
+							}
+						},
+						{
+							"id": "suBBMKQsv5qYm4PbM",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Skills.skl",
+								"id": "sM7ZMtDfhhFCJkt1X"
+							},
+							"name": "Knot-Tying",
+							"reference": "B203,MA58",
+							"tags": [
+								"Everyman"
+							],
+							"difficulty": "dx/e",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Climbing",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Seamanship",
+									"modifier": -4
+								}
+							],
+							"points": 1,
+							"defaulted_from": {
+								"type": "dx",
+								"modifier": -4,
+								"level": 9,
+								"adjusted_level": 9,
+								"points": -9
+							},
+							"calc": {
+								"level": 13,
+								"rsl": "DX+0"
+							}
+						},
+						{
+							"id": "sKiWDrUPeuNLJq1UE",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Skills.skl",
+								"id": "s7TXAnMYKalDo9ZEs"
+							},
+							"name": "Literature",
+							"reference": "B205",
+							"tags": [
+								"Humanities",
+								"Scholarly",
+								"Social Sciences"
+							],
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								}
+							],
+							"points": 1,
+							"defaulted_from": {
+								"type": "iq",
+								"modifier": -6,
+								"level": 6,
+								"adjusted_level": 6,
+								"points": -6
+							},
+							"calc": {
+								"level": 10,
+								"rsl": "IQ-2"
+							}
+						},
+						{
+							"id": "sFK_FSncoTakQHvrZ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Skills.skl",
+								"id": "sZhLALSTNRZIxx-GS"
+							},
+							"name": "Musical Instrument",
+							"reference": "B211",
+							"tags": [
+								"Arts",
+								"Entertainment"
+							],
+							"replacements": {
+								"Specialty": "Piccolo"
+							},
+							"specialization": "@Specialty@",
+							"difficulty": "iq/h",
+							"points": 1,
+							"calc": {
+								"level": 10,
+								"rsl": "IQ-2"
+							}
+						},
+						{
+							"id": "soOALl5TwoxvlesVn",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Skills.skl",
+								"id": "smwvG7uvdgf3cJC56"
+							},
+							"name": "Sewing",
+							"reference": "B219",
+							"tags": [
+								"Craft",
+								"Everyman"
+							],
+							"difficulty": "dx/e",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"tech_level": "10",
+							"points": 1,
+							"defaulted_from": {
+								"type": "dx",
+								"modifier": -4,
+								"level": 9,
+								"adjusted_level": 9,
+								"points": -9
+							},
+							"calc": {
+								"level": 13,
+								"rsl": "DX+0"
+							}
+						},
+						{
+							"id": "sQg6Fu2M74qYtnIpP",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Skills.skl",
+								"id": "syDYl_qmW2q_TFWjQ"
+							},
+							"name": "Typing",
+							"reference": "B228",
+							"tags": [
+								"Everyman",
+								"Scholarly",
+								"Technical"
+							],
+							"difficulty": "dx/e",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"points": 1,
+							"defaulted_from": {
+								"type": "dx",
+								"modifier": -4,
+								"level": 9,
+								"adjusted_level": 9,
+								"points": -9
+							},
+							"calc": {
+								"level": 13,
+								"rsl": "DX+0"
+							}
+						},
+						{
+							"id": "soB5-Q4OQ6ldufIf_",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Skills.skl",
+								"id": "si6mX4OGmTtcWb1ud"
+							},
+							"name": "Weird Science",
+							"reference": "B228",
+							"tags": [
+								"Design",
+								"Invention"
+							],
+							"difficulty": "iq/vh",
+							"points": 1,
+							"calc": {
+								"level": 9,
+								"rsl": "IQ-3"
+							}
+						}
+					]
+				},
+				{
+					"id": "sg7xioP0mnQbP3E-9",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "s7zUqAO5PEC5JKk_W"
+					},
+					"name": "Fast-Talk",
+					"reference": "B195",
+					"tags": [
+						"Criminal",
+						"Social",
+						"Spy",
+						"Street"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Acting",
+							"modifier": -5
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -5,
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
+					},
+					"calc": {
+						"level": 11,
+						"rsl": "IQ-1"
+					}
+				},
+				{
+					"id": "sbVWJI4IVhXFx4FHC",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "s9mV--3lpIfXO7N6Z"
+					},
+					"name": "First Aid",
+					"reference": "B195",
+					"tags": [
+						"Everyman",
+						"Medical"
+					],
+					"vtt_notes": "[1d+1 First Aid Healing]",
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Esoteric Medicine"
+						},
+						{
+							"type": "skill",
+							"name": "Physician"
+						},
+						{
+							"type": "skill",
+							"name": "Veterinary",
+							"modifier": -4
+						}
+					],
+					"tech_level": "10",
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -4,
+						"level": 8,
+						"adjusted_level": 8,
+						"points": -8
+					},
+					"calc": {
+						"level": 12,
+						"rsl": "IQ+0"
+					}
+				},
+				{
+					"id": "sYiwm4XugE_avq2qT",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "sxSlxLiSgB95HINP_"
+					},
+					"name": "Forced Entry",
+					"reference": "B196",
+					"tags": [
+						"Criminal",
+						"Police",
+						"Spy",
+						"Street"
+					],
+					"difficulty": "dx/e",
+					"points": 1,
+					"calc": {
+						"level": 13,
+						"rsl": "DX+0"
+					}
+				},
+				{
+					"id": "s-5hoF3y9v9LOjVCX",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "sGz21GskAlJXL1hYP"
+					},
+					"name": "Gesture",
+					"reference": "B198",
+					"tags": [
+						"Social"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -4,
+						"level": 8,
+						"adjusted_level": 8,
+						"points": -8
+					},
+					"calc": {
+						"level": 12,
+						"rsl": "IQ+0"
+					}
+				},
+				{
+					"id": "sOTB0vDW0tqkRe6kk",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "s9b5e-6c-ljOeUtt5"
+					},
+					"name": "Hiking",
+					"reference": "B200",
+					"tags": [
+						"Athletic",
+						"Exploration",
+						"Outdoor"
+					],
+					"difficulty": "ht/a",
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -5
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "ht",
+						"modifier": -5,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"calc": {
+						"level": 10,
+						"rsl": "HT-1"
+					}
+				},
+				{
+					"id": "sOLoTZuPOH9Vbt-L6",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "s3hoLmN-a9_mOr2Kh"
+					},
+					"name": "Holdout",
+					"reference": "B200",
+					"tags": [
+						"Criminal",
+						"Spy",
+						"Street"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Sleight of Hand",
+							"modifier": -3
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "skill",
+						"name": "Sleight of Hand",
+						"modifier": -3,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"calc": {
+						"level": 11,
+						"rsl": "IQ-1"
+					}
+				},
+				{
+					"id": "sl7hTMszm3q0k8QN7",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "sWVqswxT3hi7db0kD"
+					},
+					"name": "Judo",
+					"reference": "B203,MA57",
+					"local_notes": "Allows parrying two different attacks per turn, one with each hand.",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/h",
+					"encumbrance_penalty_multiplier": 1,
+					"weapons": [
+						{
+							"id": "wVQa3p1jV5apYpEzA",
+							"sv": 1,
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Throw",
+							"reach": "C,1",
+							"parry": "0F",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Judo"
+								}
+							],
+							"calc": {
+								"level": 11,
+								"damage": "1d-1 cr",
+								"parry": "8F"
+							}
+						}
+					],
+					"points": 1,
+					"calc": {
+						"level": 11,
+						"rsl": "DX-2"
+					}
+				},
+				{
+					"id": "sxeYOfqPKX-GWs5vN",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "sU4bjpp9TsvnRavPN"
+					},
+					"name": "Karate",
+					"reference": "B203,MA57",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/h",
+					"encumbrance_penalty_multiplier": 1,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						}
+					],
+					"points": 1,
+					"calc": {
+						"level": 11,
+						"rsl": "DX-2"
+					}
+				},
+				{
+					"id": "sORBp7xJHTGbxU5vq",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "slOONrK6jDHvcRoGx"
+					},
+					"name": "Knife",
+					"reference": "B208",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/e",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "dx",
+						"modifier": -4,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"calc": {
+						"level": 13,
+						"rsl": "DX+0"
+					}
+				},
+				{
+					"id": "skQpSdRe4l2j_e8wU",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "sQ2Nj_TqMYKV7skUF"
+					},
+					"name": "Scrounging",
+					"reference": "B218",
+					"tags": [
+						"Criminal",
+						"Street"
+					],
+					"difficulty": "per/e",
+					"defaults": [
+						{
+							"type": "per",
+							"modifier": -4
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "per",
+						"modifier": -4,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"calc": {
+						"level": 10,
+						"rsl": "Per+0"
+					}
+				},
+				{
+					"id": "sHrBNnrb9UE_6_XG2",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "s9IHT34mK8yfSB7d_"
+					},
+					"name": "Spacer",
+					"reference": "B185",
+					"tags": [
+						"Vehicle"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						}
+					],
+					"tech_level": "10",
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -4,
+						"level": 8,
+						"adjusted_level": 8,
+						"points": -8
+					},
+					"calc": {
+						"level": 12,
+						"rsl": "IQ+0"
+					}
+				},
+				{
+					"id": "swS6a_D_10AWo5he5",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "svEm7OyeCu_9wJ8Kk"
+					},
+					"name": "Stealth",
+					"reference": "B222",
+					"tags": [
+						"Criminal",
+						"Police",
+						"Spy",
+						"Street"
+					],
+					"difficulty": "dx/a",
+					"encumbrance_penalty_multiplier": 1,
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "dx",
+							"modifier": -5
+						}
+					],
+					"points": 3,
+					"defaulted_from": {
+						"type": "dx",
+						"modifier": -5,
+						"level": 8,
+						"adjusted_level": 8,
+						"points": -8
+					},
+					"calc": {
+						"level": 13,
+						"rsl": "DX+0"
+					}
+				},
+				{
+					"id": "sqIOGrGflW43s-Vg6",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "smTUpMWJGqPeT1KER"
+					},
+					"name": "Streetwise",
+					"reference": "B223",
+					"tags": [
+						"Criminal",
+						"Police",
+						"Social",
+						"Street"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -5,
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
+					},
+					"calc": {
+						"level": 11,
+						"rsl": "IQ-1"
+					}
+				},
+				{
+					"id": "stUqNCFYBCbX9aDHh",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "s64oJ-8i-8xecRu4a"
+					},
+					"name": "Throwing",
+					"reference": "B226",
+					"tags": [
+						"Athletic",
+						"Combat",
+						"Ranged Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/a",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Dropping",
+							"modifier": -4
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "dx",
+						"modifier": -3,
+						"level": 10,
+						"adjusted_level": 10,
+						"points": -10
+					},
+					"calc": {
+						"level": 12,
+						"rsl": "DX-1"
+					}
+				}
+			]
+		},
+		{
+			"id": "sN-e0iaAN5NStMQMb",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sgrDrFiOdLC9njqnC"
+			},
+			"name": "Surgery",
+			"reference": "B223",
+			"tags": [
+				"Medical"
+			],
+			"specialization": "Cybernetics",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "First Aid",
+					"modifier": -12
+				},
+				{
+					"type": "skill",
+					"name": "Physician",
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Heavy Weapons",
-					"modifier": -4
+					"name": "Physiology",
+					"modifier": -8
+				},
+				{
+					"type": "skill",
+					"name": "Veterinary",
+					"modifier": -5
 				}
 			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "first aid"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "physician"
+						}
+					}
+				]
+			},
 			"tech_level": "10",
 			"points": 1,
 			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"type": "skill",
+				"name": "First Aid",
+				"modifier": -12
 			},
 			"calc": {
-				"level": 12,
-				"rsl": "IQ+0"
+				"level": 10,
+				"rsl": "IQ-2"
 			}
 		}
 	],
@@ -4387,7 +4429,7 @@
 		}
 	],
 	"created_date": "2026-03-25T10:24:58-04:00",
-	"modified_date": "2026-05-03T21:11:06-04:00",
+	"modified_date": "2026-05-07T12:08:01-04:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
