@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "As49xSi5V5lxtcqzE",
-	"total_points": 212,
+	"total_points": 217,
 	"points_record": [
+		{
+			"when": "2026-05-17T20:14:24-04:00",
+			"points": 5,
+			"reason": "Session 3"
+		},
 		{
 			"when": "2026-05-03T20:19:50-04:00",
 			"points": 5,

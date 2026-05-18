@@ -1,0 +1,3204 @@
+{
+	"version": 5,
+	"id": "ALXu8DoX0q_A6Hh2s",
+	"total_points": 150,
+	"points_record": [
+		{
+			"when": "2026-04-17T22:16:42-04:00",
+			"points": 150,
+			"reason": "Initial points"
+		}
+	],
+	"profile": {
+		"name": "Gang Member",
+		"age": "17",
+		"birthday": "August 3",
+		"eyes": "Hazel",
+		"hair": "Blond",
+		"skin": "Dark Brown",
+		"handedness": "Right",
+		"gender": "Either",
+		"height": "6'",
+		"weight": "142 lb",
+		"player_name": "Jesse Finnegan",
+		"tech_level": "10",
+		"portrait": "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"
+	},
+	"settings": {
+		"page": {
+			"paper_size": "letter",
+			"orientation": "portrait",
+			"top_margin": "0.25 in",
+			"left_margin": "0.25 in",
+			"bottom_margin": "0.25 in",
+			"right_margin": "0.25 in"
+		},
+		"block_layout": [
+			"reactions conditional_modifiers",
+			"melee",
+			"ranged",
+			"traits skills",
+			"spells",
+			"equipment",
+			"other_equipment",
+			"notes"
+		],
+		"attributes": [
+			{
+				"id": "st",
+				"type": "integer",
+				"name": "ST",
+				"full_name": "Strength",
+				"base": "10",
+				"cost_per_point": 10,
+				"cost_adj_percent_per_sm": 10
+			},
+			{
+				"id": "dx",
+				"type": "integer",
+				"name": "DX",
+				"full_name": "Dexterity",
+				"base": "10",
+				"cost_per_point": 20
+			},
+			{
+				"id": "iq",
+				"type": "integer",
+				"name": "IQ",
+				"full_name": "Intelligence",
+				"base": "10",
+				"cost_per_point": 10
+			},
+			{
+				"id": "ht",
+				"type": "integer",
+				"name": "HT",
+				"full_name": "Health",
+				"base": "10",
+				"cost_per_point": 10
+			},
+			{
+				"id": "will",
+				"type": "integer",
+				"name": "Will",
+				"base": "10",
+				"cost_per_point": 5
+			},
+			{
+				"id": "fright_check",
+				"type": "integer",
+				"name": "Fright Check",
+				"base": "$will",
+				"cost_per_point": 2
+			},
+			{
+				"id": "per",
+				"type": "integer",
+				"name": "Per",
+				"full_name": "Perception",
+				"base": "10",
+				"cost_per_point": 5
+			},
+			{
+				"id": "vision",
+				"type": "integer",
+				"name": "Vision",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "hearing",
+				"type": "integer",
+				"name": "Hearing",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "taste_smell",
+				"type": "integer",
+				"name": "Taste \u0026 Smell",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "touch",
+				"type": "integer",
+				"name": "Touch",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "basic_speed",
+				"type": "decimal",
+				"name": "Basic Speed",
+				"base": "($dx + $ht) / 4",
+				"cost_per_point": 20
+			},
+			{
+				"id": "basic_move",
+				"type": "integer",
+				"name": "Basic Move",
+				"base": "Math.floor($basic_speed)",
+				"cost_per_point": 5
+			},
+			{
+				"id": "fp",
+				"type": "pool",
+				"name": "FP",
+				"full_name": "Fatigue Points",
+				"base": "$ht",
+				"cost_per_point": 3,
+				"thresholds": [
+					{
+						"state": "Unconscious",
+						"value": "-$fp",
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Collapse",
+						"value": "0",
+						"explanation": "- Roll vs. Will to do anything besides talk or rest; failure causes unconsciousness\n- Each FP you lose below 0 also causes 1 HP of injury\n- Move, Dodge and ST are halved (B426)",
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Tired",
+						"value": "Math.ceil($fp / 3) - 1",
+						"explanation": "Move, Dodge and ST are halved (B426)",
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Tiring",
+						"value": "$fp - 1"
+					},
+					{
+						"state": "Rested",
+						"value": "$fp"
+					}
+				]
+			},
+			{
+				"id": "hp",
+				"type": "pool",
+				"name": "HP",
+				"full_name": "Hit Points",
+				"base": "$st",
+				"cost_per_point": 2,
+				"cost_adj_percent_per_sm": 10,
+				"thresholds": [
+					{
+						"state": "Dead",
+						"value": "Math.round(-$hp * 5)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #4",
+						"value": "Math.round(-$hp * 4)",
+						"explanation": "- Roll vs. HT to avoid death\n- Roll vs. HT-4 every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #3",
+						"value": "Math.round(-$hp * 3)",
+						"explanation": "- Roll vs. HT to avoid death\n- Roll vs. HT-3 every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #2",
+						"value": "Math.round(-$hp * 2)",
+						"explanation": "- Roll vs. HT to avoid death\n- Roll vs. HT-2 every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #1",
+						"value": "-$hp",
+						"explanation": "- Roll vs. HT to avoid death\n- Roll vs. HT-1 every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Collapse",
+						"value": "0",
+						"explanation": "- Roll vs. HT every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Reeling",
+						"value": "Math.ceil($hp / 3) - 1",
+						"explanation": "Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Wounded",
+						"value": "$hp - 1"
+					},
+					{
+						"state": "Healthy",
+						"value": "$hp"
+					}
+				]
+			}
+		],
+		"body_type": {
+			"name": "Humanoid",
+			"roll": "3d",
+			"locations": [
+				{
+					"id": "eye",
+					"choice_name": "Eyes",
+					"table_name": "Eyes",
+					"hit_penalty": -9,
+					"description": "An attack that misses by 1 hits the torso instead. Only\nimpaling (imp), piercing (pi-, pi, pi+, pi++), and\ntight-beam burning (burn) attacks can target the eye – and\nonly from the front or sides. Injury over HP÷10 blinds the\neye. Otherwise, treat as skull, but without the extra DR!",
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 7,
+							"non-crushing": -3
+						}
+					}
+				},
+				{
+					"id": "skull",
+					"choice_name": "Skull",
+					"table_name": "Skull",
+					"slots": 2,
+					"hit_penalty": -7,
+					"dr_bonus": 2,
+					"description": "An attack that misses by 1 hits the torso instead. Wounding\nmodifier is x4. Knockdown rolls are at -10. Critical hits\nuse the Critical Head Blow Table (B556). Exception: These\nspecial effects do not apply to toxic (tox) damage.",
+					"calc": {
+						"roll_range": "3-4",
+						"dr": {
+							"all": 10,
+							"non-crushing": -3
+						}
+					}
+				},
+				{
+					"id": "face",
+					"choice_name": "Face",
+					"table_name": "Face",
+					"slots": 1,
+					"hit_penalty": -5,
+					"description": "An attack that misses by 1 hits the torso instead. Jaw,\ncheeks, nose, ears, etc. If the target has an open-faced\nhelmet, ignore its DR. Knockdown rolls are at -5. Critical\nhits use the Critical Head Blow Table (B556). Corrosion\n(cor) damage gets a x1½ wounding modifier, and if it\ninflicts a major wound, it also blinds one eye (both eyes on\ndamage over full HP). Random attacks from behind hit the\nskull instead.",
+					"calc": {
+						"roll_range": "5",
+						"dr": {
+							"all": 9,
+							"non-crushing": -3
+						}
+					}
+				},
+				{
+					"id": "leg",
+					"choice_name": "Leg",
+					"table_name": "Right Leg",
+					"slots": 2,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "6-7",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "arm",
+					"choice_name": "Arm",
+					"table_name": "Right Arm",
+					"slots": 1,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost. If holding a shield,\ndouble the penalty to hit: -4 for shield arm instead of -2.",
+					"calc": {
+						"roll_range": "8",
+						"dr": {
+							"all": 8
+						}
+					}
+				},
+				{
+					"id": "torso",
+					"choice_name": "Torso",
+					"table_name": "Torso",
+					"slots": 2,
+					"calc": {
+						"roll_range": "9-10",
+						"dr": {
+							"all": 8
+						}
+					}
+				},
+				{
+					"id": "groin",
+					"choice_name": "Groin",
+					"table_name": "Groin",
+					"slots": 1,
+					"hit_penalty": -3,
+					"description": "An attack that misses by 1 hits the torso instead. Human\nmales and the males of similar species suffer double shock\nfrom crushing (cr) damage, and get -5 to knockdown rolls.\nOtherwise, treat as a torso hit.",
+					"calc": {
+						"roll_range": "11",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "arm",
+					"choice_name": "Arm",
+					"table_name": "Left Arm",
+					"slots": 1,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost. If holding a shield,\ndouble the penalty to hit: -4 for shield arm instead of -2.",
+					"calc": {
+						"roll_range": "12",
+						"dr": {
+							"all": 8
+						}
+					}
+				},
+				{
+					"id": "leg",
+					"choice_name": "Leg",
+					"table_name": "Left Leg",
+					"slots": 2,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "13-14",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "hand",
+					"choice_name": "Hand",
+					"table_name": "Hand",
+					"slots": 1,
+					"hit_penalty": -4,
+					"description": "If holding a shield, double the penalty to hit: -8 for\nshield hand instead of -4. Reduce the wounding multiplier of\nlarge piercing (pi+), huge piercing (pi++), and impaling\n(imp) damage to x1. Any major wound (loss of over ⅓ HP\nfrom one blow) cripples the extremity. Damage beyond that\nthreshold is lost.",
+					"calc": {
+						"roll_range": "15",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "foot",
+					"choice_name": "Foot",
+					"table_name": "Foot",
+					"slots": 1,
+					"hit_penalty": -4,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ⅓ HP from one blow) cripples the\nextremity. Damage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "16",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "neck",
+					"choice_name": "Neck",
+					"table_name": "Neck",
+					"slots": 2,
+					"hit_penalty": -5,
+					"description": "An attack that misses by 1 hits the torso instead. Neck and\nthroat. Increase the wounding multiplier of crushing (cr)\nand corrosion (cor) attacks to x1½, and that of cutting\n(cut) damage to x2. At the GM’s option, anyone killed by a\ncutting (cut) blow to the neck is decapitated!",
+					"calc": {
+						"roll_range": "17-18",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "vitals",
+					"choice_name": "Vitals",
+					"table_name": "Vitals",
+					"hit_penalty": -3,
+					"description": "An attack that misses by 1 hits the torso instead. Heart,\nlungs, kidneys, etc. Increase the wounding modifier for an\nimpaling (imp) or any piercing (pi-, pi, pi+, pi++) attack\nto x3. Increase the wounding modifier for a tight-beam\nburning (burn) attack to x2. Other attacks cannot target the\nvitals.",
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 8
+						}
+					}
+				}
+			]
+		},
+		"damage_progression": "basic_set",
+		"default_length_units": "ft_in",
+		"default_weight_units": "lb",
+		"user_description_display": "tooltip",
+		"modifiers_display": "inline",
+		"notes_display": "inline",
+		"skill_level_adj_display": "tooltip",
+		"show_spell_adj": true
+	},
+	"attributes": [
+		{
+			"attr_id": "st",
+			"adj": 2,
+			"calc": {
+				"value": 12,
+				"points": 12
+			}
+		},
+		{
+			"attr_id": "dx",
+			"adj": 2,
+			"calc": {
+				"value": 12,
+				"points": 24
+			}
+		},
+		{
+			"attr_id": "iq",
+			"adj": 4,
+			"calc": {
+				"value": 14,
+				"points": 40
+			}
+		},
+		{
+			"attr_id": "ht",
+			"adj": 1,
+			"calc": {
+				"value": 11,
+				"points": 10
+			}
+		},
+		{
+			"attr_id": "will",
+			"adj": 1,
+			"calc": {
+				"value": 11,
+				"points": 5
+			}
+		},
+		{
+			"attr_id": "fright_check",
+			"adj": 0,
+			"calc": {
+				"value": 13,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "per",
+			"adj": 2,
+			"calc": {
+				"value": 12,
+				"points": 10
+			}
+		},
+		{
+			"attr_id": "vision",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "hearing",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "taste_smell",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "touch",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "basic_speed",
+			"adj": 0,
+			"calc": {
+				"value": 5.75,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "basic_move",
+			"adj": 0,
+			"calc": {
+				"value": 5,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "fp",
+			"adj": 0,
+			"calc": {
+				"value": 11,
+				"current": 11,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "hp",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"current": 12,
+				"points": 0
+			}
+		}
+	],
+	"traits": [
+		{
+			"id": "tRb-pOwXgFlGoBuH7",
+			"name": "Natural Attacks",
+			"reference": "B271",
+			"weapons": [
+				{
+					"id": "wQhZVulzkiyHrb1fr",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						}
+					],
+					"calc": {
+						"level": 13,
+						"damage": "1d-2 cr"
+					}
+				},
+				{
+					"id": "wcOt2IHSEy7La-RjO",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "skill",
+							"name": "Karate"
+						}
+					],
+					"calc": {
+						"level": 13,
+						"damage": "1d-2 cr",
+						"parry": "10"
+					}
+				},
+				{
+					"id": "wknwqiYNKIv597T7k",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Brawling",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Kicking"
+						},
+						{
+							"type": "skill",
+							"name": "Karate",
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"level": 11,
+						"damage": "1d-1 cr"
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "tDq0X581BfyDZHXPv",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tdlCZw4YB4T7QkOnj"
+			},
+			"name": "Appearance",
+			"reference": "B21",
+			"tags": [
+				"Advantage",
+				"Physical"
+			],
+			"modifiers": [
+				{
+					"id": "mxwHbfGfGzuhaQOQS",
+					"name": "Attractive",
+					"reference": "B21",
+					"cost_adj": "4",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 1
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "m8dzE5B5UNq2EflHG",
+					"name": "Average",
+					"reference": "B21",
+					"disabled": true
+				},
+				{
+					"id": "m79e5seBDrCJPHItn",
+					"name": "Beautiful",
+					"reference": "B21",
+					"cost_adj": "12",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from those attracted to members of your sex, +2 from everyone else",
+							"amount": 4
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "mDuF5hjwp8e29wIQx",
+					"name": "Beautiful (Androgynous)",
+					"reference": "B21",
+					"cost_adj": "12",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 3
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "ms8V0-bplnH64SWjl",
+					"name": "Beautiful (Impressive)",
+					"reference": "B21",
+					"cost_adj": "12",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 3
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "mhIbeE7AEhaAQFZRh",
+					"name": "Handsome",
+					"reference": "B21",
+					"cost_adj": "12",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from those attracted to members of your sex, +2 from everyone else",
+							"amount": 4
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "m8hEkmbcHt71kh76c",
+					"name": "Handsome (Androgynous)",
+					"reference": "B21",
+					"cost_adj": "12",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 3
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "moQarz3npMHucwvoJ",
+					"name": "Handsome (Impressive)",
+					"reference": "B21",
+					"cost_adj": "12",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 3
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "mo3QjMKZ2yhbmOdyn",
+					"name": "Hideous",
+					"reference": "B21,B202",
+					"cost_adj": "-16",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Intimidation"
+							},
+							"amount": 2
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -4
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "mfqTCpsjoiOLQRGC6",
+					"name": "Horrific",
+					"reference": "B21,B202",
+					"cost_adj": "-24",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Intimidation"
+							},
+							"amount": 4
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -6
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "mEBoAdN6ouySvVQ_w",
+					"name": "Impressive",
+					"reference": "B21",
+					"disabled": true
+				},
+				{
+					"id": "myq8LKkQVZD3AkPUu",
+					"name": "Monstrous",
+					"reference": "B21,B202",
+					"cost_adj": "-20",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Intimidation"
+							},
+							"amount": 3
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "madgtvzVjk7MLdLdP",
+					"name": "Off-the-Shelf Looks",
+					"reference": "B21",
+					"local_notes": "Halves the usual reaction bonus - adjust manually",
+					"cost_adj": "-50%",
+					"disabled": true
+				},
+				{
+					"id": "m6Emf-MRqUZvGO3zE",
+					"name": "Transcendent",
+					"reference": "B21",
+					"cost_adj": "20",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+							"amount": 8
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "m6KloCQm28uQeQWzR",
+					"name": "Transcendent (Androgynous)",
+					"reference": "B21",
+					"cost_adj": "20",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "m--jYu6WFjTry5CqI",
+					"name": "Transcendent (Impressive)",
+					"reference": "B21",
+					"cost_adj": "20",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 5
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "meUX4UjYJpfVuy89b",
+					"name": "Ugly",
+					"reference": "B21",
+					"cost_adj": "-8",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -2
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "m7AU8QX3KPGuOCBj1",
+					"name": "Unattractive",
+					"reference": "B21",
+					"cost_adj": "-4",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -1
+						}
+					]
+				},
+				{
+					"id": "mAh1omvvlnqcuc_KM",
+					"name": "Universal",
+					"reference": "B21",
+					"cost_adj": "25%",
+					"disabled": true
+				},
+				{
+					"id": "mJcicm-6JAOnoqvnK",
+					"name": "Very Beautiful",
+					"reference": "B21",
+					"cost_adj": "16",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+							"amount": 6
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "mDpUB0WxqtFVod-M3",
+					"name": "Very Beautiful (Androgynous)",
+					"reference": "B21",
+					"cost_adj": "16",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 4
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "mqO1LuM33MzBwX4Pi",
+					"name": "Very Beautiful (Impressive)",
+					"reference": "B21",
+					"cost_adj": "16",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 4
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "mYVJa7T0Uxbjslj-u",
+					"name": "Very Handsome",
+					"reference": "B21",
+					"cost_adj": "16",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+							"amount": 6
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "mkuWtcQfDch1AX5mu",
+					"name": "Very Handsome (Androgynous)",
+					"reference": "B21",
+					"cost_adj": "16",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 4
+						}
+					],
+					"disabled": true
+				},
+				{
+					"id": "moGbvknPVj2YMcfmY",
+					"name": "Very Handsome (Impressive)",
+					"reference": "B21",
+					"cost_adj": "16",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 4
+						}
+					],
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": -4
+			}
+		},
+		{
+			"id": "tc7qLqYTpUv9wFZS_",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tmRX0o0iO20zWIVyo"
+			},
+			"name": "Bloodlust",
+			"reference": "B125",
+			"local_notes": "You must make a self-control roll whenever you need to accept a surrender, evade a sentry, take a prisoner, etc.",
+			"tags": [
+				"Disadvantage",
+				"Mental"
+			],
+			"cr": 12,
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "tJXFUdWelF1URhnVT",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tMrRhiOyGg6WNz09k"
+			},
+			"name": "Bully",
+			"reference": "B125",
+			"tags": [
+				"Disadvantage",
+				"Mental"
+			],
+			"cr": 12,
+			"base_points": -10,
+			"features": [
+				{
+					"type": "reaction_bonus",
+					"situation": "from others",
+					"amount": -2
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "tCKx7zZuTJmR4yOxq",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tGjjVtxav9KsrG7Wx"
+			},
+			"name": "Combat Reflexes",
+			"reference": "B43",
+			"local_notes": "Never freeze",
+			"tags": [
+				"Advantage",
+				"Mental"
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "Enhanced Time Sense"
+						}
+					}
+				]
+			},
+			"base_points": 15,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "starts_with",
+						"qualifier": "fast-draw"
+					},
+					"amount": 1
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "dodge",
+					"amount": 1
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "parry",
+					"amount": 1
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "block",
+					"amount": 1
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "fright_check",
+					"amount": 2
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "on all IQ rolls to wake up or to recover from surprise or mental stun",
+					"amount": 6
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "to initiative rolls for your side (+2 if you are the leader)",
+					"amount": 1
+				}
+			],
+			"calc": {
+				"points": 15
+			}
+		},
+		{
+			"id": "ti0HqAWYNmB3LRqFd",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tXJ60phAKJZOz3Pv5"
+			},
+			"name": "Compulsive Behaviour (@Activity@)",
+			"reference": "B128",
+			"tags": [
+				"Disadvantage",
+				"Mental"
+			],
+			"replacements": {
+				"Activity": "Film everything"
+			},
+			"cr": 12,
+			"base_points": -5,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "t_aZM-rba4YPeXUEt",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "teRggYn926_I1YeWO"
+			},
+			"name": "High Pain Threshold",
+			"reference": "B59",
+			"local_notes": "Never suffer shock penalties when injured",
+			"tags": [
+				"Advantage",
+				"Physical"
+			],
+			"base_points": 10,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "on all HT rolls to avoid knockdown and stunning",
+					"amount": 3
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "to resist torture",
+					"amount": 3
+				}
+			],
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "t7fbqzWedcMuHJCD7",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "t7U0VbIzs6SqefwLr"
+			},
+			"name": "Social Stigma (Criminal Record)",
+			"reference": "B155",
+			"tags": [
+				"Disadvantage",
+				"Social"
+			],
+			"base_points": -5,
+			"features": [
+				{
+					"type": "reaction_bonus",
+					"situation": "from non-criminals who learn of your Criminal Record. Police, judges, vigilantes, and other law-and-order types react at -2",
+					"amount": -1
+				}
+			],
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "tIyuCEoCxRAI_oh62",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tNe543pbMl1IkZxSo"
+			},
+			"name": "Callous",
+			"reference": "B125",
+			"tags": [
+				"Disadvantage",
+				"Mental"
+			],
+			"base_points": -5,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "psychology"
+					},
+					"amount": -3
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "teaching"
+					},
+					"amount": -3
+				},
+				{
+					"type": "reaction_bonus",
+					"situation": "from past victims and anyone with Empathy",
+					"amount": -1
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "to Interrogation and Intimidation rolls when you use threats or torture",
+					"amount": 1
+				}
+			],
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "tBzBuVALx02E5h17R",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tBmSJ3pNE53c4IRUU"
+			},
+			"name": "Damage Resistance",
+			"reference": "B46,B47,P45,MA43,PSI14",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Physical"
+			],
+			"modifiers": [
+				{
+					"id": "MyZhl8U6jm78lGNzQ",
+					"name": "Special Enhancements",
+					"children": [
+						{
+							"id": "m2odSW_EhkzzSM-Xp",
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances @Trait@",
+							"cost_adj": "80%",
+							"disabled": true
+						},
+						{
+							"id": "mDdUiToHKaR3ixCtZ",
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Healing only",
+							"cost_adj": "80%",
+							"disabled": true
+						},
+						{
+							"id": "m5Oc-mBatsmsJb0t2",
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances any trait",
+							"cost_adj": "100%",
+							"disabled": true
+						},
+						{
+							"id": "mtav3TUk_slP7C1al",
+							"name": "Force Field",
+							"reference": "B47",
+							"cost_adj": "20%",
+							"disabled": true
+						},
+						{
+							"id": "mlOb8KJH8rbYhYQ3A",
+							"name": "Hardened",
+							"reference": "B47",
+							"local_notes": "Reduces armor divisor by @Hardened level@ step(s): \"ignores DR\"→100→10→5→3→2→\"no divisor\"",
+							"cost_adj": "20%",
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mr6WzvR-XeYgcDxWe",
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost_adj": "10%",
+							"disabled": true
+						},
+						{
+							"id": "mcoSUoYaaNJ3rHFxH",
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost_adj": "50%",
+							"disabled": true
+						},
+						{
+							"id": "mRtdUzH5SzoOMNFey",
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "mmFXww3shS3TwJ7bS",
+							"name": "Reflection",
+							"reference": "B47",
+							"cost_adj": "100%",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "M4O7kLvhvjq3STH_T",
+					"name": "Special Limitations",
+					"children": [
+						{
+							"id": "mobHYxquzEPxzL36b",
+							"name": "Ablative",
+							"reference": "B47",
+							"cost_adj": "-80%",
+							"disabled": true
+						},
+						{
+							"id": "mhnb_jOGrs_IN8gvU",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Very Common@",
+							"cost_adj": "-15%",
+							"disabled": true
+						},
+						{
+							"id": "mevQK2C-OHYvPGXLB",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Common@",
+							"cost_adj": "-10%",
+							"disabled": true
+						},
+						{
+							"id": "mjsNeF4PYcQxYiNVl",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Occasional@",
+							"cost_adj": "-5%",
+							"disabled": true
+						},
+						{
+							"id": "maOuY-Tazj6fouWxe",
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Rare@",
+							"cost_adj": "-1",
+							"disabled": true
+						},
+						{
+							"id": "m1wa7U4lk5gvKsXaF",
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mxFU6jBqUd0gDHxnN",
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "Front",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "m0vXeCsnKnP_est5i",
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mu5Uaj1zwPk2iFQxr",
+							"name": "Flexible",
+							"reference": "B47",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mQxcKfqLRf-cKPguD",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Very Common Attack Form@",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mUYhnZIrmM9njbmK7",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Common Attack Form@",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mYFPV4jQJxHr7zwZ0",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Occasional Attack Form@",
+							"cost_adj": "-60%",
+							"disabled": true
+						},
+						{
+							"id": "mxfHbGRlpQ8q43POv",
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Rare Attack Form@",
+							"cost_adj": "-80%",
+							"disabled": true
+						},
+						{
+							"id": "mSSmXlXDfvvdjMes8",
+							"name": "Partial (Arms)",
+							"reference": "B47",
+							"cost_adj": "-20%"
+						},
+						{
+							"id": "mq5IQKm6PMKFLSCfX",
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "m1eqo0ptmKcH9LDkg",
+							"name": "Tough Skin",
+							"reference": "B47",
+							"local_notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost_adj": "-40%",
+							"disabled": true
+						}
+					]
+				}
+			],
+			"points_per_level": 5,
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"eye"
+					],
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"levels": 2,
+			"calc": {
+				"points": 8,
+				"current_level": 2
+			}
+		},
+		{
+			"id": "tqsLzRe0C_iFZXOpP",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tvkUum_V1i7jyVLOV"
+			},
+			"name": "No Fine Manipulators",
+			"reference": "B145",
+			"tags": [
+				"Disadvantage",
+				"Physical"
+			],
+			"modifiers": [
+				{
+					"id": "mfKEWSC3ASuct9wQa",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Limitation Modifiers.adm",
+						"id": "mCuloKoI9eF1fHQl_"
+					},
+					"name": "Mitigator",
+					"reference": "B112",
+					"local_notes": "Monthly treatment of @drug or treatment@",
+					"cost_adj": "-70%"
+				}
+			],
+			"base_points": -30,
+			"features": [
+				{
+					"type": "cost_reduction",
+					"attribute": "st",
+					"percentage": 40
+				},
+				{
+					"type": "cost_reduction",
+					"attribute": "dx",
+					"percentage": 40
+				}
+			],
+			"calc": {
+				"points": -9
+			}
+		},
+		{
+			"id": "T2jd0NLzNUVsK47Bv",
+			"name": "Bionic Arm",
+			"modifiers": [
+				{
+					"id": "md-Yu5bYM7DHirZOS",
+					"name": "Electrical",
+					"reference": "B134",
+					"cost_adj": "-20%"
+				}
+			],
+			"children": [
+				{
+					"id": "ttIYv8JKDrKC1rvzC",
+					"name": "Talent (Driver's Reflexes)",
+					"reference": "PU3:10",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Talent"
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Boating"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Driving"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Piloting"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Submarine"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "From passengers; gamblers betting on you at the Grand Prix.",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "Bonus on Per rolls to notice dangers in the path of your ride: running children, oncoming vehicles, landmines...",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 4,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "tw3lO8CQQlsrinTUT",
+					"name": "Arm ST",
+					"reference": "B40",
+					"local_notes": "Only applies to efforts to lift, throw, or attack with those arms or hands. If a task requires multiple hands and they don't have the same ST, use the average ST.",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mfoPqOafs6ld-b7GQ",
+							"name": "No fine manipulators",
+							"reference": "B145",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mouaG3wNfx_SOv5Hb",
+							"name": "Only one arm",
+							"reference": "B40",
+							"local_notes": "Right",
+							"cost_adj": "-2",
+							"affects": "levels_only"
+						},
+						{
+							"id": "m_Ofr9rzUcZSPsRlh",
+							"name": "Three arms",
+							"reference": "B40",
+							"cost_adj": "3",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m-YnQi6Ug3Pl3UBsH",
+							"name": "Size",
+							"cost_adj": "-10%",
+							"levels": 1,
+							"disabled": true
+						}
+					],
+					"points_per_level": 5,
+					"can_level": true,
+					"levels": 4,
+					"calc": {
+						"points": 10,
+						"current_level": 4
+					}
+				},
+				{
+					"id": "tAr5N-zeKhY4pqEat",
+					"name": "Blunt Claws",
+					"reference": "B42,MA42",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 3,
+					"weapons": [
+						{
+							"id": "whQ0BMwsfSmn8o9zQ",
+							"sv": 1,
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1",
+								"modifier_per_die": 1
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"level": 13,
+								"damage": "1d-1 cr",
+								"parry": "10"
+							}
+						},
+						{
+							"id": "wWLKOqM9U21NsuHPr",
+							"sv": 1,
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"modifier_per_die": 1
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"level": 11,
+								"damage": "1d cr"
+							}
+						}
+					],
+					"calc": {
+						"points": 3
+					}
+				}
+			],
+			"calc": {
+				"points": 17
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "skP0ymXWqeH3DjCe4",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sd4bE8RsuJt-ZU8YZ"
+			},
+			"name": "Area Knowledge",
+			"reference": "B176",
+			"local_notes": "Location of the capitals of interplanetary states and the homeworlds of major races; general awareness of all major races; knowledge of individuals of Status 8; general understanding of relations between interplanetary states",
+			"tags": [
+				"Everyman",
+				"Knowledge"
+			],
+			"replacements": {
+				"Galaxy": "The galaxy",
+				"Specialty": "Specialty"
+			},
+			"specialization": "@Galaxy@; Lived there",
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Geography",
+					"specialization": "@Specialty@",
+					"modifier": -3
+				}
+			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
+			},
+			"calc": {
+				"level": 15,
+				"rsl": "IQ+1"
+			}
+		},
+		{
+			"id": "s9-JmPm4pIOIK6Iek",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sJ6jzn1OJ-knkk1Qc"
+			},
+			"name": "Beam Weapons",
+			"reference": "B179",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Pistol",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Beam Weapons",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Pistol",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 2,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "DX+1"
+			}
+		},
+		{
+			"id": "sLSl2jxKMBGkKr_RX",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sfWUh9TJBpQuwZBVo"
+			},
+			"name": "Guns",
+			"reference": "B198",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Pistol",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Grenade Launcher",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Gyroc",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Anti-Armor Weapon",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Machine Gun",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Musket",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Beam Weapons",
+					"specialization": "Pistol",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Rifle",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Shotgun",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Submachine Gun",
+					"modifier": -2
+				}
+			],
+			"tech_level": "10",
+			"points": 2,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Beam Weapons",
+				"specialization": "Pistol",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "DX+1"
+			}
+		},
+		{
+			"id": "sBtL3KFfD-GurnAGL",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "shtDdl5thrvKSnJHf"
+			},
+			"name": "Brawling",
+			"reference": "B182,MA55",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/e",
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Brawling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 2
+					},
+					"amount": 1,
+					"per_die": true
+				}
+			],
+			"points": 2,
+			"calc": {
+				"level": 13,
+				"rsl": "DX+1"
+			}
+		},
+		{
+			"id": "sWjbId_fInH2NwPy8",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sPVKx0V_AAgtQHZkd"
+			},
+			"name": "Current Affairs",
+			"reference": "B186",
+			"tags": [
+				"Everyman",
+				"Knowledge",
+				"Social"
+			],
+			"specialization": "People",
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Research",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Current Affairs",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
+			},
+			"calc": {
+				"level": 14,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "sxpujq4jREOdoRAwl",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s-DdOtFsU7dX4Ttfz"
+			},
+			"name": "Shortsword",
+			"reference": "B209",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Broadsword",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Force Sword",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Jitte/Sai",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Knife",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Saber",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Smallsword",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Tonfa",
+					"modifier": -3
+				},
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Knife",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "DX+0"
+			}
+		},
+		{
+			"id": "sa0cLLtQb7p-Z7jg-",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sT0agdf4emYBo8cUe"
+			},
+			"name": "Driving",
+			"reference": "B188",
+			"tags": [
+				"Vehicle"
+			],
+			"specialization": "Motorcycle",
+			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				},
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Bicycling",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 8,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 15,
+				"rsl": "DX+3"
+			}
+		},
+		{
+			"id": "shlN_JT-VYWpZB4cH",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sfB-d4kTee0C-BZv0"
+			},
+			"name": "Interrogation",
+			"reference": "B202",
+			"tags": [
+				"Military",
+				"Police",
+				"Spy"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Intimidation",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Psychology",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sypGWiTV3gMRvodKd",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "shun-iitiwyWbrGcF"
+			},
+			"name": "Intimidation",
+			"reference": "B202",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Social",
+				"Street"
+			],
+			"difficulty": "will/a",
+			"defaults": [
+				{
+					"type": "will",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Acting",
+					"modifier": -3
+				}
+			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "will",
+				"modifier": -5,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "Will+0"
+			}
+		},
+		{
+			"id": "s5nBtlzShPboL8Jvz",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "slOONrK6jDHvcRoGx"
+			},
+			"name": "Knife",
+			"reference": "B208",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Force Sword",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Main-Gauche",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Shortsword",
+					"modifier": -3
+				},
+				{
+					"type": "dx",
+					"modifier": -4
+				}
+			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "DX+1"
+			}
+		},
+		{
+			"id": "sgBe3mGtgaDuG2b6R",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "smuiHfT5hh4IOqtPW"
+			},
+			"name": "Performance",
+			"reference": "B212",
+			"tags": [
+				"Arts",
+				"Entertainment"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Acting",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Public Speaking",
+					"modifier": -2
+				}
+			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 14,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "smBqhjhLsWVDZay28",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sWZxYKexOd29DFrRI"
+			},
+			"name": "Photography",
+			"reference": "B213",
+			"tags": [
+				"Arts",
+				"Entertainment",
+				"Spy",
+				"Technical"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Electronics Operation",
+					"specialization": "Media",
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 4,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 15,
+				"rsl": "IQ+1"
+			}
+		},
+		{
+			"id": "sdDv1DgQxmO421YQz",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sqFw3NucoHE6Ki4XP"
+			},
+			"name": "Shadowing",
+			"reference": "B219",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Observation",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Stealth",
+					"modifier": -4
+				}
+			],
+			"points": 4,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 15,
+				"rsl": "IQ+1"
+			}
+		},
+		{
+			"id": "sFly2ZIkao2zbJNGP",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "svEm7OyeCu_9wJ8Kk"
+			},
+			"name": "Stealth",
+			"reference": "B222",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "dx/a",
+			"encumbrance_penalty_multiplier": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "DX-1"
+			}
+		},
+		{
+			"id": "sV4k7x8NX0_CKTIhF",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "smTUpMWJGqPeT1KER"
+			},
+			"name": "Streetwise",
+			"reference": "B223",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Social",
+				"Street"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"points": 4,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 15,
+				"rsl": "IQ+1"
+			}
+		},
+		{
+			"id": "sUDGOYyjVLLCi53Pb",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "ssHhRG7LH-Ma3YDnH"
+			},
+			"name": "Computer Operation",
+			"reference": "B184",
+			"tags": [
+				"Everyman",
+				"Scholarly",
+				"Technical"
+			],
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 2,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
+			},
+			"calc": {
+				"level": 15,
+				"rsl": "IQ+1"
+			}
+		},
+		{
+			"id": "szlADXMoeOuszE71g",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sBY-R7Xmf64T7WzZ4"
+			},
+			"name": "Computer Programming",
+			"reference": "B184",
+			"tags": [
+				"Design",
+				"Invention"
+			],
+			"difficulty": "iq/h",
+			"tech_level": "10",
+			"points": 1,
+			"calc": {
+				"level": 12,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "sndXiLVBdXjsqCpeq",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sQg03fYUt1kjNWrnM"
+			},
+			"name": "Computer Hacking",
+			"reference": "B184",
+			"tags": [
+				"Criminal",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "iq/vh",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "computer programming"
+						}
+					}
+				]
+			},
+			"tech_level": "10",
+			"points": 8,
+			"calc": {
+				"level": 14,
+				"rsl": "IQ+0"
+			}
+		}
+	],
+	"equipment": [
+		{
+			"id": "egCjcV11-K3cLpJLa",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eiTSaTyqy72vnG5qJ"
+			},
+			"description": "Cyber Claws",
+			"reference": "UT211",
+			"local_notes": "Minor procedure.",
+			"tech_level": "9",
+			"legality_class": "3",
+			"base_value": "4000",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 4000,
+				"extended_value": 4000,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eQxc00ZwLCMKES-fa",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "e0k1uCmBF-xZUhA7d"
+			},
+			"description": "Laser Pistol",
+			"reference": "UT115",
+			"local_notes": "C/33 shots",
+			"tech_level": "10",
+			"legality_class": "3",
+			"tags": [
+				"Missile Weapon",
+				"Weaponry"
+			],
+			"base_value": "1100",
+			"base_weight": "1.5 lb",
+			"weapons": [
+				{
+					"id": "W81X7qa5EtQATrfkp",
+					"sv": 1,
+					"damage": {
+						"type": "burn",
+						"base": "3d",
+						"armor_divisor": 2
+					},
+					"strength": "4",
+					"accuracy": "6",
+					"range": "200/600",
+					"rate_of_fire": "10",
+					"shots": "33(3)",
+					"bulk": "-2",
+					"recoil": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Beam Weapons",
+							"specialization": "Pistol"
+						},
+						{
+							"type": "skill",
+							"name": "Beam Weapons",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"level": 13,
+						"damage": "3d(2) burn"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1100,
+				"extended_value": 1100,
+				"weight": "1.5 lb",
+				"extended_weight": "1.5 lb"
+			}
+		},
+		{
+			"id": "einzOXtiE0fmKVEmA",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "High Tech/High Tech Equipment.eqp",
+				"id": "eEyqx2Zvgc3wLWJBN"
+			},
+			"description": "Motorcycle Helmet + Visor",
+			"reference": "HT70",
+			"local_notes": "DR+3 vs. cr.",
+			"tech_level": "7",
+			"tags": [
+				"Defenses"
+			],
+			"base_value": "250",
+			"base_weight": "3.5 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"skull"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"eye"
+					],
+					"amount": 7
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"face"
+					],
+					"amount": 7
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"skull"
+					],
+					"specialization": "non-crushing",
+					"amount": -3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"eye"
+					],
+					"specialization": "non-crushing",
+					"amount": -3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"face"
+					],
+					"specialization": "non-crushing",
+					"amount": -3
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 250,
+				"extended_value": 250,
+				"weight": "3.5 lb",
+				"extended_weight": "3.5 lb"
+			}
+		},
+		{
+			"id": "ePzF0-uZ4kAkg39p-",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eXrAFnE4zRoHvfbk5"
+			},
+			"description": "Neurolash Baton",
+			"reference": "UT166",
+			"local_notes": "B/20 hits.",
+			"tech_level": "10^",
+			"legality_class": "3",
+			"tags": [
+				"Melee Weapon",
+				"Weaponry"
+			],
+			"base_value": "520",
+			"base_weight": "1.5 lb",
+			"weapons": [
+				{
+					"id": "wiMi2ZkLgICuN4LUN",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "sw"
+					},
+					"strength": "6",
+					"usage": "Swing",
+					"reach": "1",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Shortsword"
+						},
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Broadsword",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Jitte/Sai",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Knife",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Saber",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Smallsword",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Tonfa",
+							"modifier": -3
+						}
+					],
+					"calc": {
+						"level": 12,
+						"damage": "1d+2 cr",
+						"parry": "10"
+					}
+				},
+				{
+					"id": "wRZwjoSoTK58tUOGp",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"strength": "6",
+					"usage": "Thrust",
+					"reach": "1",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Shortsword"
+						},
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Broadsword",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Jitte/Sai",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Knife",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Saber",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Smallsword",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Tonfa",
+							"modifier": -3
+						}
+					],
+					"calc": {
+						"level": 12,
+						"damage": "1d-1 cr",
+						"parry": "10"
+					}
+				},
+				{
+					"id": "wlnXgHJlP6wlx7Q45",
+					"sv": 1,
+					"damage": {
+						"type": "HT-5(2) aff"
+					},
+					"usage": "Linked",
+					"calc": {
+						"damage": "HT-5(2) aff"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 520,
+				"extended_value": 520,
+				"weight": "1.5 lb",
+				"extended_weight": "1.5 lb"
+			}
+		},
+		{
+			"id": "eZh-rTTWQsbhj_0Nm",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "ea__kqP7i_MP6eWbb"
+			},
+			"description": "Gauss Pistol, 4mm",
+			"reference": "UT142",
+			"local_notes": "C/40 shots.",
+			"tech_level": "10",
+			"legality_class": "3",
+			"tags": [
+				"Missile Weapon",
+				"Weaponry"
+			],
+			"base_value": "1700",
+			"base_weight": "2 lb",
+			"weapons": [
+				{
+					"id": "WnqVw-P5UeIdJ7GWV",
+					"sv": 1,
+					"damage": {
+						"type": "pi-",
+						"base": "3d",
+						"armor_divisor": 3
+					},
+					"strength": "9",
+					"accuracy": "3",
+					"range": "500/2,100",
+					"rate_of_fire": "3",
+					"shots": "40(3)",
+					"bulk": "-2",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol"
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"level": 13,
+						"damage": "3d(3) pi-"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1700,
+				"extended_value": 1700,
+				"weight": "2 lb",
+				"extended_weight": "2 lb"
+			}
+		},
+		{
+			"id": "e0ydQQXdgeocA5ATX",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "erM9LZaQj35PwcnE9"
+			},
+			"description": "Nanoweave Jacket",
+			"reference": "UT172",
+			"local_notes": "DR+12 vs. piercing and cutting. Flexible.",
+			"tech_level": "10",
+			"legality_class": "3",
+			"tags": [
+				"Defenses"
+			],
+			"base_value": "450",
+			"base_weight": "3 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"torso"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"vitals"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"arm"
+					],
+					"amount": 6
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 450,
+				"extended_value": 450,
+				"weight": "3 lb",
+				"extended_weight": "3 lb"
+			}
+		},
+		{
+			"id": "eBFbCJ4zSvTkMjE8s",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "epo6DaCWNdH71A9gz"
+			},
+			"description": "Boosted Reflexes",
+			"reference": "UT210",
+			"local_notes": "Minor procedure. Driving Only",
+			"tech_level": "10",
+			"legality_class": "3",
+			"base_value": "9000",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 9000,
+				"extended_value": 9000,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "e1TUkEV7FbXuM7u6V",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "emOmFGTZEbRVE2qhf"
+			},
+			"description": "Cable Jack",
+			"reference": "UT42",
+			"tech_level": "9",
+			"tags": [
+				"Communication and Interface"
+			],
+			"base_value": "5",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 5,
+				"extended_value": 5,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eaDrwWSK5naZGhPWI",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eXqYyIitNtQEL9YPC"
+			},
+			"description": "Implant Radio",
+			"reference": "UT211",
+			"local_notes": "Simple procedure.",
+			"tech_level": "9",
+			"base_value": "100",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 100,
+				"extended_value": 100,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eWRj9PbmUpoZ6jOwL",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "e2v-z57yU1YlczwIM"
+			},
+			"description": "Implant Video Camera",
+			"reference": "UT211",
+			"local_notes": "Minor procedure.",
+			"tech_level": "9",
+			"base_value": "200",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 200,
+				"extended_value": 200,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eCEEkwebi0v3-aNCm",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eYozKizuoe9b7Ep4_"
+			},
+			"description": "Bionic Arm",
+			"reference": "UT209",
+			"local_notes": "Major procedure.",
+			"tech_level": "10",
+			"base_value": "20000",
+			"quantity": 2,
+			"equipped": true,
+			"calc": {
+				"value": 20000,
+				"extended_value": 40000,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		}
+	],
+	"created_date": "2026-04-17T22:16:42-04:00",
+	"modified_date": "2026-05-17T14:20:20-04:00",
+	"calc": {
+		"swing": "1d+2",
+		"thrust": "1d-1",
+		"basic_lift": "29 lb",
+		"dodge_bonus": 1,
+		"parry_bonus": 1,
+		"block_bonus": 1,
+		"move": [
+			5,
+			4,
+			3,
+			2,
+			1
+		],
+		"dodge": [
+			9,
+			8,
+			7,
+			6,
+			5
+		]
+	}
+}
