@@ -4,7 +4,7 @@
 	"total_points": 218,
 	"points_record": [
 		{
-			"when": "2026-05-17T20:14:54-04:00",
+			"when": "2026-05-17T20:18:22-04:00",
 			"points": 5,
 			"reason": "Session 3"
 		},
@@ -1635,6 +1635,46 @@
 			}
 		},
 		{
+			"id": "trR68hi-tB5Sz5YBr",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Gun Fu/Gun Fu Traits.adq",
+				"id": "tgKPWS-AZ58iGlWmx"
+			},
+			"name": "Quick-Sheathe (Pistol)",
+			"reference": "GF21",
+			"tags": [
+				"Perk",
+				"Physical"
+			],
+			"base_points": 1,
+			"calc": {
+				"points": 1
+			}
+		},
+		{
+			"id": "tCP20BT1F8spHMRxn",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Martial Arts/Martial Arts Traits.adq",
+				"id": "tGjHBhOER5sffBa1W"
+			},
+			"name": "Grip Mastery (@Weapon@)",
+			"reference": "MA50",
+			"local_notes": "Lets you change grip as a free action",
+			"tags": [
+				"Mental",
+				"Perk"
+			],
+			"replacements": {
+				"Weapon": "Staff"
+			},
+			"base_points": 1,
+			"calc": {
+				"points": 1
+			}
+		},
+		{
 			"id": "tCYfeGXIwFyvMZ_Ky",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -1825,17 +1865,17 @@
 				"Disadvantage",
 				"Social"
 			],
-			"vtt_notes": "[CR: 6 Appears quite rarely]",
+			"vtt_notes": "[CR: 9 Appears quite rarely]",
 			"replacements": {
 				"Who": "Yutaka (Middle Brother)"
 			},
 			"modifiers": [
 				{
-					"id": "M_SXcgR9rc1YB37d6",
+					"id": "MmXkmV0hSvAHNgLpp",
 					"name": "Power",
 					"children": [
 						{
-							"id": "mN4auw9ZYz326wzKI",
+							"id": "m979FG8NsFZ1ZkF5P",
 							"name": "Weak Individual",
 							"reference": "B135",
 							"local_notes": "50% of your starting points",
@@ -1843,14 +1883,14 @@
 							"disabled": true
 						},
 						{
-							"id": "m6ijlsKhESEPQ1KMt",
+							"id": "mso_3gekx4yFfxzCx",
 							"name": "Equal Individual",
 							"reference": "B135",
 							"local_notes": "100% of your starting points",
 							"cost_adj": "-10"
 						},
 						{
-							"id": "mQRHKPHT8uedxOJA9",
+							"id": "mKk29wLhVcvkuliss",
 							"name": "Powerful Individual",
 							"reference": "B135",
 							"local_notes": "\u003e150% of your starting points",
@@ -1858,28 +1898,28 @@
 							"disabled": true
 						},
 						{
-							"id": "mDNdJa_ygw3dsCHud",
+							"id": "mqsRpvLgku33MBIH7",
 							"name": "Weak Group",
 							"reference": "B135",
 							"cost_adj": "-10",
 							"disabled": true
 						},
 						{
-							"id": "mI9Lm6SQKkINKv3ZB",
+							"id": "mcRtIlFmmtpFs7eMk",
 							"name": "Medium Group",
 							"reference": "B135",
 							"cost_adj": "-20",
 							"disabled": true
 						},
 						{
-							"id": "mB4ZSNj48QAcNocKS",
+							"id": "mspbRx7Ed-4jWiFI4",
 							"name": "Large/Powerful Group",
 							"reference": "B135",
 							"cost_adj": "-30",
 							"disabled": true
 						},
 						{
-							"id": "muIqHC54XnGtq6gRD",
+							"id": "mPfzUHUumD6J3QgYi",
 							"name": "Utterly Formidable Group",
 							"reference": "B135",
 							"cost_adj": "-40",
@@ -1888,17 +1928,17 @@
 					]
 				},
 				{
-					"id": "Mc62QuXyQwN56UaiV",
+					"id": "Mq5QCdKlA7_9nSYQt",
 					"name": "Special Cases",
 					"children": [
 						{
-							"id": "mDprRjNyn8vqPeOUG",
+							"id": "m-Law6dF2USLiwvTm",
 							"name": "Evil Twin",
 							"reference": "B135",
 							"disabled": true
 						},
 						{
-							"id": "m3cO712fzWaFTg6Bp",
+							"id": "mgkpYE3gotNfAnkyT",
 							"name": "Evil Twin",
 							"reference": "B135",
 							"local_notes": "More skilled or extra abilities",
@@ -1906,7 +1946,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mMhxJy-4n38WqF7ay",
+							"id": "m5w9ieHe9Tc7YqCg_",
 							"name": "Evil Twin",
 							"reference": "B135",
 							"local_notes": "More skilled and extra abilities",
@@ -1914,7 +1954,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mSjcn1XT315JuzS8H",
+							"id": "myRDaW1BaaoDeMz75",
 							"name": "Unknown",
 							"reference": "B135",
 							"cost_adj": "-5",
@@ -1923,25 +1963,25 @@
 					]
 				},
 				{
-					"id": "MRzLSu2ZhIMaQti-L",
+					"id": "MqjgDxu5WzxKU6z4R",
 					"name": "Intent",
 					"children": [
 						{
-							"id": "mYlF7APV5PIwoGBXr",
+							"id": "mSFdke9A-4p6pit_-",
 							"name": "Watcher",
 							"reference": "B135",
 							"cost_adj": "x0.25",
 							"disabled": true
 						},
 						{
-							"id": "mCkH9MXpHMadJXi44",
+							"id": "mpqQwAW7w9WO2Mopp",
 							"name": "Rival",
 							"reference": "B135",
 							"cost_adj": "x0.5",
 							"disabled": true
 						},
 						{
-							"id": "mzplf1dcB42zZcmsn",
+							"id": "mMz9fZbu0zRu18H6F",
 							"name": "Hunter",
 							"reference": "B135",
 							"cost_adj": "x1"
@@ -1949,18 +1989,18 @@
 					]
 				},
 				{
-					"id": "MbAkFTzjIEm_Zc5SI",
+					"id": "MohNl9FsixQKmRv8L",
 					"name": "Frequency of Appearance",
 					"children": [
 						{
-							"id": "mbNk13oWbDkKO23cQ",
+							"id": "mQCWUg578HiWlLrkU",
 							"name": "Appears quite rarely",
 							"reference": "B36",
 							"local_notes": "6-",
 							"cost_adj": "x0.5"
 						},
 						{
-							"id": "mXSaOV7qWTXcYoBFt",
+							"id": "mN0Z88sQ7XW_cxoJj",
 							"name": "Appears fairly often",
 							"reference": "B36",
 							"local_notes": "9-",
@@ -1968,7 +2008,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mYxc5o6mz_xEhSojr",
+							"id": "mIs8ccMyzUA2M5fTW",
 							"name": "Appears quite often",
 							"reference": "B36",
 							"local_notes": "12-",
@@ -1976,7 +2016,7 @@
 							"disabled": true
 						},
 						{
-							"id": "md3mafXaChuaVNUwp",
+							"id": "mGn_exWPV8Fcnt4WA",
 							"name": "Appears almost all the time",
 							"reference": "B36",
 							"local_notes": "15-",
@@ -2497,6 +2537,28 @@
 			"calc": {
 				"level": 12,
 				"rsl": "DX+0"
+			}
+		},
+		{
+			"id": "sbi5TnndggG8Vr8vG",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "slFkOhWAAPF7DTJRe"
+			},
+			"name": "Fast-Draw",
+			"reference": "B194,MA56",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Pistol",
+			"difficulty": "dx/e",
+			"points": 2,
+			"calc": {
+				"level": 13,
+				"rsl": "DX+1"
 			}
 		},
 		{
@@ -3614,99 +3676,99 @@
 			"tags": [
 				"Money"
 			],
-			"base_value": "30329",
+			"base_value": "30299",
 			"modifiers": [
 				{
-					"id": "FbNnsqUtJLXjvDekG",
+					"id": "F1SejJILvoMAnnjrR",
 					"name": "Tech Level",
 					"reference": "B27",
 					"children": [
 						{
-							"id": "f2QOyDfLyTZ5NHJZh",
+							"id": "fCezAXelOWE_H3F3m",
 							"name": "TL0",
 							"reference": "B27",
 							"cost": "+250",
 							"disabled": true
 						},
 						{
-							"id": "fmHwWvkfUwOamh62G",
+							"id": "fv3EOZuMS5ha8xdXN",
 							"name": "TL1",
 							"reference": "B27",
 							"cost": "+500",
 							"disabled": true
 						},
 						{
-							"id": "fF5ysvHPFxPbhEijs",
+							"id": "fhfTbUyxs71VMZbQg",
 							"name": "TL2",
 							"reference": "B27",
 							"cost": "+750",
 							"disabled": true
 						},
 						{
-							"id": "fFEBgRXjAFilueUZH",
+							"id": "f70An76kkQBLDEumQ",
 							"name": "TL3",
 							"reference": "B27",
 							"cost": "+1000",
 							"disabled": true
 						},
 						{
-							"id": "fyY4quQtZ6lU7SE7Q",
+							"id": "flv9sIssxm8CsaskA",
 							"name": "TL4",
 							"reference": "B27",
 							"cost": "+2000",
 							"disabled": true
 						},
 						{
-							"id": "f2RxAHqGfuqFpd97g",
+							"id": "fGceKOSSZcSy_0mz5",
 							"name": "TL5",
 							"reference": "B27",
 							"cost": "+5000",
 							"disabled": true
 						},
 						{
-							"id": "fcxki9-mLEbC9vqPL",
+							"id": "fggOW6lTzg5roIgun",
 							"name": "TL6",
 							"reference": "B27",
 							"cost": "+10000",
 							"disabled": true
 						},
 						{
-							"id": "fSy62LMgI1ruxssR7",
+							"id": "f95iyuRNGhiGj4rde",
 							"name": "TL7",
 							"reference": "B27",
 							"cost": "+15000",
 							"disabled": true
 						},
 						{
-							"id": "fX4pfzLJFqfQCUjzg",
+							"id": "fsHKrUNML_E8nsfha",
 							"name": "TL8",
 							"reference": "B27",
 							"cost": "+20000",
 							"disabled": true
 						},
 						{
-							"id": "fP6coVlZTCrp8CGPz",
+							"id": "f4iaI4-65eOcUMfEi",
 							"name": "TL9",
 							"reference": "B27",
 							"cost": "+30000",
 							"disabled": true
 						},
 						{
-							"id": "feaSYQJ5OOeR2kQPj",
+							"id": "fgeqKOzwe6QnM5k9t",
 							"name": "TL10",
 							"reference": "B27",
 							"cost": "+50000",
 							"disabled": true
 						},
 						{
-							"id": "fprl3oD4qtG147_9V",
+							"id": "fMySJ05CBsCj-to8s",
 							"name": "TL11",
 							"reference": "B27",
 							"cost": "+75000",
 							"disabled": true
 						},
 						{
-							"id": "fmRxAtURTUvZr7qaw",
+							"id": "fQHjZzNf19w5gzLvc",
 							"name": "TL12",
 							"reference": "B27",
 							"cost": "+100000",
@@ -3715,12 +3777,12 @@
 					]
 				},
 				{
-					"id": "FaeBUr6KL6OWQRtp0",
+					"id": "FqvH-NePAqJZiHshH",
 					"name": "Wealth Level",
 					"reference": "B25",
 					"children": [
 						{
-							"id": "f4zg0OpJE016s74mK",
+							"id": "fzt9EKGxK8e4-xs_5",
 							"name": "Poor",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3728,7 +3790,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fJH_KD_lCMyy8i_hF",
+							"id": "fGd8PPupFkA8ldmkj",
 							"name": "Struggling",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3736,7 +3798,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f_9vu8ANXo4AWH4GU",
+							"id": "fkjQ9thkaTxwvqJ-b",
 							"name": "Average",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3744,7 +3806,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fl5NqN37KBjKi61_N",
+							"id": "frBgZop8Il33U7jVK",
 							"name": "Comfortable",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3752,7 +3814,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fD3TsGRF_veYe-AMc",
+							"id": "f8Nx7pRz5SpKW9CWO",
 							"name": "Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3760,7 +3822,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fBmIwZw39U_wgfVQz",
+							"id": "feK75i1HbTkPdMrg0",
 							"name": "Very Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3768,7 +3830,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fUwl1Hl9-KdqeWqRQ",
+							"id": "fxs5x5mlRAJSCEuOW",
 							"name": "Filthy Rich",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3776,7 +3838,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fLzLcIhs6v0a-xmp4",
+							"id": "fzuSXKT4vnXZH66f3",
 							"name": "Multimillionaire 1",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3789,8 +3851,8 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 30329,
-				"extended_value": 30329,
+				"value": 30299,
+				"extended_value": 30299,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
@@ -4148,15 +4210,16 @@
 					},
 					"description": "Quarterstaff",
 					"reference": "B273",
+					"local_notes": "Staff Enchantment",
 					"tech_level": "0",
 					"tags": [
 						"Melee Weapon"
 					],
-					"base_value": "10",
+					"base_value": "40",
 					"base_weight": "4 lb",
 					"weapons": [
 						{
-							"id": "wXJ0IXSM_Zwscc6ri",
+							"id": "wxmIYDfUVkIHZYVu_",
 							"sv": 1,
 							"damage": {
 								"type": "cr",
@@ -4195,7 +4258,7 @@
 							}
 						},
 						{
-							"id": "wQmCV1KqsTH-DugMw",
+							"id": "wjAVzi8nmu1VhQRHg",
 							"sv": 1,
 							"damage": {
 								"type": "cr",
@@ -4234,7 +4297,7 @@
 							}
 						},
 						{
-							"id": "w5xjzdX3YJePRWC20",
+							"id": "wey-f4mRZeaE3iBNF",
 							"sv": 1,
 							"damage": {
 								"type": "cr",
@@ -4277,7 +4340,7 @@
 							}
 						},
 						{
-							"id": "waashRqWBbWI7vkVH",
+							"id": "wQ1KIve2HUBOAyAL5",
 							"sv": 1,
 							"damage": {
 								"type": "cr",
@@ -4323,8 +4386,8 @@
 					"quantity": 1,
 					"equipped": true,
 					"calc": {
-						"value": 10,
-						"extended_value": 10,
+						"value": 40,
+						"extended_value": 40,
 						"weight": "4 lb",
 						"extended_weight": "4 lb"
 					}
@@ -4357,7 +4420,7 @@
 			],
 			"calc": {
 				"value": 60,
-				"extended_value": 2890,
+				"extended_value": 2920,
 				"weight": "3 lb",
 				"extended_weight": "18.8 lb"
 			}
@@ -5716,7 +5779,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:16:51-04:00",
-	"modified_date": "2026-05-03T20:31:37-04:00",
+	"modified_date": "2026-05-17T20:23:50-04:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
