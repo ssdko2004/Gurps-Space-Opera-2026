@@ -5015,12 +5015,12 @@
 			"id": "eJzL8hzWLqmYOaDX8",
 			"description": "Money",
 			"legality_class": "4",
-			"base_value": "3392",
+			"base_value": "53392",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 3392,
-				"extended_value": 3392,
+				"value": 53392,
+				"extended_value": 53392,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}

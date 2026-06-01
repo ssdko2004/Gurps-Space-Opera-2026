@@ -3886,99 +3886,99 @@
 			"tags": [
 				"Money"
 			],
-			"base_value": "26540",
+			"base_value": "75,190",
 			"modifiers": [
 				{
-					"id": "Fl7V9fQdYURDzxq-1",
+					"id": "FWunYOkbvDpTwzEvX",
 					"name": "Tech Level",
 					"reference": "B27",
 					"children": [
 						{
-							"id": "f4WfrGRxeVV7Fk-c6",
+							"id": "f2GH5-1kjCLxPGNTM",
 							"name": "TL0",
 							"reference": "B27",
 							"cost": "+250",
 							"disabled": true
 						},
 						{
-							"id": "fzSGJA_99Uwe5oaz2",
+							"id": "fgNK8KGlI4M8MRW2i",
 							"name": "TL1",
 							"reference": "B27",
 							"cost": "+500",
 							"disabled": true
 						},
 						{
-							"id": "fSQZsB0oLlCznMUep",
+							"id": "fMywrM2GM5unpn1g9",
 							"name": "TL2",
 							"reference": "B27",
 							"cost": "+750",
 							"disabled": true
 						},
 						{
-							"id": "flX1BXcNgjwDRjoEI",
+							"id": "fDLJN_Ckwu9KWjIQg",
 							"name": "TL3",
 							"reference": "B27",
 							"cost": "+1000",
 							"disabled": true
 						},
 						{
-							"id": "fHqHQOEzDHz1lOqeo",
+							"id": "frQafryqMBV7T7Oo3",
 							"name": "TL4",
 							"reference": "B27",
 							"cost": "+2000",
 							"disabled": true
 						},
 						{
-							"id": "f_1r6KrpfQFLAE-Iw",
+							"id": "f-DU7Rx9VuPCIoAa7",
 							"name": "TL5",
 							"reference": "B27",
 							"cost": "+5000",
 							"disabled": true
 						},
 						{
-							"id": "fpSV8mP8TQeIWiFFB",
+							"id": "fRZK5WBvSLoLY5QlW",
 							"name": "TL6",
 							"reference": "B27",
 							"cost": "+10000",
 							"disabled": true
 						},
 						{
-							"id": "fs2F0oKIEVVbwk7Cf",
+							"id": "fZdyUaheLM3gDD0Ro",
 							"name": "TL7",
 							"reference": "B27",
 							"cost": "+15000",
 							"disabled": true
 						},
 						{
-							"id": "flFSLNgS3EsAs0kiX",
+							"id": "fu7JNsRS5-2ZM_UOb",
 							"name": "TL8",
 							"reference": "B27",
 							"cost": "+20000",
 							"disabled": true
 						},
 						{
-							"id": "f3JYRQJwEl2mE31xT",
+							"id": "fK4YxpMLtb5Rf0Wxv",
 							"name": "TL9",
 							"reference": "B27",
 							"cost": "+30000",
 							"disabled": true
 						},
 						{
-							"id": "fQQZa9BDTb_trTpO_",
+							"id": "fvErWm3i6BTr-RQcN",
 							"name": "TL10",
 							"reference": "B27",
 							"cost": "+50000",
 							"disabled": true
 						},
 						{
-							"id": "fMh6K3G7IDQKFb3Iv",
+							"id": "f7NpEGETZiSUNmNud",
 							"name": "TL11",
 							"reference": "B27",
 							"cost": "+75000",
 							"disabled": true
 						},
 						{
-							"id": "fcPWMzkBni9-v2pf-",
+							"id": "fwqkR4hJBAJgrF6aD",
 							"name": "TL12",
 							"reference": "B27",
 							"cost": "+100000",
@@ -3987,12 +3987,12 @@
 					]
 				},
 				{
-					"id": "FHOuOEOhamNAX5-Ev",
+					"id": "F-1uqBq7rRLEF1vUS",
 					"name": "Wealth Level",
 					"reference": "B25",
 					"children": [
 						{
-							"id": "fJ5hmaHegdap56pdP",
+							"id": "fLQL_p7KD6YINnzGe",
 							"name": "Poor",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4000,7 +4000,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fHnkPNJZJsAWpbrgV",
+							"id": "fM7glrIQ7gC9Sn4Y8",
 							"name": "Struggling",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4008,7 +4008,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fe-NjnG58sjA1RpOk",
+							"id": "fkKXM0KzuhNYGCGgY",
 							"name": "Average",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4016,7 +4016,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fdSOAMRX3L0C_TW5M",
+							"id": "f9Dlql_rcCwXfkUOJ",
 							"name": "Comfortable",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4024,7 +4024,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fe-jIApZhfwWAgxTK",
+							"id": "fHIPtLPRm_Mzi-B4Q",
 							"name": "Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4032,7 +4032,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f0-9FPnYk-WEQWinf",
+							"id": "fpmjWAjXIRWlposzq",
 							"name": "Very Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4040,7 +4040,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f_Gwv0_ArIQbLErm1",
+							"id": "fNXlhFtuQX_6wdKxV",
 							"name": "Filthy Rich",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4048,7 +4048,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f2ucQXr37FNyNRZ6W",
+							"id": "fOeKKrKYxeFBgnuGK",
 							"name": "Multimillionaire 1",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4061,10 +4061,188 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 26540,
-				"extended_value": 26540,
+				"value": 75190,
+				"extended_value": 75190,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "esI6V4qGU2SSMoCtE",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eeQgU7KaAJKcO9rBW"
+			},
+			"description": "Small Knife",
+			"reference": "B272",
+			"tech_level": "0",
+			"tags": [
+				"Melee Weapon",
+				"Missile Weapon"
+			],
+			"base_value": "30",
+			"base_weight": "0.5 lb",
+			"weapons": [
+				{
+					"id": "wAB-eMyJGxa7wyOhd",
+					"sv": 1,
+					"damage": {
+						"type": "cut",
+						"st": "sw",
+						"base": "-3"
+					},
+					"strength": "5",
+					"usage": "Swung",
+					"reach": "C,1",
+					"parry": "-1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Knife"
+						},
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Sword!"
+						}
+					],
+					"calc": {
+						"level": 13,
+						"damage": "2d-4 cut",
+						"parry": "8"
+					}
+				},
+				{
+					"id": "w1vBf8_1CgW6pTCBg",
+					"sv": 1,
+					"damage": {
+						"type": "imp",
+						"st": "thr",
+						"base": "-1"
+					},
+					"strength": "5",
+					"usage": "Thrust",
+					"reach": "C",
+					"parry": "-1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Knife"
+						},
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Sword!"
+						}
+					],
+					"calc": {
+						"level": 13,
+						"damage": "1d-1 imp",
+						"parry": "8"
+					}
+				},
+				{
+					"id": "WeM5gjwtYq-n9EfTq",
+					"sv": 1,
+					"damage": {
+						"type": "imp",
+						"st": "thr",
+						"base": "-1"
+					},
+					"strength": "5",
+					"usage": "Thrown",
+					"range": "x0.5/x1",
+					"rate_of_fire": "1",
+					"shots": "T",
+					"bulk": "-1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Thrown Weapon",
+							"specialization": "Knife"
+						}
+					],
+					"calc": {
+						"level": 9,
+						"damage": "1d-1 imp",
+						"range": "6/13"
+					}
+				}
+			],
+			"modifiers": [
+				{
+					"id": "f6pNrZOqGh5nVWNib",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment Modifiers.eqm",
+						"id": "fFsUMzlqBNsLbCD-n"
+					},
+					"name": "Superfine Vibroblade",
+					"reference": "UT164",
+					"cost_type": "to_final_base_cost",
+					"tech_level": "10",
+					"cost": "x30"
+				},
+				{
+					"id": "fh6ZbBaAt8IeaL4md",
+					"source": {
+						"library": "ssdko2004/https://github.com/ssdko2004/Gurps-Space-Opera-2026.git",
+						"path": "Equipment Modifiers.eqm",
+						"id": "f7J089vSAvzqTCoyA"
+					},
+					"name": "Made for small hands (SM -6)",
+					"cost_type": "to_base_cost",
+					"cost": "+0.5 CF"
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1350,
+				"extended_value": 1350,
+				"weight": "0.5 lb",
+				"extended_weight": "0.5 lb"
 			}
 		},
 		{
@@ -4442,7 +4620,7 @@
 		}
 	],
 	"created_date": "2026-03-25T10:24:58-04:00",
-	"modified_date": "2026-05-20T13:34:13-04:00",
+	"modified_date": "2026-05-31T20:47:33-04:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",

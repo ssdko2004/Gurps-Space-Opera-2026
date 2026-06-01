@@ -3681,99 +3681,99 @@
 			"tags": [
 				"Money"
 			],
-			"base_value": "30299",
+			"base_value": "80299",
 			"modifiers": [
 				{
-					"id": "F1SejJILvoMAnnjrR",
+					"id": "F8tVx6gg4drF3NbPt",
 					"name": "Tech Level",
 					"reference": "B27",
 					"children": [
 						{
-							"id": "fCezAXelOWE_H3F3m",
+							"id": "fbd9Ol7MPgxSyteWV",
 							"name": "TL0",
 							"reference": "B27",
 							"cost": "+250",
 							"disabled": true
 						},
 						{
-							"id": "fv3EOZuMS5ha8xdXN",
+							"id": "fTxQ9pkQuSQ54rzFB",
 							"name": "TL1",
 							"reference": "B27",
 							"cost": "+500",
 							"disabled": true
 						},
 						{
-							"id": "fhfTbUyxs71VMZbQg",
+							"id": "fy1Kl952NalIjLXMH",
 							"name": "TL2",
 							"reference": "B27",
 							"cost": "+750",
 							"disabled": true
 						},
 						{
-							"id": "f70An76kkQBLDEumQ",
+							"id": "fSZc_Lm39HNQLueSn",
 							"name": "TL3",
 							"reference": "B27",
 							"cost": "+1000",
 							"disabled": true
 						},
 						{
-							"id": "flv9sIssxm8CsaskA",
+							"id": "fvDdYw81zeVNAhNCp",
 							"name": "TL4",
 							"reference": "B27",
 							"cost": "+2000",
 							"disabled": true
 						},
 						{
-							"id": "fGceKOSSZcSy_0mz5",
+							"id": "f7MxmvMRBZkdVTQ69",
 							"name": "TL5",
 							"reference": "B27",
 							"cost": "+5000",
 							"disabled": true
 						},
 						{
-							"id": "fggOW6lTzg5roIgun",
+							"id": "fdErL4XPXAc3w6mvG",
 							"name": "TL6",
 							"reference": "B27",
 							"cost": "+10000",
 							"disabled": true
 						},
 						{
-							"id": "f95iyuRNGhiGj4rde",
+							"id": "f-NorfXBpLQnSXzrl",
 							"name": "TL7",
 							"reference": "B27",
 							"cost": "+15000",
 							"disabled": true
 						},
 						{
-							"id": "fsHKrUNML_E8nsfha",
+							"id": "fqJkrrMwnyQ4FvEJm",
 							"name": "TL8",
 							"reference": "B27",
 							"cost": "+20000",
 							"disabled": true
 						},
 						{
-							"id": "f4iaI4-65eOcUMfEi",
+							"id": "fvSoOkBAeW23vCmXI",
 							"name": "TL9",
 							"reference": "B27",
 							"cost": "+30000",
 							"disabled": true
 						},
 						{
-							"id": "fgeqKOzwe6QnM5k9t",
+							"id": "fIq4x83uTAHYx2Otb",
 							"name": "TL10",
 							"reference": "B27",
 							"cost": "+50000",
 							"disabled": true
 						},
 						{
-							"id": "fMySJ05CBsCj-to8s",
+							"id": "fP7X8JaBo4vRnniYu",
 							"name": "TL11",
 							"reference": "B27",
 							"cost": "+75000",
 							"disabled": true
 						},
 						{
-							"id": "fQHjZzNf19w5gzLvc",
+							"id": "f52X4PUuymI_EAA59",
 							"name": "TL12",
 							"reference": "B27",
 							"cost": "+100000",
@@ -3782,12 +3782,12 @@
 					]
 				},
 				{
-					"id": "FqvH-NePAqJZiHshH",
+					"id": "Fc3QkIMgfMxozjIYo",
 					"name": "Wealth Level",
 					"reference": "B25",
 					"children": [
 						{
-							"id": "fzt9EKGxK8e4-xs_5",
+							"id": "fCL79iyCWDwtQADZK",
 							"name": "Poor",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3795,7 +3795,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fGd8PPupFkA8ldmkj",
+							"id": "fcQeUjGZRR-IiWJf6",
 							"name": "Struggling",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3803,7 +3803,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fkjQ9thkaTxwvqJ-b",
+							"id": "f0yXLsxh78SBImj0J",
 							"name": "Average",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3811,7 +3811,7 @@
 							"disabled": true
 						},
 						{
-							"id": "frBgZop8Il33U7jVK",
+							"id": "fcFVAxSpvSyCWWjXu",
 							"name": "Comfortable",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3819,7 +3819,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f8Nx7pRz5SpKW9CWO",
+							"id": "fBPn1J__goPELdZ43",
 							"name": "Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3827,7 +3827,7 @@
 							"disabled": true
 						},
 						{
-							"id": "feK75i1HbTkPdMrg0",
+							"id": "fQwFZzc3AsCdpxT5S",
 							"name": "Very Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3835,7 +3835,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fxs5x5mlRAJSCEuOW",
+							"id": "fCullvogjxxuDmCad",
 							"name": "Filthy Rich",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3843,7 +3843,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fzuSXKT4vnXZH66f3",
+							"id": "fyA3CS3TS9M8m6_4q",
 							"name": "Multimillionaire 1",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3856,8 +3856,8 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 30299,
-				"extended_value": 30299,
+				"value": 80299,
+				"extended_value": 80299,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
