@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "Av22gCRCvmacEEanS",
-	"total_points": 218,
+	"total_points": 223,
 	"points_record": [
+		{
+			"when": "2026-05-31T20:41:47-04:00",
+			"points": 5,
+			"reason": "Session 4"
+		},
 		{
 			"when": "2026-05-17T20:14:43-04:00",
 			"points": 5,
