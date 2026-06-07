@@ -4074,7 +4074,7 @@
 				"path": "Basic Set/Basic Set Equipment.eqp",
 				"id": "eeQgU7KaAJKcO9rBW"
 			},
-			"description": "Small Knife",
+			"description": "Small Knife (Kindness)",
 			"reference": "B272",
 			"tech_level": "0",
 			"tags": [
@@ -4085,7 +4085,7 @@
 			"base_weight": "0.5 lb",
 			"weapons": [
 				{
-					"id": "wAB-eMyJGxa7wyOhd",
+					"id": "wQOvl9fs32zARhAni",
 					"sv": 1,
 					"damage": {
 						"type": "cut",
@@ -4132,7 +4132,7 @@
 					}
 				},
 				{
-					"id": "w1vBf8_1CgW6pTCBg",
+					"id": "wJIpCfeSKwizBzbwH",
 					"sv": 1,
 					"damage": {
 						"type": "imp",
@@ -4179,7 +4179,7 @@
 					}
 				},
 				{
-					"id": "WeM5gjwtYq-n9EfTq",
+					"id": "WwLPxJGtWSqLjAkYN",
 					"sv": 1,
 					"damage": {
 						"type": "imp",
@@ -4212,7 +4212,7 @@
 			],
 			"modifiers": [
 				{
-					"id": "f6pNrZOqGh5nVWNib",
+					"id": "f_i0P5jVuap3AlTms",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Ultra Tech/Ultra Tech Equipment Modifiers.eqm",
@@ -4225,7 +4225,7 @@
 					"cost": "x30"
 				},
 				{
-					"id": "fh6ZbBaAt8IeaL4md",
+					"id": "fjzeNaX2Nz1crc7tJ",
 					"source": {
 						"library": "ssdko2004/https://github.com/ssdko2004/Gurps-Space-Opera-2026.git",
 						"path": "Equipment Modifiers.eqm",
@@ -4619,8 +4619,20 @@
 			}
 		}
 	],
+	"notes": [
+		{
+			"id": "NYAQw6O9ZZSmxBkh0",
+			"markdown": "Personal Details",
+			"children": [
+				{
+					"id": "nOFbjPZ6AaQdnFeGx",
+					"markdown": "Food \u0026 Drink - Capable of eating and drinking, but not does not need to"
+				}
+			]
+		}
+	],
 	"created_date": "2026-03-25T10:24:58-04:00",
-	"modified_date": "2026-05-31T20:47:33-04:00",
+	"modified_date": "2026-06-07T11:49:40-04:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
