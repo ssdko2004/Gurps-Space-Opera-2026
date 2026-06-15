@@ -1461,7 +1461,7 @@
 				"path": "Basic Set/Basic Set Traits.adq",
 				"id": "t5bwP6TnS4cX-zM8L"
 			},
-			"name": "Enemy (@Who@)",
+			"name": "Enemy (@Who@ - Evelyn Ritchi)",
 			"reference": "B135",
 			"tags": [
 				"Disadvantage",
@@ -1473,11 +1473,11 @@
 			},
 			"modifiers": [
 				{
-					"id": "MUW4iTI7qXdtAn5jU",
+					"id": "MxtK5suIa4mZt3XyP",
 					"name": "Power",
 					"children": [
 						{
-							"id": "maZriDaczH7dRWO_I",
+							"id": "mtlfbH0bcZgoQWqyH",
 							"name": "Weak Individual",
 							"reference": "B135",
 							"local_notes": "50% of your starting points",
@@ -1485,14 +1485,14 @@
 							"disabled": true
 						},
 						{
-							"id": "me4u9t8b7lERPPQE_",
+							"id": "m8vdsTcIjpA5Yaj5H",
 							"name": "Equal Individual",
 							"reference": "B135",
 							"local_notes": "100% of your starting points",
 							"cost_adj": "-10"
 						},
 						{
-							"id": "mT2q2lSgkaXsefPEN",
+							"id": "m0BjIdXu8eBGJUH-R",
 							"name": "Powerful Individual",
 							"reference": "B135",
 							"local_notes": "\u003e150% of your starting points",
@@ -1500,28 +1500,28 @@
 							"disabled": true
 						},
 						{
-							"id": "m7853GiPX8Pcu6VBP",
+							"id": "mjC3lnZyCf8LjNSBa",
 							"name": "Weak Group",
 							"reference": "B135",
 							"cost_adj": "-10",
 							"disabled": true
 						},
 						{
-							"id": "mPdWZgcQoVgGtpagQ",
+							"id": "mjla9FRoOoh8tm9nQ",
 							"name": "Medium Group",
 							"reference": "B135",
 							"cost_adj": "-20",
 							"disabled": true
 						},
 						{
-							"id": "mieCbSninpclZ2zxZ",
+							"id": "mWzUcUQM2hoxASmA4",
 							"name": "Large/Powerful Group",
 							"reference": "B135",
 							"cost_adj": "-30",
 							"disabled": true
 						},
 						{
-							"id": "mEGFonGB00kjBCQlB",
+							"id": "mlcal5VXOnizPtOOt",
 							"name": "Utterly Formidable Group",
 							"reference": "B135",
 							"cost_adj": "-40",
@@ -1530,17 +1530,17 @@
 					]
 				},
 				{
-					"id": "McS5k6q3df75KRSQH",
+					"id": "MYEPq3aEuLr9EX0qH",
 					"name": "Special Cases",
 					"children": [
 						{
-							"id": "mzbUpVqU3Trhq6PpD",
+							"id": "m7rSNtGJXZtA7rq6Z",
 							"name": "Evil Twin",
 							"reference": "B135",
 							"disabled": true
 						},
 						{
-							"id": "mZ_3WegQRji9CNCzX",
+							"id": "mb8Z4QEtTHw93TBkO",
 							"name": "Evil Twin",
 							"reference": "B135",
 							"local_notes": "More skilled or extra abilities",
@@ -1548,7 +1548,7 @@
 							"disabled": true
 						},
 						{
-							"id": "m86pOuV1n7afhY8pG",
+							"id": "mKFVYxuxugNRvHWzi",
 							"name": "Evil Twin",
 							"reference": "B135",
 							"local_notes": "More skilled and extra abilities",
@@ -1556,7 +1556,7 @@
 							"disabled": true
 						},
 						{
-							"id": "m1UwyjIw2mttj-iLN",
+							"id": "mCp9ygpyLpSmZSnSR",
 							"name": "Unknown",
 							"reference": "B135",
 							"cost_adj": "-5",
@@ -1565,24 +1565,24 @@
 					]
 				},
 				{
-					"id": "MJlmIU_TQgsRiwG6J",
+					"id": "MYG4Gi3sFYLVKbugu",
 					"name": "Intent",
 					"children": [
 						{
-							"id": "mg9V--STekX4b8n77",
+							"id": "mVgewpXVEbdi-Isu4",
 							"name": "Watcher",
 							"reference": "B135",
 							"cost_adj": "x0.25",
 							"disabled": true
 						},
 						{
-							"id": "mKcGENeUGpYhbmfph",
+							"id": "mul-0DbMIp4jJhoOi",
 							"name": "Rival",
 							"reference": "B135",
 							"cost_adj": "x0.5"
 						},
 						{
-							"id": "mh5_5o0WgeH1PLJTm",
+							"id": "m-s973QAwSAGrfaG4",
 							"name": "Hunter",
 							"reference": "B135",
 							"cost_adj": "x1",
@@ -1591,11 +1591,11 @@
 					]
 				},
 				{
-					"id": "MzpUXnMMsyEeDnTm0",
+					"id": "MA2bW6v59YBs6vmpH",
 					"name": "Frequency of Appearance",
 					"children": [
 						{
-							"id": "m0QzYoVirOlRxQYQa",
+							"id": "mGutsYHsHhN_BND_h",
 							"name": "Appears quite rarely",
 							"reference": "B36",
 							"local_notes": "6-",
@@ -1603,14 +1603,14 @@
 							"disabled": true
 						},
 						{
-							"id": "mO_VMDKO0guZpNjuc",
+							"id": "mj-KwcXexrdlwcCQl",
 							"name": "Appears fairly often",
 							"reference": "B36",
 							"local_notes": "9-",
 							"cost_adj": "x1"
 						},
 						{
-							"id": "mk6fFz36N4xvIfd63",
+							"id": "muwHcr_W-iMOaG463",
 							"name": "Appears quite often",
 							"reference": "B36",
 							"local_notes": "12-",
@@ -1618,7 +1618,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mjPIgz5g6rmJgI-4d",
+							"id": "mPbxTv4g0QDMItwPF",
 							"name": "Appears almost all the time",
 							"reference": "B36",
 							"local_notes": "15-",
@@ -2175,7 +2175,7 @@
 				"path": "Basic Set/Basic Set Traits.adq",
 				"id": "t7U76B4j7M7hCGD_H"
 			},
-			"name": "Contact (@Who@)",
+			"name": "Contact (@Who@ - Prorsus \"Perry\" Horridus - Mafia drugdealer)",
 			"reference": "B44",
 			"tags": [
 				"Advantage",
@@ -2186,18 +2186,18 @@
 			},
 			"modifiers": [
 				{
-					"id": "M9hKt505_1F2xrATY",
+					"id": "MRAtrzWi3btTrnVeP",
 					"name": "Effective Skill",
 					"children": [
 						{
-							"id": "mZgeV9A9ljfAkWr2h",
+							"id": "mHjFMNSZ6cIKCvpAS",
 							"name": "Effective skill",
 							"reference": "B44",
 							"local_notes": "12",
 							"cost_adj": "1"
 						},
 						{
-							"id": "mkQZ8OMNuiYYi6HYo",
+							"id": "mmzB5cW_WL2a2r40W",
 							"name": "Effective skill",
 							"reference": "B44",
 							"local_notes": "15",
@@ -2205,7 +2205,7 @@
 							"disabled": true
 						},
 						{
-							"id": "myo_baySbLATHXQne",
+							"id": "mRk5GjxmrBKYyp7az",
 							"name": "Effective skill",
 							"reference": "B44",
 							"local_notes": "18",
@@ -2213,7 +2213,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mVOx3U962u-suWST9",
+							"id": "mpGWNZf67bxFNSvf4",
 							"name": "Effective skill",
 							"reference": "B44",
 							"local_notes": "21",
@@ -2221,7 +2221,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mLuGQBtRB0ZBcYtEP",
+							"id": "mCgEpldC3OUDtn1d_",
 							"name": "Can obtain information using supernatural talents",
 							"reference": "B44",
 							"cost_adj": "1",
@@ -2230,11 +2230,11 @@
 					]
 				},
 				{
-					"id": "MovKajaQkjKzhtvCV",
+					"id": "MKiiVDucQZWL7Yl-R",
 					"name": "Frequency of Appearance",
 					"children": [
 						{
-							"id": "m_4pnmcszthsi6kuI",
+							"id": "mx8WlzGDee8IqtaNQ",
 							"name": "Appears quite rarely",
 							"reference": "B36",
 							"reference_highlight": "Frequency of Appearance",
@@ -2243,7 +2243,7 @@
 							"disabled": true
 						},
 						{
-							"id": "maT3ydGheblXY5yAM",
+							"id": "mKJeYVwEgqSS_fLA_",
 							"name": "Appears fairly often",
 							"reference": "B36",
 							"reference_highlight": "Frequency of Appearance",
@@ -2251,7 +2251,7 @@
 							"cost_adj": "x1"
 						},
 						{
-							"id": "m6NFFEZDN6BIwGBJQ",
+							"id": "mE29gGbHVwDj_T9wj",
 							"name": "Appears quite often",
 							"reference": "B36",
 							"reference_highlight": "Frequency of Appearance",
@@ -2260,7 +2260,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mqsvU0MauzXMnQ4Vp",
+							"id": "mRIjgS8sM5ipL0I4h",
 							"name": "Appears almost all the time",
 							"reference": "B36",
 							"reference_highlight": "Frequency of Appearance",
@@ -2271,31 +2271,31 @@
 					]
 				},
 				{
-					"id": "M2Ds7Z1bh3oFgPX4j",
+					"id": "MEL7QJkKZxadznboO",
 					"name": "Reliability",
 					"children": [
 						{
-							"id": "mbCHVO0vuI8KQUI8l",
+							"id": "m2bmKUBIJa2olCU89",
 							"name": "Completely reliable",
 							"reference": "B44",
 							"cost_adj": "x3",
 							"disabled": true
 						},
 						{
-							"id": "m1kIdwP5Tkpqutnbc",
+							"id": "mIC_uLovRqfTAiKhc",
 							"name": "Usually reliable",
 							"reference": "B44",
 							"cost_adj": "x2",
 							"disabled": true
 						},
 						{
-							"id": "mrRnuNcr2BrgEOnOJ",
+							"id": "mKA3gthOYttL0edJf",
 							"name": "Somewhat reliable",
 							"reference": "B44",
 							"cost_adj": "x1"
 						},
 						{
-							"id": "mQ569nNOvHdGsuCXK",
+							"id": "mftjbL8u6AktUvp0e",
 							"name": "Unreliable",
 							"reference": "B44",
 							"cost_adj": "x0.5",
@@ -2304,14 +2304,14 @@
 					]
 				},
 				{
-					"id": "mMKz5jrHy36z_mQQt",
+					"id": "mv_POD74zMH0jvs7O",
 					"name": "Group",
 					"reference": "B44",
 					"cost_adj": "x5",
 					"disabled": true
 				},
 				{
-					"id": "mzPTpU6q_ICiSkdHk",
+					"id": "mlQbaKdxKzQgoRXoO",
 					"name": "Favor",
 					"reference": "B55",
 					"cost_adj": "x0.2",
@@ -3778,22 +3778,21 @@
 			}
 		},
 		{
-			"id": "swoai9LgBmtPI0Dk7",
+			"id": "sI-NXl9yfe7weAP3G",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sPNoFjMzWUsnwn7Pv"
+				"id": "skKJPuPuNFJ2u6p1f"
 			},
 			"name": "Savoir-Faire",
 			"reference": "B218,MA59",
 			"tags": [
+				"Criminal",
 				"Knowledge",
-				"Social"
+				"Social",
+				"Street"
 			],
-			"replacements": {
-				"Social group": "Mafia"
-			},
-			"specialization": "@Social group@",
+			"specialization": "Mafia",
 			"difficulty": "iq/e",
 			"defaults": [
 				{
@@ -3802,7 +3801,7 @@
 				},
 				{
 					"type": "skill",
-					"name": "Games",
+					"name": "Streetwise",
 					"modifier": -3
 				}
 			],
@@ -5257,8 +5256,14 @@
 			}
 		}
 	],
+	"notes": [
+		{
+			"id": "n7ryDN1Vwo-vN63WK",
+			"markdown": "Brother works with the Mafia group run by Benjamin \"Benji\" Murdock"
+		}
+	],
 	"created_date": "2026-04-06T20:12:34-04:00",
-	"modified_date": "2026-05-31T20:59:09-04:00",
+	"modified_date": "2026-06-14T21:12:41-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",
