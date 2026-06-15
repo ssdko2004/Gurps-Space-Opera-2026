@@ -5543,7 +5543,7 @@
 			"description": "Molecular Glue Solvent",
 			"reference": "UT83",
 			"local_notes": "Removes 10 applications.",
-			"tech_level": "10",
+			"tech_level": "9",
 			"tags": [
 				"Expedition Gear"
 			],
@@ -5970,12 +5970,12 @@
 			"id": "eZoO6Y7CtVYP-vK_E",
 			"description": "Money",
 			"legality_class": "4",
-			"base_value": "50017.9",
+			"base_value": "51937.9",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 50017.9,
-				"extended_value": 50017.9,
+				"value": 51937.9,
+				"extended_value": 51937.9,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}

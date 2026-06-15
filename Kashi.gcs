@@ -2347,6 +2347,36 @@
 			}
 		},
 		{
+			"id": "sVFYgLtXk3jLVlYEC",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "skMNNg5aD_BwYbRLd"
+			},
+			"name": "Cryptography",
+			"reference": "B186",
+			"tags": [
+				"Military",
+				"Spy"
+			],
+			"specialization": "Cryptanalysis",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Mathematics",
+					"specialization": "Cryptology",
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 2,
+			"calc": {
+				"level": 16,
+				"rsl": "IQ+0"
+			}
+		},
+		{
 			"id": "suHcrvB5H5oO-rUis",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -2493,33 +2523,25 @@
 			}
 		},
 		{
-			"id": "sVFYgLtXk3jLVlYEC",
+			"id": "sbi5TnndggG8Vr8vG",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "skMNNg5aD_BwYbRLd"
+				"id": "slFkOhWAAPF7DTJRe"
 			},
-			"name": "Cryptography",
-			"reference": "B186",
+			"name": "Fast-Draw",
+			"reference": "B194,MA56",
 			"tags": [
-				"Military",
-				"Spy"
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
 			],
-			"specialization": "Cryptanalysis",
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "skill",
-					"name": "Mathematics",
-					"specialization": "Cryptology",
-					"modifier": -5
-				}
-			],
-			"tech_level": "10",
+			"specialization": "Pistol",
+			"difficulty": "dx/e",
 			"points": 2,
 			"calc": {
-				"level": 16,
-				"rsl": "IQ+0"
+				"level": 13,
+				"rsl": "DX+1"
 			}
 		},
 		{
@@ -2542,28 +2564,6 @@
 			"calc": {
 				"level": 12,
 				"rsl": "DX+0"
-			}
-		},
-		{
-			"id": "sbi5TnndggG8Vr8vG",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "slFkOhWAAPF7DTJRe"
-			},
-			"name": "Fast-Draw",
-			"reference": "B194,MA56",
-			"tags": [
-				"Combat",
-				"Ranged Combat",
-				"Weapon"
-			],
-			"specialization": "Pistol",
-			"difficulty": "dx/e",
-			"points": 2,
-			"calc": {
-				"level": 13,
-				"rsl": "DX+1"
 			}
 		},
 		{
@@ -3091,6 +3091,78 @@
 			"calc": {
 				"level": 10,
 				"rsl": "DX+0"
+			}
+		},
+		{
+			"id": "sfZMbxPt8NNby1D1p",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sgrDrFiOdLC9njqnC"
+			},
+			"name": "Surgery",
+			"reference": "B223",
+			"tags": [
+				"Medical"
+			],
+			"difficulty": "iq/vh",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "First Aid",
+					"modifier": -12
+				},
+				{
+					"type": "skill",
+					"name": "Physician",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Physiology",
+					"modifier": -8
+				},
+				{
+					"type": "skill",
+					"name": "Veterinary",
+					"modifier": -5
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "first aid"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "physician"
+						}
+					}
+				]
+			},
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Physician",
+				"modifier": -5,
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "IQ-3"
 			}
 		},
 		{
@@ -3675,105 +3747,105 @@
 				"path": "Basic Set/Basic Set Equipment.eqp",
 				"id": "ezeQnJTiw6vauDH7p"
 			},
-			"description": "Starting Wealth",
+			"description": "Wealth",
 			"reference": "B25,B27",
 			"tech_level": "0",
 			"tags": [
 				"Money"
 			],
-			"base_value": "80299",
+			"base_value": "83219",
 			"modifiers": [
 				{
-					"id": "F8tVx6gg4drF3NbPt",
+					"id": "FWJfS06ehPSwMLBaG",
 					"name": "Tech Level",
 					"reference": "B27",
 					"children": [
 						{
-							"id": "fbd9Ol7MPgxSyteWV",
+							"id": "f8dZNmOE_n03iVCEv",
 							"name": "TL0",
 							"reference": "B27",
 							"cost": "+250",
 							"disabled": true
 						},
 						{
-							"id": "fTxQ9pkQuSQ54rzFB",
+							"id": "fXMSCWIJHS4XimwIG",
 							"name": "TL1",
 							"reference": "B27",
 							"cost": "+500",
 							"disabled": true
 						},
 						{
-							"id": "fy1Kl952NalIjLXMH",
+							"id": "fSZDYiN7KuEOHKypa",
 							"name": "TL2",
 							"reference": "B27",
 							"cost": "+750",
 							"disabled": true
 						},
 						{
-							"id": "fSZc_Lm39HNQLueSn",
+							"id": "fFREEwF2f4NOsItUl",
 							"name": "TL3",
 							"reference": "B27",
 							"cost": "+1000",
 							"disabled": true
 						},
 						{
-							"id": "fvDdYw81zeVNAhNCp",
+							"id": "fAtSvZEO2nBnVGmaZ",
 							"name": "TL4",
 							"reference": "B27",
 							"cost": "+2000",
 							"disabled": true
 						},
 						{
-							"id": "f7MxmvMRBZkdVTQ69",
+							"id": "frAj9AX7ZqGO_x_R6",
 							"name": "TL5",
 							"reference": "B27",
 							"cost": "+5000",
 							"disabled": true
 						},
 						{
-							"id": "fdErL4XPXAc3w6mvG",
+							"id": "fzVN-HvLc1mKszvkm",
 							"name": "TL6",
 							"reference": "B27",
 							"cost": "+10000",
 							"disabled": true
 						},
 						{
-							"id": "f-NorfXBpLQnSXzrl",
+							"id": "fJ2Teth3eq13dvRjP",
 							"name": "TL7",
 							"reference": "B27",
 							"cost": "+15000",
 							"disabled": true
 						},
 						{
-							"id": "fqJkrrMwnyQ4FvEJm",
+							"id": "fzV5e7RvaMBz8FJxk",
 							"name": "TL8",
 							"reference": "B27",
 							"cost": "+20000",
 							"disabled": true
 						},
 						{
-							"id": "fvSoOkBAeW23vCmXI",
+							"id": "fYtukRzprw7ik3GOz",
 							"name": "TL9",
 							"reference": "B27",
 							"cost": "+30000",
 							"disabled": true
 						},
 						{
-							"id": "fIq4x83uTAHYx2Otb",
+							"id": "fFVTL4Jq15xKieCse",
 							"name": "TL10",
 							"reference": "B27",
 							"cost": "+50000",
 							"disabled": true
 						},
 						{
-							"id": "fP7X8JaBo4vRnniYu",
+							"id": "fPtujY0KvSU4vVy6W",
 							"name": "TL11",
 							"reference": "B27",
 							"cost": "+75000",
 							"disabled": true
 						},
 						{
-							"id": "f52X4PUuymI_EAA59",
+							"id": "fvS6zDd5zhZRbPYBA",
 							"name": "TL12",
 							"reference": "B27",
 							"cost": "+100000",
@@ -3782,12 +3854,12 @@
 					]
 				},
 				{
-					"id": "Fc3QkIMgfMxozjIYo",
+					"id": "FiVjurWXKYW6mfP0j",
 					"name": "Wealth Level",
 					"reference": "B25",
 					"children": [
 						{
-							"id": "fCL79iyCWDwtQADZK",
+							"id": "fKoQ_yq8Mk4KWlYGZ",
 							"name": "Poor",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3795,7 +3867,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fcQeUjGZRR-IiWJf6",
+							"id": "fD1CGjPr8Iq5LSXcV",
 							"name": "Struggling",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3803,7 +3875,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f0yXLsxh78SBImj0J",
+							"id": "f0RH098lTscxy5sji",
 							"name": "Average",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3811,7 +3883,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fcFVAxSpvSyCWWjXu",
+							"id": "fbiSO7c8X1VqCRsFC",
 							"name": "Comfortable",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3819,7 +3891,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fBPn1J__goPELdZ43",
+							"id": "f076K1y1YRiNYY3Vg",
 							"name": "Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3827,7 +3899,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fQwFZzc3AsCdpxT5S",
+							"id": "fxUvvf1q15j52ZE_Q",
 							"name": "Very Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3835,7 +3907,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fCullvogjxxuDmCad",
+							"id": "fZ63ZdAq4RNRpgeGh",
 							"name": "Filthy Rich",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3843,7 +3915,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fyA3CS3TS9M8m6_4q",
+							"id": "fh1jpfUQTa8kSe71S",
 							"name": "Multimillionaire 1",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -3856,8 +3928,8 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 80299,
-				"extended_value": 80299,
+				"value": 83219,
+				"extended_value": 83219,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
@@ -5784,7 +5856,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:16:51-04:00",
-	"modified_date": "2026-05-17T20:23:50-04:00",
+	"modified_date": "2026-06-14T17:02:55-04:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
