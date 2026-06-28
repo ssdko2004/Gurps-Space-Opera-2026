@@ -1,0 +1,795 @@
+{
+	"version": 5,
+	"id": "A__PbCNBEVkK2wW15",
+	"total_points": 0,
+	"profile": {
+		"name": "Pirate Ship",
+		"age": "20",
+		"birthday": "September 19",
+		"eyes": "Brown",
+		"hair": "Black",
+		"skin": "Dark Brown",
+		"handedness": "Right",
+		"gender": "Male",
+		"weight": "200,000 lb",
+		"player_name": "Jesse Finnegan",
+		"tech_level": "10",
+		"portrait": "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",
+		"SM": 6
+	},
+	"settings": {
+		"page": {
+			"paper_size": "letter",
+			"orientation": "portrait",
+			"top_margin": "0.25 in",
+			"left_margin": "0.25 in",
+			"bottom_margin": "0.25 in",
+			"right_margin": "0.25 in"
+		},
+		"block_layout": [
+			"reactions conditional_modifiers",
+			"melee",
+			"ranged",
+			"traits skills",
+			"spells",
+			"equipment",
+			"other_equipment",
+			"notes"
+		],
+		"attributes": [
+			{
+				"id": "st",
+				"type": "integer",
+				"name": "ST",
+				"full_name": "Strength",
+				"base": "10"
+			},
+			{
+				"id": "ht",
+				"type": "integer",
+				"name": "HT",
+				"full_name": "Health",
+				"base": "10"
+			},
+			{
+				"id": "basic_speed",
+				"type": "decimal",
+				"name": "Basic Speed",
+				"base": "($dx + $ht) / 4"
+			},
+			{
+				"id": "basic_move",
+				"type": "integer",
+				"name": "Basic Move",
+				"base": "Math.floor($basic_speed)"
+			},
+			{
+				"id": "hp",
+				"type": "pool",
+				"name": "HP",
+				"full_name": "Hit Points",
+				"base": "$st",
+				"thresholds": [
+					{
+						"state": "Healthy",
+						"value": "$hp"
+					}
+				]
+			},
+			{
+				"id": "power_points",
+				"type": "integer",
+				"placement": "secondary",
+				"name": "PP",
+				"full_name": "Power Points",
+				"base": "0"
+			}
+		],
+		"body_type": {
+			"name": "Spaceship",
+			"roll": "1d",
+			"locations": [
+				{
+					"id": "front_hull",
+					"choice_name": "Front Hull",
+					"table_name": "Front Hull",
+					"sub_table": {
+						"roll": "1d",
+						"locations": [
+							{
+								"id": "front_hull_1",
+								"choice_name": "[1]",
+								"table_name": "[1]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "front_hull_2",
+								"choice_name": "[2]",
+								"table_name": "[2]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "front_hull_3",
+								"choice_name": "[3]",
+								"table_name": "[3]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "front_hull_4",
+								"choice_name": "[4]",
+								"table_name": "[4]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "front_hull_5",
+								"choice_name": "[5]",
+								"table_name": "[5]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "front_hull_6",
+								"choice_name": "[6]",
+								"table_name": "[6]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							}
+						]
+					},
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 70
+						}
+					}
+				},
+				{
+					"id": "central_hull",
+					"choice_name": "Central Hull",
+					"table_name": "Central Hull",
+					"sub_table": {
+						"roll": "1d",
+						"locations": [
+							{
+								"id": "central_hull_1",
+								"choice_name": "[1]",
+								"table_name": "[1]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "central_hull_2",
+								"choice_name": "[2]",
+								"table_name": "[2]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "central_hull_3",
+								"choice_name": "[3]",
+								"table_name": "[3]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "central_hull_4",
+								"choice_name": "[4]",
+								"table_name": "[4]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "central_hull_5",
+								"choice_name": "[5]",
+								"table_name": "[5]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "central_hull_6",
+								"choice_name": "[6]",
+								"table_name": "[6]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							}
+						]
+					},
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 70
+						}
+					}
+				},
+				{
+					"id": "rear_hull",
+					"choice_name": "Rear Hull",
+					"table_name": "Rear Hull",
+					"sub_table": {
+						"roll": "1d",
+						"locations": [
+							{
+								"id": "rear_hull_1",
+								"choice_name": "[1]",
+								"table_name": "[1]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "rear_hull_2",
+								"choice_name": "[2]",
+								"table_name": "[2]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "rear_hull_3",
+								"choice_name": "[3]",
+								"table_name": "[3]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "rear_hull_4",
+								"choice_name": "[4]",
+								"table_name": "[4]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "rear_hull_5",
+								"choice_name": "[5]",
+								"table_name": "[5]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							},
+							{
+								"id": "rear_hull_6",
+								"choice_name": "[6]",
+								"table_name": "[6]",
+								"calc": {
+									"roll_range": "-",
+									"dr": {
+										"all": 70
+									}
+								}
+							}
+						]
+					},
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 70
+						}
+					}
+				}
+			]
+		},
+		"damage_progression": "basic_set",
+		"default_length_units": "mi",
+		"default_weight_units": "tn",
+		"user_description_display": "tooltip",
+		"modifiers_display": "inline",
+		"notes_display": "inline",
+		"skill_level_adj_display": "tooltip",
+		"show_spell_adj": true,
+		"hide_lc_column": true
+	},
+	"attributes": [
+		{
+			"attr_id": "st",
+			"adj": 290,
+			"calc": {
+				"value": 300,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "ht",
+			"adj": 2,
+			"calc": {
+				"value": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "basic_speed",
+			"adj": 800,
+			"calc": {
+				"value": 800,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "basic_move",
+			"adj": 0,
+			"calc": {
+				"value": 800,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "hp",
+			"adj": 0,
+			"calc": {
+				"value": 300,
+				"current": 300,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "power_points",
+			"adj": 3,
+			"calc": {
+				"value": 3,
+				"points": 0
+			}
+		}
+	],
+	"traits": [
+		{
+			"id": "tswPyyk7-zXKHdfnW",
+			"name": "Handling ",
+			"local_notes": "0",
+			"userdesc": "Winged Cost: $5,000,000",
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "tTRMRpi6KRwk1UksJ",
+			"name": "Stability Rating",
+			"local_notes": "4",
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TX_yGw7-Ui06y26Vx",
+			"name": "Front Hull",
+			"children": [
+				{
+					"id": "tPZT_njf23M60Lnec",
+					"name": "[1] Armor, Nanocomposite",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"front_hull",
+								"torso"
+							],
+							"amount": 70
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tV6Hg4xTE2ihqa7zI",
+					"name": "[2] Tactical Sensory Array",
+					"local_notes": "Comm/sensor Level: 7, Has the same capabilities as an enhanced array, but adds the ability to actively jam transmissions and overcome defensive ECM.",
+					"userdesc": "Cost: $2,000,000",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "T9k4UCs6FAAARuIp6",
+					"name": "[5] Weapons, Major Battery ",
+					"local_notes": "Needs 1 PP",
+					"userdesc": "Cost: $6,000,000",
+					"children": [
+						{
+							"id": "tVbUKuf750-By8ts7",
+							"name": "Fixed-Mount Medium Laser",
+							"local_notes": "Output: 300 MW, Workspaces: 0",
+							"calc": {
+								"points": 0
+							}
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TaJDvddUwyfSrHuzj",
+					"name": "[6] Weapons, Secondary Battery ",
+					"local_notes": "Needs 1 PP",
+					"userdesc": "Cost: $6,000,000",
+					"children": [
+						{
+							"id": "tyux8ZykWzX_haF85",
+							"name": "1 Fixed-Mount Missile Launcher",
+							"local_notes": "Output: 20cm, Workspaces: 0",
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tmV16OMhxodIA8wGX",
+							"name": "Ammo Storage",
+							"local_notes": "4.5 Tons",
+							"calc": {
+								"points": 0
+							}
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tKOlxeQCt2roZ-AHa",
+					"name": "[Core] None",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "T16UcBvVwwelTqLvZ",
+			"name": "Central Hull",
+			"children": [
+				{
+					"id": "tInvUMgvIlBDuVYh0",
+					"name": "[1] Armor, Nanocomposite",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"central_hull",
+								"torso"
+							],
+							"amount": 70
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t1580Wy-4MIZ7cs6_",
+					"name": "[2] Cargo Hold",
+					"local_notes": "5 Tons",
+					"userdesc": "Cost: $0",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t7eFU6m_oXMzjxNes",
+					"name": "[3] Cargo Hold",
+					"local_notes": "5 Tons",
+					"userdesc": "Cost: $0",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tj5clNN4TQ5r3x0Jy",
+					"name": "[3] Hyper Drive",
+					"local_notes": "Needs 1 PP, Provides FTL-1",
+					"userdesc": "Costs: $10,000,000",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tRnKoAI7XKF7joGuL",
+					"name": "[4] Controll Room",
+					"local_notes": "Complexity: 8, Comm/Sensor Level: 7, Control Stations: 4, Workspaces: 0, The Bridge. Special: Was that a seethru cat? ",
+					"userdesc": "Cost: $10,000,000",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tV0GeQMw-rHaiq2qr",
+					"name": "[5] Fuel Cell Power Plant",
+					"local_notes": "Generates 1 PP. 12 hour operational duration",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "thOyewmZRFh6nw8qX",
+					"name": "[6] Fuel Cell Power Plant",
+					"local_notes": "Generates 1 PP. 12 hour operational duration",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tbfzwMPRoCFuSpzuM",
+					"name": "[Core] Fuel Cell Power Plant",
+					"local_notes": "Generates 1 PP. 12 hour operational duration",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TpiviwtdaKnAOspXu",
+			"name": "Rear Hull",
+			"children": [
+				{
+					"id": "tv7BQ_wQlOXWANEa8",
+					"name": "[1] Armor, Nanocomposite",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"rear_hull",
+								"torso"
+							],
+							"amount": 70
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tmOntMYonWK5rL1Lw",
+					"name": "[2] Standard Reactionless Drive",
+					"local_notes": "Thrust: 0.5 G, PP Cost: 1",
+					"userdesc": "Cost: $1,000,000",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tATYYHsphtTQ184h-",
+					"name": "[3] Standard Reactionless Drive",
+					"local_notes": "Thrust: 0.5 G, PP Cost: 1",
+					"userdesc": "Cost: $1,000,000",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t2Yrz6U_3LuZIkfBD",
+					"name": "[4] Standard Reactionless Drive",
+					"local_notes": "Thrust: 0.5 G, PP Cost: 1",
+					"userdesc": "Cost: $1,000,000",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tg-HlJPgIdnJqeCTv",
+					"name": "[5] Cargo Hold",
+					"local_notes": "5 Tons",
+					"userdesc": "Cost: $0",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tkXAmDhxfhP1Nogjf",
+					"name": "[6] Cargo Hold",
+					"local_notes": "5 Tons",
+					"userdesc": "Cost: $0",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t-29lrMN9GYrW_kVV",
+					"name": "[Core] Fusion Reactor",
+					"local_notes": "Generates 2 PP, Fuel: 200 Years, Special: If not spoken to nicely -CR 16 doesn't start: ",
+					"userdesc": "Cost: $10,000,000",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		}
+	],
+	"equipment": [
+		{
+			"id": "emz_-mlWLe3loKG8C",
+			"description": "30 MJ Fixed-Mount Medium Laser",
+			"local_notes": "sAcc: 0",
+			"tech_level": "10",
+			"legality_class": "4",
+			"base_value": "0",
+			"weapons": [
+				{
+					"id": "Wv9uqvKeLZoriIlFu",
+					"sv": 1,
+					"damage": {
+						"type": "burn",
+						"base": "6dx10",
+						"armor_divisor": 2
+					},
+					"usage": "3 Min turn",
+					"range": "2,500",
+					"rate_of_fire": "10",
+					"recoil": "2",
+					"calc": {
+						"damage": "6dx10(2) burn"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eA2vs-SRzzghgfrcO",
+			"description": "20cm Missile Laucher",
+			"local_notes": "sAcc: 2",
+			"tech_level": "10",
+			"legality_class": "4",
+			"weapons": [
+				{
+					"id": "WDFvAXpLAWM7VdK5U",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"base": "6dx500",
+						"armor_divisor": 2
+					},
+					"usage": "3 Min. Turn, Conventional Warhead",
+					"range": "100,000",
+					"rate_of_fire": "10",
+					"recoil": "2",
+					"calc": {
+						"damage": "6dx500(2) cr"
+					}
+				},
+				{
+					"id": "WDQVKJ_5lu6tTmela",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"base": "6dx500"
+					},
+					"usage": "3 Min. Turn, Conventional Warhead, Proximity detonation",
+					"range": "100,000",
+					"rate_of_fire": "10",
+					"recoil": "2",
+					"calc": {
+						"damage": "6dx500 cr"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "e83F6z3usaeMeIgXE",
+			"description": "40cm Conventional Missiles",
+			"tech_level": "10",
+			"legality_class": "4",
+			"base_value": "1000000",
+			"base_weight": "1",
+			"quantity": 15,
+			"equipped": true,
+			"calc": {
+				"value": 1000000,
+				"extended_value": 15000000,
+				"weight": "2,000 lb",
+				"extended_weight": "30,000 lb"
+			}
+		}
+	],
+	"created_date": "2026-06-27T21:43:28-04:00",
+	"modified_date": "2026-06-28T12:11:14-04:00",
+	"calc": {
+		"swing": "33d",
+		"thrust": "31d",
+		"basic_lift": "18,000 lb",
+		"move": [
+			800,
+			640,
+			480,
+			320,
+			160
+		],
+		"dodge": [
+			803,
+			802,
+			801,
+			800,
+			799
+		]
+	}
+}
