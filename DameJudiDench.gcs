@@ -559,16 +559,16 @@
 					"children": [
 						{
 							"id": "tVbUKuf750-By8ts7",
-							"name": "Particle Beam Cannon",
-							"local_notes": "Output: 100 MJ, Workspaces: 0, Special: Has a strange chance to either not hit on a hit, or vice versa. \"Did you see that laser bend at the last minue?\"",
+							"name": "Particle Beam Cannon Turret",
+							"local_notes": "Output: 100 MJ, Workspaces: 1, Special: Has a strange chance to either not hit on a hit, or vice versa. \"Did you see that laser bend at the last minue?\"",
 							"calc": {
 								"points": 0
 							}
 						},
 						{
 							"id": "taNza1lJsTEvHTKPG",
-							"name": "Missle Launcher",
-							"local_notes": "Launchers: 28cm, Workspaces:0",
+							"name": "Missle Launcher Turret",
+							"local_notes": "Launchers: 28cm, Workspaces:1",
 							"calc": {
 								"points": 0
 							}

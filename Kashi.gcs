@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "As0u-6HXQjmOtxbee",
-	"total_points": 223,
+	"total_points": 228,
 	"points_record": [
+		{
+			"when": "2026-06-28T20:54:29-04:00",
+			"points": 5,
+			"reason": "Session 6"
+		},
 		{
 			"when": "2026-05-31T20:41:30-04:00",
 			"points": 5,
@@ -692,41 +697,41 @@
 			],
 			"modifiers": [
 				{
-					"id": "mjKNM3Zr37chwmN7N",
+					"id": "m-nidJT2F9A_xpKon",
 					"name": "Dance",
 					"cost_adj": "-40%",
 					"affects": "levels_only"
 				},
 				{
-					"id": "mNhtZ1vxH4mHbAoKI",
+					"id": "mLdVscfNJ9gsdKVBS",
 					"name": "Dark-Aspected",
 					"cost_adj": "-50%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "mW8cxbFm0rIMQYcSh",
+					"id": "mrVYj3ajdgFMgGwrw",
 					"name": "Day-Aspected",
 					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "mUateVXiulwdQTJ2m",
+					"id": "mN3LAGuWAC4V5AKP-",
 					"name": "Musical",
 					"cost_adj": "-50%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "mBgPCPA8UsjwC7d5o",
+					"id": "mS2vlQsv1OC086Yli",
 					"name": "Night-Aspected",
 					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "mii7grtw5Z-hXKpWy",
+					"id": "mrLKSFAb3tCZSI7fp",
 					"name": "One College",
 					"local_notes": "@College@",
 					"cost_adj": "-40%",
@@ -734,14 +739,14 @@
 					"disabled": true
 				},
 				{
-					"id": "mU43AAv8drTH-TXJH",
+					"id": "mOc_w_q783lcis7Cd",
 					"name": "Solitary",
 					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "mYn-LejxlUijyC7gI",
+					"id": "mIlyURiZ4uF_G7JjP",
 					"name": "Song",
 					"cost_adj": "-40%",
 					"affects": "levels_only",
@@ -769,10 +774,10 @@
 				}
 			],
 			"can_level": true,
-			"levels": 2,
+			"levels": 3,
 			"calc": {
-				"points": 17,
-				"current_level": 2
+				"points": 23,
+				"current_level": 3
 			}
 		},
 		{
@@ -3010,6 +3015,101 @@
 			}
 		},
 		{
+			"id": "s7uU4QKuXw4GTbkX0",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sZZ8IZK6yPuxwffjd"
+			},
+			"name": "Navigation",
+			"reference": "B211",
+			"tags": [
+				"Exploration",
+				"Outdoor",
+				"Technical",
+				"Vehicle"
+			],
+			"specialization": "Space",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Astronomy",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Mathematics",
+					"specialization": "Applied",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Navigation",
+					"specialization": "Hyperspace",
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"calc": {
+				"level": 15,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "s70RkvwPgPcV7GNpm",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sQDDY3vM3okMKExLN"
+			},
+			"name": "Navigation",
+			"reference": "B211",
+			"tags": [
+				"Exploration",
+				"Outdoor",
+				"Technical",
+				"Vehicle"
+			],
+			"specialization": "Hyperspace",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Astronomy",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Mathematics",
+					"specialization": "Applied",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Navigation",
+					"specialization": "Space",
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Navigation",
+				"specialization": "Space",
+				"modifier": -5,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
+			},
+			"calc": {
+				"level": 15,
+				"rsl": "IQ-1"
+			}
+		},
+		{
 			"id": "sHxgd8iebEqu9JkVd",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -3322,8 +3422,8 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 16,
-						"rsl": "IQ+0"
+						"level": 17,
+						"rsl": "IQ+1"
 					}
 				},
 				{
@@ -3370,8 +3470,8 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 16,
-						"rsl": "IQ+0"
+						"level": 17,
+						"rsl": "IQ+1"
 					}
 				},
 				{
@@ -3456,8 +3556,8 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 16,
-						"rsl": "IQ+0"
+						"level": 17,
+						"rsl": "IQ+1"
 					}
 				},
 				{
@@ -3504,6 +3604,92 @@
 					},
 					"points": 1,
 					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "p93RlxPrBp_E0tMhT",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pzUGb8ipTDaz3q0am"
+					},
+					"name": "Major Healing",
+					"reference": "M91",
+					"tags": [
+						"Healing"
+					],
+					"difficulty": "iq/vh",
+					"college": [
+						"Healing"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1-4",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"prereq_count": 3,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (healing)"
+										}
+									}
+								]
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "minor healing"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
 						"level": 16,
 						"rsl": "IQ+0"
 					}
@@ -3538,8 +3724,8 @@
 					"duration": "Instant",
 					"points": 1,
 					"calc": {
-						"level": 16,
-						"rsl": "IQ+0"
+						"level": 17,
+						"rsl": "IQ+1"
 					}
 				},
 				{
@@ -3586,8 +3772,8 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 16,
-						"rsl": "IQ+0"
+						"level": 17,
+						"rsl": "IQ+1"
 					}
 				},
 				{
@@ -3634,8 +3820,8 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 16,
-						"rsl": "IQ+0"
+						"level": 17,
+						"rsl": "IQ+1"
 					}
 				},
 				{
@@ -3682,8 +3868,8 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 16,
-						"rsl": "IQ+0"
+						"level": 17,
+						"rsl": "IQ+1"
 					}
 				},
 				{
@@ -3732,8 +3918,8 @@
 					},
 					"points": 1,
 					"calc": {
-						"level": 16,
-						"rsl": "IQ+0"
+						"level": 17,
+						"rsl": "IQ+1"
 					}
 				}
 			]
@@ -5856,7 +6042,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:16:51-04:00",
-	"modified_date": "2026-06-14T17:02:55-04:00",
+	"modified_date": "2026-06-28T21:11:10-04:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",

@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "AMCcz18E4hSTpOYHb",
-	"total_points": 223,
+	"total_points": 228,
 	"points_record": [
+		{
+			"when": "2026-06-28T20:54:11-04:00",
+			"points": 5,
+			"reason": "Session 6"
+		},
 		{
 			"when": "2026-05-31T20:42:00-04:00",
 			"points": 5,
@@ -506,10 +511,10 @@
 		},
 		{
 			"attr_id": "iq",
-			"adj": 2,
+			"adj": 4,
 			"calc": {
-				"value": 12,
-				"points": 20
+				"value": 14,
+				"points": 40
 			}
 		},
 		{
@@ -1743,12 +1748,12 @@
 				"type": "skill",
 				"name": "Merchant",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -1858,12 +1863,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -1929,12 +1934,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -1980,12 +1985,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2021,9 +2026,9 @@
 				"type": "skill",
 				"name": "Psychology",
 				"modifier": -4,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
 				"level": 12,
@@ -2075,12 +2080,12 @@
 				"name": "Geography",
 				"specialization": "Political",
 				"modifier": -2,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2147,12 +2152,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2184,12 +2189,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2224,12 +2229,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2270,12 +2275,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2365,11 +2370,11 @@
 			"tech_level": "10",
 			"points": 1,
 			"defaulted_from": {
-				"type": "dx",
+				"type": "iq",
 				"modifier": -5,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
 				"level": 12,
@@ -2416,12 +2421,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 10,
+				"level": 12,
 				"rsl": "IQ-2"
 			}
 		},
@@ -2456,12 +2461,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2509,12 +2514,12 @@
 				"name": "Electronics Operation",
 				"specialization": "Surveillance",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2565,12 +2570,12 @@
 				"name": "Electronics Operation",
 				"specialization": "Surveillance",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2618,12 +2623,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2805,12 +2810,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2853,12 +2858,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2958,12 +2963,12 @@
 				"type": "skill",
 				"name": "Criminology",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2992,12 +2997,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3032,12 +3037,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3068,12 +3073,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3113,12 +3118,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 10,
+				"level": 12,
 				"rsl": "IQ-2"
 			}
 		},
@@ -3145,12 +3150,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3245,6 +3250,47 @@
 			}
 		},
 		{
+			"id": "slMpf5lNXPgNIdPvD",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "snZurdiP1nULV5-vm"
+			},
+			"name": "Gunner",
+			"reference": "B198",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Beams",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Gunner",
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "DX+0"
+			}
+		},
+		{
 			"id": "s6bKFZnt7BMzBTO7k",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -3269,12 +3315,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3339,12 +3385,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3414,12 +3460,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3446,12 +3492,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3486,12 +3532,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 10,
+				"level": 12,
 				"rsl": "IQ-2"
 			}
 		},
@@ -3530,12 +3576,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3710,12 +3756,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3795,12 +3841,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 10,
+				"level": 12,
 				"rsl": "IQ-2"
 			}
 		},
@@ -3832,12 +3878,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3875,12 +3921,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3941,12 +3987,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3980,11 +4026,12 @@
 			],
 			"points": 2,
 			"defaulted_from": {
-				"type": "per",
+				"type": "skill",
+				"name": "Shadowing",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
 				"level": 12,
@@ -4040,12 +4087,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -4078,12 +4125,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 10,
+				"level": 12,
 				"rsl": "IQ-2"
 			}
 		},
@@ -4188,12 +4235,12 @@
 				"type": "skill",
 				"name": "Writing",
 				"modifier": -3,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -4255,12 +4302,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "IQ+0"
 			}
 		},
@@ -4324,11 +4371,12 @@
 			],
 			"points": 1,
 			"defaulted_from": {
-				"type": "per",
+				"type": "skill",
+				"name": "Criminology",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
 				"level": 11,
@@ -4369,15 +4417,14 @@
 			],
 			"points": 2,
 			"defaulted_from": {
-				"type": "skill",
-				"name": "Stealth",
-				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"type": "iq",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "IQ+0"
 			}
 		},
@@ -4469,12 +4516,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 10,
+				"level": 12,
 				"rsl": "IQ-2"
 			}
 		},
@@ -4502,12 +4549,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -4535,12 +4582,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "IQ+0"
 			}
 		},
@@ -4573,11 +4620,11 @@
 			],
 			"points": 1,
 			"defaulted_from": {
-				"type": "dx",
+				"type": "iq",
 				"modifier": -5,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
 				"level": 12,
@@ -4610,12 +4657,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		},
@@ -4648,12 +4695,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 10,
+				"level": 12,
 				"rsl": "IQ-2"
 			}
 		},
@@ -4756,12 +4803,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "IQ-1"
 			}
 		}
@@ -5992,7 +6039,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:15:00-04:00",
-	"modified_date": "2026-05-02T13:26:07-04:00",
+	"modified_date": "2026-06-28T21:08:04-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",
