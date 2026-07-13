@@ -310,7 +310,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -325,7 +325,7 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 8
+							"all": 11
 						}
 					}
 				},
@@ -339,7 +339,7 @@
 					"calc": {
 						"roll_range": "5",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -353,7 +353,7 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -367,7 +367,7 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -379,7 +379,7 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -393,7 +393,7 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -407,7 +407,7 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -421,7 +421,7 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -435,7 +435,7 @@
 					"calc": {
 						"roll_range": "15",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -449,7 +449,7 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -463,7 +463,7 @@
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -476,7 +476,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				}
@@ -5627,6 +5627,122 @@
 				"weight": "2 lb",
 				"extended_weight": "2 lb"
 			}
+		},
+		{
+			"id": "eMJI2l9HJcDK3yK6S",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
+				"id": "eFpt05kXURQUoJ3HE"
+			},
+			"description": "Ironskin Amulet",
+			"reference": "DFA118",
+			"tags": [
+				"Magic Items"
+			],
+			"base_value": "28720",
+			"base_weight": "0.25 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"arm"
+					],
+					"amount": 3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"eye"
+					],
+					"amount": 3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"face"
+					],
+					"amount": 3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"foot"
+					],
+					"amount": 3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"groin"
+					],
+					"amount": 3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"hand"
+					],
+					"amount": 3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"leg"
+					],
+					"amount": 3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"neck"
+					],
+					"amount": 3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"skull"
+					],
+					"amount": 3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"torso"
+					],
+					"amount": 3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"vitals"
+					],
+					"amount": 3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"wing"
+					],
+					"amount": 3
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"tail"
+					],
+					"amount": 3
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 28720,
+				"extended_value": 28720,
+				"weight": "0.25 lb",
+				"extended_weight": "0.25 lb"
+			}
 		}
 	],
 	"other_equipment": [
@@ -6017,12 +6133,12 @@
 			"id": "eZoO6Y7CtVYP-vK_E",
 			"description": "Money",
 			"legality_class": "4",
-			"base_value": "51937.9",
+			"base_value": "23217",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 51937.9,
-				"extended_value": 51937.9,
+				"value": 23217,
+				"extended_value": 23217,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
@@ -6039,7 +6155,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:15:00-04:00",
-	"modified_date": "2026-06-28T21:08:04-04:00",
+	"modified_date": "2026-07-12T19:57:45-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",

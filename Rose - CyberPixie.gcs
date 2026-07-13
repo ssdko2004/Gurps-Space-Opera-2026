@@ -3891,99 +3891,99 @@
 			"tags": [
 				"Money"
 			],
-			"base_value": "78110",
+			"base_value": "68111",
 			"modifiers": [
 				{
-					"id": "FhZ5bZNeT8jP8AM3p",
+					"id": "Fpo3F8gGY7BFoWoTS",
 					"name": "Tech Level",
 					"reference": "B27",
 					"children": [
 						{
-							"id": "f9YE1GFRSYNDDWhkv",
+							"id": "fJH8jjvQw_N44ONzr",
 							"name": "TL0",
 							"reference": "B27",
 							"cost": "+250",
 							"disabled": true
 						},
 						{
-							"id": "fj0dJijMwprMfSA6p",
+							"id": "fFjPp9Kzzct02iiKC",
 							"name": "TL1",
 							"reference": "B27",
 							"cost": "+500",
 							"disabled": true
 						},
 						{
-							"id": "fkWLgh1qLMRJe130E",
+							"id": "fF763Vd_82QF2bUp5",
 							"name": "TL2",
 							"reference": "B27",
 							"cost": "+750",
 							"disabled": true
 						},
 						{
-							"id": "fUkZ7-RrckRnrgORP",
+							"id": "fNNdsX0OR1g8XuCT1",
 							"name": "TL3",
 							"reference": "B27",
 							"cost": "+1000",
 							"disabled": true
 						},
 						{
-							"id": "foNIc2g9wOPLSrA_c",
+							"id": "fclKysk_MjVaZR-Gd",
 							"name": "TL4",
 							"reference": "B27",
 							"cost": "+2000",
 							"disabled": true
 						},
 						{
-							"id": "fT-X4A62kefcSyGgG",
+							"id": "f4SrIwm_T_Ad3ANeX",
 							"name": "TL5",
 							"reference": "B27",
 							"cost": "+5000",
 							"disabled": true
 						},
 						{
-							"id": "fKZzcguFS8yhprYbm",
+							"id": "f4ZTbH3THSXlQgLSd",
 							"name": "TL6",
 							"reference": "B27",
 							"cost": "+10000",
 							"disabled": true
 						},
 						{
-							"id": "fV6bbzKrFoOqG5OmX",
+							"id": "fkqgLKoEt11vwyfHT",
 							"name": "TL7",
 							"reference": "B27",
 							"cost": "+15000",
 							"disabled": true
 						},
 						{
-							"id": "fnkPkImZdLYkHRn3Y",
+							"id": "fQbS_hvw4UvQJqY-Y",
 							"name": "TL8",
 							"reference": "B27",
 							"cost": "+20000",
 							"disabled": true
 						},
 						{
-							"id": "fbG3ztAZekVYhaaov",
+							"id": "fppOLtU7gFNq2Ghok",
 							"name": "TL9",
 							"reference": "B27",
 							"cost": "+30000",
 							"disabled": true
 						},
 						{
-							"id": "fEku0FXmMExYtPg-v",
+							"id": "fzd_4moCJoZelRT1w",
 							"name": "TL10",
 							"reference": "B27",
 							"cost": "+50000",
 							"disabled": true
 						},
 						{
-							"id": "fg0F_Lu-sz6MD13FF",
+							"id": "fA-pQdsnIvzVwwc0Q",
 							"name": "TL11",
 							"reference": "B27",
 							"cost": "+75000",
 							"disabled": true
 						},
 						{
-							"id": "fhyBui4Z1evuxpqNL",
+							"id": "fXnWUXlDL2JxDkFdG",
 							"name": "TL12",
 							"reference": "B27",
 							"cost": "+100000",
@@ -3992,12 +3992,12 @@
 					]
 				},
 				{
-					"id": "FTBk2De9JA-chVNZO",
+					"id": "FaEdXIOzVuYmjq5YG",
 					"name": "Wealth Level",
 					"reference": "B25",
 					"children": [
 						{
-							"id": "fAvMKA2RCPOS7zAnn",
+							"id": "fMAIR3lVVcSY0I6Pn",
 							"name": "Poor",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4005,7 +4005,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fx4u6QMuMZE-5Vkj-",
+							"id": "fFhTWU276OdQEPpWz",
 							"name": "Struggling",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4013,7 +4013,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fIaVBXIg1772vvLQl",
+							"id": "fC0GQIXNYi57qJD-S",
 							"name": "Average",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4021,7 +4021,7 @@
 							"disabled": true
 						},
 						{
-							"id": "ftkj8WCz2b3KUl6R-",
+							"id": "fOvE3snm1Uq5n5-ql",
 							"name": "Comfortable",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4029,7 +4029,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fSjhlmOViwp07JYyh",
+							"id": "fWmMDhOkQQye3YPg7",
 							"name": "Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4037,7 +4037,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fZlHRDCNLadh2Weae",
+							"id": "f5kYt-rRBnCKAaQCK",
 							"name": "Very Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4045,7 +4045,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fow1uhxrU5zQZr0tV",
+							"id": "fiXovVcgnopG5Upka",
 							"name": "Filthy Rich",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4053,7 +4053,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fhc6QcDQOVbdExmQx",
+							"id": "fZQrnrFBAMe7sLkbB",
 							"name": "Multimillionaire 1",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4066,8 +4066,8 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 78110,
-				"extended_value": 78110,
+				"value": 68111,
+				"extended_value": 68111,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
@@ -4377,19 +4377,27 @@
 			],
 			"modifiers": [
 				{
-					"id": "fbGqBZjp9jTHNZc-6",
-					"name": "Made for small hands (SM -6)",
+					"id": "f4wc5KTvWmlaXNgh3",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment Modifiers.eqm",
+						"id": "fBkgiUO0gWbiJUpm-"
+					},
+					"name": "SM -6",
+					"reference": "UT16",
 					"cost_type": "to_base_cost",
-					"cost": "+0.5 CF"
+					"weight_type": "to_final_weight",
+					"cost": "-0.01 CF",
+					"weight": "x1/100"
 				}
 			],
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 1800,
-				"extended_value": 1800,
-				"weight": "8 lb",
-				"extended_weight": "8 lb"
+				"value": 1188,
+				"extended_value": 1188,
+				"weight": "0.08 lb",
+				"extended_weight": "0.08 lb"
 			}
 		},
 		{
@@ -4624,6 +4632,124 @@
 			}
 		}
 	],
+	"other_equipment": [
+		{
+			"id": "e6grROjGdg2pK6rkF",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "efLiH0ag06govO6tN"
+			},
+			"description": "Filter Mask",
+			"reference": "UT177",
+			"tech_level": "9",
+			"tags": [
+				"Armor",
+				"Defenses"
+			],
+			"base_value": "100",
+			"base_weight": "3 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"eye"
+					],
+					"amount": 10
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"face"
+					],
+					"amount": 10
+				}
+			],
+			"modifiers": [
+				{
+					"id": "fxfxQeQJ5uiRIGwp_",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment Modifiers.eqm",
+						"id": "fBkgiUO0gWbiJUpm-"
+					},
+					"name": "SM -6",
+					"reference": "UT16",
+					"cost_type": "to_base_cost",
+					"weight_type": "to_final_weight",
+					"cost": "-0.01 CF",
+					"weight": "x1/100"
+				}
+			],
+			"quantity": 1,
+			"calc": {
+				"value": 99,
+				"extended_value": 99,
+				"weight": "0.03 lb",
+				"extended_weight": "0.03 lb"
+			}
+		},
+		{
+			"id": "eLEY1Y0_ePTCA2zmZ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eT3f4c4tSQXzONaiV"
+			},
+			"description": "Space Biosuit",
+			"reference": "UT179",
+			"local_notes": "Flexible. 2C/6wk.",
+			"tech_level": "10",
+			"legality_class": "3",
+			"tags": [
+				"Armor",
+				"Defenses"
+			],
+			"base_value": "10000",
+			"base_weight": "5 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "corrosion, crushing and toxic",
+					"amount": -12
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"amount": 15
+				}
+			],
+			"modifiers": [
+				{
+					"id": "fTvETwPsIKCgIa4ji",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment Modifiers.eqm",
+						"id": "fBkgiUO0gWbiJUpm-"
+					},
+					"name": "SM -6",
+					"reference": "UT16",
+					"cost_type": "to_base_cost",
+					"weight_type": "to_final_weight",
+					"cost": "-0.01 CF",
+					"weight": "x1/100"
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 9900,
+				"extended_value": 9900,
+				"weight": "0.05 lb",
+				"extended_weight": "0.05 lb"
+			}
+		}
+	],
 	"notes": [
 		{
 			"id": "NYAQw6O9ZZSmxBkh0",
@@ -4641,7 +4767,7 @@
 		}
 	],
 	"created_date": "2026-03-25T10:24:58-04:00",
-	"modified_date": "2026-06-14T21:02:07-04:00",
+	"modified_date": "2026-07-12T17:45:02-04:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",

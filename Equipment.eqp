@@ -15,6 +15,22 @@
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
+		},
+		{
+			"id": "e1NqHj5v7NqBQ6P23",
+			"description": "Luck Amulet",
+			"local_notes": "Grants Luck",
+			"legality_class": "4",
+			"base_value": "28200",
+			"base_weight": ".25",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 28200,
+				"extended_value": 28200,
+				"weight": "0.25 lb",
+				"extended_weight": "0.25 lb"
+			}
 		}
 	]
 }

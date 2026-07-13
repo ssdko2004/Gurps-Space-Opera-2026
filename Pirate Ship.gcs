@@ -658,9 +658,7 @@
 				},
 				{
 					"id": "t-29lrMN9GYrW_kVV",
-					"name": "[Core] Fusion Reactor",
-					"local_notes": "Generates 2 PP, Fuel: 200 Years, Special: If not spoken to nicely -CR 16 doesn't start: ",
-					"userdesc": "Cost: $10,000,000",
+					"name": "[Core] None",
 					"calc": {
 						"points": 0
 					}
@@ -772,7 +770,7 @@
 		}
 	],
 	"created_date": "2026-06-27T21:43:28-04:00",
-	"modified_date": "2026-06-28T12:11:14-04:00",
+	"modified_date": "2026-06-28T21:55:34-04:00",
 	"calc": {
 		"swing": "33d",
 		"thrust": "31d",

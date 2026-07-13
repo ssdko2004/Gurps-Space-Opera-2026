@@ -423,7 +423,7 @@
 				{
 					"id": "tInvUMgvIlBDuVYh0",
 					"name": "[1] Armor, Nanocomposite",
-					"local_notes": "Normally dDr 15, Currently 13",
+					"local_notes": "Normally dDr 10, Currently 8",
 					"userdesc": "Cost: $5,000,000",
 					"features": [
 						{
@@ -499,7 +499,7 @@
 				{
 					"id": "tVi4UTVU9UHM2WUnc",
 					"name": "[1] Armor, Nanocomposite",
-					"local_notes": "Normally dDr 15, Currently 14",
+					"local_notes": "Normally dDr 10, Currently 9",
 					"userdesc": "Cost: $5,000,000",
 					"features": [
 						{
@@ -607,7 +607,7 @@
 				{
 					"id": "tmtHt27jrgIXGKrK7",
 					"name": "[1] Armor, Nanocomposite",
-					"local_notes": "Normally dDr 15, Currently 14",
+					"local_notes": "Normally dDr 10, Currently 9",
 					"userdesc": "Cost: $5,000,000",
 					"features": [
 						{
@@ -642,15 +642,6 @@
 					}
 				},
 				{
-					"id": "t-29lrMN9GYrW_kVV",
-					"name": "[Core] Fusion Reactor",
-					"local_notes": "Generates 2 PP, Fuel: 200 Years, Special: If not spoken to nicely -CR 16 doesn't start: ",
-					"userdesc": "Cost: $10,000,000",
-					"calc": {
-						"points": 0
-					}
-				},
-				{
 					"id": "t9qaz4gMjSZ9q6yBm",
 					"name": "[4] Habitat ",
 					"local_notes": "8 Cyrostasis Pods (Hibernation Chamber), 4 Steerage Cargo (20 tons)",
@@ -676,17 +667,17 @@
 					"calc": {
 						"points": 0
 					}
+				},
+				{
+					"id": "t-29lrMN9GYrW_kVV",
+					"name": "[Core] Fusion Reactor",
+					"local_notes": "Generates 2 PP, Fuel: 200 Years, Special: If not spoken to nicely -CR 16 doesn't start: ",
+					"userdesc": "Cost: $10,000,000",
+					"calc": {
+						"points": 0
+					}
 				}
 			],
-			"calc": {
-				"points": 0
-			}
-		},
-		{
-			"id": "toWaSKuv1rVHBAzeu",
-			"name": "[5] Cargo Hold",
-			"local_notes": "50 Tons",
-			"userdesc": "Cost: $0",
 			"calc": {
 				"points": 0
 			}
@@ -793,7 +784,7 @@
 		}
 	],
 	"created_date": "2026-06-27T18:58:06-04:00",
-	"modified_date": "2026-06-28T12:11:21-04:00",
+	"modified_date": "2026-06-28T21:38:26-04:00",
 	"calc": {
 		"swing": "73d",
 		"thrust": "71d",
