@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "As49xSi5V5lxtcqzE",
-	"total_points": 227,
+	"total_points": 232,
 	"points_record": [
+		{
+			"when": "2026-07-12T20:21:19-04:00",
+			"points": 5,
+			"reason": "Session 7"
+		},
 		{
 			"when": "2026-06-28T20:54:45-04:00",
 			"points": 5,
@@ -151,7 +156,7 @@
 			{
 				"id": "taste_smell",
 				"type": "integer",
-				"name": "Taste \u0026 Smell",
+				"name": "Taste & Smell",
 				"base": "$per",
 				"cost_per_point": 2
 			},
@@ -318,7 +323,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -333,7 +338,7 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 8
+							"all": 11
 						}
 					}
 				},
@@ -347,7 +352,7 @@
 					"calc": {
 						"roll_range": "5",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -361,7 +366,7 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -375,7 +380,7 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -387,7 +392,7 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -401,7 +406,7 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -415,7 +420,7 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -429,7 +434,7 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -443,7 +448,7 @@
 					"calc": {
 						"roll_range": "15",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -457,7 +462,7 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -471,7 +476,7 @@
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				},
@@ -484,7 +489,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 6
+							"all": 9
 						}
 					}
 				}
@@ -646,7 +651,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Brawling"
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
 						}
 					],
 					"calc": {
@@ -671,15 +679,24 @@
 						},
 						{
 							"type": "skill",
-							"name": "Boxing"
+							"name": {
+								"compare": "is",
+								"qualifier": "Boxing"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Brawling"
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Karate"
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							}
 						}
 					],
 					"calc": {
@@ -704,16 +721,25 @@
 						},
 						{
 							"type": "skill",
-							"name": "Brawling",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							},
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Kicking"
+							"name": {
+								"compare": "is",
+								"qualifier": "Kicking"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Karate",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
 							"modifier": -2
 						}
 					],
@@ -1185,7 +1211,7 @@
 			},
 			"name": "Payload",
 			"reference": "B74",
-			"local_notes": "\u003cscript\u003e\nif(entity.exists) {\n  measure.formatWeight(\n    self.level * entity.encumbrance.basicLift / 10,\n    entity.displayWeightUnits,\n  )\n} else {\n  \"Payload will be calculated when added to a character sheet\"\n}\n\u003c/script\u003e",
+			"local_notes": "<script>\nif(entity.exists) {\n  measure.formatWeight(\n    self.level * entity.encumbrance.basicLift / 10,\n    entity.displayWeightUnits,\n  )\n} else {\n  \"Payload will be calculated when added to a character sheet\"\n}\n</script>",
 			"tags": [
 				"Advantage",
 				"Exotic",
@@ -2059,7 +2085,7 @@
 							"id": "mtOy3gLIRhXLWdZPo",
 							"name": "Powerful Individual",
 							"reference": "B135",
-							"local_notes": "\u003e150% of your starting points",
+							"local_notes": ">150% of your starting points",
 							"cost_adj": "-20",
 							"disabled": true
 						},
@@ -2214,6 +2240,33 @@
 			"calc": {
 				"points": 0
 			}
+		},
+		{
+			"id": "t0-rDew65fByJU6dB",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "t5mke7RFjA2ZT0KRA"
+			},
+			"name": "Gadgeteer",
+			"reference": "B57",
+			"tags": [
+				"Advantage",
+				"Mental"
+			],
+			"modifiers": [
+				{
+					"id": "mrtRFUBYvdh12woNj",
+					"name": "Quick",
+					"reference": "B57",
+					"cost_adj": "25",
+					"disabled": true
+				}
+			],
+			"base_points": 25,
+			"calc": {
+				"points": 25
+			}
 		}
 	],
 	"skills": [
@@ -2240,8 +2293,14 @@
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Heavy Weapons",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Heavy Weapons"
+					},
 					"modifier": -4
 				}
 			],
@@ -2282,8 +2341,14 @@
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Vehicular Armor",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Vehicular Armor"
+					},
 					"modifier": -4
 				}
 			],
@@ -2324,13 +2389,22 @@
 				},
 				{
 					"type": "skill",
-					"name": "Beam Weapons",
+					"name": {
+						"compare": "is",
+						"qualifier": "Beam Weapons"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Guns",
-					"specialization": "Rifle",
+					"name": {
+						"compare": "is",
+						"qualifier": "Guns"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Rifle"
+					},
 					"modifier": -4
 				}
 			],
@@ -2369,8 +2443,14 @@
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Electrical",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Electrical"
+					},
 					"modifier": -3
 				}
 			],
@@ -2408,19 +2488,34 @@
 				},
 				{
 					"type": "skill",
-					"name": "Electronics Operation",
-					"specialization": "@Electronics type@",
+					"name": {
+						"compare": "is",
+						"qualifier": "Electronics Operation"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "@Electronics type@"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Electronics",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Electronics"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Electronics Repair",
+					"name": {
+						"compare": "is",
+						"qualifier": "Electronics Repair"
+					},
 					"modifier": -4
 				}
 			],
@@ -2454,7 +2549,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Mechanic",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mechanic"
+					},
 					"modifier": -5
 				}
 			],
@@ -2494,18 +2592,30 @@
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Antimatter Reactor",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Antimatter Reactor"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Machinist",
+					"name": {
+						"compare": "is",
+						"qualifier": "Machinist"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Mechanic",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mechanic"
+					},
 					"modifier": -4
 				}
 			],
@@ -2513,7 +2623,13 @@
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Machinist",
+				"name": {
+					"compare": "is",
+					"qualifier": "Machinist"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -5,
 				"level": 10,
 				"adjusted_level": 10,
@@ -2546,18 +2662,30 @@
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Fusion Reactor",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Fusion Reactor"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Machinist",
+					"name": {
+						"compare": "is",
+						"qualifier": "Machinist"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Mechanic",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mechanic"
+					},
 					"modifier": -4
 				}
 			],
@@ -2565,7 +2693,13 @@
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Machinist",
+				"name": {
+					"compare": "is",
+					"qualifier": "Machinist"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -5,
 				"level": 10,
 				"adjusted_level": 10,
@@ -2598,18 +2732,30 @@
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "High-Performance Spacecraft",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "High-Performance Spacecraft"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Machinist",
+					"name": {
+						"compare": "is",
+						"qualifier": "Machinist"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Mechanic",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mechanic"
+					},
 					"modifier": -4
 				}
 			],
@@ -2617,7 +2763,13 @@
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Machinist",
+				"name": {
+					"compare": "is",
+					"qualifier": "Machinist"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -5,
 				"level": 10,
 				"adjusted_level": 10,
@@ -2653,18 +2805,30 @@
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "@Machine class@",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "@Machine class@"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Machinist",
+					"name": {
+						"compare": "is",
+						"qualifier": "Machinist"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Mechanic",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mechanic"
+					},
 					"modifier": -4
 				}
 			],
@@ -2672,7 +2836,13 @@
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Machinist",
+				"name": {
+					"compare": "is",
+					"qualifier": "Machinist"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -5,
 				"level": 10,
 				"adjusted_level": 10,
@@ -2705,18 +2875,30 @@
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Reactionless Thrusters",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Reactionless Thrusters"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Machinist",
+					"name": {
+						"compare": "is",
+						"qualifier": "Machinist"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Mechanic",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mechanic"
+					},
 					"modifier": -4
 				}
 			],
@@ -2724,7 +2906,13 @@
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Machinist",
+				"name": {
+					"compare": "is",
+					"qualifier": "Machinist"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -5,
 				"level": 10,
 				"adjusted_level": 10,
@@ -2782,7 +2970,10 @@
 			"defaults": [
 				{
 					"type": "skill",
-					"name": "Filch",
+					"name": {
+						"compare": "is",
+						"qualifier": "Filch"
+					},
 					"modifier": -5
 				}
 			],
@@ -2819,13 +3010,22 @@
 						},
 						{
 							"type": "skill",
-							"name": "Beam Weapons",
+							"name": {
+								"compare": "is",
+								"qualifier": "Beam Weapons"
+							},
 							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Guns",
-							"specialization": "Pistol",
+							"name": {
+								"compare": "is",
+								"qualifier": "Guns"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Pistol"
+							},
 							"modifier": -4
 						}
 					],
@@ -2965,7 +3165,7 @@
 								"Knowledge",
 								"Social"
 							],
-							"specialization": "Science \u0026 Technology",
+							"specialization": "Science & Technology",
 							"difficulty": "iq/e",
 							"defaults": [
 								{
@@ -2974,12 +3174,18 @@
 								},
 								{
 									"type": "skill",
-									"name": "Research",
+									"name": {
+										"compare": "is",
+										"qualifier": "Research"
+									},
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Current Affairs",
+									"name": {
+										"compare": "is",
+										"qualifier": "Current Affairs"
+									},
 									"modifier": -4
 								}
 							],
@@ -3086,12 +3292,18 @@
 								},
 								{
 									"type": "skill",
-									"name": "Climbing",
+									"name": {
+										"compare": "is",
+										"qualifier": "Climbing"
+									},
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Seamanship",
+									"name": {
+										"compare": "is",
+										"qualifier": "Seamanship"
+									},
 									"modifier": -4
 								}
 							],
@@ -3279,7 +3491,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Acting",
+							"name": {
+								"compare": "is",
+								"qualifier": "Acting"
+							},
 							"modifier": -5
 						}
 					],
@@ -3318,15 +3533,24 @@
 						},
 						{
 							"type": "skill",
-							"name": "Esoteric Medicine"
+							"name": {
+								"compare": "is",
+								"qualifier": "Esoteric Medicine"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Physician"
+							"name": {
+								"compare": "is",
+								"qualifier": "Physician"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Veterinary",
+							"name": {
+								"compare": "is",
+								"qualifier": "Veterinary"
+							},
 							"modifier": -4
 						}
 					],
@@ -3454,14 +3678,23 @@
 						},
 						{
 							"type": "skill",
-							"name": "Sleight of Hand",
+							"name": {
+								"compare": "is",
+								"qualifier": "Sleight of Hand"
+							},
 							"modifier": -3
 						}
 					],
 					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
-						"name": "Sleight of Hand",
+						"name": {
+							"compare": "is",
+							"qualifier": "Sleight of Hand"
+						},
+						"specialization": {
+							"compare": "is"
+						},
 						"modifier": -3,
 						"level": 9,
 						"adjusted_level": 9,
@@ -3504,7 +3737,10 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Judo"
+									"name": {
+										"compare": "is",
+										"qualifier": "Judo"
+									}
 								}
 							],
 							"calc": {
@@ -3589,17 +3825,26 @@
 					"defaults": [
 						{
 							"type": "skill",
-							"name": "Force Sword",
+							"name": {
+								"compare": "is",
+								"qualifier": "Force Sword"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Main-Gauche",
+							"name": {
+								"compare": "is",
+								"qualifier": "Main-Gauche"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Shortsword",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shortsword"
+							},
 							"modifier": -3
 						},
 						{
@@ -3784,7 +4029,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Dropping",
+							"name": {
+								"compare": "is",
+								"qualifier": "Dropping"
+							},
 							"modifier": -4
 						}
 					],
@@ -3820,22 +4068,34 @@
 			"defaults": [
 				{
 					"type": "skill",
-					"name": "First Aid",
+					"name": {
+						"compare": "is",
+						"qualifier": "First Aid"
+					},
 					"modifier": -12
 				},
 				{
 					"type": "skill",
-					"name": "Physician",
+					"name": {
+						"compare": "is",
+						"qualifier": "Physician"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Physiology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Physiology"
+					},
 					"modifier": -8
 				},
 				{
 					"type": "skill",
-					"name": "Veterinary",
+					"name": {
+						"compare": "is",
+						"qualifier": "Veterinary"
+					},
 					"modifier": -5
 				}
 			],
@@ -3865,7 +4125,13 @@
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "First Aid",
+				"name": {
+					"compare": "is",
+					"qualifier": "First Aid"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -12,
 				"level": 1,
 				"adjusted_level": 1,
@@ -3891,99 +4157,99 @@
 			"tags": [
 				"Money"
 			],
-			"base_value": "68111",
+			"base_value": "39361",
 			"modifiers": [
 				{
-					"id": "Fpo3F8gGY7BFoWoTS",
+					"id": "F5sarCNjiGtz0KBLA",
 					"name": "Tech Level",
 					"reference": "B27",
 					"children": [
 						{
-							"id": "fJH8jjvQw_N44ONzr",
+							"id": "ffiYoRsRoShCYWN3y",
 							"name": "TL0",
 							"reference": "B27",
 							"cost": "+250",
 							"disabled": true
 						},
 						{
-							"id": "fFjPp9Kzzct02iiKC",
+							"id": "f8V5a1wRXHrLPdJXW",
 							"name": "TL1",
 							"reference": "B27",
 							"cost": "+500",
 							"disabled": true
 						},
 						{
-							"id": "fF763Vd_82QF2bUp5",
+							"id": "fiq3aUusJuIJO_JFm",
 							"name": "TL2",
 							"reference": "B27",
 							"cost": "+750",
 							"disabled": true
 						},
 						{
-							"id": "fNNdsX0OR1g8XuCT1",
+							"id": "foWKYsJPI0UBx_tmP",
 							"name": "TL3",
 							"reference": "B27",
 							"cost": "+1000",
 							"disabled": true
 						},
 						{
-							"id": "fclKysk_MjVaZR-Gd",
+							"id": "fEFCUWNzZ_p1Am00u",
 							"name": "TL4",
 							"reference": "B27",
 							"cost": "+2000",
 							"disabled": true
 						},
 						{
-							"id": "f4SrIwm_T_Ad3ANeX",
+							"id": "ftV1FxBrhzPW9eZe-",
 							"name": "TL5",
 							"reference": "B27",
 							"cost": "+5000",
 							"disabled": true
 						},
 						{
-							"id": "f4ZTbH3THSXlQgLSd",
+							"id": "fmH4014wxw1Wjx_7t",
 							"name": "TL6",
 							"reference": "B27",
 							"cost": "+10000",
 							"disabled": true
 						},
 						{
-							"id": "fkqgLKoEt11vwyfHT",
+							"id": "f1Ikx7qR1-0aohnNs",
 							"name": "TL7",
 							"reference": "B27",
 							"cost": "+15000",
 							"disabled": true
 						},
 						{
-							"id": "fQbS_hvw4UvQJqY-Y",
+							"id": "fnAJoUdhOzEdTezED",
 							"name": "TL8",
 							"reference": "B27",
 							"cost": "+20000",
 							"disabled": true
 						},
 						{
-							"id": "fppOLtU7gFNq2Ghok",
+							"id": "fn5YclmD-PYp-KhWL",
 							"name": "TL9",
 							"reference": "B27",
 							"cost": "+30000",
 							"disabled": true
 						},
 						{
-							"id": "fzd_4moCJoZelRT1w",
+							"id": "fgNpVbrWcI1E15VdY",
 							"name": "TL10",
 							"reference": "B27",
 							"cost": "+50000",
 							"disabled": true
 						},
 						{
-							"id": "fA-pQdsnIvzVwwc0Q",
+							"id": "flbDwQf9D4vybxxNf",
 							"name": "TL11",
 							"reference": "B27",
 							"cost": "+75000",
 							"disabled": true
 						},
 						{
-							"id": "fXnWUXlDL2JxDkFdG",
+							"id": "fTIh-viJhDtL18KY4",
 							"name": "TL12",
 							"reference": "B27",
 							"cost": "+100000",
@@ -3992,12 +4258,12 @@
 					]
 				},
 				{
-					"id": "FaEdXIOzVuYmjq5YG",
+					"id": "Fj-6Y-oQbA1j0iJUT",
 					"name": "Wealth Level",
 					"reference": "B25",
 					"children": [
 						{
-							"id": "fMAIR3lVVcSY0I6Pn",
+							"id": "fYXKX3TFkj3_8kaAz",
 							"name": "Poor",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4005,7 +4271,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fFhTWU276OdQEPpWz",
+							"id": "f_OLvqRVaCfvu1gCb",
 							"name": "Struggling",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4013,7 +4279,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fC0GQIXNYi57qJD-S",
+							"id": "fkrXeb8QTgiBxGOs-",
 							"name": "Average",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4021,7 +4287,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fOvE3snm1Uq5n5-ql",
+							"id": "f_eawUVYDRcAzzdr0",
 							"name": "Comfortable",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4029,7 +4295,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fWmMDhOkQQye3YPg7",
+							"id": "f_zcigwTG8FmoR5g2",
 							"name": "Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4037,7 +4303,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f5kYt-rRBnCKAaQCK",
+							"id": "fWklacmdcpHPvIzos",
 							"name": "Very Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4045,7 +4311,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fiXovVcgnopG5Upka",
+							"id": "fJOdTHMDlCTTNuNE0",
 							"name": "Filthy Rich",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4053,7 +4319,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fZQrnrFBAMe7sLkbB",
+							"id": "f3pbcq-DMNALpRQnl",
 							"name": "Multimillionaire 1",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4066,8 +4332,8 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 68111,
-				"extended_value": 68111,
+				"value": 39361,
+				"extended_value": 39361,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
@@ -4108,26 +4374,41 @@
 						},
 						{
 							"type": "skill",
-							"name": "Knife"
+							"name": {
+								"compare": "is",
+								"qualifier": "Knife"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Force Sword",
+							"name": {
+								"compare": "is",
+								"qualifier": "Force Sword"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Main-Gauche",
+							"name": {
+								"compare": "is",
+								"qualifier": "Main-Gauche"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Shortsword",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shortsword"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Sword!"
+							"name": {
+								"compare": "is",
+								"qualifier": "Sword!"
+							}
 						}
 					],
 					"calc": {
@@ -4155,26 +4436,41 @@
 						},
 						{
 							"type": "skill",
-							"name": "Knife"
+							"name": {
+								"compare": "is",
+								"qualifier": "Knife"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Force Sword",
+							"name": {
+								"compare": "is",
+								"qualifier": "Force Sword"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Main-Gauche",
+							"name": {
+								"compare": "is",
+								"qualifier": "Main-Gauche"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Shortsword",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shortsword"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Sword!"
+							"name": {
+								"compare": "is",
+								"qualifier": "Sword!"
+							}
 						}
 					],
 					"calc": {
@@ -4204,8 +4500,14 @@
 						},
 						{
 							"type": "skill",
-							"name": "Thrown Weapon",
-							"specialization": "Knife"
+							"name": {
+								"compare": "is",
+								"qualifier": "Thrown Weapon"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Knife"
+							}
 						}
 					],
 					"calc": {
@@ -4505,18 +4807,33 @@
 								},
 								{
 									"type": "skill",
-									"name": "Beam Weapons",
-									"specialization": "Rifle"
+									"name": {
+										"compare": "is",
+										"qualifier": "Beam Weapons"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Rifle"
+									}
 								},
 								{
 									"type": "skill",
-									"name": "Beam Weapons",
+									"name": {
+										"compare": "is",
+										"qualifier": "Beam Weapons"
+									},
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Guns",
-									"specialization": "Rifle",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Rifle"
+									},
 									"modifier": -4
 								}
 							],
@@ -4584,18 +4901,33 @@
 								},
 								{
 									"type": "skill",
-									"name": "Beam Weapons",
-									"specialization": "Pistol"
+									"name": {
+										"compare": "is",
+										"qualifier": "Beam Weapons"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									}
 								},
 								{
 									"type": "skill",
-									"name": "Beam Weapons",
+									"name": {
+										"compare": "is",
+										"qualifier": "Beam Weapons"
+									},
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Guns",
-									"specialization": "Pistol",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									},
 									"modifier": -4
 								}
 							],
@@ -4621,11 +4953,127 @@
 						"weight": "3.3 lb",
 						"extended_weight": "3.3 lb"
 					}
+				},
+				{
+					"id": "eCDVRiho_ul2HJ1b9",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
+						"id": "eFpt05kXURQUoJ3HE"
+					},
+					"description": "Ironskin Amulet",
+					"reference": "DFA118",
+					"tags": [
+						"Magic Items"
+					],
+					"base_value": "28720",
+					"base_weight": "0.25 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"arm"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"eye"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"face"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"foot"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"groin"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"hand"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"leg"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"neck"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"skull"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"torso"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"vitals"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"wing"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"tail"
+							],
+							"amount": 3
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 28720,
+						"extended_value": 28720,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
 				}
 			],
 			"calc": {
 				"value": 0,
-				"extended_value": 32340,
+				"extended_value": 61060,
 				"weight": "0 lb",
 				"extended_weight": "0 lb",
 				"extended_weight_for_skills": "0 lb"
@@ -4757,7 +5205,7 @@
 			"children": [
 				{
 					"id": "nOFbjPZ6AaQdnFeGx",
-					"markdown": "Food \u0026 Drink - Capable of eating and drinking, but not does not need to"
+					"markdown": "Food & Drink - Capable of eating and drinking, but not does not need to"
 				},
 				{
 					"id": "n_Psdn1Xaiz5bccaV",
@@ -4767,7 +5215,7 @@
 		}
 	],
 	"created_date": "2026-03-25T10:24:58-04:00",
-	"modified_date": "2026-07-12T17:45:02-04:00",
+	"modified_date": "2026-07-12T20:24:11-04:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
