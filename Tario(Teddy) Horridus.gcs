@@ -3011,7 +3011,7 @@
 					"modifier": -6
 				}
 			],
-			"points": 1,
+			"points": 2,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
@@ -3020,8 +3020,8 @@
 				"points": -7
 			},
 			"calc": {
-				"level": 11,
-				"rsl": "IQ-2"
+				"level": 12,
+				"rsl": "IQ-1"
 			}
 		},
 		{
@@ -3344,7 +3344,7 @@
 					"modifier": -5
 				}
 			],
-			"points": 1,
+			"points": 2,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
@@ -3353,8 +3353,8 @@
 				"points": -8
 			},
 			"calc": {
-				"level": 12,
-				"rsl": "IQ-1"
+				"level": 13,
+				"rsl": "IQ+0"
 			}
 		},
 		{
@@ -3770,6 +3770,142 @@
 			"calc": {
 				"level": 16,
 				"rsl": "IQ+3"
+			}
+		},
+		{
+			"id": "skV6XXCrhtgSClZYv",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sQDDY3vM3okMKExLN"
+			},
+			"name": "Navigation",
+			"reference": "B211",
+			"tags": [
+				"Exploration",
+				"Outdoor",
+				"Technical",
+				"Vehicle"
+			],
+			"specialization": "Hyperspace",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Astronomy"
+					},
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mathematics"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Applied"
+					},
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Navigation"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Space"
+					},
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 2,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Navigation"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Space"
+				},
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 15,
+				"rsl": "IQ+2"
+			}
+		},
+		{
+			"id": "sjFn_evdNO2jXGCF1",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "serKIisXi15SP50f4"
+			},
+			"name": "Mechanic",
+			"reference": "B207",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"specialization": "Motorcycle",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Motorcycle"
+					},
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Machinist"
+					},
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mechanic"
+					},
+					"modifier": -4
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ-1"
 			}
 		},
 		{
@@ -5573,7 +5709,7 @@
 		}
 	],
 	"created_date": "2026-04-06T20:12:34-04:00",
-	"modified_date": "2026-07-12T20:08:54-04:00",
+	"modified_date": "2026-07-12T20:32:20-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",

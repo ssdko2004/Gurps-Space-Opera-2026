@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "AMCcz18E4hSTpOYHb",
-	"total_points": 228,
+	"total_points": 233,
 	"points_record": [
+		{
+			"when": "2026-07-12T20:21:35-04:00",
+			"points": 5,
+			"reason": "Session 7"
+		},
 		{
 			"when": "2026-06-28T20:54:11-04:00",
 			"points": 5,
@@ -143,7 +148,7 @@
 			{
 				"id": "taste_smell",
 				"type": "integer",
-				"name": "Taste \u0026 Smell",
+				"name": "Taste & Smell",
 				"base": "$per",
 				"cost_per_point": 2
 			},
@@ -638,7 +643,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Brawling"
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
 						}
 					],
 					"calc": {
@@ -663,15 +671,24 @@
 						},
 						{
 							"type": "skill",
-							"name": "Boxing"
+							"name": {
+								"compare": "is",
+								"qualifier": "Boxing"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Brawling"
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Karate"
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							}
 						}
 					],
 					"calc": {
@@ -696,16 +713,25 @@
 						},
 						{
 							"type": "skill",
-							"name": "Brawling",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							},
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Kicking"
+							"name": {
+								"compare": "is",
+								"qualifier": "Kicking"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Karate",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
 							"modifier": -2
 						}
 					],
@@ -1550,7 +1576,7 @@
 							"id": "mEmYqtBX1pk5KsVg8",
 							"name": "Powerful Individual",
 							"reference": "B135",
-							"local_notes": "\u003e150% of your starting points",
+							"local_notes": ">150% of your starting points",
 							"cost_adj": "-20",
 							"disabled": true
 						},
@@ -1728,25 +1754,43 @@
 				},
 				{
 					"type": "skill",
-					"name": "Finance",
+					"name": {
+						"compare": "is",
+						"qualifier": "Finance"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Mathematics",
-					"specialization": "Statistics",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mathematics"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Statistics"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Merchant",
+					"name": {
+						"compare": "is",
+						"qualifier": "Merchant"
+					},
 					"modifier": -5
 				}
 			],
 			"points": 2,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Merchant",
+				"name": {
+					"compare": "is",
+					"qualifier": "Merchant"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -5,
 				"level": 9,
 				"adjusted_level": 9,
@@ -1779,12 +1823,18 @@
 				},
 				{
 					"type": "skill",
-					"name": "Aerobatics",
+					"name": {
+						"compare": "is",
+						"qualifier": "Aerobatics"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Aquabatics",
+					"name": {
+						"compare": "is",
+						"qualifier": "Aquabatics"
+					},
 					"modifier": -4
 				}
 			],
@@ -1824,14 +1874,26 @@
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Body Armor",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Body Armor"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Smith",
-					"specialization": "Bronze",
+					"name": {
+						"compare": "is",
+						"qualifier": "Smith"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Bronze"
+					},
 					"modifier": -3,
 					"when_tl": {
 						"compare": "is",
@@ -1840,8 +1902,14 @@
 				},
 				{
 					"type": "skill",
-					"name": "Smith",
-					"specialization": "Iron",
+					"name": {
+						"compare": "is",
+						"qualifier": "Smith"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Iron"
+					},
 					"modifier": -3,
 					"when_tl": {
 						"compare": "at_most",
@@ -1850,7 +1918,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Machinist",
+					"name": {
+						"compare": "is",
+						"qualifier": "Machinist"
+					},
 					"modifier": -3,
 					"when_tl": {
 						"compare": "at_least",
@@ -1895,14 +1966,26 @@
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Melee Weapons",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Melee Weapons"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Smith",
-					"specialization": "Bronze",
+					"name": {
+						"compare": "is",
+						"qualifier": "Smith"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Bronze"
+					},
 					"modifier": -3,
 					"when_tl": {
 						"compare": "is",
@@ -1911,8 +1994,14 @@
 				},
 				{
 					"type": "skill",
-					"name": "Smith",
-					"specialization": "Iron",
+					"name": {
+						"compare": "is",
+						"qualifier": "Smith"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Iron"
+					},
 					"modifier": -3,
 					"when_tl": {
 						"compare": "at_most",
@@ -1921,7 +2010,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Machinist",
+					"name": {
+						"compare": "is",
+						"qualifier": "Machinist"
+					},
 					"modifier": -3,
 					"when_tl": {
 						"compare": "at_least",
@@ -1966,13 +2058,22 @@
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Small Arms",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Small Arms"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Machinist",
+					"name": {
+						"compare": "is",
+						"qualifier": "Machinist"
+					},
 					"modifier": -5,
 					"when_tl": {
 						"compare": "at_least",
@@ -2012,19 +2113,31 @@
 			"defaults": [
 				{
 					"type": "skill",
-					"name": "Detect Lies",
+					"name": {
+						"compare": "is",
+						"qualifier": "Detect Lies"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Psychology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Psychology"
+					},
 					"modifier": -4
 				}
 			],
 			"points": 2,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Psychology",
+				"name": {
+					"compare": "is",
+					"qualifier": "Psychology"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -4,
 				"level": 8,
 				"adjusted_level": 8,
@@ -2058,18 +2171,30 @@
 				},
 				{
 					"type": "skill",
-					"name": "Geography",
+					"name": {
+						"compare": "is",
+						"qualifier": "Geography"
+					},
 					"modifier": -2
 				},
 				{
 					"type": "skill",
-					"name": "Mathematics",
-					"specialization": "Surveying",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mathematics"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Surveying"
+					},
 					"modifier": -2
 				},
 				{
 					"type": "skill",
-					"name": "Navigation",
+					"name": {
+						"compare": "is",
+						"qualifier": "Navigation"
+					},
 					"modifier": -4
 				}
 			],
@@ -2077,8 +2202,14 @@
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Geography",
-				"specialization": "Political",
+				"name": {
+					"compare": "is",
+					"qualifier": "Geography"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Political"
+				},
 				"modifier": -2,
 				"level": 10,
 				"adjusted_level": 10,
@@ -2181,7 +2312,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Housekeeping",
+					"name": {
+						"compare": "is",
+						"qualifier": "Housekeeping"
+					},
 					"modifier": -5
 				}
 			],
@@ -2220,7 +2354,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Psychology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Psychology"
+					},
 					"modifier": -4
 				}
 			],
@@ -2261,12 +2398,18 @@
 				},
 				{
 					"type": "skill",
-					"name": "Research",
+					"name": {
+						"compare": "is",
+						"qualifier": "Research"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Current Affairs",
+					"name": {
+						"compare": "is",
+						"qualifier": "Current Affairs"
+					},
 					"modifier": -4
 				}
 			],
@@ -2306,19 +2449,31 @@
 				},
 				{
 					"type": "skill",
-					"name": "Body Language",
+					"name": {
+						"compare": "is",
+						"qualifier": "Body Language"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Psychology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Psychology"
+					},
 					"modifier": -4
 				}
 			],
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Body Language",
+				"name": {
+					"compare": "is",
+					"qualifier": "Body Language"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -4,
 				"level": 8,
 				"adjusted_level": 8,
@@ -2357,13 +2512,22 @@
 				},
 				{
 					"type": "skill",
-					"name": "Driving",
-					"specialization": "Heavy Wheeled",
+					"name": {
+						"compare": "is",
+						"qualifier": "Driving"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Heavy Wheeled"
+					},
 					"modifier": -2
 				},
 				{
 					"type": "skill",
-					"name": "Driving",
+					"name": {
+						"compare": "is",
+						"qualifier": "Driving"
+					},
 					"modifier": -4
 				}
 			],
@@ -2403,17 +2567,26 @@
 				},
 				{
 					"type": "skill",
-					"name": "Finance",
+					"name": {
+						"compare": "is",
+						"qualifier": "Finance"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Market Analysis",
+					"name": {
+						"compare": "is",
+						"qualifier": "Market Analysis"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Merchant",
+					"name": {
+						"compare": "is",
+						"qualifier": "Merchant"
+					},
 					"modifier": -6
 				}
 			],
@@ -2451,8 +2624,14 @@
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Electrical",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Electrical"
+					},
 					"modifier": -3
 				}
 			],
@@ -2491,19 +2670,34 @@
 				},
 				{
 					"type": "skill",
-					"name": "Electronics Operation",
+					"name": {
+						"compare": "is",
+						"qualifier": "Electronics Operation"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Electronics Repair",
-					"specialization": "Communications",
+					"name": {
+						"compare": "is",
+						"qualifier": "Electronics Repair"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Communications"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Electronics",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Electronics"
+					},
 					"modifier": -5
 				}
 			],
@@ -2511,8 +2705,14 @@
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Electronics Operation",
-				"specialization": "Surveillance",
+				"name": {
+					"compare": "is",
+					"qualifier": "Electronics Operation"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Surveillance"
+				},
 				"modifier": -4,
 				"level": 10,
 				"adjusted_level": 10,
@@ -2547,19 +2747,34 @@
 				},
 				{
 					"type": "skill",
-					"name": "Electronics Operation",
-					"specialization": "Security",
+					"name": {
+						"compare": "is",
+						"qualifier": "Electronics Operation"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Security"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Electronics",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Electronics"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Electronics Operation",
+					"name": {
+						"compare": "is",
+						"qualifier": "Electronics Operation"
+					},
 					"modifier": -4
 				}
 			],
@@ -2567,8 +2782,14 @@
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Electronics Operation",
-				"specialization": "Surveillance",
+				"name": {
+					"compare": "is",
+					"qualifier": "Electronics Operation"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Surveillance"
+				},
 				"modifier": -4,
 				"level": 10,
 				"adjusted_level": 10,
@@ -2602,19 +2823,34 @@
 				},
 				{
 					"type": "skill",
-					"name": "Electronics Repair",
-					"specialization": "Surveillance",
+					"name": {
+						"compare": "is",
+						"qualifier": "Electronics Repair"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Surveillance"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Electronics",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Electronics"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Electronics Operation",
+					"name": {
+						"compare": "is",
+						"qualifier": "Electronics Operation"
+					},
 					"modifier": -4
 				}
 			],
@@ -2685,7 +2921,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Acrobatics",
+					"name": {
+						"compare": "is",
+						"qualifier": "Acrobatics"
+					},
 					"modifier": -5
 				}
 			],
@@ -2802,7 +3041,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Acting",
+					"name": {
+						"compare": "is",
+						"qualifier": "Acting"
+					},
 					"modifier": -5
 				}
 			],
@@ -2841,15 +3083,24 @@
 				},
 				{
 					"type": "skill",
-					"name": "Esoteric Medicine"
+					"name": {
+						"compare": "is",
+						"qualifier": "Esoteric Medicine"
+					}
 				},
 				{
 					"type": "skill",
-					"name": "Physician"
+					"name": {
+						"compare": "is",
+						"qualifier": "Physician"
+					}
 				},
 				{
 					"type": "skill",
-					"name": "Veterinary",
+					"name": {
+						"compare": "is",
+						"qualifier": "Veterinary"
+					},
 					"modifier": -4
 				}
 			],
@@ -2889,12 +3140,18 @@
 				},
 				{
 					"type": "skill",
-					"name": "Pickpocket",
+					"name": {
+						"compare": "is",
+						"qualifier": "Pickpocket"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Sleight of Hand",
+					"name": {
+						"compare": "is",
+						"qualifier": "Sleight of Hand"
+					},
 					"modifier": -4
 				}
 			],
@@ -2953,7 +3210,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Criminology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Criminology"
+					},
 					"modifier": -4
 				}
 			],
@@ -2961,7 +3221,13 @@
 			"points": 2,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Criminology",
+				"name": {
+					"compare": "is",
+					"qualifier": "Criminology"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -4,
 				"level": 10,
 				"adjusted_level": 10,
@@ -3028,8 +3294,14 @@
 				},
 				{
 					"type": "skill",
-					"name": "Mathematics",
-					"specialization": "Statistics",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mathematics"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Statistics"
+					},
 					"modifier": -5
 				}
 			],
@@ -3104,12 +3376,18 @@
 				},
 				{
 					"type": "skill",
-					"name": "Economics",
+					"name": {
+						"compare": "is",
+						"qualifier": "Economics"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Geography",
+					"name": {
+						"compare": "is",
+						"qualifier": "Geography"
+					},
 					"modifier": -5
 				}
 			],
@@ -3182,56 +3460,110 @@
 				},
 				{
 					"type": "skill",
-					"name": "Guns",
-					"specialization": "Grenade Launcher",
+					"name": {
+						"compare": "is",
+						"qualifier": "Guns"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Grenade Launcher"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Guns",
-					"specialization": "Gyroc",
+					"name": {
+						"compare": "is",
+						"qualifier": "Guns"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Gyroc"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Guns",
-					"specialization": "Light Anti-Armor Weapon",
+					"name": {
+						"compare": "is",
+						"qualifier": "Guns"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Light Anti-Armor Weapon"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Guns",
-					"specialization": "Light Machine Gun",
+					"name": {
+						"compare": "is",
+						"qualifier": "Guns"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Light Machine Gun"
+					},
 					"modifier": -2
 				},
 				{
 					"type": "skill",
-					"name": "Guns",
-					"specialization": "Musket",
+					"name": {
+						"compare": "is",
+						"qualifier": "Guns"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Musket"
+					},
 					"modifier": -2
 				},
 				{
 					"type": "skill",
-					"name": "Beam Weapons",
-					"specialization": "Pistol",
+					"name": {
+						"compare": "is",
+						"qualifier": "Beam Weapons"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Pistol"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Guns",
-					"specialization": "Rifle",
+					"name": {
+						"compare": "is",
+						"qualifier": "Guns"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Rifle"
+					},
 					"modifier": -2
 				},
 				{
 					"type": "skill",
-					"name": "Guns",
-					"specialization": "Shotgun",
+					"name": {
+						"compare": "is",
+						"qualifier": "Guns"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Shotgun"
+					},
 					"modifier": -2
 				},
 				{
 					"type": "skill",
-					"name": "Guns",
-					"specialization": "Submachine Gun",
+					"name": {
+						"compare": "is",
+						"qualifier": "Guns"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Submachine Gun"
+					},
 					"modifier": -2
 				}
 			],
@@ -3272,7 +3604,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Gunner",
+					"name": {
+						"compare": "is",
+						"qualifier": "Gunner"
+					},
 					"modifier": -4
 				}
 			],
@@ -3452,7 +3787,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Sleight of Hand",
+					"name": {
+						"compare": "is",
+						"qualifier": "Sleight of Hand"
+					},
 					"modifier": -3
 				}
 			],
@@ -3523,7 +3861,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Strategy",
+					"name": {
+						"compare": "is",
+						"qualifier": "Strategy"
+					},
 					"modifier": -6
 				}
 			],
@@ -3563,12 +3904,18 @@
 				},
 				{
 					"type": "skill",
-					"name": "Intimidation",
+					"name": {
+						"compare": "is",
+						"qualifier": "Intimidation"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Psychology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Psychology"
+					},
 					"modifier": -4
 				}
 			],
@@ -3617,7 +3964,10 @@
 					"defaults": [
 						{
 							"type": "skill",
-							"name": "Judo"
+							"name": {
+								"compare": "is",
+								"qualifier": "Judo"
+							}
 						}
 					],
 					"calc": {
@@ -3704,12 +4054,18 @@
 				},
 				{
 					"type": "skill",
-					"name": "Climbing",
+					"name": {
+						"compare": "is",
+						"qualifier": "Climbing"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Seamanship",
+					"name": {
+						"compare": "is",
+						"qualifier": "Seamanship"
+					},
 					"modifier": -4
 				}
 			],
@@ -3908,12 +4264,18 @@
 				},
 				{
 					"type": "skill",
-					"name": "Finance",
+					"name": {
+						"compare": "is",
+						"qualifier": "Finance"
+					},
 					"modifier": -6
 				},
 				{
 					"type": "skill",
-					"name": "Market Analysis",
+					"name": {
+						"compare": "is",
+						"qualifier": "Market Analysis"
+					},
 					"modifier": -4
 				}
 			],
@@ -3954,31 +4316,58 @@
 				},
 				{
 					"type": "skill",
-					"name": "Cartography",
+					"name": {
+						"compare": "is",
+						"qualifier": "Cartography"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Mathematics",
-					"specialization": "Surveying",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mathematics"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Surveying"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Navigation",
-					"specialization": "Air",
+					"name": {
+						"compare": "is",
+						"qualifier": "Navigation"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Air"
+					},
 					"modifier": -2
 				},
 				{
 					"type": "skill",
-					"name": "Navigation",
-					"specialization": "Sea",
+					"name": {
+						"compare": "is",
+						"qualifier": "Navigation"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Sea"
+					},
 					"modifier": -2
 				},
 				{
 					"type": "skill",
-					"name": "Navigation",
-					"specialization": "Underground",
+					"name": {
+						"compare": "is",
+						"qualifier": "Navigation"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Underground"
+					},
 					"modifier": -2
 				}
 			],
@@ -4020,14 +4409,23 @@
 				},
 				{
 					"type": "skill",
-					"name": "Shadowing",
+					"name": {
+						"compare": "is",
+						"qualifier": "Shadowing"
+					},
 					"modifier": -5
 				}
 			],
 			"points": 2,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Shadowing",
+				"name": {
+					"compare": "is",
+					"qualifier": "Shadowing"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -5,
 				"level": 9,
 				"adjusted_level": 9,
@@ -4044,7 +4442,10 @@
 			"difficulty": "h",
 			"default": {
 				"type": "skill",
-				"name": "Smallsword",
+				"name": {
+					"compare": "is",
+					"qualifier": "Smallsword"
+				},
 				"modifier": -5
 			},
 			"limit": 4,
@@ -4077,8 +4478,14 @@
 				},
 				{
 					"type": "skill",
-					"name": "Electronics Operation",
-					"specialization": "Media",
+					"name": {
+						"compare": "is",
+						"qualifier": "Electronics Operation"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Media"
+					},
 					"modifier": -5
 				}
 			],
@@ -4117,7 +4524,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Sociology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Sociology"
+					},
 					"modifier": -4
 				}
 			],
@@ -4155,7 +4565,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Writing",
+					"name": {
+						"compare": "is",
+						"qualifier": "Writing"
+					},
 					"modifier": -3
 				}
 			],
@@ -4233,7 +4646,13 @@
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Writing",
+				"name": {
+					"compare": "is",
+					"qualifier": "Writing"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -3,
 				"level": 10,
 				"adjusted_level": 10,
@@ -4365,14 +4784,23 @@
 				},
 				{
 					"type": "skill",
-					"name": "Criminology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Criminology"
+					},
 					"modifier": -5
 				}
 			],
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Criminology",
+				"name": {
+					"compare": "is",
+					"qualifier": "Criminology"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -5,
 				"level": 9,
 				"adjusted_level": 9,
@@ -4406,12 +4834,18 @@
 				},
 				{
 					"type": "skill",
-					"name": "Observation",
+					"name": {
+						"compare": "is",
+						"qualifier": "Observation"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Stealth",
+					"name": {
+						"compare": "is",
+						"qualifier": "Stealth"
+					},
 					"modifier": -4
 				}
 			],
@@ -4450,22 +4884,34 @@
 				},
 				{
 					"type": "skill",
-					"name": "Shortsword",
+					"name": {
+						"compare": "is",
+						"qualifier": "Shortsword"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Main-Gauche",
+					"name": {
+						"compare": "is",
+						"qualifier": "Main-Gauche"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Rapier",
+					"name": {
+						"compare": "is",
+						"qualifier": "Rapier"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Saber",
+					"name": {
+						"compare": "is",
+						"qualifier": "Saber"
+					},
 					"modifier": -3
 				}
 			],
@@ -4503,12 +4949,18 @@
 				},
 				{
 					"type": "skill",
-					"name": "Anthropology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Anthropology"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Psychology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Psychology"
+					},
 					"modifier": -4
 				}
 			],
@@ -4687,7 +5139,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Strategy",
+					"name": {
+						"compare": "is",
+						"qualifier": "Strategy"
+					},
 					"modifier": -6
 				}
 			],
@@ -4727,7 +5182,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Dropping",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dropping"
+					},
 					"modifier": -4
 				}
 			],
@@ -5008,8 +5466,14 @@
 					"defaults": [
 						{
 							"type": "skill",
-							"name": "Guns",
-							"specialization": "Pistol"
+							"name": {
+								"compare": "is",
+								"qualifier": "Guns"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Pistol"
+							}
 						},
 						{
 							"type": "dx",
@@ -5017,7 +5481,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Guns",
+							"name": {
+								"compare": "is",
+								"qualifier": "Guns"
+							},
 							"modifier": -4
 						}
 					],
@@ -5099,31 +5566,49 @@
 						},
 						{
 							"type": "skill",
-							"name": "Smallsword"
+							"name": {
+								"compare": "is",
+								"qualifier": "Smallsword"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Main-Gauche",
+							"name": {
+								"compare": "is",
+								"qualifier": "Main-Gauche"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Rapier",
+							"name": {
+								"compare": "is",
+								"qualifier": "Rapier"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Saber",
+							"name": {
+								"compare": "is",
+								"qualifier": "Saber"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Shortsword",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shortsword"
+							},
 							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Sword!"
+							"name": {
+								"compare": "is",
+								"qualifier": "Sword!"
+							}
 						}
 					],
 					"calc": {
@@ -5413,11 +5898,17 @@
 					"defaults": [
 						{
 							"type": "skill",
-							"name": "Throwing"
+							"name": {
+								"compare": "is",
+								"qualifier": "Throwing"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Dropping",
+							"name": {
+								"compare": "is",
+								"qualifier": "Dropping"
+							},
 							"modifier": -4
 						},
 						{
@@ -5743,9 +6234,67 @@
 				"weight": "0.25 lb",
 				"extended_weight": "0.25 lb"
 			}
+		},
+		{
+			"id": "elYI630B-rIWVtm3L",
+			"description": "Ring of Resist Water",
+			"local_notes": "Gives wearer the Resist Water spell effect. ",
+			"legality_class": "4",
+			"base_value": "6800",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 6800,
+				"extended_value": 6800,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
 		}
 	],
 	"other_equipment": [
+		{
+			"id": "e5Rs22jQSTyiVqFHX",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eT3f4c4tSQXzONaiV"
+			},
+			"description": "Space Biosuit",
+			"reference": "UT179",
+			"local_notes": "Flexible. 2C/6wk.",
+			"tech_level": "10",
+			"legality_class": "3",
+			"tags": [
+				"Armor",
+				"Defenses"
+			],
+			"base_value": "10000",
+			"base_weight": "5 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "corrosion, crushing and toxic",
+					"amount": -12
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"amount": 15
+				}
+			],
+			"quantity": 1,
+			"calc": {
+				"value": 10000,
+				"extended_value": 10000,
+				"weight": "5 lb",
+				"extended_weight": "5 lb"
+			}
+		},
 		{
 			"id": "et4KbQWyM-80jLwdc",
 			"source": {
@@ -6133,12 +6682,26 @@
 			"id": "eZoO6Y7CtVYP-vK_E",
 			"description": "Money",
 			"legality_class": "4",
-			"base_value": "23217",
+			"base_value": "15017",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 23217,
-				"extended_value": 23217,
+				"value": 15017,
+				"extended_value": 15017,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eOSR6ihPNRwItol4u",
+			"description": "Gas Mask Filter",
+			"legality_class": "4",
+			"base_value": "10",
+			"quantity": 20,
+			"equipped": true,
+			"calc": {
+				"value": 10,
+				"extended_value": 200,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
@@ -6155,7 +6718,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:15:00-04:00",
-	"modified_date": "2026-07-12T19:57:45-04:00",
+	"modified_date": "2026-07-14T13:11:18-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",
