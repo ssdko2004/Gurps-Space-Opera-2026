@@ -5091,10 +5091,10 @@
 				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
 				"id": "e2v-z57yU1YlczwIM"
 			},
-			"description": "Implant Video Camera",
+			"description": "Implant Video Comm",
 			"reference": "UT211",
 			"local_notes": "Minor procedure.",
-			"tech_level": "9",
+			"tech_level": "10",
 			"base_value": "200",
 			"quantity": 1,
 			"equipped": true,
