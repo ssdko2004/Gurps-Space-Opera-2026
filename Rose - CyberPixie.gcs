@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "As49xSi5V5lxtcqzE",
-	"total_points": 232,
+	"total_points": 235,
 	"points_record": [
+		{
+			"when": "2026-07-26T20:30:55-04:00",
+			"points": 3,
+			"reason": "Restaraunt heist"
+		},
 		{
 			"when": "2026-07-12T20:21:19-04:00",
 			"points": 5,
@@ -3370,7 +3375,7 @@
 							"replacements": {
 								"Specialty": "Piccolo"
 							},
-							"specialization": "@Specialty@",
+							"specialization": "Pipes",
 							"difficulty": "iq/h",
 							"points": 1,
 							"calc": {
