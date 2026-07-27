@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "As0u-6HXQjmOtxbee",
-	"total_points": 228,
+	"total_points": 233,
 	"points_record": [
+		{
+			"when": "2026-07-12T20:26:56-04:00",
+			"points": 5,
+			"reason": "Session 7"
+		},
 		{
 			"when": "2026-06-28T20:54:29-04:00",
 			"points": 5,
@@ -143,7 +148,7 @@
 			{
 				"id": "taste_smell",
 				"type": "integer",
-				"name": "Taste \u0026 Smell",
+				"name": "Taste & Smell",
 				"base": "$per",
 				"cost_per_point": 2
 			},
@@ -310,7 +315,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 6,
+							"all": 19,
 							"cut": 12,
 							"pi": 12,
 							"pi+": 12,
@@ -330,7 +335,7 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 8,
+							"all": 11,
 							"cut": 12,
 							"pi": 12,
 							"pi+": 12,
@@ -349,7 +354,7 @@
 					"calc": {
 						"roll_range": "5",
 						"dr": {
-							"all": 6,
+							"all": 19,
 							"cut": 12,
 							"pi": 12,
 							"pi+": 12,
@@ -368,7 +373,7 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 6,
+							"all": 9,
 							"cut": 12,
 							"pi": 12,
 							"pi+": 12,
@@ -387,7 +392,7 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 6,
+							"all": 9,
 							"cut": 12,
 							"pi": 12,
 							"pi+": 12,
@@ -404,7 +409,7 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 6,
+							"all": 9,
 							"cut": 12,
 							"pi": 12,
 							"pi+": 12,
@@ -423,7 +428,7 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 6,
+							"all": 9,
 							"cut": 12,
 							"pi": 12,
 							"pi+": 12,
@@ -442,7 +447,7 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 6,
+							"all": 9,
 							"cut": 12,
 							"pi": 12,
 							"pi+": 12,
@@ -461,7 +466,7 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 6,
+							"all": 9,
 							"cut": 12,
 							"pi": 12,
 							"pi+": 12,
@@ -480,7 +485,7 @@
 					"calc": {
 						"roll_range": "15",
 						"dr": {
-							"all": 6,
+							"all": 9,
 							"cut": 12,
 							"pi": 12,
 							"pi+": 12,
@@ -499,7 +504,7 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 7,
+							"all": 10,
 							"cut": 12,
 							"pi": 12,
 							"pi+": 12,
@@ -518,7 +523,7 @@
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
-							"all": 6,
+							"all": 9,
 							"cut": 12,
 							"pi": 12,
 							"pi+": 12,
@@ -536,7 +541,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 6,
+							"all": 9,
 							"cut": 12,
 							"pi": 12,
 							"pi+": 12,
@@ -1226,7 +1231,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Brawling"
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
 						}
 					],
 					"calc": {
@@ -1251,15 +1259,24 @@
 						},
 						{
 							"type": "skill",
-							"name": "Boxing"
+							"name": {
+								"compare": "is",
+								"qualifier": "Boxing"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Brawling"
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Karate"
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							}
 						}
 					],
 					"calc": {
@@ -1284,16 +1301,25 @@
 						},
 						{
 							"type": "skill",
-							"name": "Brawling",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							},
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Kicking"
+							"name": {
+								"compare": "is",
+								"qualifier": "Kicking"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Karate",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
 							"modifier": -2
 						}
 					],
@@ -1726,7 +1752,7 @@
 							"id": "mi-NCtgbavNLW1bkp",
 							"name": "Powerful Individual",
 							"reference": "B135",
-							"local_notes": "\u003e150% of your starting points",
+							"local_notes": ">150% of your starting points",
 							"cost_adj": "-20"
 						},
 						{
@@ -1903,7 +1929,7 @@
 							"id": "mKk29wLhVcvkuliss",
 							"name": "Powerful Individual",
 							"reference": "B135",
-							"local_notes": "\u003e150% of your starting points",
+							"local_notes": ">150% of your starting points",
 							"cost_adj": "-20",
 							"disabled": true
 						},
@@ -2065,8 +2091,14 @@
 			"defaults": [
 				{
 					"type": "skill",
-					"name": "Geography",
-					"specialization": "@Specialty@",
+					"name": {
+						"compare": "is",
+						"qualifier": "Geography"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "@Specialty@"
+					},
 					"modifier": -3
 				}
 			],
@@ -2098,7 +2130,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Artist",
+					"name": {
+						"compare": "is",
+						"qualifier": "Artist"
+					},
 					"modifier": -6
 				}
 			],
@@ -2138,13 +2173,22 @@
 				},
 				{
 					"type": "skill",
-					"name": "Beam Weapons",
+					"name": {
+						"compare": "is",
+						"qualifier": "Beam Weapons"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Guns",
-					"specialization": "Pistol",
+					"name": {
+						"compare": "is",
+						"qualifier": "Guns"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Pistol"
+					},
 					"modifier": -4
 				}
 			],
@@ -2195,7 +2239,7 @@
 				"points": -7
 			},
 			"calc": {
-				"level": 9,
+				"level": 10,
 				"rsl": "DX-1"
 			}
 		},
@@ -2334,7 +2378,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Housekeeping",
+					"name": {
+						"compare": "is",
+						"qualifier": "Housekeeping"
+					},
 					"modifier": -5
 				}
 			],
@@ -2369,8 +2416,14 @@
 			"defaults": [
 				{
 					"type": "skill",
-					"name": "Mathematics",
-					"specialization": "Cryptology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mathematics"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Cryptology"
+					},
 					"modifier": -5
 				}
 			],
@@ -2436,7 +2489,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Politics",
+					"name": {
+						"compare": "is",
+						"qualifier": "Politics"
+					},
 					"modifier": -6
 				}
 			],
@@ -2481,13 +2537,22 @@
 				},
 				{
 					"type": "skill",
-					"name": "Driving",
-					"specialization": "Heavy Wheeled",
+					"name": {
+						"compare": "is",
+						"qualifier": "Driving"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Heavy Wheeled"
+					},
 					"modifier": -2
 				},
 				{
 					"type": "skill",
-					"name": "Driving",
+					"name": {
+						"compare": "is",
+						"qualifier": "Driving"
+					},
 					"modifier": -4
 				}
 			],
@@ -2569,6 +2634,42 @@
 			"calc": {
 				"level": 12,
 				"rsl": "DX+0"
+			}
+		},
+		{
+			"id": "saJfSmBOVv2EsM9oQ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "syfSQ9N8yETqQbhFK"
+			},
+			"name": "Games",
+			"reference": "B197,MA57",
+			"tags": [
+				"Knowledge"
+			],
+			"replacements": {
+				"Specialty": "Video"
+			},
+			"specialization": "@Specialty@",
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 12,
+				"adjusted_level": 12,
+				"points": -12
+			},
+			"calc": {
+				"level": 16,
+				"rsl": "IQ+0"
 			}
 		},
 		{
@@ -2659,7 +2760,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Sleight of Hand",
+					"name": {
+						"compare": "is",
+						"qualifier": "Sleight of Hand"
+					},
 					"modifier": -3
 				}
 			],
@@ -2708,19 +2812,22 @@
 					"defaults": [
 						{
 							"type": "skill",
-							"name": "Judo"
+							"name": {
+								"compare": "is",
+								"qualifier": "Judo"
+							}
 						}
 					],
 					"calc": {
-						"level": 6,
+						"level": 8,
 						"damage": "1d-3 cr",
-						"parry": "5F"
+						"parry": "6F"
 					}
 				}
 			],
 			"points": 1,
 			"calc": {
-				"level": 8,
+				"level": 9,
 				"rsl": "DX-2"
 			}
 		},
@@ -2771,7 +2878,7 @@
 			],
 			"points": 1,
 			"calc": {
-				"level": 8,
+				"level": 9,
 				"rsl": "DX-2"
 			}
 		},
@@ -2823,7 +2930,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Shadowing",
+					"name": {
+						"compare": "is",
+						"qualifier": "Shadowing"
+					},
 					"modifier": -5
 				}
 			],
@@ -2861,12 +2971,18 @@
 				},
 				{
 					"type": "skill",
-					"name": "First Aid",
+					"name": {
+						"compare": "is",
+						"qualifier": "First Aid"
+					},
 					"modifier": -11
 				},
 				{
 					"type": "skill",
-					"name": "Veterinary",
+					"name": {
+						"compare": "is",
+						"qualifier": "Veterinary"
+					},
 					"modifier": -5
 				}
 			],
@@ -2907,8 +3023,14 @@
 				},
 				{
 					"type": "skill",
-					"name": "Savoir-Faire",
-					"specialization": "Servant",
+					"name": {
+						"compare": "is",
+						"qualifier": "Savoir-Faire"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Servant"
+					},
 					"modifier": -2
 				}
 			],
@@ -2949,7 +3071,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Diving Suit",
+					"name": {
+						"compare": "is",
+						"qualifier": "Diving Suit"
+					},
 					"modifier": -2
 				}
 			],
@@ -3034,19 +3159,34 @@
 			"defaults": [
 				{
 					"type": "skill",
-					"name": "Astronomy",
+					"name": {
+						"compare": "is",
+						"qualifier": "Astronomy"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Mathematics",
-					"specialization": "Applied",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mathematics"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Applied"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Navigation",
-					"specialization": "Hyperspace",
+					"name": {
+						"compare": "is",
+						"qualifier": "Navigation"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Hyperspace"
+					},
 					"modifier": -5
 				}
 			],
@@ -3077,19 +3217,34 @@
 			"defaults": [
 				{
 					"type": "skill",
-					"name": "Astronomy",
+					"name": {
+						"compare": "is",
+						"qualifier": "Astronomy"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Mathematics",
-					"specialization": "Applied",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mathematics"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Applied"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Navigation",
-					"specialization": "Space",
+					"name": {
+						"compare": "is",
+						"qualifier": "Navigation"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Space"
+					},
 					"modifier": -5
 				}
 			],
@@ -3097,8 +3252,14 @@
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Navigation",
-				"specialization": "Space",
+				"name": {
+					"compare": "is",
+					"qualifier": "Navigation"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Space"
+				},
 				"modifier": -5,
 				"level": 10,
 				"adjusted_level": 10,
@@ -3131,12 +3292,18 @@
 				},
 				{
 					"type": "skill",
-					"name": "Polearm",
+					"name": {
+						"compare": "is",
+						"qualifier": "Polearm"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Spear",
+					"name": {
+						"compare": "is",
+						"qualifier": "Spear"
+					},
 					"modifier": -2
 				}
 			],
@@ -3189,7 +3356,7 @@
 				"points": 1
 			},
 			"calc": {
-				"level": 10,
+				"level": 11,
 				"rsl": "DX+0"
 			}
 		},
@@ -3209,22 +3376,34 @@
 			"defaults": [
 				{
 					"type": "skill",
-					"name": "First Aid",
+					"name": {
+						"compare": "is",
+						"qualifier": "First Aid"
+					},
 					"modifier": -12
 				},
 				{
 					"type": "skill",
-					"name": "Physician",
+					"name": {
+						"compare": "is",
+						"qualifier": "Physician"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Physiology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Physiology"
+					},
 					"modifier": -8
 				},
 				{
 					"type": "skill",
-					"name": "Veterinary",
+					"name": {
+						"compare": "is",
+						"qualifier": "Veterinary"
+					},
 					"modifier": -5
 				}
 			],
@@ -3254,7 +3433,13 @@
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Physician",
+				"name": {
+					"compare": "is",
+					"qualifier": "Physician"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -5,
 				"level": 11,
 				"adjusted_level": 11,
@@ -3296,7 +3481,7 @@
 				"points": -8
 			},
 			"calc": {
-				"level": 8,
+				"level": 10,
 				"rsl": "HT+0"
 			}
 		},
@@ -3323,7 +3508,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Dropping",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dropping"
+					},
 					"modifier": -4
 				}
 			],
@@ -3693,6 +3881,92 @@
 						"level": 16,
 						"rsl": "IQ+0"
 					}
+				},
+				{
+					"id": "pM3X8W-LjQApn4CHu",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "puqUHq0u4xvGrh6kP"
+					},
+					"name": "Great Healing",
+					"reference": "M91",
+					"tags": [
+						"Healing"
+					],
+					"difficulty": "iq/vh",
+					"college": [
+						"Healing"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "20",
+					"maintenance_cost": "-",
+					"casting_time": "1 min",
+					"duration": "Permanent",
+					"prereq_count": 4,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 3
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 3
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (healing)"
+										}
+									}
+								]
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "major healing"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 16,
+						"rsl": "IQ+0"
+					}
 				}
 			]
 		},
@@ -3923,6 +4197,40 @@
 					}
 				}
 			]
+		},
+		{
+			"id": "PSCnX8stvY8bru7zr",
+			"name": "Plant",
+			"children": [
+				{
+					"id": "pPq43Mp_67flrCq9W",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "p5M81V2RV0mifRIPR"
+					},
+					"name": "Seek Plant",
+					"reference": "M161",
+					"tags": [
+						"Plant"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Plant"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				}
+			]
 		}
 	],
 	"equipment": [
@@ -3939,99 +4247,99 @@
 			"tags": [
 				"Money"
 			],
-			"base_value": "83219",
+			"base_value": "26839",
 			"modifiers": [
 				{
-					"id": "FWJfS06ehPSwMLBaG",
+					"id": "F083eWTs8EYJlqvgM",
 					"name": "Tech Level",
 					"reference": "B27",
 					"children": [
 						{
-							"id": "f8dZNmOE_n03iVCEv",
+							"id": "fA8jvyD1YWCroSTaL",
 							"name": "TL0",
 							"reference": "B27",
 							"cost": "+250",
 							"disabled": true
 						},
 						{
-							"id": "fXMSCWIJHS4XimwIG",
+							"id": "fdwfHzPepSAsS7apo",
 							"name": "TL1",
 							"reference": "B27",
 							"cost": "+500",
 							"disabled": true
 						},
 						{
-							"id": "fSZDYiN7KuEOHKypa",
+							"id": "ftj4KhjjICCpWzMXp",
 							"name": "TL2",
 							"reference": "B27",
 							"cost": "+750",
 							"disabled": true
 						},
 						{
-							"id": "fFREEwF2f4NOsItUl",
+							"id": "fvOMY66rJpga733R4",
 							"name": "TL3",
 							"reference": "B27",
 							"cost": "+1000",
 							"disabled": true
 						},
 						{
-							"id": "fAtSvZEO2nBnVGmaZ",
+							"id": "foAeLfXa9_ccSFbW1",
 							"name": "TL4",
 							"reference": "B27",
 							"cost": "+2000",
 							"disabled": true
 						},
 						{
-							"id": "frAj9AX7ZqGO_x_R6",
+							"id": "fl5olVvw7oWbLervc",
 							"name": "TL5",
 							"reference": "B27",
 							"cost": "+5000",
 							"disabled": true
 						},
 						{
-							"id": "fzVN-HvLc1mKszvkm",
+							"id": "faQykKmriYljxTC3q",
 							"name": "TL6",
 							"reference": "B27",
 							"cost": "+10000",
 							"disabled": true
 						},
 						{
-							"id": "fJ2Teth3eq13dvRjP",
+							"id": "f01ZAL6VEuhjJI4do",
 							"name": "TL7",
 							"reference": "B27",
 							"cost": "+15000",
 							"disabled": true
 						},
 						{
-							"id": "fzV5e7RvaMBz8FJxk",
+							"id": "fvS5-jVK-skb1Agzh",
 							"name": "TL8",
 							"reference": "B27",
 							"cost": "+20000",
 							"disabled": true
 						},
 						{
-							"id": "fYtukRzprw7ik3GOz",
+							"id": "fWD6sGNVsxjxKV8Je",
 							"name": "TL9",
 							"reference": "B27",
 							"cost": "+30000",
 							"disabled": true
 						},
 						{
-							"id": "fFVTL4Jq15xKieCse",
+							"id": "f8T43ptg_i6zvkFs4",
 							"name": "TL10",
 							"reference": "B27",
 							"cost": "+50000",
 							"disabled": true
 						},
 						{
-							"id": "fPtujY0KvSU4vVy6W",
+							"id": "f5R0d33uXwU4zIdvC",
 							"name": "TL11",
 							"reference": "B27",
 							"cost": "+75000",
 							"disabled": true
 						},
 						{
-							"id": "fvS6zDd5zhZRbPYBA",
+							"id": "fyQssK1aqh5WnvOyF",
 							"name": "TL12",
 							"reference": "B27",
 							"cost": "+100000",
@@ -4040,12 +4348,12 @@
 					]
 				},
 				{
-					"id": "FiVjurWXKYW6mfP0j",
+					"id": "Frj5n7cA_9bdHxfca",
 					"name": "Wealth Level",
 					"reference": "B25",
 					"children": [
 						{
-							"id": "fKoQ_yq8Mk4KWlYGZ",
+							"id": "fvPCW9EXYQoEhkF0j",
 							"name": "Poor",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4053,7 +4361,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fD1CGjPr8Iq5LSXcV",
+							"id": "fPOn7RuKASErJaJhC",
 							"name": "Struggling",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4061,7 +4369,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f0RH098lTscxy5sji",
+							"id": "f13J8imQTQVAFzlJq",
 							"name": "Average",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4069,7 +4377,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fbiSO7c8X1VqCRsFC",
+							"id": "f10OEVuHcf3FCBoPE",
 							"name": "Comfortable",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4077,7 +4385,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f076K1y1YRiNYY3Vg",
+							"id": "fHHbuxtcQ_6KC9GRj",
 							"name": "Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4085,7 +4393,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fxUvvf1q15j52ZE_Q",
+							"id": "fTJH2tpXZor15VMac",
 							"name": "Very Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4093,7 +4401,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fZ63ZdAq4RNRpgeGh",
+							"id": "fUhHT2HGg0IQqLr3v",
 							"name": "Filthy Rich",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4101,7 +4409,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fh1jpfUQTa8kSe71S",
+							"id": "fvfERg3lgwxUPPfva",
 							"name": "Multimillionaire 1",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4114,8 +4422,8 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 83219,
-				"extended_value": 83219,
+				"value": 26839,
+				"extended_value": 26839,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
@@ -4193,18 +4501,33 @@
 								},
 								{
 									"type": "skill",
-									"name": "Beam Weapons",
-									"specialization": "Pistol"
+									"name": {
+										"compare": "is",
+										"qualifier": "Beam Weapons"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									}
 								},
 								{
 									"type": "skill",
-									"name": "Beam Weapons",
+									"name": {
+										"compare": "is",
+										"qualifier": "Beam Weapons"
+									},
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Guns",
-									"specialization": "Pistol",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									},
 									"modifier": -4
 								}
 							],
@@ -4257,8 +4580,14 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Beam Weapons",
-									"specialization": "Pistol"
+									"name": {
+										"compare": "is",
+										"qualifier": "Beam Weapons"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									}
 								},
 								{
 									"type": "dx",
@@ -4266,13 +4595,22 @@
 								},
 								{
 									"type": "skill",
-									"name": "Beam Weapons",
+									"name": {
+										"compare": "is",
+										"qualifier": "Beam Weapons"
+									},
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Guns",
-									"specialization": "Pistol",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									},
 									"modifier": -4
 								}
 							],
@@ -4289,179 +4627,6 @@
 						"extended_value": 120,
 						"weight": "0.3 lb",
 						"extended_weight": "0.3 lb"
-					}
-				},
-				{
-					"id": "eYMcWipge8NPhE60Q",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-						"id": "ePL-YCl8gTtT4mOAR"
-					},
-					"description": "Nanoweave Suit",
-					"reference": "UT172",
-					"local_notes": "DR+12 vs. piercing and cutting. Flexible.",
-					"tech_level": "10",
-					"legality_class": "3",
-					"tags": [
-						"Defenses"
-					],
-					"base_value": "1200",
-					"base_weight": "8 lb",
-					"features": [
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"all"
-							],
-							"specialization": "cut",
-							"amount": 12
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"all"
-							],
-							"specialization": "pi",
-							"amount": 12
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"all"
-							],
-							"specialization": "pi+",
-							"amount": 12
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"all"
-							],
-							"specialization": "pi++",
-							"amount": 12
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"all"
-							],
-							"specialization": "pi-",
-							"amount": 12
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"eye"
-							],
-							"amount": 6
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"skull"
-							],
-							"amount": 6
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"face"
-							],
-							"amount": 6
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"neck"
-							],
-							"amount": 6
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"torso"
-							],
-							"amount": 6
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"vitals"
-							],
-							"amount": 6
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"groin"
-							],
-							"amount": 6
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"arm"
-							],
-							"amount": 6
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"hand"
-							],
-							"amount": 6
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"leg"
-							],
-							"amount": 6
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"foot"
-							],
-							"amount": 6
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"tail"
-							],
-							"amount": 6
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"wing"
-							],
-							"amount": 6
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"fin"
-							],
-							"amount": 6
-						},
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"brain"
-							],
-							"amount": 6
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 1200,
-						"extended_value": 1200,
-						"weight": "8 lb",
-						"extended_weight": "8 lb"
 					}
 				},
 				{
@@ -4501,16 +4666,25 @@
 								},
 								{
 									"type": "skill",
-									"name": "Staff"
+									"name": {
+										"compare": "is",
+										"qualifier": "Staff"
+									}
 								},
 								{
 									"type": "skill",
-									"name": "Polearm",
+									"name": {
+										"compare": "is",
+										"qualifier": "Polearm"
+									},
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Spear",
+									"name": {
+										"compare": "is",
+										"qualifier": "Spear"
+									},
 									"modifier": -2
 								}
 							],
@@ -4540,16 +4714,25 @@
 								},
 								{
 									"type": "skill",
-									"name": "Staff"
+									"name": {
+										"compare": "is",
+										"qualifier": "Staff"
+									}
 								},
 								{
 									"type": "skill",
-									"name": "Polearm",
+									"name": {
+										"compare": "is",
+										"qualifier": "Polearm"
+									},
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Spear",
+									"name": {
+										"compare": "is",
+										"qualifier": "Spear"
+									},
 									"modifier": -2
 								}
 							],
@@ -4579,21 +4762,33 @@
 								},
 								{
 									"type": "skill",
-									"name": "Two-Handed Sword"
+									"name": {
+										"compare": "is",
+										"qualifier": "Two-Handed Sword"
+									}
 								},
 								{
 									"type": "skill",
-									"name": "Broadsword",
+									"name": {
+										"compare": "is",
+										"qualifier": "Broadsword"
+									},
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Force Sword",
+									"name": {
+										"compare": "is",
+										"qualifier": "Force Sword"
+									},
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Sword!"
+									"name": {
+										"compare": "is",
+										"qualifier": "Sword!"
+									}
 								}
 							],
 							"calc": {
@@ -4622,21 +4817,33 @@
 								},
 								{
 									"type": "skill",
-									"name": "Two-Handed Sword"
+									"name": {
+										"compare": "is",
+										"qualifier": "Two-Handed Sword"
+									}
 								},
 								{
 									"type": "skill",
-									"name": "Broadsword",
+									"name": {
+										"compare": "is",
+										"qualifier": "Broadsword"
+									},
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Force Sword",
+									"name": {
+										"compare": "is",
+										"qualifier": "Force Sword"
+									},
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Sword!"
+									"name": {
+										"compare": "is",
+										"qualifier": "Sword!"
+									}
 								}
 							],
 							"calc": {
@@ -4653,6 +4860,147 @@
 						"extended_value": 40,
 						"weight": "4 lb",
 						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "eQM6Lcsg_6d_JLwOO",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "e9twf7mhTaBNGu3rQ"
+					},
+					"description": "Ear Muffs",
+					"reference": "B289",
+					"local_notes": "Block loud noises (e.g. gunshots). Give Protected Hearing.",
+					"tech_level": "6",
+					"tags": [
+						"Weapon and Combat Accessories"
+					],
+					"base_value": "200",
+					"base_weight": "1 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 200,
+						"extended_value": 200,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eyjA-nfRxku_IY3oZ",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
+						"id": "eFpt05kXURQUoJ3HE"
+					},
+					"description": "Ironskin Amulet",
+					"reference": "DFA118",
+					"tags": [
+						"Magic Items"
+					],
+					"base_value": "28720",
+					"base_weight": "0.25 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"arm"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"eye"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"face"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"foot"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"groin"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"hand"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"leg"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"neck"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"skull"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"torso"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"vitals"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"wing"
+							],
+							"amount": 3
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"tail"
+							],
+							"amount": 3
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 28720,
+						"extended_value": 28720,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
 					}
 				},
 				{
@@ -4679,13 +5027,298 @@
 						"weight": "2 lb",
 						"extended_weight": "2 lb"
 					}
+				},
+				{
+					"id": "e6h6GjOt7Q9BJLLtH",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "efLiH0ag06govO6tN"
+					},
+					"description": "Filter Mask",
+					"reference": "UT177",
+					"tech_level": "9",
+					"tags": [
+						"Armor",
+						"Defenses"
+					],
+					"base_value": "100",
+					"base_weight": "3 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"eye"
+							],
+							"amount": 10
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"face"
+							],
+							"amount": 10
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "3 lb",
+						"extended_weight": "3 lb"
+					}
+				},
+				{
+					"id": "e2pVJ7YSAgjAHGNFn",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "e2WKpO0IMVsXiTZNt"
+					},
+					"description": "Personal Computer",
+					"reference": "UT22",
+					"local_notes": "Complexity 7. 100PB. 2C/20hr or external power.",
+					"tech_level": "10",
+					"tags": [
+						"Computers"
+					],
+					"base_value": "1000",
+					"base_weight": "5 lb",
+					"quantity": 1,
+					"calc": {
+						"value": 1000,
+						"extended_value": 1000,
+						"weight": "5 lb",
+						"extended_weight": "5 lb"
+					}
+				},
+				{
+					"id": "eBqr-n5L96kQLIY5p",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "ev80WwcnBpiGFrkol"
+					},
+					"description": "C cell",
+					"reference": "UT19",
+					"tech_level": "9",
+					"tags": [
+						"Power"
+					],
+					"base_value": "10",
+					"base_weight": "0.5 lb",
+					"quantity": 2,
+					"calc": {
+						"value": 10,
+						"extended_value": 20,
+						"weight": "0.5 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "e2oEvw3xvIoZXX-5V",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "enQNM0RB6euc5mo7i"
+					},
+					"description": "B cell",
+					"reference": "UT19",
+					"tech_level": "9",
+					"tags": [
+						"Power"
+					],
+					"base_value": "3",
+					"base_weight": "0.05 lb",
+					"quantity": 2,
+					"equipped": true,
+					"calc": {
+						"value": 3,
+						"extended_value": 6,
+						"weight": "0.05 lb",
+						"extended_weight": "0.1 lb"
+					}
 				}
 			],
 			"calc": {
 				"value": 60,
-				"extended_value": 2920,
+				"extended_value": 31766,
 				"weight": "3 lb",
-				"extended_weight": "18.8 lb"
+				"extended_weight": "21.15 lb"
+			}
+		},
+		{
+			"id": "eYMcWipge8NPhE60Q",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "ePL-YCl8gTtT4mOAR"
+			},
+			"description": "Nanoweave Suit",
+			"reference": "UT172",
+			"local_notes": "DR+12 vs. piercing and cutting. Flexible.",
+			"tech_level": "10",
+			"legality_class": "3",
+			"tags": [
+				"Defenses"
+			],
+			"base_value": "1200",
+			"base_weight": "8 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "cut",
+					"amount": 12
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi",
+					"amount": 12
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi+",
+					"amount": 12
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi++",
+					"amount": 12
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi-",
+					"amount": 12
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"eye"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"skull"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"face"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"neck"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"torso"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"vitals"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"groin"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"arm"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"hand"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"leg"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"foot"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"tail"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"wing"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"fin"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"brain"
+					],
+					"amount": 6
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1200,
+				"extended_value": 1200,
+				"weight": "8 lb",
+				"extended_weight": "8 lb"
 			}
 		},
 		{
@@ -4759,31 +5392,6 @@
 			}
 		},
 		{
-			"id": "eQM6Lcsg_6d_JLwOO",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "e9twf7mhTaBNGu3rQ"
-			},
-			"description": "Ear Muffs",
-			"reference": "B289",
-			"local_notes": "Block loud noises (e.g. gunshots). Give Protected Hearing.",
-			"tech_level": "6",
-			"tags": [
-				"Weapon and Combat Accessories"
-			],
-			"base_value": "200",
-			"base_weight": "1 lb",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 200,
-				"extended_value": 200,
-				"weight": "1 lb",
-				"extended_weight": "1 lb"
-			}
-		},
-		{
 			"id": "ENfsFNztyYFqblGoP",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -4846,54 +5454,6 @@
 			}
 		},
 		{
-			"id": "eE3mpwp1CcGKuNaDt",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "e5UE7oCCXj41LPhIT"
-			},
-			"description": "Formal Wear",
-			"reference": "B266",
-			"local_notes": "Status 2",
-			"tags": [
-				"Clothing"
-			],
-			"base_value": "1200",
-			"base_weight": "2 lb",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 1200,
-				"extended_value": 1200,
-				"weight": "2 lb",
-				"extended_weight": "2 lb"
-			}
-		},
-		{
-			"id": "eLbYV7WnH_5UNeH7q",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "e_cSxP1TJ4hArvY2s"
-			},
-			"description": "Winter Clothes",
-			"reference": "B266",
-			"local_notes": "Status 1",
-			"tags": [
-				"Clothing"
-			],
-			"base_value": "360",
-			"base_weight": "4 lb",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 360,
-				"extended_value": 360,
-				"weight": "4 lb",
-				"extended_weight": "4 lb"
-			}
-		},
-		{
 			"id": "e5bZXZzTLoW_prSD6",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -4925,30 +5485,6 @@
 				"extended_value": 40,
 				"weight": "2 lb",
 				"extended_weight": "2 lb"
-			}
-		},
-		{
-			"id": "e2pVJ7YSAgjAHGNFn",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "e2WKpO0IMVsXiTZNt"
-			},
-			"description": "Personal Computer",
-			"reference": "UT22",
-			"local_notes": "Complexity 7. 100PB. 2C/20hr or external power.",
-			"tech_level": "10",
-			"tags": [
-				"Computers"
-			],
-			"base_value": "1000",
-			"base_weight": "5 lb",
-			"quantity": 1,
-			"calc": {
-				"value": 1000,
-				"extended_value": 1000,
-				"weight": "5 lb",
-				"extended_weight": "5 lb"
 			}
 		},
 		{
@@ -4984,12 +5520,18 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Programming",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Programming"
+									},
 									"modifier": -2
 								},
 								{
 									"type": "skill",
-									"name": "Computer Hacking",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Hacking"
+									},
 									"modifier": -2
 								}
 							],
@@ -5034,12 +5576,18 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Programming",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Programming"
+									},
 									"modifier": -1
 								},
 								{
 									"type": "skill",
-									"name": "Computer Hacking",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Hacking"
+									},
 									"modifier": -1
 								}
 							],
@@ -5083,13 +5631,22 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Programming",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Programming"
+									},
 									"modifier": -2
 								},
 								{
 									"type": "skill",
-									"name": "Expert Skill",
-									"specialization": "Computer Security",
+									"name": {
+										"compare": "is",
+										"qualifier": "Expert Skill"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Computer Security"
+									},
 									"modifier": -1
 								}
 							],
@@ -5133,13 +5690,22 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Programming",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Programming"
+									},
 									"modifier": -1
 								},
 								{
 									"type": "skill",
-									"name": "Expert Skill",
-									"specialization": "Computer Security"
+									"name": {
+										"compare": "is",
+										"qualifier": "Expert Skill"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Computer Security"
+									}
 								}
 							],
 							"calc": {
@@ -5183,7 +5749,10 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Hacking",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Hacking"
+									},
 									"modifier": -1
 								}
 							],
@@ -5228,7 +5797,10 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Hacking"
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Hacking"
+									}
 								}
 							],
 							"calc": {
@@ -5272,12 +5844,18 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Hacking",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Hacking"
+									},
 									"modifier": -1
 								},
 								{
 									"type": "skill",
-									"name": "Computer Operation",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Operation"
+									},
 									"modifier": -2
 								}
 							],
@@ -5322,13 +5900,22 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Hacking",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Hacking"
+									},
 									"modifier": -3
 								},
 								{
 									"type": "skill",
-									"name": "Expert Skill",
-									"specialization": "Computer Security",
+									"name": {
+										"compare": "is",
+										"qualifier": "Expert Skill"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Computer Security"
+									},
 									"modifier": -3
 								}
 							],
@@ -5372,12 +5959,21 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Hacking"
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Hacking"
+									}
 								},
 								{
 									"type": "skill",
-									"name": "Expert Skill",
-									"specialization": "Computer Security",
+									"name": {
+										"compare": "is",
+										"qualifier": "Expert Skill"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Computer Security"
+									},
 									"modifier": 2
 								}
 							],
@@ -5421,13 +6017,22 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Hacking",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Hacking"
+									},
 									"modifier": -1
 								},
 								{
 									"type": "skill",
-									"name": "Expert Skill",
-									"specialization": "Computer Security",
+									"name": {
+										"compare": "is",
+										"qualifier": "Expert Skill"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Computer Security"
+									},
 									"modifier": 1
 								}
 							],
@@ -5472,7 +6077,10 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Hacking",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Hacking"
+									},
 									"modifier": -1
 								}
 							],
@@ -5517,12 +6125,21 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Hacking"
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Hacking"
+									}
 								},
 								{
 									"type": "skill",
-									"name": "Expert Skill",
-									"specialization": "Computer Security",
+									"name": {
+										"compare": "is",
+										"qualifier": "Expert Skill"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Computer Security"
+									},
 									"modifier": 2
 								}
 							],
@@ -5566,12 +6183,21 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Operation"
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Operation"
+									}
 								},
 								{
 									"type": "skill",
-									"name": "Expert Skill",
-									"specialization": "Computer Security",
+									"name": {
+										"compare": "is",
+										"qualifier": "Expert Skill"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Computer Security"
+									},
 									"modifier": 1
 								}
 							],
@@ -5615,13 +6241,22 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Operation",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Operation"
+									},
 									"modifier": -1
 								},
 								{
 									"type": "skill",
-									"name": "Expert Skill",
-									"specialization": "Computer Security"
+									"name": {
+										"compare": "is",
+										"qualifier": "Expert Skill"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Computer Security"
+									}
 								}
 							],
 							"calc": {
@@ -5665,7 +6300,10 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Hacking",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Hacking"
+									},
 									"modifier": -2
 								}
 							],
@@ -5710,13 +6348,22 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Hacking",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Hacking"
+									},
 									"modifier": -3
 								},
 								{
 									"type": "skill",
-									"name": "Expert Skill",
-									"specialization": "Computer Security",
+									"name": {
+										"compare": "is",
+										"qualifier": "Expert Skill"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Computer Security"
+									},
 									"modifier": -3
 								}
 							],
@@ -5760,13 +6407,22 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Computer Operation",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Operation"
+									},
 									"modifier": 1
 								},
 								{
 									"type": "skill",
-									"name": "Expert Skill",
-									"specialization": "Computer Security",
+									"name": {
+										"compare": "is",
+										"qualifier": "Expert Skill"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Computer Security"
+									},
 									"modifier": 1
 								}
 							],
@@ -5812,114 +6468,6 @@
 				"extended_value": 5000,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
-			}
-		},
-		{
-			"id": "e2oEvw3xvIoZXX-5V",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "enQNM0RB6euc5mo7i"
-			},
-			"description": "B cell",
-			"reference": "UT19",
-			"tech_level": "9",
-			"tags": [
-				"Power"
-			],
-			"base_value": "3",
-			"base_weight": "0.05 lb",
-			"quantity": 2,
-			"equipped": true,
-			"calc": {
-				"value": 3,
-				"extended_value": 6,
-				"weight": "0.05 lb",
-				"extended_weight": "0.1 lb"
-			}
-		},
-		{
-			"id": "eBqr-n5L96kQLIY5p",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "ev80WwcnBpiGFrkol"
-			},
-			"description": "C cell",
-			"reference": "UT19",
-			"tech_level": "9",
-			"tags": [
-				"Power"
-			],
-			"base_value": "10",
-			"base_weight": "0.5 lb",
-			"quantity": 2,
-			"calc": {
-				"value": 10,
-				"extended_value": 20,
-				"weight": "0.5 lb",
-				"extended_weight": "1 lb"
-			}
-		},
-		{
-			"id": "e9d14sgIvfJcFBm8c",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "eXwmhzGUCny3k4r8I"
-			},
-			"description": "Surgical Instruments",
-			"reference": "B289",
-			"local_notes": "Includes scalpels, forceps, etc. Basic equipment for Surgery skill.",
-			"tech_level": "1",
-			"tags": [
-				"Medical Gear"
-			],
-			"base_value": "300",
-			"base_weight": "15 lb",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 300,
-				"extended_value": 300,
-				"weight": "15 lb",
-				"extended_weight": "15 lb"
-			}
-		},
-		{
-			"id": "ey8qEwOkEreOpbaMf",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "eHoOTNeBiFqTk598H"
-			},
-			"description": "First Aid Kit",
-			"reference": "B289",
-			"local_notes": "A complete kit for treating wounds, with bandages, ointments, etc.",
-			"tech_level": "0",
-			"tags": [
-				"Medical Gear"
-			],
-			"base_value": "50",
-			"base_weight": "2 lb",
-			"features": [
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "First Aid"
-					},
-					"amount": 1
-				}
-			],
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 50,
-				"extended_value": 50,
-				"weight": "2 lb",
-				"extended_weight": "2 lb"
 			}
 		},
 		{
@@ -6006,9 +6554,207 @@
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
+		},
+		{
+			"id": "ErmIFXpTOgfavvc9y",
+			"description": "Bag of Weightlessness",
+			"local_notes": "Can carry up to 40 lbs of which will be reduced by 50%",
+			"legality_class": "4",
+			"base_weight": "3",
+			"features": [
+				{
+					"type": "contained_weight_reduction",
+					"reduction": "50%"
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "ey8qEwOkEreOpbaMf",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "eHoOTNeBiFqTk598H"
+					},
+					"description": "First Aid Kit",
+					"reference": "B289",
+					"local_notes": "A complete kit for treating wounds, with bandages, ointments, etc.",
+					"tech_level": "0",
+					"tags": [
+						"Medical Gear"
+					],
+					"base_value": "50",
+					"base_weight": "2 lb",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "First Aid"
+							},
+							"amount": 1
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 50,
+						"extended_value": 50,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 50,
+				"weight": "3 lb",
+				"extended_weight": "4 lb"
+			}
 		}
 	],
 	"other_equipment": [
+		{
+			"id": "ep32YEbJ0cuGOc9GD",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "e25fe8uGR6a_T4rvD"
+			},
+			"description": "Responsive Bed, Double",
+			"reference": "UT69",
+			"tech_level": "9",
+			"tags": [
+				"Housing and Food"
+			],
+			"base_value": "700",
+			"base_weight": "140 lb",
+			"quantity": 1,
+			"calc": {
+				"value": 700,
+				"extended_value": 700,
+				"weight": "140 lb",
+				"extended_weight": "140 lb"
+			}
+		},
+		{
+			"id": "eE3mpwp1CcGKuNaDt",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "e5UE7oCCXj41LPhIT"
+			},
+			"description": "Formal Wear",
+			"reference": "B266",
+			"local_notes": "Status 2",
+			"tags": [
+				"Clothing"
+			],
+			"base_value": "1200",
+			"base_weight": "2 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1200,
+				"extended_value": 1200,
+				"weight": "2 lb",
+				"extended_weight": "2 lb"
+			}
+		},
+		{
+			"id": "eV_mLEW6WPdgqrat4",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eT3f4c4tSQXzONaiV"
+			},
+			"description": "Space Biosuit",
+			"reference": "UT179",
+			"local_notes": "Flexible. 2C/6wk.",
+			"tech_level": "10",
+			"legality_class": "3",
+			"tags": [
+				"Armor",
+				"Defenses"
+			],
+			"base_value": "10000",
+			"base_weight": "5 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "corrosion, crushing and toxic",
+					"amount": -12
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"amount": 15
+				}
+			],
+			"quantity": 1,
+			"calc": {
+				"value": 10000,
+				"extended_value": 10000,
+				"weight": "5 lb",
+				"extended_weight": "5 lb"
+			}
+		},
+		{
+			"id": "e9d14sgIvfJcFBm8c",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eXwmhzGUCny3k4r8I"
+			},
+			"description": "Surgical Instruments",
+			"reference": "B289",
+			"local_notes": "Includes scalpels, forceps, etc. Basic equipment for Surgery skill.",
+			"tech_level": "1",
+			"tags": [
+				"Medical Gear"
+			],
+			"base_value": "300",
+			"base_weight": "15 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 300,
+				"extended_value": 300,
+				"weight": "15 lb",
+				"extended_weight": "15 lb"
+			}
+		},
+		{
+			"id": "eLbYV7WnH_5UNeH7q",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "e_cSxP1TJ4hArvY2s"
+			},
+			"description": "Winter Clothes",
+			"reference": "B266",
+			"local_notes": "Status 1",
+			"tags": [
+				"Clothing"
+			],
+			"base_value": "360",
+			"base_weight": "4 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 360,
+				"extended_value": 360,
+				"weight": "4 lb",
+				"extended_weight": "4 lb"
+			}
+		},
 		{
 			"id": "egmEeKu1mJ0fiUeB8",
 			"description": "Kawanagi Motorcycle",
@@ -6042,7 +6788,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:16:51-04:00",
-	"modified_date": "2026-06-28T21:11:10-04:00",
+	"modified_date": "2026-07-14T13:06:59-04:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
