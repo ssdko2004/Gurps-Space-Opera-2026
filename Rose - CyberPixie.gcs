@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "As49xSi5V5lxtcqzE",
-	"total_points": 232,
+	"total_points": 235,
 	"points_record": [
+		{
+			"when": "2026-07-26T20:30:55-04:00",
+			"points": 3,
+			"reason": "Restaraunt heist"
+		},
 		{
 			"when": "2026-07-12T20:21:19-04:00",
 			"points": 5,
@@ -3371,7 +3376,7 @@
 							"replacements": {
 								"Specialty": "Piccolo"
 							},
-							"specialization": "@Specialty@",
+							"specialization": "Pipes",
 							"difficulty": "iq/h",
 							"points": 1,
 							"calc": {
@@ -4158,99 +4163,99 @@
 			"tags": [
 				"Money"
 			],
-			"base_value": "39361",
+			"base_value": "38461",
 			"modifiers": [
 				{
-					"id": "F5sarCNjiGtz0KBLA",
+					"id": "FNIv3re06FKH12w9N",
 					"name": "Tech Level",
 					"reference": "B27",
 					"children": [
 						{
-							"id": "ffiYoRsRoShCYWN3y",
+							"id": "fu3SZAHTJQJAGJpaY",
 							"name": "TL0",
 							"reference": "B27",
 							"cost": "+250",
 							"disabled": true
 						},
 						{
-							"id": "f8V5a1wRXHrLPdJXW",
+							"id": "feO0qhzTDLqkZORsq",
 							"name": "TL1",
 							"reference": "B27",
 							"cost": "+500",
 							"disabled": true
 						},
 						{
-							"id": "fiq3aUusJuIJO_JFm",
+							"id": "fyNjl6WmrHidET88B",
 							"name": "TL2",
 							"reference": "B27",
 							"cost": "+750",
 							"disabled": true
 						},
 						{
-							"id": "foWKYsJPI0UBx_tmP",
+							"id": "f_X3k_YiWh8EhYe67",
 							"name": "TL3",
 							"reference": "B27",
 							"cost": "+1000",
 							"disabled": true
 						},
 						{
-							"id": "fEFCUWNzZ_p1Am00u",
+							"id": "fiAXAKUfPn7ayKjuf",
 							"name": "TL4",
 							"reference": "B27",
 							"cost": "+2000",
 							"disabled": true
 						},
 						{
-							"id": "ftV1FxBrhzPW9eZe-",
+							"id": "fQkKrgiZ1NwaZ33ab",
 							"name": "TL5",
 							"reference": "B27",
 							"cost": "+5000",
 							"disabled": true
 						},
 						{
-							"id": "fmH4014wxw1Wjx_7t",
+							"id": "fs_GSEGrv8jbN8Zgu",
 							"name": "TL6",
 							"reference": "B27",
 							"cost": "+10000",
 							"disabled": true
 						},
 						{
-							"id": "f1Ikx7qR1-0aohnNs",
+							"id": "fBvJmgB4LPEKcMJJh",
 							"name": "TL7",
 							"reference": "B27",
 							"cost": "+15000",
 							"disabled": true
 						},
 						{
-							"id": "fnAJoUdhOzEdTezED",
+							"id": "f5YDMqxBAdJwRnL2u",
 							"name": "TL8",
 							"reference": "B27",
 							"cost": "+20000",
 							"disabled": true
 						},
 						{
-							"id": "fn5YclmD-PYp-KhWL",
+							"id": "fW-_M24t6hoS-FQ1J",
 							"name": "TL9",
 							"reference": "B27",
 							"cost": "+30000",
 							"disabled": true
 						},
 						{
-							"id": "fgNpVbrWcI1E15VdY",
+							"id": "fh1ytSxiUSKnLflAC",
 							"name": "TL10",
 							"reference": "B27",
 							"cost": "+50000",
 							"disabled": true
 						},
 						{
-							"id": "flbDwQf9D4vybxxNf",
+							"id": "f22qRu8QzBZ1qtpwB",
 							"name": "TL11",
 							"reference": "B27",
 							"cost": "+75000",
 							"disabled": true
 						},
 						{
-							"id": "fTIh-viJhDtL18KY4",
+							"id": "fXQTbF64Lxvdpxz5v",
 							"name": "TL12",
 							"reference": "B27",
 							"cost": "+100000",
@@ -4259,12 +4264,12 @@
 					]
 				},
 				{
-					"id": "Fj-6Y-oQbA1j0iJUT",
+					"id": "FwiZ5LmY8zUOp9bxj",
 					"name": "Wealth Level",
 					"reference": "B25",
 					"children": [
 						{
-							"id": "fYXKX3TFkj3_8kaAz",
+							"id": "foiiEmOM8CH-ZkjVO",
 							"name": "Poor",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4272,7 +4277,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f_OLvqRVaCfvu1gCb",
+							"id": "f7GMxMLM2mbeTN85W",
 							"name": "Struggling",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4280,7 +4285,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fkrXeb8QTgiBxGOs-",
+							"id": "fnufgpGMJ8NIXDxEV",
 							"name": "Average",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4288,7 +4293,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f_eawUVYDRcAzzdr0",
+							"id": "fGhjEbTUFnoY_hY1g",
 							"name": "Comfortable",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4296,7 +4301,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f_zcigwTG8FmoR5g2",
+							"id": "f7aLOMiTgJPUNwJxh",
 							"name": "Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4304,7 +4309,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fWklacmdcpHPvIzos",
+							"id": "fVwdUNKtQwrHU_uJd",
 							"name": "Very Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4312,7 +4317,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fJOdTHMDlCTTNuNE0",
+							"id": "fKZHn2z-xekt1aBp4",
 							"name": "Filthy Rich",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4320,7 +4325,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f3pbcq-DMNALpRQnl",
+							"id": "f9-GvaZ91tRdrqrrt",
 							"name": "Multimillionaire 1",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4333,8 +4338,8 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 39361,
-				"extended_value": 39361,
+				"value": 38461,
+				"extended_value": 38461,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
@@ -5079,6 +5084,27 @@
 				"extended_weight": "0 lb",
 				"extended_weight_for_skills": "0 lb"
 			}
+		},
+		{
+			"id": "e4Orv9uyFJD7zVUyR",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "e2v-z57yU1YlczwIM"
+			},
+			"description": "Implant Video Comm - Encrypted",
+			"reference": "UT211",
+			"local_notes": "Minor procedure.",
+			"tech_level": "10",
+			"base_value": "700",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 700,
+				"extended_value": 700,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
 		}
 	],
 	"other_equipment": [
@@ -5216,7 +5242,7 @@
 		}
 	],
 	"created_date": "2026-03-25T10:24:58-04:00",
-	"modified_date": "2026-07-12T20:24:11-04:00",
+	"modified_date": "2026-07-26T20:41:37-04:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
