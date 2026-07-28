@@ -2381,26 +2381,6 @@
 			}
 		},
 		{
-			"id": "tfFshVgePf4ddQNms",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Traits.adq",
-				"id": "tOyGCEEXkwH_ipfxg"
-			},
-			"name": "Chronic Depression",
-			"reference": "B126",
-			"local_notes": "Make a self-control roll to do anything but acquire and consume the minimum necessities for survival, or whenever you must choose between two or more actions",
-			"tags": [
-				"Disadvantage",
-				"Mental"
-			],
-			"cr": 12,
-			"base_points": -15,
-			"calc": {
-				"points": -15
-			}
-		},
-		{
 			"id": "tMHGD5vVZqm1K-G07",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -2632,6 +2612,41 @@
 			],
 			"calc": {
 				"points": 10
+			}
+		},
+		{
+			"id": "tumh0kxxgXEhui1Xz",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tUhfUSdR8XS1qd7Bn"
+			},
+			"name": "Insomniac",
+			"reference": "B140",
+			"tags": [
+				"Disadvantage",
+				"Physical"
+			],
+			"vtt_notes": "[2d-1 days between episodes]",
+			"modifiers": [
+				{
+					"id": "myEj8HIFR1P9Pphnl",
+					"name": "Mild",
+					"reference": "B140",
+					"local_notes": "GM secretly rolls 3d for the number of days between episodes",
+					"cost_adj": "-10",
+					"disabled": true
+				},
+				{
+					"id": "m93QRilDqMSKWSdsF",
+					"name": "Severe",
+					"reference": "B140",
+					"local_notes": "GM secretly rolls 2d-1 for the number of days between episodes",
+					"cost_adj": "-15"
+				}
+			],
+			"calc": {
+				"points": -15
 			}
 		}
 	],
@@ -5439,12 +5454,12 @@
 			"id": "eJzL8hzWLqmYOaDX8",
 			"description": "Money",
 			"legality_class": "4",
-			"base_value": "27912",
+			"base_value": "23212",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 27912,
-				"extended_value": 27912,
+				"value": 23212,
+				"extended_value": 23212,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
@@ -5552,6 +5567,37 @@
 				"extended_value": 28200,
 				"weight": "0.25 lb",
 				"extended_weight": "0.25 lb"
+			}
+		},
+		{
+			"id": "emDzEhg2jI5zjcNyo",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "High Tech/High Tech Equipment.eqp",
+				"id": "es6AmzOmVTMUHWtkL"
+			},
+			"description": "Cellular Phone",
+			"reference": "HT39",
+			"tech_level": "10",
+			"tags": [
+				"General Equipment"
+			],
+			"base_value": "100",
+			"base_weight": "0.5 lb",
+			"modifiers": [
+				{
+					"id": "fn1WzqtUlcBqy6uYG",
+					"name": "Secure Encryption",
+					"cost": "+500"
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 600,
+				"extended_value": 600,
+				"weight": "0.5 lb",
+				"extended_weight": "0.5 lb"
 			}
 		}
 	],
@@ -5709,7 +5755,7 @@
 		}
 	],
 	"created_date": "2026-04-06T20:12:34-04:00",
-	"modified_date": "2026-07-12T20:32:20-04:00",
+	"modified_date": "2026-07-26T20:44:20-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",
