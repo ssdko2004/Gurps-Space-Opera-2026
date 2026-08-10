@@ -1337,20 +1337,21 @@
 				"Disadvantage",
 				"Physical"
 			],
+			"vtt_notes": "[CR: 15 Chronic Pain Appears fairly often]",
 			"modifiers": [
 				{
-					"id": "M0OkmwVZDdFg_KCWa",
+					"id": "MWkQi3x2bfWmh5o76",
 					"name": "Severity",
 					"children": [
 						{
-							"id": "mLC4u9QRWpDKoemBg",
+							"id": "mun6VwmQdX3CoT6Oi",
 							"name": "Mild",
 							"reference": "B126",
 							"local_notes": "-2 to DX, IQ, and self-control rolls",
 							"cost_adj": "-5"
 						},
 						{
-							"id": "mj5IuTMbQf3XDybqf",
+							"id": "mvqv7osAj9RbdV-rb",
 							"name": "Severe",
 							"reference": "B126",
 							"local_notes": "-4 to DX, IQ, and self-control rolls",
@@ -1358,7 +1359,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mBn7m31anD5QoKq0L",
+							"id": "mVNdM7HMchfnizI-x",
 							"name": "Agonizing",
 							"reference": "B126",
 							"local_notes": "-6 to DX, IQ, and self-control rolls",
@@ -1368,32 +1369,32 @@
 					]
 				},
 				{
-					"id": "Mu57fsJ7lTPxYt6We",
+					"id": "MUONrRXr5q_VNS7Yt",
 					"name": "Interval",
 					"children": [
 						{
-							"id": "mIkGS6DPx-q8Mz2d3",
+							"id": "mmiXyshT3UsMlQdk2",
 							"name": "1 hour interval",
 							"reference": "B126",
 							"cost_adj": "x0.5",
 							"disabled": true
 						},
 						{
-							"id": "m8D-tG0ldym3m--bg",
+							"id": "m-oG83ob34gdGPLRA",
 							"name": "2 hour interval",
 							"reference": "B126",
 							"cost_adj": "x1",
 							"disabled": true
 						},
 						{
-							"id": "m8nh2CK7D_-UGB97N",
+							"id": "my6WpyY3Emv-wlDzP",
 							"name": "4 hour interval",
 							"reference": "B126",
 							"cost_adj": "x1.5",
 							"disabled": true
 						},
 						{
-							"id": "mBeSpbCxcxURhlfAL",
+							"id": "mhYMJ-dmmc9Z7tdjo",
 							"name": "8 hour interval",
 							"reference": "B126",
 							"cost_adj": "x2"
@@ -1401,32 +1402,32 @@
 					]
 				},
 				{
-					"id": "MrOFPnEHyo3brlbRb",
+					"id": "Mk-AB9A1dzBflVlhe",
 					"name": "Frequency of Appearance",
 					"children": [
 						{
-							"id": "mKErhdY_W9qGKtnjS",
+							"id": "m_6P5zXFE8W-oUCKD",
 							"name": "Quite rarely",
 							"local_notes": "6-",
 							"cost_adj": "x0.5",
 							"disabled": true
 						},
 						{
-							"id": "mpKb9-tGxWQwemveE",
+							"id": "m5-BjY-dkW8uAGryd",
 							"name": "Fairly often",
 							"local_notes": "9-",
 							"cost_adj": "x1",
 							"disabled": true
 						},
 						{
-							"id": "moAyMzwm27z3cC6h_",
+							"id": "mS-zx7mk9lImUszRD",
 							"name": "Quite often",
 							"local_notes": "12-",
 							"cost_adj": "x2",
 							"disabled": true
 						},
 						{
-							"id": "mL6VaJa5XVTs4UYNu",
+							"id": "m7oT9b09_sFe5rNQg",
 							"name": "Almost all the time",
 							"local_notes": "15-",
 							"cost_adj": "x3"
@@ -2066,17 +2067,17 @@
 				"Disadvantage",
 				"Social"
 			],
-			"vtt_notes": "[CR: 9 Appears fairly often]",
+			"vtt_notes": "[CR: 9 Kotobuki Appears fairly often]",
 			"replacements": {
 				"Who": "Kotobuki Financhial"
 			},
 			"modifiers": [
 				{
-					"id": "MLFzMq4ng8wJiXPZq",
+					"id": "M45RUm24S12nX5gyi",
 					"name": "Power",
 					"children": [
 						{
-							"id": "mhHxdozWvCOfaf_Eu",
+							"id": "mz2gEe94EudF96lHO",
 							"name": "Weak Individual",
 							"reference": "B135",
 							"local_notes": "50% of your starting points",
@@ -2084,7 +2085,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mQOwPNK14RtC_1ibE",
+							"id": "mSmFf74w95d-oiMkV",
 							"name": "Equal Individual",
 							"reference": "B135",
 							"local_notes": "100% of your starting points",
@@ -2092,7 +2093,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mtOy3gLIRhXLWdZPo",
+							"id": "mKYP485eilGXrOIpg",
 							"name": "Powerful Individual",
 							"reference": "B135",
 							"local_notes": ">150% of your starting points",
@@ -2100,27 +2101,27 @@
 							"disabled": true
 						},
 						{
-							"id": "mc_B8KEcQaVQ8nem8",
+							"id": "m1s9q3jhAiejU6_2V",
 							"name": "Weak Group",
 							"reference": "B135",
 							"cost_adj": "-10",
 							"disabled": true
 						},
 						{
-							"id": "mdmysVtDwFJRPcmBv",
+							"id": "m5ghDntTx9gLanamt",
 							"name": "Medium Group",
 							"reference": "B135",
 							"cost_adj": "-20",
 							"disabled": true
 						},
 						{
-							"id": "mhopfeYc7T-gxrU8y",
+							"id": "m89_54wBKGJWKX7zB",
 							"name": "Large/Powerful Group",
 							"reference": "B135",
 							"cost_adj": "-30"
 						},
 						{
-							"id": "mQbxBTHMMqwIQ5wHD",
+							"id": "mR5CWGi6jzfrmJfxE",
 							"name": "Utterly Formidable Group",
 							"reference": "B135",
 							"cost_adj": "-40",
@@ -2129,17 +2130,17 @@
 					]
 				},
 				{
-					"id": "M15kdCQUs1a-TDqUK",
+					"id": "M4u9zS7CtUS1ECuGX",
 					"name": "Special Cases",
 					"children": [
 						{
-							"id": "m3TYguzaO8I4P3BAU",
+							"id": "m0_sWpNPkPyqNT0NV",
 							"name": "Evil Twin",
 							"reference": "B135",
 							"disabled": true
 						},
 						{
-							"id": "m0jLuXIQeABZQy6ne",
+							"id": "mic1wHnUvKfFNk5OZ",
 							"name": "Evil Twin",
 							"reference": "B135",
 							"local_notes": "More skilled or extra abilities",
@@ -2147,7 +2148,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mjFN5iofkALa2JIN3",
+							"id": "mbWCxtuOFSA3pm9Yz",
 							"name": "Evil Twin",
 							"reference": "B135",
 							"local_notes": "More skilled and extra abilities",
@@ -2155,7 +2156,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mZ29aYwsAFsID-Xj6",
+							"id": "mOJmdhUENh0Psjyxj",
 							"name": "Unknown",
 							"reference": "B135",
 							"cost_adj": "-5",
@@ -2164,25 +2165,25 @@
 					]
 				},
 				{
-					"id": "MGqDgw3mNkANA4u5i",
+					"id": "M8naRcTjyaAg9Bdv6",
 					"name": "Intent",
 					"children": [
 						{
-							"id": "m1B2hSVj9QjnEIlwo",
+							"id": "mcsw_i0T5P4Xm473Y",
 							"name": "Watcher",
 							"reference": "B135",
 							"cost_adj": "x0.25",
 							"disabled": true
 						},
 						{
-							"id": "mZk6lIlkbQqVNNJQT",
+							"id": "mhq4XleF99pvAR8Rl",
 							"name": "Rival",
 							"reference": "B135",
 							"cost_adj": "x0.5",
 							"disabled": true
 						},
 						{
-							"id": "mMO8cyKOdXXKGDPX2",
+							"id": "mSVJCwvfjfO3fB1ZS",
 							"name": "Hunter",
 							"reference": "B135",
 							"cost_adj": "x1"
@@ -2190,11 +2191,11 @@
 					]
 				},
 				{
-					"id": "MhPUEJ1s0ae8uqaW8",
+					"id": "MHvmvDbWLqOsiKVll",
 					"name": "Frequency of Appearance",
 					"children": [
 						{
-							"id": "m44lsEAPm1w_lp35X",
+							"id": "mr7S8NtVs_gBtwRyP",
 							"name": "Appears quite rarely",
 							"reference": "B36",
 							"local_notes": "6-",
@@ -2202,14 +2203,14 @@
 							"disabled": true
 						},
 						{
-							"id": "mEygWSxCKyYnhmdWj",
+							"id": "mTsMDoHjbyQqe6a8w",
 							"name": "Appears fairly often",
 							"reference": "B36",
 							"local_notes": "9-",
 							"cost_adj": "x1"
 						},
 						{
-							"id": "mKvqJGIgZ9BXoizwM",
+							"id": "mnDQm5kkjraGE32Fo",
 							"name": "Appears quite often",
 							"reference": "B36",
 							"local_notes": "12-",
@@ -2217,7 +2218,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mW9lgD88NqN7Xtndk",
+							"id": "m79OiJt4J7Aw-XNot",
 							"name": "Appears almost all the time",
 							"reference": "B36",
 							"local_notes": "15-",
