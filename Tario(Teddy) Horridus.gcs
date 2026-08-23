@@ -1,8 +1,18 @@
 {
 	"version": 5,
 	"id": "Av22gCRCvmacEEanS",
-	"total_points": 233,
+	"total_points": 239,
 	"points_record": [
+		{
+			"when": "2026-08-23T10:08:29-04:00",
+			"points": 3,
+			"reason": "Session 8"
+		},
+		{
+			"when": "2026-08-09T17:41:44-04:00",
+			"points": 3,
+			"reason": "Restaraunt heist"
+		},
 		{
 			"when": "2026-07-12T20:18:07-04:00",
 			"points": 5,
@@ -5603,6 +5613,30 @@
 	],
 	"other_equipment": [
 		{
+			"id": "eU-OuzSMpkpc9YfgL",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eafxbL_MsqAoAZecF"
+			},
+			"description": "Formal Wear",
+			"reference": "B266",
+			"local_notes": "Status 3",
+			"tags": [
+				"Clothing"
+			],
+			"base_value": "4800",
+			"base_weight": "2 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 4800,
+				"extended_value": 4800,
+				"weight": "2 lb",
+				"extended_weight": "2 lb"
+			}
+		},
+		{
 			"id": "eYiQl1XHqUIFXH4lB",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -5755,7 +5789,7 @@
 		}
 	],
 	"created_date": "2026-04-06T20:12:34-04:00",
-	"modified_date": "2026-07-26T20:44:20-04:00",
+	"modified_date": "2026-08-09T17:40:49-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",

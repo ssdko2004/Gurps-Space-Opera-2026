@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "As0u-6HXQjmOtxbee",
-	"total_points": 233,
+	"total_points": 236,
 	"points_record": [
+		{
+			"when": "2026-08-09T20:04:37-04:00",
+			"points": 3,
+			"reason": "Session 8"
+		},
 		{
 			"when": "2026-07-12T20:26:56-04:00",
 			"points": 5,
@@ -4199,6 +4204,298 @@
 			]
 		},
 		{
+			"id": "P_PJvSpBM67CI3IJc",
+			"name": "Mind Control",
+			"children": [
+				{
+					"id": "pK30kA2Q_Je2BE8jg",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pIFb2-henE9nKHZ4K"
+					},
+					"name": "Foolishness",
+					"reference": "M134",
+					"tags": [
+						"Mind Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"resist": "Will",
+					"casting_cost": "1-5",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_least",
+									"qualifier": 12
+								},
+								"which": "iq"
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "pus8fAmLWTVWWy_gM",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pVZusRQhTkrsaf7uH"
+					},
+					"name": "Daze",
+					"reference": "M134",
+					"tags": [
+						"Mind Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"resist": "HT",
+					"casting_cost": "3",
+					"maintenance_cost": "2",
+					"casting_time": "2 sec",
+					"duration": "1 min",
+					"prereq_count": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "foolishness"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "peApgFywKO-LIGyKW",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "p0MJ8TlQri9YGdVW5"
+					},
+					"name": "Sleep",
+					"reference": "M135",
+					"tags": [
+						"Mind Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"resist": "HT",
+					"casting_cost": "4",
+					"maintenance_cost": "-",
+					"casting_time": "3 sec",
+					"duration": "Until awakened",
+					"prereq_count": 2,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "daze"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "pjwJv-ctZ1vAtpSMX",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pZ19s_-x3dsN6lUxc"
+					},
+					"name": "Peaceful Sleep",
+					"reference": "M138",
+					"tags": [
+						"Mind Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"resist": "Special",
+					"casting_cost": "4",
+					"maintenance_cost": "-",
+					"casting_time": "30 sec",
+					"duration": "8 hrs",
+					"prereq_count": 5,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "sleep"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "silence"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				}
+			]
+		},
+		{
+			"id": "PDyC68H7sXRivpZp1",
+			"name": "Sound",
+			"children": [
+				{
+					"id": "pS3Z5x3RW8ELCDABL",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pKfRVVMyj6NbAFvSW"
+					},
+					"name": "Sound",
+					"reference": "M171",
+					"tags": [
+						"Sound"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Sound"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "Varies",
+					"maintenance_cost": "1/ min",
+					"casting_time": "1 sec",
+					"duration": "Varies",
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "pcGmg2zBz60PF2Iri",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pfsPG86GFjPtUmpps"
+					},
+					"name": "Silence",
+					"reference": "M171",
+					"tags": [
+						"Sound"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Sound"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "2",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"prereq_count": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "sound"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				}
+			]
+		},
+		{
 			"id": "PSCnX8stvY8bru7zr",
 			"name": "Plant",
 			"children": [
@@ -4247,99 +4544,99 @@
 			"tags": [
 				"Money"
 			],
-			"base_value": "26839",
+			"base_value": "8339",
 			"modifiers": [
 				{
-					"id": "F083eWTs8EYJlqvgM",
+					"id": "FJ9_SaQuunbO2fTmk",
 					"name": "Tech Level",
 					"reference": "B27",
 					"children": [
 						{
-							"id": "fA8jvyD1YWCroSTaL",
+							"id": "fUH4c6pXSk9t4iIJz",
 							"name": "TL0",
 							"reference": "B27",
 							"cost": "+250",
 							"disabled": true
 						},
 						{
-							"id": "fdwfHzPepSAsS7apo",
+							"id": "ftBitfsKg3thirU9f",
 							"name": "TL1",
 							"reference": "B27",
 							"cost": "+500",
 							"disabled": true
 						},
 						{
-							"id": "ftj4KhjjICCpWzMXp",
+							"id": "f5Hn3wsGOw7O_fucU",
 							"name": "TL2",
 							"reference": "B27",
 							"cost": "+750",
 							"disabled": true
 						},
 						{
-							"id": "fvOMY66rJpga733R4",
+							"id": "fAtFfApgRbKY6QjIf",
 							"name": "TL3",
 							"reference": "B27",
 							"cost": "+1000",
 							"disabled": true
 						},
 						{
-							"id": "foAeLfXa9_ccSFbW1",
+							"id": "fDn46GgJEjBjuRMcB",
 							"name": "TL4",
 							"reference": "B27",
 							"cost": "+2000",
 							"disabled": true
 						},
 						{
-							"id": "fl5olVvw7oWbLervc",
+							"id": "fGSEbzT5bE0frCvKN",
 							"name": "TL5",
 							"reference": "B27",
 							"cost": "+5000",
 							"disabled": true
 						},
 						{
-							"id": "faQykKmriYljxTC3q",
+							"id": "fwb4wx81WEkuyn_s8",
 							"name": "TL6",
 							"reference": "B27",
 							"cost": "+10000",
 							"disabled": true
 						},
 						{
-							"id": "f01ZAL6VEuhjJI4do",
+							"id": "fghNByWXdrudBxo_g",
 							"name": "TL7",
 							"reference": "B27",
 							"cost": "+15000",
 							"disabled": true
 						},
 						{
-							"id": "fvS5-jVK-skb1Agzh",
+							"id": "fp-ICCrHRxlEbK0py",
 							"name": "TL8",
 							"reference": "B27",
 							"cost": "+20000",
 							"disabled": true
 						},
 						{
-							"id": "fWD6sGNVsxjxKV8Je",
+							"id": "f9TALuElteDPJuEkB",
 							"name": "TL9",
 							"reference": "B27",
 							"cost": "+30000",
 							"disabled": true
 						},
 						{
-							"id": "f8T43ptg_i6zvkFs4",
+							"id": "fcyx8UxhWaKCQ970r",
 							"name": "TL10",
 							"reference": "B27",
 							"cost": "+50000",
 							"disabled": true
 						},
 						{
-							"id": "f5R0d33uXwU4zIdvC",
+							"id": "fE3R9qb2kO20RwXFO",
 							"name": "TL11",
 							"reference": "B27",
 							"cost": "+75000",
 							"disabled": true
 						},
 						{
-							"id": "fyQssK1aqh5WnvOyF",
+							"id": "f27jTgbeZBw6-b4fA",
 							"name": "TL12",
 							"reference": "B27",
 							"cost": "+100000",
@@ -4348,12 +4645,12 @@
 					]
 				},
 				{
-					"id": "Frj5n7cA_9bdHxfca",
+					"id": "F_8yyjaUYwDMAsxeb",
 					"name": "Wealth Level",
 					"reference": "B25",
 					"children": [
 						{
-							"id": "fvPCW9EXYQoEhkF0j",
+							"id": "fMEKhcukILqyVW7jm",
 							"name": "Poor",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4361,7 +4658,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fPOn7RuKASErJaJhC",
+							"id": "f1MeIJMyL_QPxrsA6",
 							"name": "Struggling",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4369,7 +4666,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f13J8imQTQVAFzlJq",
+							"id": "fajJlpSfTUXn6oqWu",
 							"name": "Average",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4377,7 +4674,7 @@
 							"disabled": true
 						},
 						{
-							"id": "f10OEVuHcf3FCBoPE",
+							"id": "fZSIP-isOsAuflmK5",
 							"name": "Comfortable",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4385,7 +4682,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fHHbuxtcQ_6KC9GRj",
+							"id": "fpR8RO9i6hvzU-tS0",
 							"name": "Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4393,7 +4690,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fTJH2tpXZor15VMac",
+							"id": "fRtO2z5qEvApYBobI",
 							"name": "Very Wealthy",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4401,7 +4698,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fUhHT2HGg0IQqLr3v",
+							"id": "fPDKao4D6CnFmO-oc",
 							"name": "Filthy Rich",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4409,7 +4706,7 @@
 							"disabled": true
 						},
 						{
-							"id": "fvfERg3lgwxUPPfva",
+							"id": "fZVxQmWyrkagbsk3l",
 							"name": "Multimillionaire 1",
 							"reference": "B25",
 							"cost_type": "to_base_cost",
@@ -4422,8 +4719,8 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 26839,
-				"extended_value": 26839,
+				"value": 8339,
+				"extended_value": 8339,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
@@ -5139,13 +5436,38 @@
 						"weight": "0.05 lb",
 						"extended_weight": "0.1 lb"
 					}
+				},
+				{
+					"id": "eaoZkfmOQvFlcGGLO",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Equipment.eqp",
+						"id": "eBuYxPcaMGVSl6nKR"
+					},
+					"description": "30 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"base_value": "18500",
+					"base_weight": "0.012 lb",
+					"max_uses": 30,
+					"quantity": 1,
+					"uses": 30,
+					"equipped": true,
+					"calc": {
+						"value": 18500,
+						"extended_value": 18500,
+						"weight": "0.012 lb",
+						"extended_weight": "0.012 lb"
+					}
 				}
 			],
 			"calc": {
 				"value": 60,
-				"extended_value": 31766,
+				"extended_value": 50266,
 				"weight": "3 lb",
-				"extended_weight": "21.15 lb"
+				"extended_weight": "21.162 lb"
 			}
 		},
 		{
@@ -5319,31 +5641,6 @@
 				"extended_value": 1200,
 				"weight": "8 lb",
 				"extended_weight": "8 lb"
-			}
-		},
-		{
-			"id": "e2jCBiIGW6siO7CnK",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Magic/Magic Equipment.eqp",
-				"id": "en3K5VAj04gPAJcc0"
-			},
-			"description": "10 pt Powerstone",
-			"reference": "M20",
-			"tags": [
-				"Powerstone"
-			],
-			"base_value": "1900",
-			"base_weight": "0.004 lb",
-			"max_uses": 10,
-			"quantity": 1,
-			"uses": 10,
-			"equipped": true,
-			"calc": {
-				"value": 1900,
-				"extended_value": 1900,
-				"weight": "0.004 lb",
-				"extended_weight": "0.004 lb"
 			}
 		},
 		{
@@ -6664,6 +6961,31 @@
 			}
 		},
 		{
+			"id": "e2jCBiIGW6siO7CnK",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic/Magic Equipment.eqp",
+				"id": "en3K5VAj04gPAJcc0"
+			},
+			"description": "10 pt Powerstone",
+			"reference": "M20",
+			"tags": [
+				"Powerstone"
+			],
+			"base_value": "1900",
+			"base_weight": "0.004 lb",
+			"max_uses": 10,
+			"quantity": 1,
+			"uses": 10,
+			"equipped": true,
+			"calc": {
+				"value": 1900,
+				"extended_value": 1900,
+				"weight": "0.004 lb",
+				"extended_weight": "0.004 lb"
+			}
+		},
+		{
 			"id": "eV_mLEW6WPdgqrat4",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -6788,7 +7110,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:16:51-04:00",
-	"modified_date": "2026-07-14T13:06:59-04:00",
+	"modified_date": "2026-08-09T21:09:46-04:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",

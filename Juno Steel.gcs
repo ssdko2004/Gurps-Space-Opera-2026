@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "AMCcz18E4hSTpOYHb",
-	"total_points": 233,
+	"total_points": 236,
 	"points_record": [
+		{
+			"when": "2026-08-23T10:09:03-04:00",
+			"points": 3,
+			"reason": "Session 8"
+		},
 		{
 			"when": "2026-07-12T20:21:35-04:00",
 			"points": 5,
