@@ -33,16 +33,185 @@
 			"bottom_margin": "0.25 in",
 			"right_margin": "0.25 in"
 		},
-		"block_layout": [
-			"reactions conditional_modifiers",
-			"melee",
-			"ranged",
-			"traits skills",
-			"spells",
-			"equipment",
-			"other_equipment",
-			"notes"
-		],
+		"layout": {
+			"root": {
+				"type": "column",
+				"weight": 1,
+				"children": [
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "portrait",
+								"weight": 1,
+								"square": true
+							},
+							{
+								"type": "column",
+								"weight": 4.3,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "block",
+												"key": "identity",
+												"weight": 1.6
+											},
+											{
+												"type": "block",
+												"key": "miscellaneous",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "description",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "points",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "column",
+								"weight": 1.5,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "column",
+												"weight": 1,
+												"children": [
+													{
+														"type": "block",
+														"key": "primary_attributes",
+														"weight": 1
+													},
+													{
+														"type": "block",
+														"key": "damage",
+														"weight": 1
+													}
+												]
+											},
+											{
+												"type": "block",
+												"key": "secondary_attributes",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "point_pools",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "body",
+								"weight": 1
+							},
+							{
+								"type": "column",
+								"weight": 1.6,
+								"children": [
+									{
+										"type": "block",
+										"key": "encumbrance",
+										"weight": 1
+									},
+									{
+										"type": "block",
+										"key": "lifting",
+										"weight": 1
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "reactions",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "conditional_modifiers",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "melee",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "ranged",
+						"weight": 1
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "traits",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "skills",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "spells",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "other_equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "notes",
+						"weight": 1
+					}
+				]
+			}
+		},
 		"attributes": [
 			{
 				"id": "st",
@@ -283,7 +452,8 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 0
+							"all": 0,
+							"laser": 0
 						}
 					}
 				},
@@ -298,7 +468,8 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 12
+							"all": 12,
+							"laser": 10
 						}
 					}
 				},
@@ -312,7 +483,8 @@
 					"calc": {
 						"roll_range": "5",
 						"dr": {
-							"all": 10
+							"all": 10,
+							"laser": 10
 						}
 					}
 				},
@@ -326,7 +498,8 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 10
+							"all": 10,
+							"laser": 10
 						}
 					}
 				},
@@ -340,7 +513,8 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 10
+							"all": 10,
+							"laser": 10
 						}
 					}
 				},
@@ -352,7 +526,8 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 10
+							"all": 10,
+							"laser": 10
 						}
 					}
 				},
@@ -366,7 +541,8 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 10
+							"all": 10,
+							"laser": 10
 						}
 					}
 				},
@@ -380,7 +556,8 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 10
+							"all": 10,
+							"laser": 10
 						}
 					}
 				},
@@ -394,7 +571,8 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 10
+							"all": 10,
+							"laser": 10
 						}
 					}
 				},
@@ -408,7 +586,8 @@
 					"calc": {
 						"roll_range": "15",
 						"dr": {
-							"all": 10
+							"all": 10,
+							"laser": 10
 						}
 					}
 				},
@@ -422,7 +601,8 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 10
+							"all": 10,
+							"laser": 10
 						}
 					}
 				},
@@ -436,7 +616,8 @@
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
-							"all": 10
+							"all": 10,
+							"laser": 10
 						}
 					}
 				},
@@ -449,7 +630,8 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 10
+							"all": 10,
+							"laser": 10
 						}
 					}
 				}
@@ -580,11 +762,11 @@
 		},
 		{
 			"attr_id": "hp",
-			"adj": 0,
+			"adj": 14,
 			"calc": {
-				"value": 14,
-				"current": 14,
-				"points": 0
+				"value": 28,
+				"current": 28,
+				"points": 28
 			}
 		}
 	],
@@ -1067,7 +1249,10 @@
 							"reference": "B47",
 							"local_notes": "@Direction: Back, Right, Left, Top or Underside@",
 							"cost_adj": "-40%",
-							"disabled": true
+							"disabled": true,
+							"calc": {
+								"resolved_notes": "@Direction@"
+							}
 						},
 						{
 							"id": "mr83lZQImig8uVuFA",
@@ -1160,9 +1345,413 @@
 			}
 		},
 		{
+			"id": "te_na9Oz1SWkSo05_",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tBmSJ3pNE53c4IRUU"
+			},
+			"name": "Damage Resistance",
+			"reference": "B46,B47,P45,MA43,PSI14",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Physical"
+			],
+			"replacements": {
+				"Common Attack Form": "Laser"
+			},
+			"modifiers": [
+				{
+					"id": "M15wT6TyvwoMGZp9C",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "MNGwNvpoQ0he3h7A7"
+					},
+					"name": "Special Enhancements",
+					"children": [
+						{
+							"id": "mlz5d3mOwxRlvkc96",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mJxX9ApiNM2Hh9akl"
+							},
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances @Trait@",
+							"cost_adj": "80%",
+							"disabled": true
+						},
+						{
+							"id": "mPo-VrB86aIoq6GU4",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mHwfpp1_SY3jN-JjF"
+							},
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Healing only",
+							"cost_adj": "80%",
+							"disabled": true
+						},
+						{
+							"id": "mvwbBvfI0kD6kRh6N",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mvDYFqhwd-tS12G97"
+							},
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances any trait",
+							"cost_adj": "100%",
+							"disabled": true
+						},
+						{
+							"id": "mFqcXRt8ch1iS3tw9",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mKZQfoJhVcaw04aPy"
+							},
+							"name": "Force Field",
+							"reference": "B47",
+							"cost_adj": "20%",
+							"disabled": true
+						},
+						{
+							"id": "mas68u3_bnzpMB-LX",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mTxwPrj2QOL79_Emh"
+							},
+							"name": "Hardened",
+							"reference": "B47",
+							"local_notes": "Reduces armor divisor by @Hardened level@ step(s): \"ignores DR\"→100→10→5→3→2→\"no divisor\"",
+							"cost_adj": "20%",
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "m4g1yuE1klvYf4pno",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "moRQ906qHeIUxEtDH"
+							},
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost_adj": "10%",
+							"disabled": true
+						},
+						{
+							"id": "mM1CM2WqPlsuqPpVm",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mdZamgGXO5wzrri6F"
+							},
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost_adj": "50%",
+							"disabled": true
+						},
+						{
+							"id": "mcvT6UIUWhj6wTdga",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mn4Yj3uRBdathIgxl"
+							},
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "m1lss3n9-GZ0gqBH0",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mtRJjmPRbkagvp56y"
+							},
+							"name": "Reflection",
+							"reference": "B47",
+							"cost_adj": "100%",
+							"disabled": true
+						},
+						{
+							"id": "mEEK3gNTZqtK3ieY7",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mLQMHKKsvEZKUR4wq"
+							},
+							"name": "Mental Resilience",
+							"reference": "PY103:8",
+							"tags": [
+								"Mad as Bones"
+							],
+							"cost_adj": "+100%",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "MocTbHXHBo_8uxYlI",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "MLdtoe0kIczt1CwQK"
+					},
+					"name": "Special Limitations",
+					"children": [
+						{
+							"id": "mitH9QpOCKcu_2YNu",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m5yX0DkbngKxcMk3U"
+							},
+							"name": "Ablative",
+							"reference": "B47",
+							"cost_adj": "-80%",
+							"disabled": true
+						},
+						{
+							"id": "m6sDEk7bg9FIp-fnz",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mriC_suSIQRyOEPIf"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Very Common@",
+							"cost_adj": "-15%",
+							"disabled": true
+						},
+						{
+							"id": "myYCCDRIHgzwckyvD",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mGhdjo4vkF4K3wlU4"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Common@",
+							"cost_adj": "-10%",
+							"disabled": true
+						},
+						{
+							"id": "mYVMe9_C1BdPnDajH",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mKFXBIZdlnqy30umW"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Occasional@",
+							"cost_adj": "-5%",
+							"disabled": true
+						},
+						{
+							"id": "mVyDk-8SAAVxWhANq",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m82EYyrIt9oPcHoUi"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Rare@",
+							"cost_adj": "-1",
+							"disabled": true
+						},
+						{
+							"id": "mdtboSp3rbqaYKtrA",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mh0D3QvmBdTb2Fj35"
+							},
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mLe_vb-Xi7AAYEa5x",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mJOqQDNVieB3BqNZq"
+							},
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "Front",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "m45ORou06o4JA3F4S",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mJI6krqiiAhykZkqD"
+							},
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost_adj": "-40%",
+							"disabled": true,
+							"calc": {
+								"resolved_notes": "@Direction@"
+							}
+						},
+						{
+							"id": "mi8v9t8sMd9pNkTkX",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mdXLyaSji8XL7ogcm"
+							},
+							"name": "Flexible",
+							"reference": "B47",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mAqnlUUq7Vnw4siH7",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mHX9jNBEFXDMx9Udj"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Very Common Attack Form@",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "muHxlc-d9L1EHo-m0",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mydbXeU0Gp6_5IXwP"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Common Attack Form@",
+							"cost_adj": "-40%",
+							"calc": {
+								"resolved_notes": "Laser"
+							}
+						},
+						{
+							"id": "m_7eUxT7dD3G8-8G1",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mEhEeAZtQ31RY7uEQ"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Occasional Attack Form@",
+							"cost_adj": "-60%",
+							"disabled": true
+						},
+						{
+							"id": "miuzuQtOJ298v5ESs",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mjfZ7ao6KmZfLqHZL"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Rare Attack Form@",
+							"cost_adj": "-80%",
+							"disabled": true
+						},
+						{
+							"id": "m9_oVimAczUSN7ZJ2",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mWmUeD6W1op93mlr8"
+							},
+							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+							"reference": "B47",
+							"cost_adj": "-10%",
+							"disabled": true
+						},
+						{
+							"id": "mPjKf2kHnOoSQbDOk",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mv-FSylFn8Naju4GK"
+							},
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "m_iDsr0M66cVrQBI1",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mP4bVdigxz3GIkAfk"
+							},
+							"name": "Tough Skin",
+							"reference": "B47",
+							"local_notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost_adj": "-40%",
+							"disabled": true
+						}
+					]
+				}
+			],
+			"points_per_level": 5,
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "Laser",
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"eye"
+					],
+					"specialization": "Laser",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"levels": 10,
+			"calc": {
+				"points": 30,
+				"current_level": 10
+			}
+		},
+		{
 			"id": "tjqdMeY6MGXWLYdDC",
 			"name": "Aegis of the Faithful",
-			"local_notes": "Creates a 2-yard radius field that gives those inside it +3 DR and +1 Dodge.  Costs 3 FP to cast and 1 FP per 10 seconds to maintain (has 10 reserve FP)",
+			"local_notes": "Creates a 3-yard radius field that gives those inside it +3 DR and +1 Dodge.  Costs 3 FP to cast and 1 FP per 10 seconds to maintain (has 10 reserve FP)",
 			"calc": {
 				"points": 0
 			}
@@ -2347,7 +2936,7 @@
 		}
 	],
 	"created_date": "2026-08-23T14:15:58-04:00",
-	"modified_date": "2026-08-23T14:55:08-04:00",
+	"modified_date": "2026-09-05T14:09:05-04:00",
 	"calc": {
 		"swing": "2d",
 		"thrust": "1d",
