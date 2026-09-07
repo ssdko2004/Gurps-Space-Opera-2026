@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "As49xSi5V5lxtcqzE",
-	"total_points": 244,
+	"total_points": 249,
 	"points_record": [
+		{
+			"when": "2026-09-06T20:24:00-04:00",
+			"points": 5,
+			"reason": "Session Points"
+		},
 		{
 			"when": "2026-08-23T20:18:13-04:00",
 			"points": 5,
@@ -88,16 +93,185 @@
 			"bottom_margin": "0.25 in",
 			"right_margin": "0.25 in"
 		},
-		"block_layout": [
-			"reactions conditional_modifiers",
-			"melee",
-			"ranged",
-			"traits skills",
-			"spells",
-			"equipment",
-			"other_equipment",
-			"notes"
-		],
+		"layout": {
+			"root": {
+				"type": "column",
+				"weight": 1,
+				"children": [
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "portrait",
+								"weight": 1,
+								"square": true
+							},
+							{
+								"type": "column",
+								"weight": 4.3,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "block",
+												"key": "identity",
+												"weight": 1.6
+											},
+											{
+												"type": "block",
+												"key": "miscellaneous",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "description",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "points",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "column",
+								"weight": 1.5,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "column",
+												"weight": 1,
+												"children": [
+													{
+														"type": "block",
+														"key": "primary_attributes",
+														"weight": 1
+													},
+													{
+														"type": "block",
+														"key": "damage",
+														"weight": 1
+													}
+												]
+											},
+											{
+												"type": "block",
+												"key": "secondary_attributes",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "point_pools",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "body",
+								"weight": 1
+							},
+							{
+								"type": "column",
+								"weight": 1.6,
+								"children": [
+									{
+										"type": "block",
+										"key": "encumbrance",
+										"weight": 1
+									},
+									{
+										"type": "block",
+										"key": "lifting",
+										"weight": 1
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "reactions",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "conditional_modifiers",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "melee",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "ranged",
+						"weight": 1
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "traits",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "skills",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "spells",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "other_equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "notes",
+						"weight": 1
+					}
+				]
+			}
+		},
 		"attributes": [
 			{
 				"id": "st",
@@ -2425,7 +2599,7 @@
 				}
 			],
 			"tech_level": "10",
-			"points": 1,
+			"points": 3,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -4,
@@ -2434,8 +2608,8 @@
 				"points": -9
 			},
 			"calc": {
-				"level": 13,
-				"rsl": "DX+0"
+				"level": 14,
+				"rsl": "DX+1"
 			}
 		},
 		{
@@ -3046,7 +3220,7 @@
 						}
 					],
 					"tech_level": "10",
-					"points": 1,
+					"points": 3,
 					"defaulted_from": {
 						"type": "dx",
 						"modifier": -4,
@@ -3055,8 +3229,8 @@
 						"points": -9
 					},
 					"calc": {
-						"level": 13,
-						"rsl": "DX+0"
+						"level": 14,
+						"rsl": "DX+1"
 					}
 				},
 				{
@@ -4174,10 +4348,10 @@
 			],
 			"specialization": "Pistol",
 			"difficulty": "dx/e",
-			"points": 2,
+			"points": 4,
 			"calc": {
-				"level": 14,
-				"rsl": "DX+1"
+				"level": 15,
+				"rsl": "DX+2"
 			}
 		},
 		{
@@ -4196,10 +4370,10 @@
 			],
 			"specialization": "Long Arm",
 			"difficulty": "dx/e",
-			"points": 1,
+			"points": 3,
 			"calc": {
-				"level": 13,
-				"rsl": "DX+0"
+				"level": 14,
+				"rsl": "DX+1"
 			}
 		}
 	],
@@ -4898,7 +5072,7 @@
 								}
 							],
 							"calc": {
-								"level": 13,
+								"level": 14,
 								"damage": "8d(2) burn"
 							}
 						}
@@ -4992,7 +5166,7 @@
 								}
 							],
 							"calc": {
-								"level": 13,
+								"level": 14,
 								"damage": "4d(2) burn"
 							}
 						}
@@ -5296,7 +5470,7 @@
 		}
 	],
 	"created_date": "2026-03-25T10:24:58-04:00",
-	"modified_date": "2026-08-23T20:18:29-04:00",
+	"modified_date": "2026-09-06T20:27:10-04:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
