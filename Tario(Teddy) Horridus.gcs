@@ -766,10 +766,10 @@
 	"attributes": [
 		{
 			"attr_id": "st",
-			"adj": 2,
+			"adj": 3,
 			"calc": {
-				"value": 12,
-				"points": 20
+				"value": 13,
+				"points": 30
 			}
 		},
 		{
@@ -879,11 +879,11 @@
 		},
 		{
 			"attr_id": "hp",
-			"adj": 0,
+			"adj": 3,
 			"calc": {
-				"value": 12,
-				"current": 12,
-				"points": 0
+				"value": 16,
+				"current": 16,
+				"points": 6
 			}
 		}
 	],
@@ -1182,7 +1182,7 @@
 					],
 					"calc": {
 						"level": 14,
-						"damage": "1d-2 cr"
+						"damage": "1d-1 cr"
 					}
 				},
 				{
@@ -1224,7 +1224,7 @@
 					],
 					"calc": {
 						"level": 14,
-						"damage": "1d-2 cr",
+						"damage": "1d-1 cr",
 						"parry": "10"
 					}
 				},
@@ -1268,7 +1268,7 @@
 					],
 					"calc": {
 						"level": 12,
-						"damage": "1d-1 cr"
+						"damage": "1d cr"
 					}
 				}
 			],
@@ -5125,7 +5125,7 @@
 					],
 					"calc": {
 						"level": 10,
-						"damage": "1d+2 cr",
+						"damage": "2d-1 cr",
 						"parry": "8"
 					}
 				},
@@ -5218,7 +5218,7 @@
 					],
 					"calc": {
 						"level": 10,
-						"damage": "1d-1 cr",
+						"damage": "1d cr",
 						"parry": "8"
 					}
 				}
@@ -5480,7 +5480,7 @@
 					],
 					"calc": {
 						"level": 14,
-						"damage": "2d(5) cut",
+						"damage": "2d+1(5) cut",
 						"parry": "9"
 					}
 				},
@@ -5543,7 +5543,7 @@
 					],
 					"calc": {
 						"level": 14,
-						"damage": "1d+3(5) imp",
+						"damage": "2d(5) imp",
 						"parry": "9"
 					}
 				},
@@ -5580,8 +5580,8 @@
 					],
 					"calc": {
 						"level": 10,
-						"damage": "1d+3 imp",
-						"range": "9/18"
+						"damage": "2d imp",
+						"range": "10/19"
 					}
 				}
 			],
@@ -5974,11 +5974,11 @@
 		}
 	],
 	"created_date": "2026-04-06T20:12:34-04:00",
-	"modified_date": "2026-09-06T20:24:31-04:00",
+	"modified_date": "2026-09-06T20:39:04-04:00",
 	"calc": {
-		"swing": "1d+2",
-		"thrust": "1d-1",
-		"basic_lift": "29 lb",
+		"swing": "2d-1",
+		"thrust": "1d",
+		"basic_lift": "34 lb",
 		"dodge_bonus": 1,
 		"move": [
 			6,
