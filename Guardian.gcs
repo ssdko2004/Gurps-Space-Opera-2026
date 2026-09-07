@@ -2356,21 +2356,22 @@
 							},
 							"amount": 5
 						}
-					]
+					],
+					"disabled": true
 				}
 			],
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 4400,
-				"extended_value": 4400,
+				"value": 400,
+				"extended_value": 400,
 				"weight": "2 lb",
 				"extended_weight": "2 lb"
 			}
 		}
 	],
 	"created_date": "2026-08-23T13:53:40-04:00",
-	"modified_date": "2026-09-05T14:09:13-04:00",
+	"modified_date": "2026-09-06T17:50:42-04:00",
 	"calc": {
 		"swing": "3d",
 		"thrust": "1d+2",

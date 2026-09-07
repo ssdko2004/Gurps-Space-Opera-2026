@@ -2684,6 +2684,129 @@
 			"calc": {
 				"points": 0
 			}
+		},
+		{
+			"id": "t69DXdIXr9S2iqQMK",
+			"name": "Natural Attacks",
+			"reference": "B271",
+			"weapons": [
+				{
+					"id": "wq0jLqRaIAmkE_zju",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
+						}
+					],
+					"calc": {
+						"level": 13,
+						"damage": "1d-1 cr"
+					}
+				},
+				{
+					"id": "wYMV0a1BXt4mYos1-",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Boxing"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							}
+						}
+					],
+					"calc": {
+						"level": 13,
+						"damage": "1d-1 cr",
+						"parry": "9"
+					}
+				},
+				{
+					"id": "wFxyJrRc81YMemRoE",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							},
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Kicking"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"level": 11,
+						"damage": "1d cr"
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
 		}
 	],
 	"skills": [
@@ -2936,7 +3059,7 @@
 		}
 	],
 	"created_date": "2026-08-23T14:15:58-04:00",
-	"modified_date": "2026-09-05T14:09:05-04:00",
+	"modified_date": "2026-09-06T18:12:36-04:00",
 	"calc": {
 		"swing": "2d",
 		"thrust": "1d",

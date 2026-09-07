@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "AMCcz18E4hSTpOYHb",
-	"total_points": 241,
+	"total_points": 246,
 	"points_record": [
+		{
+			"when": "2026-09-06T20:24:58-04:00",
+			"points": 5,
+			"reason": "Session 10"
+		},
 		{
 			"when": "2026-08-23T20:23:13-04:00",
 			"points": 5,
@@ -73,16 +78,185 @@
 			"bottom_margin": "0.25 in",
 			"right_margin": "0.25 in"
 		},
-		"block_layout": [
-			"reactions conditional_modifiers",
-			"melee",
-			"ranged",
-			"traits skills",
-			"spells",
-			"equipment",
-			"other_equipment",
-			"notes"
-		],
+		"layout": {
+			"root": {
+				"type": "column",
+				"weight": 1,
+				"children": [
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "portrait",
+								"weight": 1,
+								"square": true
+							},
+							{
+								"type": "column",
+								"weight": 4.3,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "block",
+												"key": "identity",
+												"weight": 1.6
+											},
+											{
+												"type": "block",
+												"key": "miscellaneous",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "description",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "points",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "column",
+								"weight": 1.5,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "column",
+												"weight": 1,
+												"children": [
+													{
+														"type": "block",
+														"key": "primary_attributes",
+														"weight": 1
+													},
+													{
+														"type": "block",
+														"key": "damage",
+														"weight": 1
+													}
+												]
+											},
+											{
+												"type": "block",
+												"key": "secondary_attributes",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "point_pools",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "body",
+								"weight": 1
+							},
+							{
+								"type": "column",
+								"weight": 1.6,
+								"children": [
+									{
+										"type": "block",
+										"key": "encumbrance",
+										"weight": 1
+									},
+									{
+										"type": "block",
+										"key": "lifting",
+										"weight": 1
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "reactions",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "conditional_modifiers",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "melee",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "ranged",
+						"weight": 1
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "traits",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "skills",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "spells",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "other_equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "notes",
+						"weight": 1
+					}
+				]
+			}
+		},
 		"attributes": [
 			{
 				"id": "st",
@@ -526,10 +700,10 @@
 		},
 		{
 			"attr_id": "iq",
-			"adj": 4,
+			"adj": 5,
 			"calc": {
-				"value": 14,
-				"points": 40
+				"value": 15,
+				"points": 50
 			}
 		},
 		{
@@ -1152,25 +1326,6 @@
 			],
 			"calc": {
 				"points": 1
-			}
-		},
-		{
-			"id": "tLC_QizVF-X0nTa9D",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Traits.adq",
-				"id": "t9lxfCn84bo3idpX9"
-			},
-			"name": "Unluckiness",
-			"reference": "B160",
-			"local_notes": "Once per play session, the GM will arbitrarily and maliciously make something go wrong for you.",
-			"tags": [
-				"Disadvantage",
-				"Mental"
-			],
-			"base_points": -10,
-			"calc": {
-				"points": -10
 			}
 		},
 		{
@@ -1802,12 +1957,12 @@
 					"compare": "is"
 				},
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -1944,12 +2099,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2036,12 +2191,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2096,12 +2251,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2149,9 +2304,9 @@
 					"compare": "is"
 				},
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
 				"level": 12,
@@ -2221,12 +2376,12 @@
 					"qualifier": "Political"
 				},
 				"modifier": -2,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2293,12 +2448,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2333,12 +2488,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2376,12 +2531,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2428,12 +2583,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ+0"
 			}
 		},
@@ -2546,9 +2701,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
 				"level": 12,
@@ -2604,12 +2759,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 12,
+				"level": 13,
 				"rsl": "IQ-2"
 			}
 		},
@@ -2650,12 +2805,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2724,12 +2879,12 @@
 					"qualifier": "Surveillance"
 				},
 				"modifier": -4,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2801,12 +2956,12 @@
 					"qualifier": "Surveillance"
 				},
 				"modifier": -4,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -2869,12 +3024,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3062,12 +3217,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3119,12 +3274,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3239,12 +3394,12 @@
 					"compare": "is"
 				},
 				"modifier": -4,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3273,12 +3428,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3319,12 +3474,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3355,12 +3510,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3406,12 +3561,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 12,
+				"level": 13,
 				"rsl": "IQ-2"
 			}
 		},
@@ -3438,12 +3593,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3660,12 +3815,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3730,12 +3885,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3808,12 +3963,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3840,12 +3995,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3883,12 +4038,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 12,
+				"level": 13,
 				"rsl": "IQ-2"
 			}
 		},
@@ -3933,12 +4088,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -4122,12 +4277,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -4207,12 +4362,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 12,
+				"level": 13,
 				"rsl": "IQ-2"
 			}
 		},
@@ -4244,12 +4399,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -4293,12 +4448,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ+0"
 			}
 		},
@@ -4386,12 +4541,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -4437,9 +4592,9 @@
 					"compare": "is"
 				},
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
 				"level": 12,
@@ -4504,12 +4659,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -4545,12 +4700,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 12,
+				"level": 13,
 				"rsl": "IQ-2"
 			}
 		},
@@ -4664,12 +4819,12 @@
 					"compare": "is"
 				},
 				"modifier": -3,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -4731,12 +4886,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ+0"
 			}
 		},
@@ -4812,9 +4967,9 @@
 					"compare": "is"
 				},
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
 				"level": 11,
@@ -4863,12 +5018,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ+0"
 			}
 		},
@@ -4978,12 +5133,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 12,
+				"level": 13,
 				"rsl": "IQ-2"
 			}
 		},
@@ -5011,12 +5166,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -5044,12 +5199,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"calc": {
-				"level": 14,
+				"level": 15,
 				"rsl": "IQ+0"
 			}
 		},
@@ -5084,9 +5239,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
 				"level": 12,
@@ -5119,12 +5274,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		},
@@ -5160,12 +5315,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 12,
+				"level": 13,
 				"rsl": "IQ-2"
 			}
 		},
@@ -5271,12 +5426,12 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "IQ-1"
 			}
 		}
@@ -6728,7 +6883,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:15:00-04:00",
-	"modified_date": "2026-08-23T20:23:24-04:00",
+	"modified_date": "2026-09-06T20:25:20-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",
