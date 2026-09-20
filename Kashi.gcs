@@ -4,12 +4,12 @@
 	"total_points": 246,
 	"points_record": [
 		{
-			"when": "2026-09-06T20:26:37-04:00",
+			"when": "2026-09-05T19:57:00-04:00",
 			"points": 5,
 			"reason": "Session 10"
 		},
 		{
-			"when": "2026-09-06T20:25:55-04:00",
+			"when": "2026-08-23T20:22:56-04:00",
 			"points": 5,
 			"reason": "Session 9"
 		},
@@ -2377,7 +2377,7 @@
 				}
 			],
 			"tech_level": "10",
-			"points": 2,
+			"points": 4,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -4,
@@ -2386,8 +2386,8 @@
 				"points": -8
 			},
 			"calc": {
-				"level": 13,
-				"rsl": "DX+1"
+				"level": 14,
+				"rsl": "DX+2"
 			}
 		},
 		{
@@ -2755,6 +2755,68 @@
 			}
 		},
 		{
+			"id": "sn_FakLd6pjL1JjyJ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s_QPsaG-MtZBFWSgN"
+			},
+			"name": "Engineer",
+			"reference": "B190",
+			"tags": [
+				"Design",
+				"Engineer",
+				"Invention"
+			],
+			"replacements": {
+				"Field of expertise": "Hyperdrive"
+			},
+			"specialization": "@Field of expertise@",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Armoury"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Heavy Weapons"
+					},
+					"modifier": -6
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"when_tl": {
+					"compare": "at_least",
+					"qualifier": 5
+				},
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "mathematics"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "applied"
+						}
+					}
+				]
+			},
+			"tech_level": "10",
+			"points": 1,
+			"calc": {
+				"level": 14,
+				"rsl": "IQ-2"
+			}
+		},
+		{
 			"id": "sKVYb2hDpo2XWfUIQ",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -3067,6 +3129,56 @@
 			}
 		},
 		{
+			"id": "sqIAlVgqsLnFQ5G37",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sGgBbCTe-AwY1nu3W"
+			},
+			"name": "Mathematics",
+			"reference": "B207",
+			"tags": [
+				"Natural Science"
+			],
+			"specialization": "Applied",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Physics"
+					},
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					},
+					"modifier": -5
+				}
+			],
+			"tech_level": "10",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
+			},
+			"calc": {
+				"level": 14,
+				"rsl": "IQ-2"
+			}
+		},
+		{
 			"id": "ssSzoetGWMWBuwkCb",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -3376,6 +3488,21 @@
 			],
 			"tech_level": "10",
 			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Mathematics"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Applied"
+				},
+				"modifier": -4,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
+			},
 			"calc": {
 				"level": 15,
 				"rsl": "IQ-1"
@@ -3715,9 +3842,162 @@
 	],
 	"spells": [
 		{
+			"id": "PkNVSC2xTh9QHeNP4",
+			"name": "Body Control",
+			"children": [
+				{
+					"id": "pscR_tjB3kK9OMYaG",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "p2mdVACXpgRMjS5yL"
+					},
+					"name": "Vigor",
+					"reference": "M37",
+					"tags": [
+						"Body Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Body Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2/+HT",
+					"maintenance_cost": "Same",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"prereq_count": 2,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "lend vitality"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "frailty"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				}
+			]
+		},
+		{
 			"id": "PnfkNaFj1ijbetKxI",
 			"name": "Healing",
 			"children": [
+				{
+					"id": "pM3X8W-LjQApn4CHu",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "puqUHq0u4xvGrh6kP"
+					},
+					"name": "Great Healing",
+					"reference": "M91",
+					"tags": [
+						"Healing"
+					],
+					"difficulty": "iq/vh",
+					"college": [
+						"Healing"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "20",
+					"maintenance_cost": "-",
+					"casting_time": "1 min",
+					"duration": "Permanent",
+					"prereq_count": 4,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 3
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 3
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (healing)"
+										}
+									}
+								]
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "major healing"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 16,
+						"rsl": "IQ+0"
+					}
+				},
 				{
 					"id": "p-1KeCCkPLIX8Ptjl",
 					"source": {
@@ -3847,140 +4127,6 @@
 					}
 				},
 				{
-					"id": "p_6R6mlN4TsOtIw1T",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Magic/Magic Spells.spl",
-						"id": "p0egxfyUPAzxaHzW0"
-					},
-					"name": "Recover Energy",
-					"reference": "M89",
-					"tags": [
-						"Healing"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Healing"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Special",
-					"casting_cost": "0",
-					"maintenance_cost": "0",
-					"casting_time": "1 sec",
-					"duration": "Special",
-					"prereq_count": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "prereq_list",
-								"all": false,
-								"prereqs": [
-									{
-										"type": "trait_prereq",
-										"has": true,
-										"name": {
-											"compare": "is",
-											"qualifier": "magery"
-										},
-										"level": {
-											"compare": "at_least",
-											"qualifier": 1
-										},
-										"notes": {
-											"compare": "does_not_contain",
-											"qualifier": "one college"
-										}
-									},
-									{
-										"type": "trait_prereq",
-										"has": true,
-										"name": {
-											"compare": "is",
-											"qualifier": "magery"
-										},
-										"level": {
-											"compare": "at_least",
-											"qualifier": 1
-										},
-										"notes": {
-											"compare": "contains",
-											"qualifier": "one college (healing)"
-										}
-									}
-								]
-							},
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "lend energy"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							}
-						]
-					},
-					"points": 1,
-					"calc": {
-						"level": 17,
-						"rsl": "IQ+1"
-					}
-				},
-				{
-					"id": "pjUYAI0BPF0uBzsp4",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Magic/Magic Spells.spl",
-						"id": "pCqwzS6IrSS4rmeqA"
-					},
-					"name": "Minor Healing",
-					"reference": "M91",
-					"tags": [
-						"Healing"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Healing"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "1-3",
-					"maintenance_cost": "-",
-					"casting_time": "1 sec",
-					"duration": "Permanent",
-					"prereq_count": 2,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "lend vitality"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							}
-						]
-					},
-					"points": 1,
-					"calc": {
-						"level": 17,
-						"rsl": "IQ+1"
-					}
-				},
-				{
 					"id": "p93RlxPrBp_E0tMhT",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -4067,28 +4213,76 @@
 					}
 				},
 				{
-					"id": "pM3X8W-LjQApn4CHu",
+					"id": "pjUYAI0BPF0uBzsp4",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Magic/Magic Spells.spl",
-						"id": "puqUHq0u4xvGrh6kP"
+						"id": "pCqwzS6IrSS4rmeqA"
 					},
-					"name": "Great Healing",
+					"name": "Minor Healing",
 					"reference": "M91",
 					"tags": [
 						"Healing"
 					],
-					"difficulty": "iq/vh",
+					"difficulty": "iq/h",
 					"college": [
 						"Healing"
 					],
 					"power_source": "Arcane",
 					"spell_class": "Regular",
-					"casting_cost": "20",
+					"casting_cost": "1-3",
 					"maintenance_cost": "-",
-					"casting_time": "1 min",
+					"casting_time": "1 sec",
 					"duration": "Permanent",
-					"prereq_count": 4,
+					"prereq_count": 2,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "lend vitality"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "p_6R6mlN4TsOtIw1T",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "p0egxfyUPAzxaHzW0"
+					},
+					"name": "Recover Energy",
+					"reference": "M89",
+					"tags": [
+						"Healing"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Healing"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Special",
+					"casting_cost": "0",
+					"maintenance_cost": "0",
+					"casting_time": "1 sec",
+					"duration": "Special",
+					"prereq_count": 1,
 					"prereqs": {
 						"type": "prereq_list",
 						"all": true,
@@ -4106,7 +4300,7 @@
 										},
 										"level": {
 											"compare": "at_least",
-											"qualifier": 3
+											"qualifier": 1
 										},
 										"notes": {
 											"compare": "does_not_contain",
@@ -4122,7 +4316,7 @@
 										},
 										"level": {
 											"compare": "at_least",
-											"qualifier": 3
+											"qualifier": 1
 										},
 										"notes": {
 											"compare": "contains",
@@ -4137,89 +4331,7 @@
 								"has": true,
 								"qualifier": {
 									"compare": "is",
-									"qualifier": "major healing"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							}
-						]
-					},
-					"points": 1,
-					"calc": {
-						"level": 16,
-						"rsl": "IQ+0"
-					}
-				}
-			]
-		},
-		{
-			"id": "PLur7QokyhySpvWx8",
-			"name": "Water",
-			"children": [
-				{
-					"id": "pSpvIOKIT6q2LudcN",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Magic/Magic Spells.spl",
-						"id": "pTXKwtWhv8uwNocUa"
-					},
-					"name": "Seek Water",
-					"reference": "M184",
-					"tags": [
-						"Water"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Water"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Info",
-					"casting_cost": "2",
-					"maintenance_cost": "-",
-					"casting_time": "1 sec",
-					"duration": "Instant",
-					"points": 1,
-					"calc": {
-						"level": 17,
-						"rsl": "IQ+1"
-					}
-				},
-				{
-					"id": "pj5HIAA41Ht7NQMX-",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Magic/Magic Spells.spl",
-						"id": "p02EyWJYPMv3sKn_-"
-					},
-					"name": "Purify Water",
-					"reference": "M184",
-					"tags": [
-						"Water"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Water"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Special",
-					"casting_cost": "1/gal",
-					"maintenance_cost": "-",
-					"casting_time": "5-10/gal #",
-					"duration": "Permanent",
-					"prereq_count": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "seek water"
+									"qualifier": "lend energy"
 								},
 								"quantity": {
 									"compare": "at_least",
@@ -4235,75 +4347,29 @@
 					}
 				},
 				{
-					"id": "pcPe6xqaS_DAvSKiM",
+					"id": "pFF_I4flF60N-PJkn",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Magic/Magic Spells.spl",
-						"id": "p2tOJ0E1h7MPdJIRy"
+						"id": "pq8PU1_moprglWyaz"
 					},
-					"name": "Create Water",
-					"reference": "M184",
+					"name": "Resist Poison",
+					"reference": "M91",
 					"tags": [
-						"Water"
+						"Healing",
+						"Protection & Warning"
 					],
 					"difficulty": "iq/h",
 					"college": [
-						"Water"
+						"Healing",
+						"Protection & Warning"
 					],
 					"power_source": "Arcane",
 					"spell_class": "Regular",
-					"casting_cost": "2/gal",
-					"maintenance_cost": "-",
-					"casting_time": "1 sec",
-					"duration": "Permanent",
-					"prereq_count": 2,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "purify water"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							}
-						]
-					},
-					"points": 1,
-					"calc": {
-						"level": 17,
-						"rsl": "IQ+1"
-					}
-				},
-				{
-					"id": "pWuDQen0o7um_PPXt",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Magic/Magic Spells.spl",
-						"id": "p8pyxF4R9wQgTKvSz"
-					},
-					"name": "Shape Water",
-					"reference": "M185",
-					"tags": [
-						"Water"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Water"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "1#",
-					"maintenance_cost": "1",
-					"casting_time": "2 sec",
-					"duration": "1 min",
+					"casting_cost": "4",
+					"maintenance_cost": "3",
+					"casting_time": "10 sec",
+					"duration": "1 hr",
 					"prereq_count": 3,
 					"prereqs": {
 						"type": "prereq_list",
@@ -4315,57 +4381,7 @@
 								"has": true,
 								"qualifier": {
 									"compare": "is",
-									"qualifier": "create water"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							}
-						]
-					},
-					"points": 1,
-					"calc": {
-						"level": 17,
-						"rsl": "IQ+1"
-					}
-				},
-				{
-					"id": "p2oyMA5iboj6oH7GM",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Magic/Magic Spells.spl",
-						"id": "pcC9jHfApGLeCnhq7"
-					},
-					"name": "Fog",
-					"reference": "M193",
-					"tags": [
-						"Water",
-						"Weather"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Water",
-						"Weather"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Area",
-					"casting_cost": "2",
-					"maintenance_cost": "Half",
-					"casting_time": "1 sec",
-					"duration": "1 min",
-					"prereq_count": 4,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "shape water"
+									"qualifier": "vigor"
 								},
 								"quantity": {
 									"compare": "at_least",
@@ -4386,50 +4402,6 @@
 			"id": "P_PJvSpBM67CI3IJc",
 			"name": "Mind Control",
 			"children": [
-				{
-					"id": "pK30kA2Q_Je2BE8jg",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Magic/Magic Spells.spl",
-						"id": "pIFb2-henE9nKHZ4K"
-					},
-					"name": "Foolishness",
-					"reference": "M134",
-					"tags": [
-						"Mind Control"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Mind Control"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"resist": "Will",
-					"casting_cost": "1-5",
-					"maintenance_cost": "Half",
-					"casting_time": "1 sec",
-					"duration": "1 min",
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "attribute_prereq",
-								"has": true,
-								"qualifier": {
-									"compare": "at_least",
-									"qualifier": 12
-								},
-								"which": "iq"
-							}
-						]
-					},
-					"points": 1,
-					"calc": {
-						"level": 17,
-						"rsl": "IQ+1"
-					}
-				},
 				{
 					"id": "pus8fAmLWTVWWy_gM",
 					"source": {
@@ -4480,14 +4452,14 @@
 					}
 				},
 				{
-					"id": "peApgFywKO-LIGyKW",
+					"id": "pK30kA2Q_Je2BE8jg",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Magic/Magic Spells.spl",
-						"id": "p0MJ8TlQri9YGdVW5"
+						"id": "pIFb2-henE9nKHZ4K"
 					},
-					"name": "Sleep",
-					"reference": "M135",
+					"name": "Foolishness",
+					"reference": "M134",
 					"tags": [
 						"Mind Control"
 					],
@@ -4497,28 +4469,23 @@
 					],
 					"power_source": "Arcane",
 					"spell_class": "Regular",
-					"resist": "HT",
-					"casting_cost": "4",
-					"maintenance_cost": "-",
-					"casting_time": "3 sec",
-					"duration": "Until awakened",
-					"prereq_count": 2,
+					"resist": "Will",
+					"casting_cost": "1-5",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
 					"prereqs": {
 						"type": "prereq_list",
 						"all": true,
 						"prereqs": [
 							{
-								"type": "spell_prereq",
-								"sub_type": "name",
+								"type": "attribute_prereq",
 								"has": true,
 								"qualifier": {
-									"compare": "is",
-									"qualifier": "daze"
-								},
-								"quantity": {
 									"compare": "at_least",
-									"qualifier": 1
-								}
+									"qualifier": 12
+								},
+								"which": "iq"
 							}
 						]
 					},
@@ -4589,6 +4556,124 @@
 						"level": 17,
 						"rsl": "IQ+1"
 					}
+				},
+				{
+					"id": "peApgFywKO-LIGyKW",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "p0MJ8TlQri9YGdVW5"
+					},
+					"name": "Sleep",
+					"reference": "M135",
+					"tags": [
+						"Mind Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Mind Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"resist": "HT",
+					"casting_cost": "4",
+					"maintenance_cost": "-",
+					"casting_time": "3 sec",
+					"duration": "Until awakened",
+					"prereq_count": 2,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "daze"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				}
+			]
+		},
+		{
+			"id": "PSCnX8stvY8bru7zr",
+			"name": "Plant",
+			"children": [
+				{
+					"id": "pPq43Mp_67flrCq9W",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "p5M81V2RV0mifRIPR"
+					},
+					"name": "Seek Plant",
+					"reference": "M161",
+					"tags": [
+						"Plant"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Plant"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				}
+			]
+		},
+		{
+			"id": "Pc8xSMQYpSapoUVIq",
+			"name": "Radiation",
+			"children": [
+				{
+					"id": "pEyxZfEUvo3jmplaN",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pKr7xGbSuLzyDgJGA"
+					},
+					"name": "See Radiation",
+					"reference": "M181",
+					"tags": [
+						"Radiation",
+						"Technological"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Technological"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "3",
+					"maintenance_cost": "2",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
 				}
 			]
 		},
@@ -4596,34 +4681,6 @@
 			"id": "PDyC68H7sXRivpZp1",
 			"name": "Sound",
 			"children": [
-				{
-					"id": "pS3Z5x3RW8ELCDABL",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Magic/Magic Spells.spl",
-						"id": "pKfRVVMyj6NbAFvSW"
-					},
-					"name": "Sound",
-					"reference": "M171",
-					"tags": [
-						"Sound"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Sound"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "Varies",
-					"maintenance_cost": "1/ min",
-					"casting_time": "1 sec",
-					"duration": "Varies",
-					"points": 1,
-					"calc": {
-						"level": 17,
-						"rsl": "IQ+1"
-					}
-				},
 				{
 					"id": "pcGmg2zBz60PF2Iri",
 					"source": {
@@ -4671,28 +4728,444 @@
 						"level": 17,
 						"rsl": "IQ+1"
 					}
+				},
+				{
+					"id": "pS3Z5x3RW8ELCDABL",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pKfRVVMyj6NbAFvSW"
+					},
+					"name": "Sound",
+					"reference": "M171",
+					"tags": [
+						"Sound"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Sound"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "Varies",
+					"maintenance_cost": "1/ min",
+					"casting_time": "1 sec",
+					"duration": "Varies",
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
 				}
 			]
 		},
 		{
-			"id": "PSCnX8stvY8bru7zr",
-			"name": "Plant",
+			"id": "PLur7QokyhySpvWx8",
+			"name": "Water",
 			"children": [
 				{
-					"id": "pPq43Mp_67flrCq9W",
+					"id": "pcPe6xqaS_DAvSKiM",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Magic/Magic Spells.spl",
-						"id": "p5M81V2RV0mifRIPR"
+						"id": "p2tOJ0E1h7MPdJIRy"
 					},
-					"name": "Seek Plant",
-					"reference": "M161",
+					"name": "Create Water",
+					"reference": "M184",
 					"tags": [
-						"Plant"
+						"Water"
 					],
 					"difficulty": "iq/h",
 					"college": [
-						"Plant"
+						"Water"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2/gal",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"prereq_count": 2,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "purify water"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "p2oyMA5iboj6oH7GM",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pcC9jHfApGLeCnhq7"
+					},
+					"name": "Fog",
+					"reference": "M193",
+					"tags": [
+						"Water",
+						"Weather"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Water",
+						"Weather"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "2",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"prereq_count": 4,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "shape water"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "pqH0zABKd0ubQAG7K",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "p_t25cjDNPBpLo1Nv"
+					},
+					"name": "Frost",
+					"reference": "M193",
+					"tags": [
+						"Water",
+						"Weather"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Water",
+						"Weather"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "1",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Indefinite",
+					"prereq_count": 3,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "cold"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "create water"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "p0o88C1kgT8EYA_Y4",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "p4mDPZQZzoStYuYka"
+					},
+					"name": "Ice Slick",
+					"reference": "M186",
+					"tags": [
+						"Water"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Water"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "3",
+					"maintenance_cost": "-",
+					"casting_time": "Varies",
+					"duration": "Permanent",
+					"prereq_count": 4,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "frost"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "p9w-_L7-VcIIIOlZS",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pa8rVeiGc3KlPh0Df"
+					},
+					"name": "Icy Touch",
+					"reference": "M188",
+					"tags": [
+						"Water"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Water"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Melee",
+					"casting_cost": "2#",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec #",
+					"duration": "Permanent",
+					"prereq_count": 4,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (water)"
+										}
+									}
+								]
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "college",
+								"has": true,
+								"qualifier": {
+									"compare": "contains",
+									"qualifier": "Water"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 4
+								}
+							}
+						]
+					},
+					"weapons": [
+						{
+							"id": "wWS4dRa_BzkZg3Iws",
+							"sv": 1,
+							"damage": {
+								"type": "+paralysis",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Boxing"
+									}
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Brawling"
+									}
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Karate"
+									}
+								}
+							],
+							"calc": {
+								"level": 12,
+								"damage": "1d-3 +paralysis",
+								"parry": "9"
+							}
+						}
+					],
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "pj5HIAA41Ht7NQMX-",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "p02EyWJYPMv3sKn_-"
+					},
+					"name": "Purify Water",
+					"reference": "M184",
+					"tags": [
+						"Water"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Water"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Special",
+					"casting_cost": "1/gal",
+					"maintenance_cost": "-",
+					"casting_time": "5-10/gal #",
+					"duration": "Permanent",
+					"prereq_count": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "seek water"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "pSpvIOKIT6q2LudcN",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pTXKwtWhv8uwNocUa"
+					},
+					"name": "Seek Water",
+					"reference": "M184",
+					"tags": [
+						"Water"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Water"
 					],
 					"power_source": "Arcane",
 					"spell_class": "Info",
@@ -4700,6 +5173,54 @@
 					"maintenance_cost": "-",
 					"casting_time": "1 sec",
 					"duration": "Instant",
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "pWuDQen0o7um_PPXt",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "p8pyxF4R9wQgTKvSz"
+					},
+					"name": "Shape Water",
+					"reference": "M185",
+					"tags": [
+						"Water"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Water"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1#",
+					"maintenance_cost": "1",
+					"casting_time": "2 sec",
+					"duration": "1 min",
+					"prereq_count": 3,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "create water"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
 					"points": 1,
 					"calc": {
 						"level": 17,
@@ -5008,7 +5529,7 @@
 								}
 							],
 							"calc": {
-								"level": 13,
+								"level": 14,
 								"damage": "3d(2) burn"
 							}
 						}
@@ -5091,7 +5612,7 @@
 								}
 							],
 							"calc": {
-								"level": 13,
+								"level": 14,
 								"damage": "HT-2(5) aff"
 							}
 						}
@@ -7289,7 +7810,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:16:51-04:00",
-	"modified_date": "2026-09-06T20:26:46-04:00",
+	"modified_date": "2026-09-19T14:15:59-04:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
