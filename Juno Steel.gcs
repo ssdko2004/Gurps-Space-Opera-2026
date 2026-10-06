@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "AMCcz18E4hSTpOYHb",
-	"total_points": 251,
+	"total_points": 256,
 	"points_record": [
+		{
+			"when": "2026-10-05T21:26:33-04:00",
+			"points": 5,
+			"reason": "Session 12"
+		},
 		{
 			"when": "2026-09-20T20:13:58-04:00",
 			"points": 5,
@@ -737,17 +742,17 @@
 		},
 		{
 			"attr_id": "per",
-			"adj": 2,
+			"adj": 4,
 			"calc": {
-				"value": 12,
-				"points": 10
+				"value": 14,
+				"points": 20
 			}
 		},
 		{
 			"attr_id": "vision",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 14,
 				"points": 0
 			}
 		},
@@ -755,7 +760,7 @@
 			"attr_id": "hearing",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 14,
 				"points": 0
 			}
 		},
@@ -763,7 +768,7 @@
 			"attr_id": "taste_smell",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 14,
 				"points": 0
 			}
 		},
@@ -771,7 +776,7 @@
 			"attr_id": "touch",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 14,
 				"points": 0
 			}
 		},
@@ -2314,7 +2319,7 @@
 				"points": -9
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "Per+0"
 			}
 		},
@@ -2645,12 +2650,12 @@
 					"compare": "is"
 				},
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 10,
+				"level": 12,
 				"rsl": "Per-2"
 			}
 		},
@@ -4333,12 +4338,12 @@
 			"defaulted_from": {
 				"type": "per",
 				"modifier": -10,
-				"level": 2,
-				"adjusted_level": 2,
-				"points": -2
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "Per-1"
 			}
 		},
@@ -4602,7 +4607,7 @@
 				"points": -10
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "Per+0"
 			}
 		},
@@ -4924,12 +4929,12 @@
 			"defaulted_from": {
 				"type": "per",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 12,
+				"level": 14,
 				"rsl": "Per+0"
 			}
 		},
@@ -4977,7 +4982,7 @@
 				"points": -10
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "Per-1"
 			}
 		},
@@ -5397,12 +5402,12 @@
 			"defaulted_from": {
 				"type": "per",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 13,
 				"rsl": "Per-1"
 			}
 		},
@@ -6888,7 +6893,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:15:00-04:00",
-	"modified_date": "2026-10-04T19:03:35-04:00",
+	"modified_date": "2026-10-05T21:27:42-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",
