@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "AMCcz18E4hSTpOYHb",
-	"total_points": 246,
+	"total_points": 251,
 	"points_record": [
+		{
+			"when": "2026-09-20T20:13:58-04:00",
+			"points": 5,
+			"reason": "Session 11"
+		},
 		{
 			"when": "2026-09-06T20:24:58-04:00",
 			"points": 5,
@@ -6847,12 +6852,12 @@
 			"id": "eZoO6Y7CtVYP-vK_E",
 			"description": "Money",
 			"legality_class": "4",
-			"base_value": "15017",
+			"base_value": "10472817",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 15017,
-				"extended_value": 15017,
+				"value": 10472817,
+				"extended_value": 10472817,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
@@ -6883,7 +6888,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:15:00-04:00",
-	"modified_date": "2026-09-06T20:25:20-04:00",
+	"modified_date": "2026-10-04T19:03:35-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",

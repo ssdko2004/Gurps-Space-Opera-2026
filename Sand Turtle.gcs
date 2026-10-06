@@ -1,0 +1,2830 @@
+{
+	"version": 5,
+	"id": "AwcxFfxkJzfbCDg8G",
+	"total_points": 150,
+	"points_record": [
+		{
+			"when": "2026-09-20T17:09:55-04:00",
+			"points": 150,
+			"reason": "Initial points"
+		}
+	],
+	"profile": {
+		"name": "Sand Turtle",
+		"age": "16",
+		"birthday": "January 18",
+		"eyes": "Brown",
+		"hair": "Brown",
+		"skin": "Freckled",
+		"handedness": "Right",
+		"gender": "Male",
+		"height": "5'6\"",
+		"weight": "133 lb",
+		"player_name": "Jesse Finnegan",
+		"tech_level": "10",
+		"portrait": "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",
+		"SM": 11
+	},
+	"settings": {
+		"page": {
+			"paper_size": "letter",
+			"orientation": "portrait",
+			"top_margin": "0.25 in",
+			"left_margin": "0.25 in",
+			"bottom_margin": "0.25 in",
+			"right_margin": "0.25 in"
+		},
+		"layout": {
+			"root": {
+				"type": "column",
+				"weight": 1,
+				"children": [
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "portrait",
+								"weight": 1,
+								"square": true
+							},
+							{
+								"type": "column",
+								"weight": 4.3,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "block",
+												"key": "identity",
+												"weight": 1.6
+											},
+											{
+												"type": "block",
+												"key": "miscellaneous",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "description",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "points",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "column",
+								"weight": 1.5,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "column",
+												"weight": 1,
+												"children": [
+													{
+														"type": "block",
+														"key": "primary_attributes",
+														"weight": 1
+													},
+													{
+														"type": "block",
+														"key": "damage",
+														"weight": 1
+													}
+												]
+											},
+											{
+												"type": "block",
+												"key": "secondary_attributes",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "point_pools",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "body",
+								"weight": 1
+							},
+							{
+								"type": "column",
+								"weight": 1.6,
+								"children": [
+									{
+										"type": "block",
+										"key": "encumbrance",
+										"weight": 1
+									},
+									{
+										"type": "block",
+										"key": "lifting",
+										"weight": 1
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "reactions",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "conditional_modifiers",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "melee",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "ranged",
+						"weight": 1
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "traits",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "skills",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "spells",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "other_equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "notes",
+						"weight": 1
+					}
+				]
+			}
+		},
+		"attributes": [
+			{
+				"id": "st",
+				"type": "integer",
+				"name": "ST",
+				"full_name": "Strength",
+				"base": "10",
+				"cost_per_point": 10,
+				"cost_adj_percent_per_sm": 10
+			},
+			{
+				"id": "dx",
+				"type": "integer",
+				"name": "DX",
+				"full_name": "Dexterity",
+				"base": "10",
+				"cost_per_point": 20
+			},
+			{
+				"id": "iq",
+				"type": "integer",
+				"name": "IQ",
+				"full_name": "Intelligence",
+				"base": "10",
+				"cost_per_point": 10
+			},
+			{
+				"id": "ht",
+				"type": "integer",
+				"name": "HT",
+				"full_name": "Health",
+				"base": "10",
+				"cost_per_point": 10
+			},
+			{
+				"id": "will",
+				"type": "integer",
+				"name": "Will",
+				"base": "10",
+				"cost_per_point": 5
+			},
+			{
+				"id": "fright_check",
+				"type": "integer",
+				"name": "Fright Check",
+				"base": "$will",
+				"cost_per_point": 2
+			},
+			{
+				"id": "per",
+				"type": "integer",
+				"name": "Per",
+				"full_name": "Perception",
+				"base": "10",
+				"cost_per_point": 5
+			},
+			{
+				"id": "vision",
+				"type": "integer",
+				"name": "Vision",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "hearing",
+				"type": "integer",
+				"name": "Hearing",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "taste_smell",
+				"type": "integer",
+				"name": "Taste & Smell",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "touch",
+				"type": "integer",
+				"name": "Touch",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "basic_speed",
+				"type": "decimal",
+				"name": "Basic Speed",
+				"base": "($dx + $ht) / 4",
+				"cost_per_point": 20
+			},
+			{
+				"id": "basic_move",
+				"type": "integer",
+				"name": "Basic Move",
+				"base": "Math.floor($basic_speed)",
+				"cost_per_point": 5
+			},
+			{
+				"id": "fp",
+				"type": "pool",
+				"name": "FP",
+				"full_name": "Fatigue Points",
+				"base": "$ht",
+				"cost_per_point": 3,
+				"thresholds": [
+					{
+						"state": "Unconscious",
+						"value": "-$fp",
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Collapse",
+						"value": "0",
+						"explanation": "- Roll vs. Will to do anything besides talk or rest; failure causes unconsciousness\n- Each FP you lose below 0 also causes 1 HP of injury\n- Move, Dodge and ST are halved (B426)",
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Tired",
+						"value": "Math.ceil($fp / 3) - 1",
+						"explanation": "Move, Dodge and ST are halved (B426)",
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Tiring",
+						"value": "$fp - 1"
+					},
+					{
+						"state": "Rested",
+						"value": "$fp"
+					}
+				]
+			},
+			{
+				"id": "hp",
+				"type": "pool",
+				"name": "HP",
+				"full_name": "Hit Points",
+				"base": "$st",
+				"cost_per_point": 2,
+				"cost_adj_percent_per_sm": 10,
+				"thresholds": [
+					{
+						"state": "Dead",
+						"value": "Math.round(-$hp * 5)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #4",
+						"value": "Math.round(-$hp * 4)",
+						"explanation": "- Roll vs. HT to avoid death\n- Roll vs. HT-4 every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #3",
+						"value": "Math.round(-$hp * 3)",
+						"explanation": "- Roll vs. HT to avoid death\n- Roll vs. HT-3 every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #2",
+						"value": "Math.round(-$hp * 2)",
+						"explanation": "- Roll vs. HT to avoid death\n- Roll vs. HT-2 every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #1",
+						"value": "-$hp",
+						"explanation": "- Roll vs. HT to avoid death\n- Roll vs. HT-1 every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Collapse",
+						"value": "0",
+						"explanation": "- Roll vs. HT every second to avoid falling unconscious\n- Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Reeling",
+						"value": "Math.ceil($hp / 3) - 1",
+						"explanation": "Move and Dodge are halved (B419)",
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Wounded",
+						"value": "$hp - 1"
+					},
+					{
+						"state": "Healthy",
+						"value": "$hp"
+					}
+				]
+			}
+		],
+		"body_type": {
+			"name": "Humanoid",
+			"roll": "3d",
+			"locations": [
+				{
+					"id": "eye",
+					"choice_name": "Eyes",
+					"table_name": "Eyes",
+					"hit_penalty": -9,
+					"description": "An attack that misses by 1 hits the torso instead. Only\nimpaling (imp), piercing (pi-, pi, pi+, pi++), and\ntight-beam burning (burn) attacks can target the eye – and\nonly from the front or sides. Injury over HP÷10 blinds the\neye. Otherwise, treat as skull, but without the extra DR!",
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "skull",
+					"choice_name": "Skull",
+					"table_name": "Skull",
+					"slots": 2,
+					"hit_penalty": -7,
+					"dr_bonus": 2,
+					"description": "An attack that misses by 1 hits the torso instead. Wounding\nmodifier is x4. Knockdown rolls are at -10. Critical hits\nuse the Critical Head Blow Table (B556). Exception: These\nspecial effects do not apply to toxic (tox) damage.",
+					"calc": {
+						"roll_range": "3-4",
+						"dr": {
+							"all": 27
+						}
+					}
+				},
+				{
+					"id": "face",
+					"choice_name": "Face",
+					"table_name": "Face",
+					"slots": 1,
+					"hit_penalty": -5,
+					"description": "An attack that misses by 1 hits the torso instead. Jaw,\ncheeks, nose, ears, etc. If the target has an open-faced\nhelmet, ignore its DR. Knockdown rolls are at -5. Critical\nhits use the Critical Head Blow Table (B556). Corrosion\n(cor) damage gets a x1½ wounding modifier, and if it\ninflicts a major wound, it also blinds one eye (both eyes on\ndamage over full HP). Random attacks from behind hit the\nskull instead.",
+					"calc": {
+						"roll_range": "5",
+						"dr": {
+							"all": 25
+						}
+					}
+				},
+				{
+					"id": "leg",
+					"choice_name": "Leg",
+					"table_name": "Right Leg",
+					"slots": 2,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "6-7",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "arm",
+					"choice_name": "Arm",
+					"table_name": "Right Arm",
+					"slots": 1,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost. If holding a shield,\ndouble the penalty to hit: -4 for shield arm instead of -2.",
+					"calc": {
+						"roll_range": "8",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "torso",
+					"choice_name": "Torso",
+					"table_name": "Torso",
+					"slots": 2,
+					"calc": {
+						"roll_range": "9-10",
+						"dr": {
+							"all": 40
+						}
+					}
+				},
+				{
+					"id": "groin",
+					"choice_name": "Groin",
+					"table_name": "Groin",
+					"slots": 1,
+					"hit_penalty": -3,
+					"description": "An attack that misses by 1 hits the torso instead. Human\nmales and the males of similar species suffer double shock\nfrom crushing (cr) damage, and get -5 to knockdown rolls.\nOtherwise, treat as a torso hit.",
+					"calc": {
+						"roll_range": "11",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "arm",
+					"choice_name": "Arm",
+					"table_name": "Left Arm",
+					"slots": 1,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost. If holding a shield,\ndouble the penalty to hit: -4 for shield arm instead of -2.",
+					"calc": {
+						"roll_range": "12",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "leg",
+					"choice_name": "Leg",
+					"table_name": "Left Leg",
+					"slots": 2,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "13-14",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "hand",
+					"choice_name": "Hand",
+					"table_name": "Hand",
+					"slots": 1,
+					"hit_penalty": -4,
+					"description": "If holding a shield, double the penalty to hit: -8 for\nshield hand instead of -4. Reduce the wounding multiplier of\nlarge piercing (pi+), huge piercing (pi++), and impaling\n(imp) damage to x1. Any major wound (loss of over ⅓ HP\nfrom one blow) cripples the extremity. Damage beyond that\nthreshold is lost.",
+					"calc": {
+						"roll_range": "15",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "foot",
+					"choice_name": "Foot",
+					"table_name": "Foot",
+					"slots": 1,
+					"hit_penalty": -4,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ⅓ HP from one blow) cripples the\nextremity. Damage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "16",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "neck",
+					"choice_name": "Neck",
+					"table_name": "Neck",
+					"slots": 2,
+					"hit_penalty": -5,
+					"description": "An attack that misses by 1 hits the torso instead. Neck and\nthroat. Increase the wounding multiplier of crushing (cr)\nand corrosion (cor) attacks to x1½, and that of cutting\n(cut) damage to x2. At the GM’s option, anyone killed by a\ncutting (cut) blow to the neck is decapitated!",
+					"calc": {
+						"roll_range": "17-18",
+						"dr": {
+							"all": 25
+						}
+					}
+				},
+				{
+					"id": "vitals",
+					"choice_name": "Vitals",
+					"table_name": "Vitals",
+					"hit_penalty": -3,
+					"description": "An attack that misses by 1 hits the torso instead. Heart,\nlungs, kidneys, etc. Increase the wounding modifier for an\nimpaling (imp) or any piercing (pi-, pi, pi+, pi++) attack\nto x3. Increase the wounding modifier for a tight-beam\nburning (burn) attack to x2. Other attacks cannot target the\nvitals.",
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 15
+						}
+					}
+				}
+			]
+		},
+		"damage_progression": "basic_set",
+		"default_length_units": "ft_in",
+		"default_weight_units": "lb",
+		"user_description_display": "tooltip",
+		"modifiers_display": "inline",
+		"notes_display": "inline",
+		"skill_level_adj_display": "tooltip",
+		"show_spell_adj": true
+	},
+	"attributes": [
+		{
+			"attr_id": "st",
+			"adj": 140,
+			"calc": {
+				"value": 150,
+				"points": 280
+			}
+		},
+		{
+			"attr_id": "dx",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "iq",
+			"adj": -6,
+			"calc": {
+				"value": 4,
+				"points": -60
+			}
+		},
+		{
+			"attr_id": "ht",
+			"adj": 4,
+			"calc": {
+				"value": 14,
+				"points": 40
+			}
+		},
+		{
+			"attr_id": "will",
+			"adj": 2,
+			"calc": {
+				"value": 12,
+				"points": 10
+			}
+		},
+		{
+			"attr_id": "fright_check",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "per",
+			"adj": 2,
+			"calc": {
+				"value": 12,
+				"points": 10
+			}
+		},
+		{
+			"attr_id": "vision",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "hearing",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "taste_smell",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "touch",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "basic_speed",
+			"adj": 0,
+			"calc": {
+				"value": 6,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "basic_move",
+			"adj": 2,
+			"calc": {
+				"value": 8,
+				"points": 10
+			}
+		},
+		{
+			"attr_id": "fp",
+			"adj": 0,
+			"calc": {
+				"value": 14,
+				"current": 14,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "hp",
+			"adj": 30,
+			"calc": {
+				"value": 180,
+				"current": 180,
+				"points": 12
+			}
+		}
+	],
+	"traits": [
+		{
+			"id": "tB-SKXnEtOHVIeaSA",
+			"name": "Natural Attacks",
+			"reference": "B271",
+			"weapons": [
+				{
+					"id": "wiYxmhvY3oN7ebAso",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
+						}
+					],
+					"calc": {
+						"level": 10,
+						"damage": "16d-1 cr"
+					}
+				},
+				{
+					"id": "wNRhEEjVZw1S8TiKf",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Boxing"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							}
+						}
+					],
+					"calc": {
+						"level": 10,
+						"damage": "16d-1 cr",
+						"parry": "8"
+					}
+				},
+				{
+					"id": "wBhluXs0B-C80S11i",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							},
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Kicking"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"level": 8,
+						"damage": "16d cr"
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "tMC50Bxmn1r39TMbC",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tZw_ze3n_bPxiK86s"
+			},
+			"name": "Terrain Adaptation (@Terrain Type@)",
+			"reference": "B93,P83",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Physical"
+			],
+			"replacements": {
+				"Terrain Type": "Desert"
+			},
+			"modifiers": [
+				{
+					"id": "mIuNaiG5XlorR1iIE",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mB_8eh5m-u3KQ8ger"
+					},
+					"name": "Unstable on solid ground",
+					"reference": "B93",
+					"cost_adj": "-5",
+					"disabled": true
+				},
+				{
+					"id": "mjqIo985-G5-85uH0",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mCvipetVKbkkakoXk"
+					},
+					"name": "Active",
+					"reference": "P84",
+					"cost_adj": "300%",
+					"disabled": true
+				}
+			],
+			"base_points": 5,
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "t3gpQZbovdOlsM2YB",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tBmSJ3pNE53c4IRUU"
+			},
+			"name": "Damage Resistance",
+			"reference": "B46,B47,P45,MA43,PSI14",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Physical"
+			],
+			"modifiers": [
+				{
+					"id": "MvYSAvC33DAWL8rt7",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "MNGwNvpoQ0he3h7A7"
+					},
+					"name": "Special Enhancements",
+					"children": [
+						{
+							"id": "mAd8sgZ6UKBX6qJPz",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mJxX9ApiNM2Hh9akl"
+							},
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances @Trait@",
+							"cost_adj": "80%",
+							"disabled": true
+						},
+						{
+							"id": "maEt5Kfd49OzJ-OdY",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mHwfpp1_SY3jN-JjF"
+							},
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Healing only",
+							"cost_adj": "80%",
+							"disabled": true
+						},
+						{
+							"id": "mdatJFO97o5YH0prW",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mvDYFqhwd-tS12G97"
+							},
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances any trait",
+							"cost_adj": "100%",
+							"disabled": true
+						},
+						{
+							"id": "mU4lU5Qx0-jT5_brq",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mKZQfoJhVcaw04aPy"
+							},
+							"name": "Force Field",
+							"reference": "B47",
+							"cost_adj": "20%",
+							"disabled": true
+						},
+						{
+							"id": "mEogORDV0_wyTD7jM",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mTxwPrj2QOL79_Emh"
+							},
+							"name": "Hardened",
+							"reference": "B47",
+							"local_notes": "Reduces armor divisor by @Hardened level@ step(s): \"ignores DR\"→100→10→5→3→2→\"no divisor\"",
+							"cost_adj": "20%",
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mSXtYT8VzTTLJ8mxL",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "moRQ906qHeIUxEtDH"
+							},
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost_adj": "10%",
+							"disabled": true
+						},
+						{
+							"id": "mnB-QYqvgxDxZIs1s",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mdZamgGXO5wzrri6F"
+							},
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost_adj": "50%",
+							"disabled": true
+						},
+						{
+							"id": "mg0nC_VRAWsxc-LJI",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mn4Yj3uRBdathIgxl"
+							},
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "mHyONjKaQtcbOBebS",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mtRJjmPRbkagvp56y"
+							},
+							"name": "Reflection",
+							"reference": "B47",
+							"cost_adj": "100%",
+							"disabled": true
+						},
+						{
+							"id": "mGwnABTrtqNhQeUXz",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mLQMHKKsvEZKUR4wq"
+							},
+							"name": "Mental Resilience",
+							"reference": "PY103:8",
+							"tags": [
+								"Mad as Bones"
+							],
+							"cost_adj": "+100%",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "MYF74cWa2Qq3VOcXj",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "MLdtoe0kIczt1CwQK"
+					},
+					"name": "Special Limitations",
+					"children": [
+						{
+							"id": "m5ts6ucYpi0boEkof",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m5yX0DkbngKxcMk3U"
+							},
+							"name": "Ablative",
+							"reference": "B47",
+							"cost_adj": "-80%",
+							"disabled": true
+						},
+						{
+							"id": "mh45BWHFBlF10q0CL",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mriC_suSIQRyOEPIf"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Very Common@",
+							"cost_adj": "-15%",
+							"disabled": true
+						},
+						{
+							"id": "melHmQfwHtZl4N2xg",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mGhdjo4vkF4K3wlU4"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Common@",
+							"cost_adj": "-10%",
+							"disabled": true
+						},
+						{
+							"id": "m1pAbgCtHcImKuPx4",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mKFXBIZdlnqy30umW"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Occasional@",
+							"cost_adj": "-5%",
+							"disabled": true
+						},
+						{
+							"id": "mgN-CMcKfOHD0FpRp",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m82EYyrIt9oPcHoUi"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Rare@",
+							"cost_adj": "-1",
+							"disabled": true
+						},
+						{
+							"id": "mtVBtnR0ePETNgXGF",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mh0D3QvmBdTb2Fj35"
+							},
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mJsAA0KZz-XmhUR2W",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mJOqQDNVieB3BqNZq"
+							},
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "Front",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mr82W-_pMJIXZs5bb",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mJI6krqiiAhykZkqD"
+							},
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost_adj": "-40%",
+							"disabled": true,
+							"calc": {
+								"resolved_notes": "@Direction@"
+							}
+						},
+						{
+							"id": "m388y2TfIKZVu49q3",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mdXLyaSji8XL7ogcm"
+							},
+							"name": "Flexible",
+							"reference": "B47",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mDUAiq983RpJNGq1X",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mHX9jNBEFXDMx9Udj"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Very Common Attack Form@",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "m9SK4QbDJGRu-6qgO",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mydbXeU0Gp6_5IXwP"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Common Attack Form@",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mN8Nm-6W4jAyYB2nH",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mEhEeAZtQ31RY7uEQ"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Occasional Attack Form@",
+							"cost_adj": "-60%",
+							"disabled": true
+						},
+						{
+							"id": "moRYBdEUE272fSKNs",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mjfZ7ao6KmZfLqHZL"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Rare Attack Form@",
+							"cost_adj": "-80%",
+							"disabled": true
+						},
+						{
+							"id": "mAgDKrVCnds_CUasU",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mWmUeD6W1op93mlr8"
+							},
+							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+							"reference": "B47",
+							"cost_adj": "-10%",
+							"disabled": true
+						},
+						{
+							"id": "mR3-9qYMfhEuQnwU7",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mv-FSylFn8Naju4GK"
+							},
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mFmg8zP7mu-47VcQY",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mP4bVdigxz3GIkAfk"
+							},
+							"name": "Tough Skin",
+							"reference": "B47",
+							"local_notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost_adj": "-40%",
+							"disabled": true
+						}
+					]
+				}
+			],
+			"points_per_level": 5,
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"torso"
+					],
+					"amount": 40,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 5,
+				"current_level": 1
+			}
+		},
+		{
+			"id": "tPqurZedECWLwaR4K",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tBmSJ3pNE53c4IRUU"
+			},
+			"name": "Damage Resistance",
+			"reference": "B46,B47,P45,MA43,PSI14",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Physical"
+			],
+			"modifiers": [
+				{
+					"id": "MwN28F5xIUAtz0Dig",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "MNGwNvpoQ0he3h7A7"
+					},
+					"name": "Special Enhancements",
+					"children": [
+						{
+							"id": "mPvZIJWnFso09QqQG",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mJxX9ApiNM2Hh9akl"
+							},
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances @Trait@",
+							"cost_adj": "80%",
+							"disabled": true
+						},
+						{
+							"id": "mjANERhc0zM5hArBR",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mHwfpp1_SY3jN-JjF"
+							},
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Healing only",
+							"cost_adj": "80%",
+							"disabled": true
+						},
+						{
+							"id": "mx1vOCdsvUHjNE0cY",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mvDYFqhwd-tS12G97"
+							},
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances any trait",
+							"cost_adj": "100%",
+							"disabled": true
+						},
+						{
+							"id": "mSQsdVg01-_pBi2A6",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mKZQfoJhVcaw04aPy"
+							},
+							"name": "Force Field",
+							"reference": "B47",
+							"cost_adj": "20%",
+							"disabled": true
+						},
+						{
+							"id": "mWOWrVdE2mnTSwDkd",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mTxwPrj2QOL79_Emh"
+							},
+							"name": "Hardened",
+							"reference": "B47",
+							"local_notes": "Reduces armor divisor by @Hardened level@ step(s): \"ignores DR\"→100→10→5→3→2→\"no divisor\"",
+							"cost_adj": "20%",
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "moWFuxr7UkACTRVlT",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "moRQ906qHeIUxEtDH"
+							},
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost_adj": "10%",
+							"disabled": true
+						},
+						{
+							"id": "m_0NeQYTQgume8rN2",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mdZamgGXO5wzrri6F"
+							},
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost_adj": "50%",
+							"disabled": true
+						},
+						{
+							"id": "mXhuqXsJTDDjrPwPN",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mn4Yj3uRBdathIgxl"
+							},
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "mGVuL20AVgzzk5-sm",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mtRJjmPRbkagvp56y"
+							},
+							"name": "Reflection",
+							"reference": "B47",
+							"cost_adj": "100%",
+							"disabled": true
+						},
+						{
+							"id": "m4uvFPAq7-URIe9vM",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mLQMHKKsvEZKUR4wq"
+							},
+							"name": "Mental Resilience",
+							"reference": "PY103:8",
+							"tags": [
+								"Mad as Bones"
+							],
+							"cost_adj": "+100%",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "M4gGVfCQvb1Xtwbr2",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "MLdtoe0kIczt1CwQK"
+					},
+					"name": "Special Limitations",
+					"children": [
+						{
+							"id": "mrAUFEGWlrR_7BBbF",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m5yX0DkbngKxcMk3U"
+							},
+							"name": "Ablative",
+							"reference": "B47",
+							"cost_adj": "-80%",
+							"disabled": true
+						},
+						{
+							"id": "mYqp0AkQs27zMSk-c",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mriC_suSIQRyOEPIf"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Very Common@",
+							"cost_adj": "-15%",
+							"disabled": true
+						},
+						{
+							"id": "mexrI2UN4x6XqoZK9",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mGhdjo4vkF4K3wlU4"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Common@",
+							"cost_adj": "-10%",
+							"disabled": true
+						},
+						{
+							"id": "mqkY8RueEpGyPBcJ3",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mKFXBIZdlnqy30umW"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Occasional@",
+							"cost_adj": "-5%",
+							"disabled": true
+						},
+						{
+							"id": "mVrBRyjw6fe6tUQCn",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m82EYyrIt9oPcHoUi"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Rare@",
+							"cost_adj": "-1",
+							"disabled": true
+						},
+						{
+							"id": "mBtmSAhccJz_1sH-M",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mh0D3QvmBdTb2Fj35"
+							},
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mcni7oEQ2fwn6nYxn",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mJOqQDNVieB3BqNZq"
+							},
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "Front",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mvYmSdVWv--72A5NY",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mJI6krqiiAhykZkqD"
+							},
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost_adj": "-40%",
+							"disabled": true,
+							"calc": {
+								"resolved_notes": "@Direction@"
+							}
+						},
+						{
+							"id": "m8JaCT8Fv8TNNQN2A",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mdXLyaSji8XL7ogcm"
+							},
+							"name": "Flexible",
+							"reference": "B47",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mGiHPfwmwN3zZ9Ehg",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mHX9jNBEFXDMx9Udj"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Very Common Attack Form@",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mYuYRgNBHWuY-Bdyk",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mydbXeU0Gp6_5IXwP"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Common Attack Form@",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mwuaRMB0baLUI5XS5",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mEhEeAZtQ31RY7uEQ"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Occasional Attack Form@",
+							"cost_adj": "-60%",
+							"disabled": true
+						},
+						{
+							"id": "mdoQtnPGP0GA_Ax5d",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mjfZ7ao6KmZfLqHZL"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Rare Attack Form@",
+							"cost_adj": "-80%",
+							"disabled": true
+						},
+						{
+							"id": "m-NuAmGmf8kpU7HLc",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mWmUeD6W1op93mlr8"
+							},
+							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+							"reference": "B47",
+							"cost_adj": "-10%",
+							"disabled": true
+						},
+						{
+							"id": "mA-sD-xOnJ1iy_ZK6",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mv-FSylFn8Naju4GK"
+							},
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mN4TLK9vmrRG0jsWA",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mP4bVdigxz3GIkAfk"
+							},
+							"name": "Tough Skin",
+							"reference": "B47",
+							"local_notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost_adj": "-40%",
+							"disabled": true
+						}
+					]
+				}
+			],
+			"points_per_level": 5,
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"face",
+						"neck",
+						"skull"
+					],
+					"amount": 25,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 5,
+				"current_level": 1
+			}
+		},
+		{
+			"id": "tW4P6RqR2_oI3HN-l",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tBmSJ3pNE53c4IRUU"
+			},
+			"name": "Damage Resistance",
+			"reference": "B46,B47,P45,MA43,PSI14",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Physical"
+			],
+			"modifiers": [
+				{
+					"id": "MMRy9jKYMl5Nm3Uvn",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "MNGwNvpoQ0he3h7A7"
+					},
+					"name": "Special Enhancements",
+					"children": [
+						{
+							"id": "mGb2TDKCTJP2F1ZQj",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mJxX9ApiNM2Hh9akl"
+							},
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances @Trait@",
+							"cost_adj": "80%",
+							"disabled": true
+						},
+						{
+							"id": "mupHkncByv2oPBIZX",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mHwfpp1_SY3jN-JjF"
+							},
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Healing only",
+							"cost_adj": "80%",
+							"disabled": true
+						},
+						{
+							"id": "msgM3nqTilT5j4O38",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mvDYFqhwd-tS12G97"
+							},
+							"name": "Absorption",
+							"reference": "B46",
+							"local_notes": "Enhances any trait",
+							"cost_adj": "100%",
+							"disabled": true
+						},
+						{
+							"id": "mH9m0K1nKPrzT0YR7",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mKZQfoJhVcaw04aPy"
+							},
+							"name": "Force Field",
+							"reference": "B47",
+							"cost_adj": "20%",
+							"disabled": true
+						},
+						{
+							"id": "myJUqMn__Z1cL7WvB",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mTxwPrj2QOL79_Emh"
+							},
+							"name": "Hardened",
+							"reference": "B47",
+							"local_notes": "Reduces armor divisor by @Hardened level@ step(s): \"ignores DR\"→100→10→5→3→2→\"no divisor\"",
+							"cost_adj": "20%",
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "m_EwWWJl3V0dLr8LF",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "moRQ906qHeIUxEtDH"
+							},
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost_adj": "10%",
+							"disabled": true
+						},
+						{
+							"id": "meV0pCiHI8m-SjXHo",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mdZamgGXO5wzrri6F"
+							},
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost_adj": "50%",
+							"disabled": true
+						},
+						{
+							"id": "miR384UNZ6SIk9K4Z",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mn4Yj3uRBdathIgxl"
+							},
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "mJRjJmNDR6uY8KNvw",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mtRJjmPRbkagvp56y"
+							},
+							"name": "Reflection",
+							"reference": "B47",
+							"cost_adj": "100%",
+							"disabled": true
+						},
+						{
+							"id": "m1iNX968_NXixcUnv",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mLQMHKKsvEZKUR4wq"
+							},
+							"name": "Mental Resilience",
+							"reference": "PY103:8",
+							"tags": [
+								"Mad as Bones"
+							],
+							"cost_adj": "+100%",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "MMAwPvVzVd9Ws_sZK",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "MLdtoe0kIczt1CwQK"
+					},
+					"name": "Special Limitations",
+					"children": [
+						{
+							"id": "mwK59gk9G4Ulik0wC",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m5yX0DkbngKxcMk3U"
+							},
+							"name": "Ablative",
+							"reference": "B47",
+							"cost_adj": "-80%",
+							"disabled": true
+						},
+						{
+							"id": "meNCYdE3GOH56aKxL",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mriC_suSIQRyOEPIf"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Very Common@",
+							"cost_adj": "-15%",
+							"disabled": true
+						},
+						{
+							"id": "mqomr8gim0oFSIA2j",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mGhdjo4vkF4K3wlU4"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Common@",
+							"cost_adj": "-10%",
+							"disabled": true
+						},
+						{
+							"id": "mvwkPn6tK60TRU7av",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mKFXBIZdlnqy30umW"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Occasional@",
+							"cost_adj": "-5%",
+							"disabled": true
+						},
+						{
+							"id": "miejLKHIS-83d8jTQ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m82EYyrIt9oPcHoUi"
+							},
+							"name": "Bane",
+							"reference": "H14",
+							"local_notes": "@Rare@",
+							"cost_adj": "-1",
+							"disabled": true
+						},
+						{
+							"id": "mL33uJFv2r_LgCMam",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mh0D3QvmBdTb2Fj35"
+							},
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mh7RCnaLQFD5LOIrs",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mJOqQDNVieB3BqNZq"
+							},
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "Front",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "m93FgGf817dLmafzF",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mJI6krqiiAhykZkqD"
+							},
+							"name": "Directional",
+							"reference": "B47",
+							"local_notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost_adj": "-40%",
+							"disabled": true,
+							"calc": {
+								"resolved_notes": "@Direction@"
+							}
+						},
+						{
+							"id": "mfdgBclPROVKQ5H73",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mdXLyaSji8XL7ogcm"
+							},
+							"name": "Flexible",
+							"reference": "B47",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "m7nzsA68wCgZka6_z",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mHX9jNBEFXDMx9Udj"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Very Common Attack Form@",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mtffHPpLQ3Z-z3xWO",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mydbXeU0Gp6_5IXwP"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Common Attack Form@",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mb41NSxBR_H9755J4",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mEhEeAZtQ31RY7uEQ"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Occasional Attack Form@",
+							"cost_adj": "-60%",
+							"disabled": true
+						},
+						{
+							"id": "mJpg_aBOfmXEBhwjS",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mjfZ7ao6KmZfLqHZL"
+							},
+							"name": "Limited",
+							"reference": "B46",
+							"local_notes": "@Rare Attack Form@",
+							"cost_adj": "-80%",
+							"disabled": true
+						},
+						{
+							"id": "mzFBdDgZntMzDozmU",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mWmUeD6W1op93mlr8"
+							},
+							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+							"reference": "B47",
+							"cost_adj": "-10%",
+							"disabled": true
+						},
+						{
+							"id": "mw-1ZL0zvw5THFt3L",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mv-FSylFn8Naju4GK"
+							},
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "myXGX2teHBEEEJBOW",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mP4bVdigxz3GIkAfk"
+							},
+							"name": "Tough Skin",
+							"reference": "B47",
+							"local_notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost_adj": "-40%",
+							"disabled": true
+						}
+					]
+				}
+			],
+			"points_per_level": 5,
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"vitals"
+					],
+					"amount": 15,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 5,
+				"current_level": 1
+			}
+		},
+		{
+			"id": "tpsKfLPQF1rZ4ARBR",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tiSMEnPxz8njtqMqF"
+			},
+			"name": "Innate Attack (Horn)",
+			"reference": "B62,P53,MA45",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Physical"
+			],
+			"replacements": {
+				"Attack Type": "Horn"
+			},
+			"modifiers": [
+				{
+					"id": "mifFZ3mp6zPdHi97e",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mE330OLxul5UKELbB"
+					},
+					"name": "Double Blunt Trauma",
+					"reference": "B104",
+					"cost_adj": "20%",
+					"disabled": true
+				},
+				{
+					"id": "m7mOl5bhpVOvo3Hka",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mW_gQI0OKWAeha-9r"
+					},
+					"name": "Explosion",
+					"reference": "B104",
+					"cost_adj": "50%",
+					"levels": 1,
+					"disabled": true
+				},
+				{
+					"id": "mx8kRTj0vMmp119Qb",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mAhO4v5OK7n2hkXmV"
+					},
+					"name": "Fragmentation",
+					"reference": "B104",
+					"cost_adj": "15%",
+					"levels": 1,
+					"disabled": true
+				},
+				{
+					"id": "mAlFDZWFBXP73EeSb",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "meXeMCtfzJfd47AYe"
+					},
+					"name": "Fragmentation",
+					"reference": "B104",
+					"local_notes": "Hot",
+					"cost_adj": "15%",
+					"levels": 1,
+					"disabled": true
+				},
+				{
+					"id": "mp868oKzrcX1WoRDp",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mppCrpyrutQW3krUF"
+					},
+					"name": "Surge",
+					"reference": "B104",
+					"cost_adj": "20%",
+					"disabled": true
+				},
+				{
+					"id": "mBvbswEM7FF2Bv2JZ",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "moTf8WrXxJ67BQoC4"
+					},
+					"name": "Armor Divisor",
+					"reference": "B102",
+					"local_notes": "2",
+					"cost_adj": "50%",
+					"disabled": true
+				},
+				{
+					"id": "m9Ek2_UxiSZud-OoS",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mQkKH-f7naQtCNJLM"
+					},
+					"name": "Armor Divisor",
+					"reference": "B102",
+					"local_notes": "3",
+					"cost_adj": "100%",
+					"disabled": true
+				},
+				{
+					"id": "mpw9P80PG2hdLbEEk",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mPikWxbGuNSi0fEGO"
+					},
+					"name": "Armor Divisor",
+					"reference": "B102",
+					"local_notes": "5",
+					"cost_adj": "150%",
+					"disabled": true
+				},
+				{
+					"id": "mtXSpHswSJZXC-rf-",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mTE11dsjRtaUrK-Hl"
+					},
+					"name": "Armor Divisor",
+					"reference": "B102",
+					"local_notes": "10",
+					"cost_adj": "200%",
+					"disabled": true
+				},
+				{
+					"id": "mf6ogB4Iu6lC7m294",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mElw-ZLI05t3Blc0R"
+					},
+					"name": "Side Effect",
+					"reference": "B109",
+					"local_notes": "@Effect@",
+					"disabled": true
+				},
+				{
+					"id": "mFhVbscqNord4VWdx",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "m1OQB-0deQEJCFzfF"
+					},
+					"name": "Symptoms",
+					"reference": "B109",
+					"local_notes": "@Effect@",
+					"disabled": true
+				},
+				{
+					"id": "m7VGQuuiXXR3ngTGq",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "muPZfIEvEEhqHc6Sj"
+					},
+					"name": "Armor Divisor",
+					"reference": "B110",
+					"local_notes": "0.5",
+					"cost_adj": "-30%",
+					"disabled": true
+				},
+				{
+					"id": "mb3GJGYPU-cKGV2If",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "m_GC3dwLVgklBSn7R"
+					},
+					"name": "Armor Divisor",
+					"reference": "B110",
+					"local_notes": "0.2",
+					"cost_adj": "-50%",
+					"disabled": true
+				},
+				{
+					"id": "mD3rRnpsadb6n_8rP",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "msJJk_O9COsPiiXA7"
+					},
+					"name": "Armor Divisor",
+					"reference": "B110",
+					"local_notes": "0.1",
+					"cost_adj": "-70%",
+					"disabled": true
+				},
+				{
+					"id": "ml6vqtGPgjv458-5s",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "myutNb3ewoPQEaARe"
+					},
+					"name": "No Blunt Trauma",
+					"reference": "B111",
+					"cost_adj": "-20%",
+					"disabled": true
+				},
+				{
+					"id": "mNVM_rbjFLWjzvkI_",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mUej4AZEp1wsiNfwX"
+					},
+					"name": "No Wounding",
+					"reference": "B111",
+					"cost_adj": "-50%",
+					"disabled": true
+				},
+				{
+					"id": "mEkpx2MBao2ShZIMt",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mmH-1pLqnsSc1KH2M"
+					},
+					"name": "Incendiary",
+					"reference": "B104",
+					"cost_adj": "10%",
+					"disabled": true
+				},
+				{
+					"id": "muMhE_pRs-95D--s_",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "marrU53ql1YWkxmYR"
+					},
+					"name": "AP Ammo",
+					"reference": "PU4:18",
+					"cost_adj": "35%",
+					"disabled": true
+				},
+				{
+					"id": "MxFEVBLHd1cTdoEVT",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "MgEvipsQA7KZClGXm"
+					},
+					"name": "Melee Attack modifiers",
+					"local_notes": "unhide the melee weapon usage and hide the ranged weapon usage",
+					"children": [
+						{
+							"id": "m-dsxPgXYDwfYmQrQ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m47nWv7v6Dr8O7m9o"
+							},
+							"name": "Melee Attack, Reach C",
+							"reference": "B112",
+							"reference_highlight": "Melee Attack",
+							"cost_adj": "-30%",
+							"disabled": true
+						},
+						{
+							"id": "mOqhqjqwvBjhW4WHU",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mrCfh-IN3lmXimEHj"
+							},
+							"name": "Melee Attack, Reach 1",
+							"reference": "B112",
+							"reference_highlight": "Melee Attack",
+							"cost_adj": "-25%",
+							"features": [
+								{
+									"type": "weapon_max_reach_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								},
+								{
+									"type": "weapon_min_reach_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								},
+								{
+									"type": "weapon_switch",
+									"selection_type": "this_weapon",
+									"switch_type": "close_combat",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mpp-Yy5FFTVVYAj_4",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mga_lYWN5MUEMuKVW"
+							},
+							"name": "Melee Attack, Reach 2",
+							"reference": "B112",
+							"reference_highlight": "Melee Attack",
+							"cost_adj": "-25%",
+							"features": [
+								{
+									"type": "weapon_max_reach_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 2
+								},
+								{
+									"type": "weapon_min_reach_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 2
+								},
+								{
+									"type": "weapon_switch",
+									"selection_type": "this_weapon",
+									"switch_type": "close_combat",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mO_mDr_gXcwxiL0dN",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mgj5HUpW91s1R87Rb"
+							},
+							"name": "Melee Attack, Reach C,1",
+							"reference": "B112",
+							"reference_highlight": "Melee Attack",
+							"cost_adj": "-20%",
+							"features": [
+								{
+									"type": "weapon_max_reach_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								},
+								{
+									"type": "weapon_min_reach_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "m4wC0-oTlpEAA11Wy",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mpNpXVDtOcSoDyv95"
+							},
+							"name": "Melee Attack, Reach 1,2",
+							"reference": "B112",
+							"reference_highlight": "Melee Attack",
+							"cost_adj": "-20%",
+							"features": [
+								{
+									"type": "weapon_max_reach_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 2
+								},
+								{
+									"type": "weapon_min_reach_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								},
+								{
+									"type": "weapon_switch",
+									"selection_type": "this_weapon",
+									"switch_type": "close_combat",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mNnLCqYULoMonwqQL",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m52dw77Bow22djlZJ"
+							},
+							"name": "Melee Attack, Reach 2,3",
+							"reference": "B112",
+							"reference_highlight": "Melee Attack",
+							"cost_adj": "-20%",
+							"features": [
+								{
+									"type": "weapon_max_reach_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 3
+								},
+								{
+									"type": "weapon_min_reach_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 2
+								},
+								{
+									"type": "weapon_switch",
+									"selection_type": "this_weapon",
+									"switch_type": "close_combat",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						},
+						{
+							"id": "m9O8ZTnx3kV-0nLaw",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mn5z28sXGhJ75_nDy"
+							},
+							"name": "Melee Attack, Reach 1-4",
+							"reference": "B112",
+							"reference_highlight": "Melee Attack",
+							"cost_adj": "-15%",
+							"features": [
+								{
+									"type": "weapon_max_reach_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 4
+								},
+								{
+									"type": "weapon_min_reach_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								},
+								{
+									"type": "weapon_switch",
+									"selection_type": "this_weapon",
+									"switch_type": "close_combat",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "m7D_B3EvQaTLE23Zv",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mHV4ZH7iT2lFLgSnL"
+							},
+							"name": "Cannot Parry",
+							"reference": "B112",
+							"reference_highlight": "If your attack cannot parry",
+							"cost_adj": "-5%",
+							"features": [
+								{
+									"type": "weapon_switch",
+									"selection_type": "this_weapon",
+									"switch_type": "can_parry",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							],
+							"disabled": true
+						}
+					]
+				}
+			],
+			"points_per_level": 8,
+			"weapons": [
+				{
+					"id": "wuVuzKSi2GqtVrRWA",
+					"sv": 1,
+					"damage": {
+						"type": "pi++",
+						"st": "thr",
+						"base_leveled": "1d"
+					},
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
+						},
+						{
+							"type": "dx"
+						}
+					],
+					"calc": {
+						"level": 10,
+						"damage": "17d pi++",
+						"parry": "8",
+						"reach": "2-3"
+					}
+				},
+				{
+					"id": "Wvl2UgMr7uAu4PNrN",
+					"sv": 1,
+					"damage": {
+						"type": "pi++",
+						"st": "thr",
+						"base_leveled": "1d"
+					},
+					"accuracy": "3",
+					"range": "10/100",
+					"rate_of_fire": "1",
+					"recoil": "1",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Innate Attack"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "@Attack Type@"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Innate Attack"
+							},
+							"modifier": -2
+						},
+						{
+							"type": "dx",
+							"modifier": -4
+						}
+					],
+					"hide": true,
+					"calc": {
+						"level": 10,
+						"damage": "17d pi++"
+					}
+				}
+			],
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 7,
+				"current_level": 1
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "s-8H9dSUlR4rpLswn",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sJvwPKtI422-KNEiv"
+			},
+			"name": "Innate Attack",
+			"reference": "B201",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Horn",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Innate Attack"
+					},
+					"modifier": -2
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "DX+0"
+			}
+		}
+	],
+	"created_date": "2026-09-20T17:09:55-04:00",
+	"modified_date": "2026-09-20T18:08:01-04:00",
+	"calc": {
+		"swing": "18d",
+		"thrust": "16d",
+		"basic_lift": "4,500 lb",
+		"move": [
+			8,
+			6,
+			4,
+			3,
+			1
+		],
+		"dodge": [
+			9,
+			8,
+			7,
+			6,
+			5
+		]
+	}
+}

@@ -864,15 +864,63 @@
 					"sv": 1,
 					"damage": {
 						"type": "burn rad sur",
+						"base": "2dx500",
+						"armor_divisor": 5
+					},
+					"usage": "3 Min. turn",
+					"range": "10,000",
+					"rate_of_fire": "10",
+					"recoil": "2",
+					"calc": {
+						"damage": "2dx500(5) burn rad sur"
+					}
+				},
+				{
+					"id": "WgaP4aY2NcjhVnEOy",
+					"sv": 1,
+					"damage": {
+						"type": "burn rad sur",
 						"base": "2dx50",
 						"armor_divisor": 5
 					},
-					"usage": "3 Min turn",
+					"usage": "20 Sec. turn",
 					"range": "10,000",
 					"rate_of_fire": "10",
 					"recoil": "2",
 					"calc": {
 						"damage": "2dx50(5) burn rad sur"
+					}
+				},
+				{
+					"id": "Wkec6Dczl4c9kB1m3",
+					"sv": 1,
+					"damage": {
+						"type": "burn rad sur",
+						"base": "2dx5",
+						"armor_divisor": 5
+					},
+					"usage": "2 Sec. turn",
+					"range": "10,000",
+					"rate_of_fire": "10",
+					"recoil": "2",
+					"calc": {
+						"damage": "2dx5(5) burn rad sur"
+					}
+				},
+				{
+					"id": "WsNwZT7CJZKs2Y9Sw",
+					"sv": 1,
+					"damage": {
+						"type": "burn rad sur",
+						"base": "2dx150",
+						"armor_divisor": 5
+					},
+					"usage": "1 Min. turn",
+					"range": "10,000",
+					"rate_of_fire": "10",
+					"recoil": "2",
+					"calc": {
+						"damage": "2dx150(5) burn rad sur"
 					}
 				}
 			],
@@ -887,7 +935,7 @@
 		},
 		{
 			"id": "eA2vs-SRzzghgfrcO",
-			"description": "40cm Missile Laucher",
+			"description": "28cm Missile Laucher",
 			"local_notes": "sAcc: 3",
 			"tech_level": "10",
 			"legality_class": "4",
@@ -897,7 +945,7 @@
 					"sv": 1,
 					"damage": {
 						"type": "cr",
-						"base": "6dx1000",
+						"base": "6dx700",
 						"armor_divisor": 2
 					},
 					"usage": "3 Min. Turn, Conventional Warhead",
@@ -905,7 +953,55 @@
 					"rate_of_fire": "10",
 					"recoil": "2",
 					"calc": {
-						"damage": "6dx1000(2) cr"
+						"damage": "6dx700(2) cr"
+					}
+				},
+				{
+					"id": "WnnVvPLQkTgAUujcj",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"base": "6dx70",
+						"armor_divisor": 2
+					},
+					"usage": "20 Sec. Turn, Conventional Warhead",
+					"range": "300,000",
+					"rate_of_fire": "10",
+					"recoil": "2",
+					"calc": {
+						"damage": "6dx70(2) cr"
+					}
+				},
+				{
+					"id": "W40539q1Zmh-2bdWH",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"base": "6dx7",
+						"armor_divisor": 2
+					},
+					"usage": "2 Sec. Turn, Conventional Warhead",
+					"range": "300,000",
+					"rate_of_fire": "10",
+					"recoil": "2",
+					"calc": {
+						"damage": "6dx7(2) cr"
+					}
+				},
+				{
+					"id": "Wv7sOnXLwKLr4rxIQ",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"base": "6dx210",
+						"armor_divisor": 2
+					},
+					"usage": "1 Min. Turn, Conventional Warhead",
+					"range": "300,000",
+					"rate_of_fire": "10",
+					"recoil": "2",
+					"calc": {
+						"damage": "6dx210(2) cr"
 					}
 				},
 				{
@@ -913,14 +1009,59 @@
 					"sv": 1,
 					"damage": {
 						"type": "cr",
-						"base": "6dx1000"
+						"base": "6dx700"
 					},
 					"usage": "3 Min. Turn, Conventional Warhead, Proximity detonation",
 					"range": "300,000",
 					"rate_of_fire": "10",
 					"recoil": "2",
 					"calc": {
-						"damage": "6dx1000 cr"
+						"damage": "6dx700 cr"
+					}
+				},
+				{
+					"id": "Ww0XYD2pPzWXM5_Nl",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"base": "6dx210"
+					},
+					"usage": "1 Min. Turn, Conventional Warhead, Proximity detonation",
+					"range": "300,000",
+					"rate_of_fire": "10",
+					"recoil": "2",
+					"calc": {
+						"damage": "6dx210 cr"
+					}
+				},
+				{
+					"id": "WS9ZJR8_k4Fcz8f7a",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"base": "6dx7"
+					},
+					"usage": "2 Sec. Turn, Conventional Warhead, Proximity detonation",
+					"range": "300,000",
+					"rate_of_fire": "10",
+					"recoil": "2",
+					"calc": {
+						"damage": "6dx7 cr"
+					}
+				},
+				{
+					"id": "WUUzddv7NpeEQgmop",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"base": "6dx70"
+					},
+					"usage": "20 Sec. Turn, Conventional Warhead, Proximity detonation",
+					"range": "300,000",
+					"rate_of_fire": "10",
+					"recoil": "2",
+					"calc": {
+						"damage": "6dx70 cr"
 					}
 				}
 			],
@@ -951,7 +1092,7 @@
 		}
 	],
 	"created_date": "2026-06-27T18:58:06-04:00",
-	"modified_date": "2026-09-06T20:18:14-04:00",
+	"modified_date": "2026-10-04T18:41:37-04:00",
 	"calc": {
 		"swing": "73d",
 		"thrust": "71d",
