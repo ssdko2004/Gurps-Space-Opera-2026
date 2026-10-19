@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "As0u-6HXQjmOtxbee",
-	"total_points": 256,
+	"total_points": 261,
 	"points_record": [
+		{
+			"when": "2026-10-18T20:24:26-04:00",
+			"points": 5,
+			"reason": "Session 13"
+		},
 		{
 			"when": "2026-10-05T21:26:54-04:00",
 			"points": 5,
@@ -509,7 +514,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 19,
+							"all": 21,
 							"cut": 12,
 							"pi": 12,
 							"pi+": 12,
@@ -753,7 +758,9 @@
 		"modifiers_display": "inline",
 		"notes_display": "inline",
 		"skill_level_adj_display": "tooltip",
-		"show_spell_adj": true
+		"show_spell_adj": true,
+		"buy_percent": 100,
+		"sell_percent": 50
 	},
 	"attributes": [
 		{
@@ -3915,6 +3922,101 @@
 	],
 	"spells": [
 		{
+			"id": "PJt4jKUgdTCsbzwWl",
+			"name": "Air",
+			"children": [
+				{
+					"id": "pGAFhDfclzOit0ZWf",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pQnpeCNJULs0zZkzI"
+					},
+					"name": "Purify Air",
+					"reference": "M23",
+					"tags": [
+						"Air"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Air"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "1",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "pS38GEypjMKv2zFN2",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pID_KoeYb8yT5tsEd"
+					},
+					"name": "Create Air",
+					"reference": "M23",
+					"tags": [
+						"Air"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Air"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "1",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "5 sec",
+					"prereq_count": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "purify air"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "seek air"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				}
+			]
+		},
+		{
 			"id": "Pe7KrhqJwceQX4fBC",
 			"name": "Fire",
 			"children": [
@@ -4846,6 +4948,84 @@
 			]
 		},
 		{
+			"id": "PaUnTEHOMsOkpVcXG",
+			"name": "Movement",
+			"children": [
+				{
+					"id": "pqlFNlADUid9JDl03",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "p03sy00PGKLo6Ztl7"
+					},
+					"name": "Apportation",
+					"reference": "M142",
+					"tags": [
+						"Movement"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Movement"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"resist": "Will",
+					"casting_cost": "Varies",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (movement)"
+										}
+									}
+								]
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				}
+			]
+		},
+		{
 			"id": "PSCnX8stvY8bru7zr",
 			"name": "Plant",
 			"children": [
@@ -4871,6 +5051,200 @@
 					"maintenance_cost": "-",
 					"casting_time": "1 sec",
 					"duration": "Instant",
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				}
+			]
+		},
+		{
+			"id": "PEsdhH6GKIC4-8J-A",
+			"name": "Protection",
+			"children": [
+				{
+					"id": "pu6xnLLX8Mav2zgvF",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pArejST639oGWHLGo"
+					},
+					"name": "Weather Dome",
+					"reference": "M169",
+					"tags": [
+						"Protection & Warning",
+						"Weather"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Protection & Warning",
+						"Weather"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "3",
+					"maintenance_cost": "2",
+					"casting_time": "1 sec",
+					"duration": "6 hrs",
+					"prereq_count": 8,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "college",
+								"has": true,
+								"qualifier": {
+									"compare": "contains",
+									"qualifier": "Water"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "college",
+								"has": true,
+								"qualifier": {
+									"compare": "contains",
+									"qualifier": "Earth"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "college",
+								"has": true,
+								"qualifier": {
+									"compare": "contains",
+									"qualifier": "Fire"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "college",
+								"has": true,
+								"qualifier": {
+									"compare": "contains",
+									"qualifier": "Air"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 2
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 17,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "pPEancXwZIvhwTLwg",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Spells.spl",
+						"id": "pC78tGqw5dqJ5TWUn"
+					},
+					"name": "Force Dome",
+					"reference": "M170",
+					"tags": [
+						"Protection & Warning"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Protection & Warning"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "3",
+					"maintenance_cost": "2",
+					"casting_time": "1 sec",
+					"duration": "10 min",
+					"prereq_count": 10,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (protection & warning)"
+										}
+									}
+								]
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "weather dome"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "apportation"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
 					"points": 1,
 					"calc": {
 						"level": 17,
@@ -5481,7 +5855,7 @@
 			"tags": [
 				"Money"
 			],
-			"base_value": "10473339",
+			"base_value": "99588407",
 			"modifiers": [
 				{
 					"id": "FJ9_SaQuunbO2fTmk",
@@ -5656,76 +6030,1652 @@
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 10473339,
-				"extended_value": 10473339,
+				"value": 99588407,
+				"extended_value": 99588407,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
 		},
 		{
-			"id": "ELoCx14d_GiuXjDZM",
+			"id": "EBCvSjl_wKJgSJ6oQ",
+			"description": "Purchases",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eYMcWipge8NPhE60Q",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "ePL-YCl8gTtT4mOAR"
+			},
+			"description": "Nanoweave Suit",
+			"reference": "UT172",
+			"local_notes": "DR+12 vs. piercing and cutting. Flexible.",
+			"tech_level": "10",
+			"legality_class": "3",
+			"tags": [
+				"Defenses"
+			],
+			"base_value": "1200",
+			"base_weight": "8 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "cut",
+					"amount": 12
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi",
+					"amount": 12
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi+",
+					"amount": 12
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi++",
+					"amount": 12
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"all"
+					],
+					"specialization": "pi-",
+					"amount": 12
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"eye"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"skull"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"face"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"neck"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"torso"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"vitals"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"groin"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"arm"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"hand"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"leg"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"foot"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"tail"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"wing"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"fin"
+					],
+					"amount": 6
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"brain"
+					],
+					"amount": 6
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1200,
+				"extended_value": 1200,
+				"weight": "8 lb",
+				"extended_weight": "8 lb"
+			}
+		},
+		{
+			"id": "eAYaS5u4dzCTyooAe",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "ESjtIfyzScVP49ity"
+				"id": "eMz1aFy0Oh6s1urhz"
 			},
-			"description": "Backpack, Small",
-			"reference": "B288",
-			"tech_level": "1",
+			"description": "Quarterstaff",
+			"reference": "B273",
+			"local_notes": "Staff Enchantment",
+			"tech_level": "0",
 			"tags": [
-				"Camping and Survival Gear"
+				"Melee Weapon"
 			],
-			"base_value": "60",
-			"base_weight": "3 lb",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "contained_weight_prereq",
-						"has": true,
-						"qualifier": {
-							"compare": "at_most",
-							"qualifier": "40 lb"
+			"base_value": "40",
+			"base_weight": "4 lb",
+			"weapons": [
+				{
+					"id": "wxmIYDfUVkIHZYVu_",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "2"
+					},
+					"strength": "7†",
+					"usage": "Swung",
+					"usage_notes": "Staff",
+					"reach": "1-2",
+					"parry": "2",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Staff"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Polearm"
+							},
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Spear"
+							},
+							"modifier": -2
 						}
+					],
+					"calc": {
+						"level": 11,
+						"damage": "1d+2 cr",
+						"parry": "10"
 					}
-				]
+				},
+				{
+					"id": "wjAVzi8nmu1VhQRHg",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "2"
+					},
+					"strength": "7†",
+					"usage": "Thrust",
+					"usage_notes": "Staff",
+					"reach": "1-2",
+					"parry": "2",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Staff"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Polearm"
+							},
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Spear"
+							},
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"level": 11,
+						"damage": "1d cr",
+						"parry": "10"
+					}
+				},
+				{
+					"id": "wey-f4mRZeaE3iBNF",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "2"
+					},
+					"strength": "9†",
+					"usage": "Swung",
+					"usage_notes": "Two-Handed Sword",
+					"reach": "1-2",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Two-Handed Sword"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Broadsword"
+							},
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Force Sword"
+							},
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Sword!"
+							}
+						}
+					],
+					"calc": {
+						"level": 7,
+						"damage": "1d+2 cr",
+						"parry": "6"
+					}
+				},
+				{
+					"id": "wQ1KIve2HUBOAyAL5",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "1"
+					},
+					"strength": "9†",
+					"usage": "Thrust",
+					"usage_notes": "Two-Handed Sword",
+					"reach": "2",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Two-Handed Sword"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Broadsword"
+							},
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Force Sword"
+							},
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Sword!"
+							}
+						}
+					],
+					"calc": {
+						"level": 7,
+						"damage": "1d-1 cr",
+						"parry": "6"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 40,
+				"extended_value": 40,
+				"weight": "4 lb",
+				"extended_weight": "4 lb"
+			}
+		},
+		{
+			"id": "EH7OOcaxIpWRtXAui",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "EiXZXZFCOaJSomAm-"
 			},
+			"description": "Computer Implant",
+			"reference": "UT215",
+			"local_notes": "Minor procedure.",
+			"tech_level": "10",
+			"base_value": "4000",
 			"quantity": 1,
 			"equipped": true,
 			"children": [
 				{
-					"id": "e_ChiE1opn1cpUa0i",
+					"id": "e0dbpRuOXKPDaYbeC",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-						"id": "e0k1uCmBF-xZUhA7d"
+						"id": "ebAGWiGi75ZYuDJkw"
 					},
-					"description": "Laser Pistol",
+					"description": "Wireless Neural Interface",
+					"reference": "UT217",
+					"local_notes": "Minor procedure.",
+					"tech_level": "10",
+					"legality_class": "3",
+					"base_value": "5000",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 5000,
+						"extended_value": 5000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e82vJO4VwU65KbdNg",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "eVA7XKS7HVVpq7Vyi"
+					},
+					"description": "Tiny Computer (Compact)",
+					"reference": "UT22",
+					"local_notes": "Minor procedure.",
+					"tech_level": "10",
+					"base_value": "100",
+					"base_weight": "0.025 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0.025 lb",
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "eb1iGgX_KPlDT6So5",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "eSq-F2yPGErMgrQlm"
+					},
+					"description": "Tiny Computer",
+					"reference": "UT22",
+					"local_notes": "Complexity 5. 1PB. 2A/20hr.",
+					"tech_level": "10",
+					"tags": [
+						"Computers"
+					],
+					"base_value": "50",
+					"base_weight": "0.05 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 50,
+						"extended_value": 50,
+						"weight": "0.05 lb",
+						"extended_weight": "0.05 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 4000,
+				"extended_value": 9150,
+				"weight": "0 lb",
+				"extended_weight": "0.075 lb"
+			}
+		},
+		{
+			"id": "eCK-fWOimTJcUKOj4",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "e9F8zNWEjYh2hx1fi"
+			},
+			"description": "Ordinary Clothes",
+			"reference": "B266",
+			"local_notes": "Status 1",
+			"tags": [
+				"Clothing"
+			],
+			"base_value": "240",
+			"base_weight": "2 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 240,
+				"extended_value": 240,
+				"weight": "2 lb",
+				"extended_weight": "2 lb"
+			}
+		},
+		{
+			"id": "e5bZXZzTLoW_prSD6",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eVW6oMjhnZJN7WlQ_"
+			},
+			"description": "Shoes",
+			"reference": "B284",
+			"local_notes": "Flexible; Concealable",
+			"tech_level": "1",
+			"tags": [
+				"Footwear"
+			],
+			"base_value": "40",
+			"base_weight": "2 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"foot"
+					],
+					"amount": 1
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 40,
+				"extended_value": 40,
+				"weight": "2 lb",
+				"extended_weight": "2 lb"
+			}
+		},
+		{
+			"id": "E0MakjwqkJQEzcdOz",
+			"description": "Programs",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "eGvUy1mm-muVyIYn0",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+						"id": "eO4e_B6uNWMg4eSi5"
+					},
+					"description": "BrEaCh",
+					"local_notes": "Breach Program:  Complexity 9; Single Execution",
+					"tech_level": "10",
+					"legality_class": "3",
+					"tags": [
+						"Program",
+						"Program: Breach"
+					],
+					"base_value": "1000",
+					"weapons": [
+						{
+							"id": "wVkq061Di1OTtOqbG",
+							"sv": 1,
+							"damage": {
+								"type": ""
+							},
+							"usage": "Breach",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Computer Hacking"
+									},
+									"modifier": 4
+								}
+							],
+							"calc": {
+								"level": 19
+							}
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 1000,
+						"extended_value": 1000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "EW6T0D2emZn09FcOA",
+					"description": "Other Programs",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "eNM4xoVRhPssh6kP2",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "e3PV_OipscZFCGEvl"
+							},
+							"description": "Changeling",
+							"local_notes": "Alter Program:  Complexity 5; Single Execution",
+							"tech_level": "9",
+							"legality_class": "3",
+							"tags": [
+								"Program",
+								"Program: Alter"
+							],
+							"base_value": "100",
+							"weapons": [
+								{
+									"id": "wrZx9mwU3fZHZGOyT",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Alter",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Programming"
+											},
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Hacking"
+											},
+											"modifier": -2
+										}
+									],
+									"calc": {
+										"level": 14
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 100,
+								"extended_value": 100,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "elSfBEbupNBuWj4s8",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "e_pMBzaui-1yRLULd"
+							},
+							"description": "DataWrench",
+							"local_notes": "Alter Program:  Complexity 6; Single Execution",
+							"tech_level": "9",
+							"legality_class": "3",
+							"tags": [
+								"Program",
+								"Program: Alter"
+							],
+							"base_value": "300",
+							"weapons": [
+								{
+									"id": "wS-M4u-XblC7ARMbv",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Alter",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Programming"
+											},
+											"modifier": -1
+										},
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Hacking"
+											},
+											"modifier": -1
+										}
+									],
+									"calc": {
+										"level": 15
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 300,
+								"extended_value": 300,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "efht1lNiu2lENaXFX",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "e-AqD7CYoycJz-k3V"
+							},
+							"description": "White Light",
+							"local_notes": "Analyze Program:  Complexity 4; Continuous or Single Execution",
+							"tech_level": "9",
+							"tags": [
+								"Program",
+								"Program: Analyze"
+							],
+							"base_value": "30",
+							"weapons": [
+								{
+									"id": "wYBvm-KqF09gmqdKs",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Analyze",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Programming"
+											},
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Expert Skill"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Computer Security"
+											},
+											"modifier": -1
+										}
+									],
+									"calc": {
+										"level": 15
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 30,
+								"extended_value": 30,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e_4LQdA5t5wIt8oRP",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "eA4qB9UUIE7hDhGzF"
+							},
+							"description": "Fortunata",
+							"local_notes": "Analyze Program:  Complexity 5; Continuous or Single Execution",
+							"tech_level": "9",
+							"tags": [
+								"Program",
+								"Program: Analyze"
+							],
+							"base_value": "100",
+							"weapons": [
+								{
+									"id": "wqLsf7-a_KSLRL3HT",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Analyze",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Programming"
+											},
+											"modifier": -1
+										},
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Expert Skill"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Computer Security"
+											}
+										}
+									],
+									"calc": {
+										"level": 16
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 100,
+								"extended_value": 100,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eV1K4ggTJjjAzwHzE",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "euSfC0T-cC82Z8mWA"
+							},
+							"description": "Bad Kitty",
+							"local_notes": "Breach Program:  Complexity 4; Single Execution",
+							"tech_level": "9",
+							"legality_class": "3",
+							"tags": [
+								"Program",
+								"Program: Breach"
+							],
+							"base_value": "30",
+							"weapons": [
+								{
+									"id": "wMNp09x_uL1x0Dpfn",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Breach",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Hacking"
+											},
+											"modifier": -1
+										}
+									],
+									"calc": {
+										"level": 14
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 30,
+								"extended_value": 30,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e2QGzEX9KKqGPgjmX",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "eO4e_B6uNWMg4eSi5"
+							},
+							"description": "F.A.M.E.",
+							"local_notes": "Breach Program:  Complexity 5; Single Execution",
+							"tech_level": "9",
+							"legality_class": "3",
+							"tags": [
+								"Program",
+								"Program: Breach"
+							],
+							"base_value": "100",
+							"weapons": [
+								{
+									"id": "wzT5tl7twN2D1EV_B",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Breach",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Hacking"
+											}
+										}
+									],
+									"calc": {
+										"level": 15
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 100,
+								"extended_value": 100,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e2vziM5anRH8vT_dK",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "ek57BC4lUf7fxmezT"
+							},
+							"description": "Puppet Master",
+							"local_notes": "Control Program:  Complexity 5; Single Execution",
+							"tech_level": "9",
+							"legality_class": "3",
+							"tags": [
+								"Program",
+								"Program: Control"
+							],
+							"base_value": "100",
+							"weapons": [
+								{
+									"id": "wr5_gcOasyyyUVDsy",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Control",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Hacking"
+											},
+											"modifier": -1
+										},
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Operation"
+											},
+											"modifier": -2
+										}
+									],
+									"calc": {
+										"level": 15
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 100,
+								"extended_value": 100,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e5qNAo8CwSxGNITUj",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "ePnJtxFsKRe4ZfPgI"
+							},
+							"description": "Javelin",
+							"local_notes": "Damage Program:  Complexity 5; Single Execution",
+							"tech_level": "9",
+							"legality_class": "3",
+							"tags": [
+								"Program",
+								"Program: Damage"
+							],
+							"base_value": "100",
+							"weapons": [
+								{
+									"id": "wrOmMY91GMh8RcIXQ",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Damage",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Hacking"
+											},
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Expert Skill"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Computer Security"
+											},
+											"modifier": -3
+										}
+									],
+									"calc": {
+										"level": 13
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 100,
+								"extended_value": 100,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e5KfzS9LV7w3t_bey",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "e1pQxdsvzPc7flzCu"
+							},
+							"description": "Chimera",
+							"local_notes": "ICE Program:  Complexity 5; Continuous",
+							"tech_level": "9",
+							"tags": [
+								"Program",
+								"Program: ICE"
+							],
+							"base_value": "100",
+							"weapons": [
+								{
+									"id": "wh-Sc7tMmGCiNZ_4E",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "ICE",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Hacking"
+											}
+										},
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Expert Skill"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Computer Security"
+											},
+											"modifier": 2
+										}
+									],
+									"calc": {
+										"level": 18
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 100,
+								"extended_value": 100,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "ejhg-lzclzFEF22_T",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "eMq9axkgouk_xp24v"
+							},
+							"description": "Iron Gate",
+							"local_notes": "ICE Program:  Complexity 4; Continuous",
+							"tech_level": "9",
+							"tags": [
+								"Program",
+								"Program: ICE"
+							],
+							"base_value": "30",
+							"weapons": [
+								{
+									"id": "wOPk64sU2ATGb18B-",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "ICE",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Hacking"
+											},
+											"modifier": -1
+										},
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Expert Skill"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Computer Security"
+											},
+											"modifier": 1
+										}
+									],
+									"calc": {
+										"level": 17
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 30,
+								"extended_value": 30,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eq865D8slZ91K1Xcj",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "eJ5Nvi7nCIvgKElWu"
+							},
+							"description": "Static Sea",
+							"local_notes": "Jam Program:  Complexity 3; Continuous",
+							"tech_level": "9",
+							"legality_class": "3",
+							"tags": [
+								"Program",
+								"Program: Jam"
+							],
+							"base_value": "10",
+							"weapons": [
+								{
+									"id": "wo7DgFrrcgx-TC0-y",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Jam",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Hacking"
+											},
+											"modifier": -1
+										}
+									],
+									"calc": {
+										"level": 14
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 10,
+								"extended_value": 10,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "ec8OuA5AccyyRnMsA",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "ep700po9S2niBTwsy"
+							},
+							"description": "Sentinal",
+							"local_notes": "Listen Program:  Complexity 4; Continuous",
+							"tech_level": "9",
+							"legality_class": "3",
+							"tags": [
+								"Program",
+								"Program: Listen"
+							],
+							"base_value": "30",
+							"weapons": [
+								{
+									"id": "wsnaG72ctXvjF-XuI",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Listen",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Hacking"
+											}
+										},
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Expert Skill"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Computer Security"
+											},
+											"modifier": 2
+										}
+									],
+									"calc": {
+										"level": 18
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 30,
+								"extended_value": 30,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "etjE4Mr1JO9-npVeE",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "ehCTdQ6niwZBYy4mo"
+							},
+							"description": "Seeker",
+							"local_notes": "Search Program:  Complexity 5; Continuous or Single Execution",
+							"tech_level": "9",
+							"tags": [
+								"Program",
+								"Program: Search"
+							],
+							"base_value": "100",
+							"weapons": [
+								{
+									"id": "w7uun7yiNvV8FFciI",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Search",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Operation"
+											}
+										},
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Expert Skill"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Computer Security"
+											},
+											"modifier": 1
+										}
+									],
+									"calc": {
+										"level": 17
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 100,
+								"extended_value": 100,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "ekK3nKjGA-x8Ia-Ja",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "egpnZKGVjsAEn19Jh"
+							},
+							"description": "Sure Lock",
+							"local_notes": "Search Program:  Complexity 4; Continuous or Single Execution",
+							"tech_level": "9",
+							"tags": [
+								"Program",
+								"Program: Search"
+							],
+							"base_value": "30",
+							"weapons": [
+								{
+									"id": "wqObUfSxc24C6emLF",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Search",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Operation"
+											},
+											"modifier": -1
+										},
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Expert Skill"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Computer Security"
+											}
+										}
+									],
+									"calc": {
+										"level": 16
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 30,
+								"extended_value": 30,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eh0yo5qMKFEE9CBSa",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "ezVFPeio3OQT_6eMy"
+							},
+							"description": "Smooth Op",
+							"local_notes": "Spoof Program:  Complexity 5; Continuous or Single Execution",
+							"tech_level": "9",
+							"legality_class": "3",
+							"tags": [
+								"Program",
+								"Program: Spoof"
+							],
+							"base_value": "100",
+							"weapons": [
+								{
+									"id": "ws45JsN3wHR_1NllQ",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Spoof",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Hacking"
+											},
+											"modifier": -2
+										}
+									],
+									"calc": {
+										"level": 13
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 100,
+								"extended_value": 100,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eiuzLl1iRn1ehsdVa",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "ec2tlhEqM0jxGJN9a"
+							},
+							"description": "Air",
+							"local_notes": "Stealth Program:  Complexity 4; Continuous",
+							"tech_level": "9",
+							"legality_class": "3",
+							"tags": [
+								"Program",
+								"Program: Stealth"
+							],
+							"base_value": "30",
+							"weapons": [
+								{
+									"id": "wTFbWZVn-uNspIUTe",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Stealth",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Hacking"
+											},
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Expert Skill"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Computer Security"
+											},
+											"modifier": -3
+										}
+									],
+									"calc": {
+										"level": 13
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 30,
+								"extended_value": 30,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eFhLt28D8abGqevvT",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
+								"id": "estx-QfqEibkkWiev"
+							},
+							"description": "Trip Wire",
+							"local_notes": "Trigger Program:  Complexity 4; Continuous",
+							"tech_level": "9",
+							"tags": [
+								"Program",
+								"Program: Trigger"
+							],
+							"base_value": "30",
+							"weapons": [
+								{
+									"id": "wzi587unzgOK2cei5",
+									"sv": 1,
+									"damage": {
+										"type": ""
+									},
+									"usage": "Trigger",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Computer Operation"
+											},
+											"modifier": 1
+										},
+										{
+											"type": "skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Expert Skill"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Computer Security"
+											},
+											"modifier": 1
+										}
+									],
+									"calc": {
+										"level": 18
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 30,
+								"extended_value": 30,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 0,
+						"extended_value": 1320,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 2320,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "ErmIFXpTOgfavvc9y",
+			"description": "Bag of Weightlessness",
+			"local_notes": "Can carry up to 40 lbs of which will be reduced by 50%",
+			"legality_class": "4",
+			"base_weight": "3",
+			"features": [
+				{
+					"type": "contained_weight_reduction",
+					"reduction": "50%"
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "ef69RWoRiBkvwTx4Q",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "eZy6BFBoX-Q3tdBQv"
+					},
+					"description": "Heavy Laser Pistol",
 					"reference": "UT115",
-					"local_notes": "C/33 shots",
+					"local_notes": "2C/56 shots",
 					"tech_level": "10",
 					"legality_class": "3",
 					"tags": [
 						"Missile Weapon",
 						"Weaponry"
 					],
-					"base_value": "1100",
-					"base_weight": "1.5 lb",
+					"base_value": "2400",
+					"base_weight": "3.3 lb",
 					"weapons": [
 						{
-							"id": "Wbd9oi_PprBNK26LF",
+							"id": "Wk9ceY_repAM3OkdI",
 							"sv": 1,
 							"damage": {
 								"type": "burn",
-								"base": "3d",
+								"base": "4d",
 								"armor_divisor": 2
 							},
-							"strength": "4",
+							"strength": "6",
 							"accuracy": "6",
-							"range": "200/600",
+							"range": "300/900",
 							"rate_of_fire": "10",
-							"shots": "33(3)",
+							"shots": "56(3)",
 							"bulk": "-2",
 							"recoil": "1",
 							"defaults": [
@@ -5767,17 +7717,333 @@
 							],
 							"calc": {
 								"level": 14,
-								"damage": "3d(2) burn"
+								"damage": "4d(2) burn"
 							}
+						}
+					],
+					"modifiers": [
+						{
+							"id": "fK2WZqZOrtNCCztav",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+								"id": "fAz3zS589sHL_Gqha"
+							},
+							"name": "Using unloaded cell stats",
+							"weight": "-1 lb",
+							"disabled": true
 						}
 					],
 					"quantity": 1,
 					"equipped": true,
 					"calc": {
-						"value": 1100,
-						"extended_value": 1100,
-						"weight": "1.5 lb",
-						"extended_weight": "1.5 lb"
+						"value": 2400,
+						"extended_value": 2400,
+						"weight": "3.3 lb",
+						"extended_weight": "3.3 lb"
+					}
+				},
+				{
+					"id": "eQ17gXw_Ydh4DxDqE",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "e1d8n4-gGfhAipQDV"
+					},
+					"description": "Force Pistol",
+					"reference": "UT129",
+					"local_notes": "2C/56 shots.",
+					"tech_level": "10^",
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"base_value": "1200",
+					"base_weight": "3.3 lb",
+					"weapons": [
+						{
+							"id": "W7M_7Y_PbjLG8IrZD",
+							"sv": 1,
+							"damage": {
+								"type": "cr dkb",
+								"base": "4d+2"
+							},
+							"strength": "6",
+							"accuracy": "6",
+							"range": "300/900",
+							"rate_of_fire": "1",
+							"shots": "56(3)",
+							"bulk": "-2",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Beam Weapons"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									}
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Beam Weapons"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									},
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"level": 14,
+								"damage": "4d+2 cr dkb"
+							}
+						}
+					],
+					"modifiers": [
+						{
+							"id": "fVBCso2LnZzWRHtzn",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+								"id": "f9rIqx4a0ATwbTSdI"
+							},
+							"name": "Using unloaded cell stats",
+							"weight": "-1 lb",
+							"disabled": true
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 1200,
+						"extended_value": 1200,
+						"weight": "3.3 lb",
+						"extended_weight": "3.3 lb"
+					}
+				},
+				{
+					"id": "eQIwGEyMqCoRajB7s",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "eyvIWpyu_ZL2Mu5zP"
+					},
+					"description": "Wristwatch Rad Counter",
+					"reference": "UT67",
+					"local_notes": "A/6mo.",
+					"tech_level": "9",
+					"tags": [
+						"Sensors and Scientific Equipment"
+					],
+					"base_value": "100",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eIHALOCw8Ai6Nvgu8",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "eNEACFkp88ouc3hjG"
+					},
+					"description": "Survival Watch",
+					"reference": "UT77",
+					"local_notes": "B/3mo.",
+					"tech_level": "10",
+					"tags": [
+						"Expedition Gear"
+					],
+					"base_value": "300",
+					"base_weight": "0.5 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eihBYZQrWrkv77A6n",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "eN7qpN00THFv6z_Uu"
+					},
+					"description": "PESA Goggles",
+					"reference": "UT61",
+					"local_notes": "1x magnification. B/10hr.",
+					"tech_level": "10",
+					"tags": [
+						"Sensors and Scientific Equipment"
+					],
+					"base_value": "2000",
+					"base_weight": "0.6 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"eye"
+							],
+							"amount": 2
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 2000,
+						"extended_value": 2000,
+						"weight": "0.6 lb",
+						"extended_weight": "0.6 lb"
+					}
+				},
+				{
+					"id": "eaGlDzDk8XBADsKM6",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "eHVmV3xhDjbDxM6x8"
+					},
+					"description": "Bandage Spray Can",
+					"reference": "UT197",
+					"local_notes": "First Aid +2 (quality). Six applications.",
+					"tech_level": "9",
+					"tags": [
+						"Medical"
+					],
+					"base_value": "15",
+					"base_weight": "0.5 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 15,
+						"extended_value": 15,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "ePAaqnzS7BmVbuqr2",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "e_i5GdrpupUcERZMC"
+					},
+					"description": "Medscanner",
+					"reference": "UT200",
+					"local_notes": "B/10hr.",
+					"tech_level": "10^",
+					"tags": [
+						"Medical"
+					],
+					"base_value": "1000",
+					"base_weight": "0.25 lb",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Diagnosis"
+							},
+							"amount": 3
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 1000,
+						"extended_value": 1000,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "ey6nY_evNoBy5zSqo",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "e4h9Lm5aCqBNjRJ45"
+					},
+					"description": "Antibiotic",
+					"reference": "B289",
+					"local_notes": "Prevents or cures (in 1d days) infections.",
+					"tech_level": "6",
+					"tags": [
+						"Medical Gear"
+					],
+					"base_value": "20",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 20,
+						"extended_value": 20,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ENfsFNztyYFqblGoP",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "EQtsd2lBetSnfQoUv"
+					},
+					"description": "Canteen",
+					"reference": "B288",
+					"tech_level": "5",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"base_value": "10",
+					"base_weight": "1 lb",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "2 lb"
+								}
+							}
+						]
+					},
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 10,
+						"extended_value": 10,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
 					}
 				},
 				{
@@ -5864,236 +8130,64 @@
 					}
 				},
 				{
-					"id": "eAYaS5u4dzCTyooAe",
+					"id": "eCJ-e_-Q7hz5SutbN",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Equipment.eqp",
-						"id": "eMz1aFy0Oh6s1urhz"
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "e_i5GdrpupUcERZMC"
 					},
-					"description": "Quarterstaff",
-					"reference": "B273",
-					"local_notes": "Staff Enchantment",
-					"tech_level": "0",
+					"description": "Medscanner",
+					"reference": "UT200",
+					"local_notes": "B/10hr.",
+					"tech_level": "10^",
 					"tags": [
-						"Melee Weapon"
+						"Medical"
 					],
-					"base_value": "40",
-					"base_weight": "4 lb",
-					"weapons": [
+					"base_value": "1000",
+					"base_weight": "0.25 lb",
+					"features": [
 						{
-							"id": "wxmIYDfUVkIHZYVu_",
-							"sv": 1,
-							"damage": {
-								"type": "cr",
-								"st": "sw",
-								"base": "2"
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Diagnosis"
 							},
-							"strength": "7†",
-							"usage": "Swung",
-							"usage_notes": "Staff",
-							"reach": "1-2",
-							"parry": "2",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Staff"
-									}
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Polearm"
-									},
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Spear"
-									},
-									"modifier": -2
-								}
-							],
-							"calc": {
-								"level": 11,
-								"damage": "1d+2 cr",
-								"parry": "10"
-							}
-						},
-						{
-							"id": "wjAVzi8nmu1VhQRHg",
-							"sv": 1,
-							"damage": {
-								"type": "cr",
-								"st": "thr",
-								"base": "2"
-							},
-							"strength": "7†",
-							"usage": "Thrust",
-							"usage_notes": "Staff",
-							"reach": "1-2",
-							"parry": "2",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Staff"
-									}
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Polearm"
-									},
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Spear"
-									},
-									"modifier": -2
-								}
-							],
-							"calc": {
-								"level": 11,
-								"damage": "1d cr",
-								"parry": "10"
-							}
-						},
-						{
-							"id": "wey-f4mRZeaE3iBNF",
-							"sv": 1,
-							"damage": {
-								"type": "cr",
-								"st": "sw",
-								"base": "2"
-							},
-							"strength": "9†",
-							"usage": "Swung",
-							"usage_notes": "Two-Handed Sword",
-							"reach": "1-2",
-							"parry": "0",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Two-Handed Sword"
-									}
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Broadsword"
-									},
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Force Sword"
-									},
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Sword!"
-									}
-								}
-							],
-							"calc": {
-								"level": 7,
-								"damage": "1d+2 cr",
-								"parry": "6"
-							}
-						},
-						{
-							"id": "wQ1KIve2HUBOAyAL5",
-							"sv": 1,
-							"damage": {
-								"type": "cr",
-								"st": "thr",
-								"base": "1"
-							},
-							"strength": "9†",
-							"usage": "Thrust",
-							"usage_notes": "Two-Handed Sword",
-							"reach": "2",
-							"parry": "0",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Two-Handed Sword"
-									}
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Broadsword"
-									},
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Force Sword"
-									},
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Sword!"
-									}
-								}
-							],
-							"calc": {
-								"level": 7,
-								"damage": "1d-1 cr",
-								"parry": "6"
-							}
+							"amount": 3
 						}
 					],
 					"quantity": 1,
 					"equipped": true,
 					"calc": {
-						"value": 40,
-						"extended_value": 40,
-						"weight": "4 lb",
-						"extended_weight": "4 lb"
+						"value": 1000,
+						"extended_value": 1000,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "eR9we6xQmgqcNHnTC",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "e4TcFYFb8y3rAeixA"
+					},
+					"description": "Diagnostic Sensors",
+					"reference": "UT197",
+					"local_notes": "+2 (quality) to diagnose the patient.",
+					"tech_level": "9",
+					"tags": [
+						"Medical"
+					],
+					"base_value": "500",
+					"base_weight": "0.5 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 500,
+						"extended_value": 500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
 					}
 				},
 				{
@@ -6119,6 +8213,47 @@
 						"extended_value": 200,
 						"weight": "1 lb",
 						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eEv-9j0cspPkWgH1E",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "e2WKpO0IMVsXiTZNt"
+					},
+					"description": "Personal Computer",
+					"reference": "UT22",
+					"local_notes": "Complexity 9. 100PB. 2C/20hr or external power.",
+					"tech_level": "10",
+					"tags": [
+						"Computers"
+					],
+					"base_value": "1000",
+					"base_weight": "5 lb",
+					"modifiers": [
+						{
+							"id": "fIX3ZD2LfA-6NVmfg",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Ultra Tech/Ultra Tech Equipment Modifiers.eqm",
+								"id": "fV3DRKJenyjBaC_5S"
+							},
+							"name": "Genius (+2 Complexity)",
+							"reference": "UT23",
+							"local_notes": "Using Multipliers, -1 LC",
+							"cost_type": "to_base_cost",
+							"tech_level": "9",
+							"cost": "+499 CF"
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 500000,
+						"extended_value": 500000,
+						"weight": "5 lb",
+						"extended_weight": "5 lb"
 					}
 				},
 				{
@@ -6304,30 +8439,6 @@
 					}
 				},
 				{
-					"id": "e2pVJ7YSAgjAHGNFn",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-						"id": "e2WKpO0IMVsXiTZNt"
-					},
-					"description": "Personal Computer",
-					"reference": "UT22",
-					"local_notes": "Complexity 7. 100PB. 2C/20hr or external power.",
-					"tech_level": "10",
-					"tags": [
-						"Computers"
-					],
-					"base_value": "1000",
-					"base_weight": "5 lb",
-					"quantity": 1,
-					"calc": {
-						"value": 1000,
-						"extended_value": 1000,
-						"weight": "5 lb",
-						"extended_weight": "5 lb"
-					}
-				},
-				{
 					"id": "eBqr-n5L96kQLIY5p",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -6342,12 +8453,12 @@
 					],
 					"base_value": "10",
 					"base_weight": "0.5 lb",
-					"quantity": 2,
+					"quantity": 6,
 					"calc": {
 						"value": 10,
-						"extended_value": 20,
+						"extended_value": 60,
 						"weight": "0.5 lb",
-						"extended_weight": "1 lb"
+						"extended_weight": "3 lb"
 					}
 				},
 				{
@@ -6365,13 +8476,13 @@
 					],
 					"base_value": "3",
 					"base_weight": "0.05 lb",
-					"quantity": 2,
+					"quantity": 6,
 					"equipped": true,
 					"calc": {
 						"value": 3,
-						"extended_value": 6,
+						"extended_value": 18,
 						"weight": "0.05 lb",
-						"extended_weight": "0.1 lb"
+						"extended_weight": "0.3 lb"
 					}
 				},
 				{
@@ -6398,1412 +8509,7 @@
 						"weight": "0.012 lb",
 						"extended_weight": "0.012 lb"
 					}
-				}
-			],
-			"calc": {
-				"value": 60,
-				"extended_value": 50266,
-				"weight": "3 lb",
-				"extended_weight": "21.162 lb"
-			}
-		},
-		{
-			"id": "eYMcWipge8NPhE60Q",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "ePL-YCl8gTtT4mOAR"
-			},
-			"description": "Nanoweave Suit",
-			"reference": "UT172",
-			"local_notes": "DR+12 vs. piercing and cutting. Flexible.",
-			"tech_level": "10",
-			"legality_class": "3",
-			"tags": [
-				"Defenses"
-			],
-			"base_value": "1200",
-			"base_weight": "8 lb",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"all"
-					],
-					"specialization": "cut",
-					"amount": 12
 				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"all"
-					],
-					"specialization": "pi",
-					"amount": 12
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"all"
-					],
-					"specialization": "pi+",
-					"amount": 12
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"all"
-					],
-					"specialization": "pi++",
-					"amount": 12
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"all"
-					],
-					"specialization": "pi-",
-					"amount": 12
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"eye"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"skull"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"face"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"neck"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"torso"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"vitals"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"groin"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"arm"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"hand"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"leg"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"foot"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"tail"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"wing"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"fin"
-					],
-					"amount": 6
-				},
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"brain"
-					],
-					"amount": 6
-				}
-			],
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 1200,
-				"extended_value": 1200,
-				"weight": "8 lb",
-				"extended_weight": "8 lb"
-			}
-		},
-		{
-			"id": "EH7OOcaxIpWRtXAui",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "EiXZXZFCOaJSomAm-"
-			},
-			"description": "Computer Implant",
-			"reference": "UT215",
-			"local_notes": "Minor procedure.",
-			"tech_level": "10",
-			"base_value": "4000",
-			"quantity": 1,
-			"equipped": true,
-			"children": [
-				{
-					"id": "e82vJO4VwU65KbdNg",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-						"id": "eVA7XKS7HVVpq7Vyi"
-					},
-					"description": "Tiny Computer (Compact)",
-					"reference": "UT22",
-					"local_notes": "Minor procedure.",
-					"tech_level": "10",
-					"base_value": "100",
-					"base_weight": "0.025 lb",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 100,
-						"extended_value": 100,
-						"weight": "0.025 lb",
-						"extended_weight": "0.025 lb"
-					}
-				}
-			],
-			"calc": {
-				"value": 4000,
-				"extended_value": 4100,
-				"weight": "0 lb",
-				"extended_weight": "0.025 lb"
-			}
-		},
-		{
-			"id": "ENfsFNztyYFqblGoP",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "EQtsd2lBetSnfQoUv"
-			},
-			"description": "Canteen",
-			"reference": "B288",
-			"tech_level": "5",
-			"tags": [
-				"Camping and Survival Gear"
-			],
-			"base_value": "10",
-			"base_weight": "1 lb",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "contained_weight_prereq",
-						"has": true,
-						"qualifier": {
-							"compare": "at_most",
-							"qualifier": "2 lb"
-						}
-					}
-				]
-			},
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 10,
-				"extended_value": 10,
-				"weight": "1 lb",
-				"extended_weight": "1 lb"
-			}
-		},
-		{
-			"id": "eCK-fWOimTJcUKOj4",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "e9F8zNWEjYh2hx1fi"
-			},
-			"description": "Ordinary Clothes",
-			"reference": "B266",
-			"local_notes": "Status 1",
-			"tags": [
-				"Clothing"
-			],
-			"base_value": "240",
-			"base_weight": "2 lb",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 240,
-				"extended_value": 240,
-				"weight": "2 lb",
-				"extended_weight": "2 lb"
-			}
-		},
-		{
-			"id": "e5bZXZzTLoW_prSD6",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "eVW6oMjhnZJN7WlQ_"
-			},
-			"description": "Shoes",
-			"reference": "B284",
-			"local_notes": "Flexible; Concealable",
-			"tech_level": "1",
-			"tags": [
-				"Footwear"
-			],
-			"base_value": "40",
-			"base_weight": "2 lb",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"foot"
-					],
-					"amount": 1
-				}
-			],
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 40,
-				"extended_value": 40,
-				"weight": "2 lb",
-				"extended_weight": "2 lb"
-			}
-		},
-		{
-			"id": "E0MakjwqkJQEzcdOz",
-			"description": "Programs",
-			"quantity": 1,
-			"equipped": true,
-			"children": [
-				{
-					"id": "eNM4xoVRhPssh6kP2",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "e3PV_OipscZFCGEvl"
-					},
-					"description": "Changeling",
-					"local_notes": "Alter Program:  Complexity 5; Single Execution",
-					"tech_level": "9",
-					"legality_class": "3",
-					"tags": [
-						"Program",
-						"Program: Alter"
-					],
-					"base_value": "100",
-					"weapons": [
-						{
-							"id": "wrZx9mwU3fZHZGOyT",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Alter",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Programming"
-									},
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Hacking"
-									},
-									"modifier": -2
-								}
-							],
-							"calc": {
-								"level": 14
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 100,
-						"extended_value": 100,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "elSfBEbupNBuWj4s8",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "e_pMBzaui-1yRLULd"
-					},
-					"description": "DataWrench",
-					"local_notes": "Alter Program:  Complexity 6; Single Execution",
-					"tech_level": "9",
-					"legality_class": "3",
-					"tags": [
-						"Program",
-						"Program: Alter"
-					],
-					"base_value": "300",
-					"weapons": [
-						{
-							"id": "wS-M4u-XblC7ARMbv",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Alter",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Programming"
-									},
-									"modifier": -1
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Hacking"
-									},
-									"modifier": -1
-								}
-							],
-							"calc": {
-								"level": 15
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 300,
-						"extended_value": 300,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "efht1lNiu2lENaXFX",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "e-AqD7CYoycJz-k3V"
-					},
-					"description": "White Light",
-					"local_notes": "Analyze Program:  Complexity 4; Continuous or Single Execution",
-					"tech_level": "9",
-					"tags": [
-						"Program",
-						"Program: Analyze"
-					],
-					"base_value": "30",
-					"weapons": [
-						{
-							"id": "wYBvm-KqF09gmqdKs",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Analyze",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Programming"
-									},
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Expert Skill"
-									},
-									"specialization": {
-										"compare": "is",
-										"qualifier": "Computer Security"
-									},
-									"modifier": -1
-								}
-							],
-							"calc": {
-								"level": 15
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 30,
-						"extended_value": 30,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "e_4LQdA5t5wIt8oRP",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "eA4qB9UUIE7hDhGzF"
-					},
-					"description": "Fortunata",
-					"local_notes": "Analyze Program:  Complexity 5; Continuous or Single Execution",
-					"tech_level": "9",
-					"tags": [
-						"Program",
-						"Program: Analyze"
-					],
-					"base_value": "100",
-					"weapons": [
-						{
-							"id": "wqLsf7-a_KSLRL3HT",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Analyze",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Programming"
-									},
-									"modifier": -1
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Expert Skill"
-									},
-									"specialization": {
-										"compare": "is",
-										"qualifier": "Computer Security"
-									}
-								}
-							],
-							"calc": {
-								"level": 16
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 100,
-						"extended_value": 100,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "eV1K4ggTJjjAzwHzE",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "euSfC0T-cC82Z8mWA"
-					},
-					"description": "Bad Kitty",
-					"local_notes": "Breach Program:  Complexity 4; Single Execution",
-					"tech_level": "9",
-					"legality_class": "3",
-					"tags": [
-						"Program",
-						"Program: Breach"
-					],
-					"base_value": "30",
-					"weapons": [
-						{
-							"id": "wMNp09x_uL1x0Dpfn",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Breach",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Hacking"
-									},
-									"modifier": -1
-								}
-							],
-							"calc": {
-								"level": 14
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 30,
-						"extended_value": 30,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "e2QGzEX9KKqGPgjmX",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "eO4e_B6uNWMg4eSi5"
-					},
-					"description": "F.A.M.E.",
-					"local_notes": "Breach Program:  Complexity 5; Single Execution",
-					"tech_level": "9",
-					"legality_class": "3",
-					"tags": [
-						"Program",
-						"Program: Breach"
-					],
-					"base_value": "100",
-					"weapons": [
-						{
-							"id": "wzT5tl7twN2D1EV_B",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Breach",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Hacking"
-									}
-								}
-							],
-							"calc": {
-								"level": 15
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 100,
-						"extended_value": 100,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "e2vziM5anRH8vT_dK",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "ek57BC4lUf7fxmezT"
-					},
-					"description": "Puppet Master",
-					"local_notes": "Control Program:  Complexity 5; Single Execution",
-					"tech_level": "9",
-					"legality_class": "3",
-					"tags": [
-						"Program",
-						"Program: Control"
-					],
-					"base_value": "100",
-					"weapons": [
-						{
-							"id": "wr5_gcOasyyyUVDsy",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Control",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Hacking"
-									},
-									"modifier": -1
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Operation"
-									},
-									"modifier": -2
-								}
-							],
-							"calc": {
-								"level": 15
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 100,
-						"extended_value": 100,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "e5qNAo8CwSxGNITUj",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "ePnJtxFsKRe4ZfPgI"
-					},
-					"description": "Javelin",
-					"local_notes": "Damage Program:  Complexity 5; Single Execution",
-					"tech_level": "9",
-					"legality_class": "3",
-					"tags": [
-						"Program",
-						"Program: Damage"
-					],
-					"base_value": "100",
-					"weapons": [
-						{
-							"id": "wrOmMY91GMh8RcIXQ",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Damage",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Hacking"
-									},
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Expert Skill"
-									},
-									"specialization": {
-										"compare": "is",
-										"qualifier": "Computer Security"
-									},
-									"modifier": -3
-								}
-							],
-							"calc": {
-								"level": 13
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 100,
-						"extended_value": 100,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "e5KfzS9LV7w3t_bey",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "e1pQxdsvzPc7flzCu"
-					},
-					"description": "Chimera",
-					"local_notes": "ICE Program:  Complexity 5; Continuous",
-					"tech_level": "9",
-					"tags": [
-						"Program",
-						"Program: ICE"
-					],
-					"base_value": "100",
-					"weapons": [
-						{
-							"id": "wh-Sc7tMmGCiNZ_4E",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "ICE",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Hacking"
-									}
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Expert Skill"
-									},
-									"specialization": {
-										"compare": "is",
-										"qualifier": "Computer Security"
-									},
-									"modifier": 2
-								}
-							],
-							"calc": {
-								"level": 18
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 100,
-						"extended_value": 100,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "ejhg-lzclzFEF22_T",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "eMq9axkgouk_xp24v"
-					},
-					"description": "Iron Gate",
-					"local_notes": "ICE Program:  Complexity 4; Continuous",
-					"tech_level": "9",
-					"tags": [
-						"Program",
-						"Program: ICE"
-					],
-					"base_value": "30",
-					"weapons": [
-						{
-							"id": "wOPk64sU2ATGb18B-",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "ICE",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Hacking"
-									},
-									"modifier": -1
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Expert Skill"
-									},
-									"specialization": {
-										"compare": "is",
-										"qualifier": "Computer Security"
-									},
-									"modifier": 1
-								}
-							],
-							"calc": {
-								"level": 17
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 30,
-						"extended_value": 30,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "eq865D8slZ91K1Xcj",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "eJ5Nvi7nCIvgKElWu"
-					},
-					"description": "Static Sea",
-					"local_notes": "Jam Program:  Complexity 3; Continuous",
-					"tech_level": "9",
-					"legality_class": "3",
-					"tags": [
-						"Program",
-						"Program: Jam"
-					],
-					"base_value": "10",
-					"weapons": [
-						{
-							"id": "wo7DgFrrcgx-TC0-y",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Jam",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Hacking"
-									},
-									"modifier": -1
-								}
-							],
-							"calc": {
-								"level": 14
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 10,
-						"extended_value": 10,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "ec8OuA5AccyyRnMsA",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "ep700po9S2niBTwsy"
-					},
-					"description": "Sentinal",
-					"local_notes": "Listen Program:  Complexity 4; Continuous",
-					"tech_level": "9",
-					"legality_class": "3",
-					"tags": [
-						"Program",
-						"Program: Listen"
-					],
-					"base_value": "30",
-					"weapons": [
-						{
-							"id": "wsnaG72ctXvjF-XuI",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Listen",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Hacking"
-									}
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Expert Skill"
-									},
-									"specialization": {
-										"compare": "is",
-										"qualifier": "Computer Security"
-									},
-									"modifier": 2
-								}
-							],
-							"calc": {
-								"level": 18
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 30,
-						"extended_value": 30,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "etjE4Mr1JO9-npVeE",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "ehCTdQ6niwZBYy4mo"
-					},
-					"description": "Seeker",
-					"local_notes": "Search Program:  Complexity 5; Continuous or Single Execution",
-					"tech_level": "9",
-					"tags": [
-						"Program",
-						"Program: Search"
-					],
-					"base_value": "100",
-					"weapons": [
-						{
-							"id": "w7uun7yiNvV8FFciI",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Search",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Operation"
-									}
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Expert Skill"
-									},
-									"specialization": {
-										"compare": "is",
-										"qualifier": "Computer Security"
-									},
-									"modifier": 1
-								}
-							],
-							"calc": {
-								"level": 17
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 100,
-						"extended_value": 100,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "ekK3nKjGA-x8Ia-Ja",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "egpnZKGVjsAEn19Jh"
-					},
-					"description": "Sure Lock",
-					"local_notes": "Search Program:  Complexity 4; Continuous or Single Execution",
-					"tech_level": "9",
-					"tags": [
-						"Program",
-						"Program: Search"
-					],
-					"base_value": "30",
-					"weapons": [
-						{
-							"id": "wqObUfSxc24C6emLF",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Search",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Operation"
-									},
-									"modifier": -1
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Expert Skill"
-									},
-									"specialization": {
-										"compare": "is",
-										"qualifier": "Computer Security"
-									}
-								}
-							],
-							"calc": {
-								"level": 16
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 30,
-						"extended_value": 30,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "eh0yo5qMKFEE9CBSa",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "ezVFPeio3OQT_6eMy"
-					},
-					"description": "Smooth Op",
-					"local_notes": "Spoof Program:  Complexity 5; Continuous or Single Execution",
-					"tech_level": "9",
-					"legality_class": "3",
-					"tags": [
-						"Program",
-						"Program: Spoof"
-					],
-					"base_value": "100",
-					"weapons": [
-						{
-							"id": "ws45JsN3wHR_1NllQ",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Spoof",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Hacking"
-									},
-									"modifier": -2
-								}
-							],
-							"calc": {
-								"level": 13
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 100,
-						"extended_value": 100,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "eiuzLl1iRn1ehsdVa",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "ec2tlhEqM0jxGJN9a"
-					},
-					"description": "Air",
-					"local_notes": "Stealth Program:  Complexity 4; Continuous",
-					"tech_level": "9",
-					"legality_class": "3",
-					"tags": [
-						"Program",
-						"Program: Stealth"
-					],
-					"base_value": "30",
-					"weapons": [
-						{
-							"id": "wTFbWZVn-uNspIUTe",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Stealth",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Hacking"
-									},
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Expert Skill"
-									},
-									"specialization": {
-										"compare": "is",
-										"qualifier": "Computer Security"
-									},
-									"modifier": -3
-								}
-							],
-							"calc": {
-								"level": 13
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 30,
-						"extended_value": 30,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "eFhLt28D8abGqevvT",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Pyramid Magazine/Pyramid Magazine Equipment.eqp",
-						"id": "estx-QfqEibkkWiev"
-					},
-					"description": "Trip Wire",
-					"local_notes": "Trigger Program:  Complexity 4; Continuous",
-					"tech_level": "9",
-					"tags": [
-						"Program",
-						"Program: Trigger"
-					],
-					"base_value": "30",
-					"weapons": [
-						{
-							"id": "wzi587unzgOK2cei5",
-							"sv": 1,
-							"damage": {
-								"type": ""
-							},
-							"usage": "Trigger",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Computer Operation"
-									},
-									"modifier": 1
-								},
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Expert Skill"
-									},
-									"specialization": {
-										"compare": "is",
-										"qualifier": "Computer Security"
-									},
-									"modifier": 1
-								}
-							],
-							"calc": {
-								"level": 18
-							}
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 30,
-						"extended_value": 30,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				}
-			],
-			"calc": {
-				"value": 0,
-				"extended_value": 1320,
-				"weight": "0 lb",
-				"extended_weight": "0 lb"
-			}
-		},
-		{
-			"id": "e0dbpRuOXKPDaYbeC",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "ebAGWiGi75ZYuDJkw"
-			},
-			"description": "Wireless Neural Interface",
-			"reference": "UT217",
-			"local_notes": "Minor procedure.",
-			"tech_level": "10",
-			"legality_class": "3",
-			"base_value": "5000",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 5000,
-				"extended_value": 5000,
-				"weight": "0 lb",
-				"extended_weight": "0 lb"
-			}
-		},
-		{
-			"id": "eaGlDzDk8XBADsKM6",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "eHVmV3xhDjbDxM6x8"
-			},
-			"description": "Bandage Spray Can",
-			"reference": "UT197",
-			"local_notes": "First Aid +2 (quality). Six applications.",
-			"tech_level": "9",
-			"tags": [
-				"Medical"
-			],
-			"base_value": "15",
-			"base_weight": "0.5 lb",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 15,
-				"extended_value": 15,
-				"weight": "0.5 lb",
-				"extended_weight": "0.5 lb"
-			}
-		},
-		{
-			"id": "ePAaqnzS7BmVbuqr2",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "e_i5GdrpupUcERZMC"
-			},
-			"description": "Medscanner",
-			"reference": "UT200",
-			"local_notes": "B/10hr.",
-			"tech_level": "10^",
-			"tags": [
-				"Medical"
-			],
-			"base_value": "1000",
-			"base_weight": "0.25 lb",
-			"features": [
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Diagnosis"
-					},
-					"amount": 3
-				}
-			],
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 1000,
-				"extended_value": 1000,
-				"weight": "0.25 lb",
-				"extended_weight": "0.25 lb"
-			}
-		},
-		{
-			"id": "ey6nY_evNoBy5zSqo",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "e4h9Lm5aCqBNjRJ45"
-			},
-			"description": "Antibiotic",
-			"reference": "B289",
-			"local_notes": "Prevents or cures (in 1d days) infections.",
-			"tech_level": "6",
-			"tags": [
-				"Medical Gear"
-			],
-			"base_value": "20",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 20,
-				"extended_value": 20,
-				"weight": "0 lb",
-				"extended_weight": "0 lb"
-			}
-		},
-		{
-			"id": "ErmIFXpTOgfavvc9y",
-			"description": "Bag of Weightlessness",
-			"local_notes": "Can carry up to 40 lbs of which will be reduced by 50%",
-			"legality_class": "4",
-			"base_weight": "3",
-			"features": [
-				{
-					"type": "contained_weight_reduction",
-					"reduction": "50%"
-				}
-			],
-			"quantity": 1,
-			"equipped": true,
-			"children": [
 				{
 					"id": "ey8qEwOkEreOpbaMf",
 					"source": {
@@ -7843,9 +8549,9 @@
 			],
 			"calc": {
 				"value": 0,
-				"extended_value": 50,
+				"extended_value": 556713,
 				"weight": "3 lb",
-				"extended_weight": "4 lb"
+				"extended_weight": "16.531 lb"
 			}
 		}
 	],
@@ -7874,6 +8580,130 @@
 			}
 		},
 		{
+			"id": "ELoCx14d_GiuXjDZM",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "ESjtIfyzScVP49ity"
+			},
+			"description": "Backpack, Small",
+			"reference": "B288",
+			"tech_level": "1",
+			"tags": [
+				"Camping and Survival Gear"
+			],
+			"base_value": "60",
+			"base_weight": "3 lb",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "40 lb"
+						}
+					}
+				]
+			},
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 60,
+				"extended_value": 60,
+				"weight": "3 lb",
+				"extended_weight": "3 lb"
+			}
+		},
+		{
+			"id": "e_ChiE1opn1cpUa0i",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "e0k1uCmBF-xZUhA7d"
+			},
+			"description": "Laser Pistol",
+			"reference": "UT115",
+			"local_notes": "C/33 shots",
+			"tech_level": "10",
+			"legality_class": "3",
+			"tags": [
+				"Missile Weapon",
+				"Weaponry"
+			],
+			"base_value": "1100",
+			"base_weight": "1.5 lb",
+			"weapons": [
+				{
+					"id": "Wbd9oi_PprBNK26LF",
+					"sv": 1,
+					"damage": {
+						"type": "burn",
+						"base": "3d",
+						"armor_divisor": 2
+					},
+					"strength": "4",
+					"accuracy": "6",
+					"range": "200/600",
+					"rate_of_fire": "10",
+					"shots": "33(3)",
+					"bulk": "-2",
+					"recoil": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Beam Weapons"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Pistol"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Beam Weapons"
+							},
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Guns"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Pistol"
+							},
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"level": 14,
+						"damage": "3d(2) burn"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1100,
+				"extended_value": 1100,
+				"weight": "1.5 lb",
+				"extended_weight": "1.5 lb"
+			}
+		},
+		{
 			"id": "eE3mpwp1CcGKuNaDt",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -7895,6 +8725,30 @@
 				"extended_value": 1200,
 				"weight": "2 lb",
 				"extended_weight": "2 lb"
+			}
+		},
+		{
+			"id": "e2pVJ7YSAgjAHGNFn",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "e2WKpO0IMVsXiTZNt"
+			},
+			"description": "Personal Computer",
+			"reference": "UT22",
+			"local_notes": "Complexity 7. 100PB. 2C/20hr or external power.",
+			"tech_level": "10",
+			"tags": [
+				"Computers"
+			],
+			"base_value": "1000",
+			"base_weight": "5 lb",
+			"quantity": 1,
+			"calc": {
+				"value": 1000,
+				"extended_value": 1000,
+				"weight": "5 lb",
+				"extended_weight": "5 lb"
 			}
 		},
 		{
@@ -8047,7 +8901,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:16:51-04:00",
-	"modified_date": "2026-10-05T21:27:14-04:00",
+	"modified_date": "2026-10-18T20:24:35-04:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",

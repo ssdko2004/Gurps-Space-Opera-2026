@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "AMCcz18E4hSTpOYHb",
-	"total_points": 256,
+	"total_points": 261,
 	"points_record": [
+		{
+			"when": "2026-10-18T20:24:00-04:00",
+			"points": 5,
+			"reason": "Session 13"
+		},
 		{
 			"when": "2026-10-05T21:26:33-04:00",
 			"points": 5,
@@ -689,7 +694,9 @@
 		"notes_display": "inline",
 		"skill_level_adj_display": "tooltip",
 		"use_modifying_dice_plus_adds": true,
-		"show_spell_adj": true
+		"show_spell_adj": true,
+		"buy_percent": 100,
+		"sell_percent": 50
 	},
 	"attributes": [
 		{
@@ -6893,7 +6900,7 @@
 		}
 	],
 	"created_date": "2026-04-05T19:15:00-04:00",
-	"modified_date": "2026-10-05T21:27:42-04:00",
+	"modified_date": "2026-10-18T20:24:07-04:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",
